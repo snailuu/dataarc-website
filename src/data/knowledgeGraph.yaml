@@ -1,0 +1,384 @@
+# 扩展知识图谱数据结构 - 包含大量节点和三元组
+nodes:
+  # 第一层：核心节点 (5个)
+  core:
+    - id: "finance"
+      label: "金融核心"
+      x: 300
+      y: 200
+      level: 1
+    - id: "education" 
+      label: "教育核心"
+      x: 500
+      y: 150
+      level: 1
+    - id: "industry"
+      label: "工业核心"
+      x: 400
+      y: 320
+      level: 1
+    - id: "healthcare"
+      label: "医疗核心"
+      x: 200
+      y: 300
+      level: 1
+    - id: "technology"
+      label: "科技核心"
+      x: 600
+      y: 280
+      level: 1
+
+  # 第二层：子节点 (25个)
+  secondary:
+    # 金融子节点 (5个)
+    - id: "risk_control"
+      label: "风控数据"
+      parent: "finance"
+      x: 180
+      y: 120
+      level: 2
+    - id: "transaction"
+      label: "交易记录"
+      parent: "finance"
+      x: 220
+      y: 280
+      level: 2
+    - id: "customer_profile"
+      label: "客户画像"
+      parent: "finance"
+      x: 380
+      y: 100
+      level: 2
+    - id: "market_data"
+      label: "市场数据"
+      parent: "finance"
+      x: 420
+      y: 260
+      level: 2
+    - id: "regulatory_compliance"
+      label: "监管合规"
+      parent: "finance"
+      x: 350
+      y: 150
+      level: 2
+    
+    # 教育子节点 (5个)
+    - id: "learning_behavior"
+      label: "学习行为"
+      parent: "education"
+      x: 580
+      y: 80
+      level: 2
+    - id: "course_data"
+      label: "课程数据"
+      parent: "education"
+      x: 620
+      y: 200
+      level: 2
+    - id: "grade_analysis"
+      label: "成绩分析"
+      parent: "education"
+      x: 520
+      y: 250
+      level: 2
+    - id: "teacher_eval"
+      label: "教师评价"
+      parent: "education"
+      x: 480
+      y: 50
+      level: 2
+    - id: "educational_resources"
+      label: "教育资源"
+      parent: "education"
+      x: 560
+      y: 180
+      level: 2
+    
+    # 工业子节点 (5个)
+    - id: "production_data"
+      label: "生产数据"
+      parent: "industry"
+      x: 320
+      y: 420
+      level: 2
+    - id: "equipment_status"
+      label: "设备状态"
+      parent: "industry"
+      x: 480
+      y: 400
+      level: 2
+    - id: "quality_control"
+      label: "质量检测"
+      parent: "industry"
+      x: 360
+      y: 480
+      level: 2
+    - id: "supply_chain"
+      label: "供应链"
+      parent: "industry"
+      x: 240
+      y: 380
+      level: 2
+    - id: "efficiency_metrics"
+      label: "效率指标"
+      parent: "industry"
+      x: 450
+      y: 350
+      level: 2
+    
+    # 医疗子节点 (5个)
+    - id: "patient_records"
+      label: "病历档案"
+      parent: "healthcare"
+      x: 120
+      y: 240
+      level: 2
+    - id: "clinical_trials"
+      label: "临床试验"
+      parent: "healthcare"
+      x: 180
+      y: 360
+      level: 2
+    - id: "medical_imaging"
+      label: "医学影像"
+      parent: "healthcare"
+      x: 80
+      y: 340
+      level: 2
+    - id: "drug_discovery"
+      label: "药物研发"
+      parent: "healthcare"
+      x: 240
+      y: 220
+      level: 2
+    - id: "treatment_outcomes"
+      label: "治疗效果"
+      parent: "healthcare"
+      x: 160
+      y: 280
+      level: 2
+    
+    # 科技子节点 (5个)
+    - id: "ai_algorithms"
+      label: "AI算法"
+      parent: "technology"
+      x: 680
+      y: 200
+      level: 2
+    - id: "data_infrastructure"
+      label: "数据基础设施"
+      parent: "technology"
+      x: 640
+      y: 320
+      level: 2
+    - id: "software_development"
+      label: "软件开发"
+      parent: "technology"
+      x: 720
+      y: 350
+      level: 2
+    - id: "cybersecurity"
+      label: "网络安全"
+      parent: "technology"
+      x: 580
+      y: 380
+      level: 2
+    - id: "cloud_computing"
+      label: "云计算"
+      parent: "technology"
+      x: 660
+      y: 240
+      level: 2
+
+  # 第三层：详细节点 (80个)
+  detail:
+    # 金融详细节点 (20个)
+    - { id: "credit_score", label: "信用评分", parent: "risk_control", x: 120, y: 80, level: 3 }
+    - { id: "fraud_detect", label: "反欺诈", parent: "risk_control", x: 160, y: 160, level: 3 }
+    - { id: "loan_approval", label: "放贷审批", parent: "risk_control", x: 80, y: 140, level: 3 }
+    - { id: "stress_testing", label: "压力测试", parent: "risk_control", x: 220, y: 100, level: 3 }
+    - { id: "payment_flow", label: "支付流水", parent: "transaction", x: 180, y: 320, level: 3 }
+    - { id: "trade_volume", label: "交易量", parent: "transaction", x: 260, y: 340, level: 3 }
+    - { id: "settlement", label: "清算数据", parent: "transaction", x: 200, y: 240, level: 3 }
+    - { id: "algorithmic_trading", label: "算法交易", parent: "transaction", x: 280, y: 300, level: 3 }
+    - { id: "demographic_data", label: "人口统计", parent: "customer_profile", x: 420, y: 60, level: 3 }
+    - { id: "spending_pattern", label: "消费模式", parent: "customer_profile", x: 340, y: 80, level: 3 }
+    - { id: "investment_preference", label: "投资偏好", parent: "customer_profile", x: 400, y: 140, level: 3 }
+    - { id: "income_bracket", label: "收入区间", parent: "customer_profile", x: 460, y: 120, level: 3 }
+    - { id: "stock_price", label: "股票价格", parent: "market_data", x: 480, y: 220, level: 3 }
+    - { id: "bond_yield", label: "债券收益", parent: "market_data", x: 360, y: 300, level: 3 }
+    - { id: "commodity_futures", label: "商品期货", parent: "market_data", x: 440, y: 300, level: 3 }
+    - { id: "currency_exchange", label: "外汇汇率", parent: "market_data", x: 500, y: 280, level: 3 }
+    - { id: "basel_requirements", label: "巴塞尔要求", parent: "regulatory_compliance", x: 300, y: 120, level: 3 }
+    - { id: "aml_compliance", label: "反洗钱合规", parent: "regulatory_compliance", x: 380, y: 180, level: 3 }
+    - { id: "kyc_verification", label: "客户身份验证", parent: "regulatory_compliance", x: 320, y: 180, level: 3 }
+    - { id: "regulatory_reporting", label: "监管报告", parent: "regulatory_compliance", x: 400, y: 120, level: 3 }
+    
+    # 教育详细节点 (16个)
+    - { id: "study_time", label: "学习时长", parent: "learning_behavior", x: 620, y: 40, level: 3 }
+    - { id: "interaction", label: "互动频率", parent: "learning_behavior", x: 580, y: 120, level: 3 }
+    - { id: "progress", label: "学习进度", parent: "learning_behavior", x: 540, y: 60, level: 3 }
+    - { id: "engagement_rate", label: "参与度", parent: "learning_behavior", x: 600, y: 100, level: 3 }
+    - { id: "course_content", label: "课程内容", parent: "course_data", x: 660, y: 160, level: 3 }
+    - { id: "learning_path", label: "学习路径", parent: "course_data", x: 580, y: 240, level: 3 }
+    - { id: "curriculum_design", label: "课程设计", parent: "course_data", x: 640, y: 240, level: 3 }
+    - { id: "assessment_method", label: "评估方法", parent: "course_data", x: 680, y: 180, level: 3 }
+    - { id: "grade_distribution", label: "成绩分布", parent: "grade_analysis", x: 480, y: 290, level: 3 }
+    - { id: "skill_assessment", label: "技能评估", parent: "grade_analysis", x: 560, y: 290, level: 3 }
+    - { id: "learning_outcomes", label: "学习成果", parent: "grade_analysis", x: 520, y: 210, level: 3 }
+    - { id: "academic_progress", label: "学业进度", parent: "grade_analysis", x: 480, y: 220, level: 3 }
+    - { id: "teaching_quality", label: "教学质量", parent: "teacher_eval", x: 440, y: 20, level: 3 }
+    - { id: "student_feedback", label: "学生反馈", parent: "teacher_eval", x: 520, y: 20, level: 3 }
+    - { id: "digital_textbooks", label: "数字教材", parent: "educational_resources", x: 600, y: 160, level: 3 }
+    - { id: "online_libraries", label: "在线图书馆", parent: "educational_resources", x: 520, y: 200, level: 3 }
+    
+    # 工业详细节点 (16个)
+    - { id: "output_rate", label: "产出率", parent: "production_data", x: 280, y: 460, level: 3 }
+    - { id: "efficiency", label: "效率指标", parent: "production_data", x: 360, y: 460, level: 3 }
+    - { id: "downtime", label: "停机时间", parent: "production_data", x: 320, y: 380, level: 3 }
+    - { id: "capacity_utilization", label: "产能利用率", parent: "production_data", x: 280, y: 400, level: 3 }
+    - { id: "maintenance_schedule", label: "维护计划", parent: "equipment_status", x: 520, y: 360, level: 3 }
+    - { id: "sensor_data", label: "传感器数据", parent: "equipment_status", x: 440, y: 440, level: 3 }
+    - { id: "predictive_maintenance", label: "预测性维护", parent: "equipment_status", x: 500, y: 420, level: 3 }
+    - { id: "equipment_efficiency", label: "设备效率", parent: "equipment_status", x: 520, y: 380, level: 3 }
+    - { id: "defect_rate", label: "缺陷率", parent: "quality_control", x: 320, y: 520, level: 3 }
+    - { id: "inspection_results", label: "检验结果", parent: "quality_control", x: 400, y: 520, level: 3 }
+    - { id: "compliance_standards", label: "合规标准", parent: "quality_control", x: 360, y: 440, level: 3 }
+    - { id: "process_optimization", label: "工艺优化", parent: "quality_control", x: 320, y: 500, level: 3 }
+    - { id: "vendor_management", label: "供应商管理", parent: "supply_chain", x: 180, y: 340, level: 3 }
+    - { id: "logistics_optimization", label: "物流优化", parent: "supply_chain", x: 200, y: 420, level: 3 }
+    - { id: "inventory_level", label: "库存水平", parent: "supply_chain", x: 280, y: 340, level: 3 }
+    - { id: "demand_forecasting", label: "需求预测", parent: "supply_chain", x: 240, y: 360, level: 3 }
+    
+    # 医疗详细节点 (16个)
+    - { id: "electronic_health_records", label: "电子病历", parent: "patient_records", x: 80, y: 200, level: 3 }
+    - { id: "diagnosis_codes", label: "诊断编码", parent: "patient_records", x: 160, y: 200, level: 3 }
+    - { id: "treatment_protocols", label: "治疗方案", parent: "patient_records", x: 120, y: 280, level: 3 }
+    - { id: "patient_monitoring", label: "患者监护", parent: "patient_records", x: 80, y: 260, level: 3 }
+    - { id: "biomarker_analysis", label: "生物标记分析", parent: "clinical_trials", x: 140, y: 400, level: 3 }
+    - { id: "genomic_data", label: "基因组数据", parent: "clinical_trials", x: 220, y: 400, level: 3 }
+    - { id: "clinical_trials_data", label: "临床试验数据", parent: "clinical_trials", x: 180, y: 320, level: 3 }
+    - { id: "adverse_events", label: "不良反应", parent: "clinical_trials", x: 120, y: 360, level: 3 }
+    - { id: "ct_scan", label: "CT扫描", parent: "medical_imaging", x: 40, y: 300, level: 3 }
+    - { id: "mri_analysis", label: "MRI分析", parent: "medical_imaging", x: 120, y: 380, level: 3 }
+    - { id: "x_ray_detection", label: "X光检测", parent: "medical_imaging", x: 60, y: 380, level: 3 }
+    - { id: "radiology_ai", label: "放射学AI", parent: "medical_imaging", x: 100, y: 320, level: 3 }
+    - { id: "molecular_modeling", label: "分子建模", parent: "drug_discovery", x: 280, y: 180, level: 3 }
+    - { id: "pharmacokinetics", label: "药代动力学", parent: "drug_discovery", x: 200, y: 180, level: 3 }
+    - { id: "recovery_rates", label: "康复率", parent: "treatment_outcomes", x: 120, y: 320, level: 3 }
+    - { id: "patient_satisfaction", label: "患者满意度", parent: "treatment_outcomes", x: 200, y: 320, level: 3 }
+    
+    # 科技详细节点 (12个)
+    - { id: "machine_learning", label: "机器学习", parent: "ai_algorithms", x: 720, y: 160, level: 3 }
+    - { id: "deep_learning", label: "深度学习", parent: "ai_algorithms", x: 640, y: 160, level: 3 }
+    - { id: "natural_language_processing", label: "自然语言处理", parent: "ai_algorithms", x: 680, y: 240, level: 3 }
+    - { id: "computer_vision", label: "计算机视觉", parent: "ai_algorithms", x: 720, y: 220, level: 3 }
+    - { id: "big_data_analytics", label: "大数据分析", parent: "data_infrastructure", x: 600, y: 360, level: 3 }
+    - { id: "distributed_systems", label: "分布式系统", parent: "data_infrastructure", x: 680, y: 360, level: 3 }
+    - { id: "agile_methodology", label: "敏捷方法", parent: "software_development", x: 760, y: 320, level: 3 }
+    - { id: "devops_practices", label: "DevOps实践", parent: "software_development", x: 720, y: 380, level: 3 }
+    - { id: "threat_detection", label: "威胁检测", parent: "cybersecurity", x: 540, y: 420, level: 3 }
+    - { id: "encryption_protocols", label: "加密协议", parent: "cybersecurity", x: 620, y: 420, level: 3 }
+    - { id: "serverless_computing", label: "无服务器计算", parent: "cloud_computing", x: 620, y: 200, level: 3 }
+    - { id: "container_orchestration", label: "容器编排", parent: "cloud_computing", x: 700, y: 280, level: 3 }
+
+# 连接关系 (三元组) - 大幅增加
+links:
+  # 强连接 (strength > 0.7)
+  - { source: "finance", target: "risk_control", strength: 0.9, relation: "管理" }
+  - { source: "finance", target: "transaction", strength: 0.85, relation: "处理" }
+  - { source: "education", target: "learning_behavior", strength: 0.8, relation: "分析" }
+  - { source: "industry", target: "production_data", strength: 0.9, relation: "监控" }
+  - { source: "healthcare", target: "patient_records", strength: 0.95, relation: "维护" }
+  - { source: "technology", target: "ai_algorithms", strength: 0.88, relation: "开发" }
+  
+  # 中等连接 (0.4 < strength <= 0.7)
+  - { source: "risk_control", target: "credit_score", strength: 0.7, relation: "计算" }
+  - { source: "risk_control", target: "fraud_detect", strength: 0.65, relation: "识别" }
+  - { source: "transaction", target: "payment_flow", strength: 0.6, relation: "记录" }
+  - { source: "market_data", target: "stock_price", strength: 0.7, relation: "追踪" }
+  - { source: "learning_behavior", target: "study_time", strength: 0.6, relation: "统计" }
+  - { source: "course_data", target: "course_content", strength: 0.65, relation: "包含" }
+  - { source: "production_data", target: "output_rate", strength: 0.7, relation: "衡量" }
+  - { source: "equipment_status", target: "sensor_data", strength: 0.6, relation: "采集" }
+  - { source: "patient_records", target: "electronic_health_records", strength: 0.65, relation: "存储" }
+  - { source: "medical_imaging", target: "ct_scan", strength: 0.6, relation: "执行" }
+  - { source: "ai_algorithms", target: "machine_learning", strength: 0.7, relation: "实现" }
+  
+  # 跨域连接
+  - { source: "technology", target: "healthcare", strength: 0.5, relation: "支持" }
+  - { source: "ai_algorithms", target: "fraud_detect", strength: 0.45, relation: "优化" }
+  - { source: "machine_learning", target: "predictive_maintenance", strength: 0.4, relation: "预测" }
+  - { source: "big_data_analytics", target: "market_data", strength: 0.35, relation: "处理" }
+  - { source: "natural_language_processing", target: "patient_records", strength: 0.3, relation: "理解" }
+  
+  # 弱连接 (strength <= 0.4)
+  - { source: "customer_profile", target: "learning_behavior", strength: 0.25, relation: "关联" }
+  - { source: "quality_control", target: "drug_discovery", strength: 0.3, relation: "验证" }
+  - { source: "cybersecurity", target: "regulatory_compliance", strength: 0.35, relation: "保障" }
+  - { source: "supply_chain", target: "inventory_level", strength: 0.4, relation: "管理" }
+  - { source: "teacher_eval", target: "teaching_quality", strength: 0.38, relation: "评估" }
+
+# 扩展QA对话数据
+conversations:
+  finance:
+    - q: "分析客户信贷风险等级"
+      a: "基于历史交易数据，该客户风险等级为B+，建议授信额度50万"
+    - q: "预测下季度投资趋势"
+      a: "综合宏观经济指标，科技板块上涨概率72%，建议配置15%"
+    - q: "识别异常交易行为"
+      a: "检测到账户近7日交易频率异常，疑似洗钱风险，建议人工审核"
+    - q: "优化资产配置策略"
+      a: "当前组合波动率偏高，建议降低股票仓位至60%，增加债券配置"
+    - q: "评估企业财务健康度"
+      a: "目标企业资产负债率45%，现金流健康，信用评级A-"
+    - q: "量化交易策略分析"
+      a: "Alpha策略年化收益15.2%，夏普比率1.8，回撤控制在8%以内"
+    - q: "市场风险压力测试"
+      a: "在极端市场条件下，投资组合最大损失预计不超过12%"
+    - q: "监管合规检查报告"
+      a: "本季度合规率99.2%，已完成巴塞尔III要求的资本充足率测试"
+
+  education:
+    - q: "推荐个性化学习路径"
+      a: "根据学习行为分析，建议优先加强数学基础模块，预计需要15天"
+    - q: "评估教学效果"
+      a: "当前课程完成率87%，学生满意度4.2/5.0，建议增加互动环节"
+    - q: "识别学习困难学生"
+      a: "检测到张同学近期作业质量下降，建议安排一对一辅导"
+    - q: "智能作业批改分析"
+      a: "本次作业平均分78分，常见错误：概念理解不清（45%），计算错误（32%）"
+    - q: "学习资源个性化推荐"
+      a: "基于学习进度，为您推荐高等数学视频课程和配套练习题"
+    - q: "课程设计优化建议"
+      a: "数据显示互动式教学效果提升35%，建议增加案例讨论环节"
+
+  industry:
+    - q: "优化生产线排程"
+      a: "建议调整生产线A至85%产能，预计提升效率12%，节约成本8万"
+    - q: "预测设备维护需求"
+      a: "压缩机组件预计30天后需要保养，建议提前备料避免停机"
+    - q: "质量检测异常分析"
+      a: "产线B不合格率上升至3.2%，主要问题：密封性能不达标"
+    - q: "智能制造升级效果"
+      a: "AI视觉检测系统上线后，缺陷识别准确率提升至99.2%"
+
+  healthcare:
+    - q: "患者诊断辅助分析"
+      a: "基于症状和检查结果，疑似心血管疾病，建议进一步心电图检查"
+    - q: "药物相互作用检查"
+      a: "检测到阿司匹林与华法林可能存在相互作用，建议调整用药剂量"
+    - q: "医学影像智能识别"
+      a: "CT扫描显示肺部有2mm结节，建议3个月后复查"
+    - q: "精准医疗方案推荐"
+      a: "基因检测结果显示对靶向药物敏感，推荐个体化治疗方案"
+
+  technology:
+    - q: "AI模型性能优化"
+      a: "通过超参数调优，模型准确率提升至94.5%，推理速度提升30%"
+    - q: "云平台资源调度"
+      a: "动态扩容策略已启动，预计处理能力提升50%，成本降低15%"
+    - q: "网络安全威胁检测"
+      a: "发现异常登录尝试125次，已自动阻断，建议强化密码策略"
+    - q: "分布式系统性能"
+      a: "集群负载均衡良好，平均响应时间150ms，满足性能要求" 

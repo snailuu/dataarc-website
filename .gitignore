@@ -1,0 +1,45 @@
+# 依赖目录
+node_modules/
+
+# 构建输出
+dist/
+build/
+
+# 环境文件
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 日志文件
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE 文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# 临时文件
+*.tmp
+*.temp
+
+# 图片资源文件夹（太大）
+图片资源/
+
+# PPT文件（太大）
+*.pptx
+pptx_extracted/
+
+# 视频文件（太大）
+*.mp4
+*.avi
+*.mov
+*.mkv
