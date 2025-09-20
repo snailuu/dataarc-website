@@ -303,6 +303,251 @@
         </div>
       </div>
     </section>
+
+    <!-- Company Details Section -->
+    <section class="company-details">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">公司基本信息</h2>
+          <p class="section-subtitle">数创弧光(深圳)科技有限公司详细信息</p>
+        </div>
+        
+        <div class="details-grid">
+          <div class="detail-card">
+            <div class="detail-icon">【需要图片：公司标识图标】</div>
+            <h3>公司全称</h3>
+            <p>数创弧光（深圳）科技有限公司</p>
+            <p class="detail-en">DataArc Technology Co., Ltd.</p>
+          </div>
+          
+          <div class="detail-card">
+            <div class="detail-icon">【需要图片：成立时间图标】</div>
+            <h3>成立时间</h3>
+            <p>2025年1月</p>
+            <p class="detail-description">在沈向洋院士支持下成立</p>
+          </div>
+          
+          <div class="detail-card">
+            <div class="detail-icon">【需要图片：地址位置图标】</div>
+            <h3>公司地址</h3>
+            <p>深圳市福田区河套保税区</p>
+            <p class="detail-description">长富金茂大厦3901</p>
+          </div>
+          
+          <div class="detail-card">
+            <div class="detail-icon">【需要图片：愿景目标图标】</div>
+            <h3>发展愿景</h3>
+            <p>打造合成数据时代的ScaleAI</p>
+            <p class="detail-description">成为中国的下一代ScaleAI</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Details Section -->
+    <section class="team-details">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">团队详细介绍</h2>
+          <p class="section-subtitle">深厚的研究积累和丰富的项目资源</p>
+        </div>
+        
+        <div class="team-overview">
+          <div class="team-info">
+            <h3>团队规模与结构</h3>
+            <p>团队现全职12人，计划维持15-20人的精英规模。团队相关领域研究积累深厚，业界知名度高，拥有世界知名专家作为项目顾问团队。</p>
+            
+            <div class="team-advantages">
+              <div class="advantage-item">
+                <div class="advantage-icon">【需要图片：研究积累图标】</div>
+                <div class="advantage-content">
+                  <h4>深厚研究积累</h4>
+                  <p>团队在相关领域有深厚的研究基础和技术积累</p>
+                </div>
+              </div>
+              
+              <div class="advantage-item">
+                <div class="advantage-icon">【需要图片：业界知名图标】</div>
+                <div class="advantage-content">
+                  <h4>业界知名度高</h4>
+                  <p>在人工智能和合成数据领域享有较高声誉</p>
+                </div>
+              </div>
+              
+              <div class="advantage-item">
+                <div class="advantage-icon">【需要图片：专家顾问图标】</div>
+                <div class="advantage-content">
+                  <h4>专家顾问团队</h4>
+                  <p>世界知名专家担任项目顾问，提供战略指导</p>
+                </div>
+              </div>
+              
+              <div class="advantage-item">
+                <div class="advantage-icon">【需要图片：项目资源图标】</div>
+                <div class="advantage-content">
+                  <h4>项目资源丰富</h4>
+                  <p>通过IDEA研究院获得丰富的项目资源支持</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="team-visual">
+            <div class="team-placeholder">【需要图片：团队介绍页面设计】</div>
+          </div>
+        </div>
+        
+        <div class="advisors-section">
+          <h3>项目顾问委员会</h3>
+          <div class="advisors-grid">
+            <div class="advisor-card">
+              <div class="advisor-avatar">【需要图片：沈向洋院士头像】</div>
+              <h4>沈向洋院士</h4>
+              <p class="advisor-title">项目主要支持者</p>
+              <p class="advisor-bio">IDEA研究院理事长，微软前全球执行副总裁</p>
+            </div>
+            
+            <div class="advisor-card">
+              <div class="advisor-avatar">【需要图片：顾问专家头像占位符】</div>
+              <h4>世界级专家</h4>
+              <p class="advisor-title">技术顾问团队</p>
+              <p class="advisor-bio">来自国际顶尖科研机构的技术专家</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Funding Section -->
+    <section class="funding-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">融资情况</h2>
+          <p class="section-subtitle">获得头部投资机构认可，快速发展中</p>
+        </div>
+        
+        <div class="funding-timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="timeline-number">1</div>
+            </div>
+            <div class="timeline-content">
+              <h3>种子轮</h3>
+              <div class="funding-stats">
+                <span class="funding-amount">8000万估值</span>
+                <span class="funding-date">2025年初</span>
+              </div>
+              <p>获得首轮种子投资，验证产品市场需求</p>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="timeline-number">2</div>
+            </div>
+            <div class="timeline-content">
+              <h3>种子加轮</h3>
+              <div class="funding-stats">
+                <span class="funding-amount">1.5亿估值</span>
+                <span class="funding-date">2025年中</span>
+              </div>
+              <p>快速发展阶段，估值大幅提升</p>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="timeline-number">3</div>
+            </div>
+            <div class="timeline-content">
+              <h3>加加轮</h3>
+              <div class="funding-stats">
+                <span class="funding-amount">2.5亿估值</span>
+                <span class="funding-date">2025年下半年</span>
+              </div>
+              <p>业务快速增长，市场认可度持续提升</p>
+            </div>
+          </div>
+          
+          <div class="timeline-item active">
+            <div class="timeline-marker">
+              <div class="timeline-number">4</div>
+            </div>
+            <div class="timeline-content">
+              <h3>拟天使轮</h3>
+              <div class="funding-stats">
+                <span class="funding-amount">5亿估值</span>
+                <span class="funding-date">进行中</span>
+              </div>
+              <p>目标成为合成数据领域的领军企业</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="investors-section">
+          <h3>投资机构</h3>
+          <div class="investors-grid">
+            <div class="investor-category">
+              <h4>头部投资机构</h4>
+              <div class="investor-placeholder">【需要图片：头部投资机构展示】</div>
+            </div>
+            
+            <div class="investor-category">
+              <h4>产业集团投资方</h4>
+              <div class="investor-placeholder">【需要图片：产业集团投资方】</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Development Milestones Section -->
+    <section class="milestones">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">发展历程</h2>
+          <p class="section-subtitle">从概念到实现，持续创新的发展之路</p>
+        </div>
+        
+        <div class="milestones-grid">
+          <div class="milestone-card">
+            <div class="milestone-date">2025年1月</div>
+            <h3>公司成立</h3>
+            <p>在沈向洋院士支持下，由IDEA研究院推动孵化成立</p>
+          </div>
+          
+          <div class="milestone-card">
+            <div class="milestone-date">2025年3月</div>
+            <h3>业务启动</h3>
+            <p>开始正式业务运营，进入PMF阶段</p>
+          </div>
+          
+          <div class="milestone-card">
+            <div class="milestone-date">2025年6月</div>
+            <h3>技术突破</h3>
+            <p>完成核心技术研发，推出Living KB和SynData Platform</p>
+          </div>
+          
+          <div class="milestone-card">
+            <div class="milestone-date">2025年9月</div>
+            <h3>客户验证</h3>
+            <p>完成多个POC项目，获得客户认可</p>
+          </div>
+          
+          <div class="milestone-card">
+            <div class="milestone-date">2025年12月</div>
+            <h3>规模扩张</h3>
+            <p>业务快速发展，团队规模持续优化</p>
+          </div>
+          
+          <div class="milestone-card future">
+            <div class="milestone-date">2026年+</div>
+            <h3>未来规划</h3>
+            <p>成为中国的下一代ScaleAI，引领合成数据时代</p>
+          </div>
+        </div>
+      </div>
+    </section>
     
     <AppFooter />
   </div>
@@ -963,5 +1208,343 @@ const submitForm = () => {
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
+}
+
+/* ===== Company Details Section ===== */
+.company-details {
+  padding: var(--space-32) 0;
+  background: var(--bg-secondary);
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-6);
+}
+
+.detail-card {
+  background: var(--bg-primary);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-8);
+  text-align: center;
+  border: 1px solid var(--neutral-200);
+}
+
+.detail-icon {
+  margin-bottom: var(--space-4);
+  color: var(--primary-color);
+  font-size: var(--font-sm);
+}
+
+.detail-card h3 {
+  font-size: var(--font-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-3);
+}
+
+.detail-en {
+  color: var(--text-tertiary);
+  font-size: var(--font-sm);
+  font-style: italic;
+}
+
+.detail-description {
+  color: var(--text-secondary);
+  font-size: var(--font-sm);
+}
+
+/* ===== Team Details Section ===== */
+.team-details {
+  padding: var(--space-32) 0;
+  background: var(--bg-primary);
+}
+
+.team-overview {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-12);
+  margin-bottom: var(--space-16);
+}
+
+.team-advantages {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+  margin-top: var(--space-8);
+}
+
+.advantage-item {
+  display: flex;
+  gap: var(--space-4);
+  align-items: flex-start;
+}
+
+.advantage-icon {
+  color: var(--primary-color);
+  font-size: var(--font-sm);
+  flex-shrink: 0;
+}
+
+.advantage-content h4 {
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.team-placeholder {
+  background: var(--neutral-100);
+  border: 2px dashed var(--neutral-300);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  color: var(--neutral-500);
+  text-align: center;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advisors-section h3 {
+  font-size: var(--font-2xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-8);
+  text-align: center;
+}
+
+.advisors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-8);
+}
+
+.advisor-card {
+  background: var(--glass-bg);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-8);
+  text-align: center;
+  backdrop-filter: var(--glass-backdrop);
+  border: 1px solid var(--glass-border);
+}
+
+.advisor-avatar {
+  width: 100px;
+  height: 100px;
+  background: var(--neutral-100);
+  border: 2px dashed var(--neutral-300);
+  border-radius: var(--radius-full);
+  margin: 0 auto var(--space-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--neutral-500);
+  font-size: var(--font-xs);
+}
+
+.advisor-card h4 {
+  font-size: var(--font-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.advisor-title {
+  color: var(--primary-color);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--space-3);
+}
+
+/* ===== Funding Section ===== */
+.funding-section {
+  padding: var(--space-32) 0;
+  background: var(--bg-secondary);
+}
+
+.funding-timeline {
+  position: relative;
+  margin-bottom: var(--space-16);
+}
+
+.timeline-item {
+  display: flex;
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+  align-items: flex-start;
+}
+
+.timeline-marker {
+  flex-shrink: 0;
+}
+
+.timeline-number {
+  width: 50px;
+  height: 50px;
+  background: var(--neutral-300);
+  color: var(--text-white);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-weight-bold);
+}
+
+.timeline-item.active .timeline-number {
+  background: var(--primary-color);
+}
+
+.timeline-content {
+  background: var(--bg-primary);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  border: 1px solid var(--neutral-200);
+  flex: 1;
+}
+
+.timeline-content h3 {
+  font-size: var(--font-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-3);
+}
+
+.funding-stats {
+  display: flex;
+  gap: var(--space-4);
+  margin-bottom: var(--space-3);
+}
+
+.funding-amount {
+  background: var(--primary-color);
+  color: var(--text-white);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  font-size: var(--font-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.funding-date {
+  background: var(--neutral-200);
+  color: var(--text-secondary);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  font-size: var(--font-sm);
+}
+
+.investors-section h3 {
+  font-size: var(--font-2xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-8);
+  text-align: center;
+}
+
+.investors-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-8);
+}
+
+.investor-category h4 {
+  font-size: var(--font-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-4);
+  text-align: center;
+}
+
+.investor-placeholder {
+  background: var(--neutral-100);
+  border: 2px dashed var(--neutral-300);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  color: var(--neutral-500);
+  text-align: center;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== Milestones Section ===== */
+.milestones {
+  padding: var(--space-32) 0;
+  background: var(--bg-primary);
+}
+
+.milestones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-6);
+}
+
+.milestone-card {
+  background: var(--glass-bg);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-6);
+  backdrop-filter: var(--glass-backdrop);
+  border: 1px solid var(--glass-border);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.milestone-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.milestone-card.future {
+  border: 2px solid var(--primary-color);
+  background: linear-gradient(135deg, var(--glass-bg), var(--primary-color-light));
+}
+
+.milestone-date {
+  background: var(--primary-color);
+  color: var(--text-white);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  font-size: var(--font-sm);
+  font-weight: var(--font-weight-medium);
+  display: inline-block;
+  margin-bottom: var(--space-4);
+}
+
+.milestone-card h3 {
+  font-size: var(--font-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-3);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .team-overview {
+    grid-template-columns: 1fr;
+  }
+  
+  .team-advantages {
+    grid-template-columns: 1fr;
+  }
+  
+  .advisors-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .timeline-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .investors-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .milestones-grid {
+    grid-template-columns: 1fr;
+  }
 }
 </style> 

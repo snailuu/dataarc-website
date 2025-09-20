@@ -103,6 +103,250 @@
         </div>
       </div>
     </section>
+
+    <!-- Detailed Customer Cases Section -->
+    <section class="detailed-cases">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">重点客户案例</h2>
+          <p class="section-subtitle">深度解析DataArc在各行业的创新应用与显著成效</p>
+        </div>
+
+        <!-- Insurance Case -->
+        <div class="detailed-case">
+          <div class="case-overview">
+            <div class="case-info">
+              <h3 class="case-title">保险行业 - AI智能客服</h3>
+              <div class="case-tags">
+                <span class="tag">保险行业</span>
+                <span class="tag">智能客服</span>
+                <span class="tag">合成数据</span>
+              </div>
+              <p class="case-description">
+                为大型保险公司提供AI智能客服解决方案，通过合成数据技术显著提升客服系统的对话质量和处理效率。
+              </p>
+            </div>
+            <div class="case-visual">
+              <div class="case-placeholder">【需要图片：保险行业智能客服案例总览】</div>
+            </div>
+          </div>
+          
+          <div class="case-challenge">
+            <h4>业务挑战</h4>
+            <p>提升AI保险客服的对话质量，解决长尾问题和反例问题，降低人工转接率</p>
+          </div>
+          
+          <div class="case-solution">
+            <h4>DataArc解决方案</h4>
+            <p>通过合成数据技术，为AI客服模型提供高质量训练数据，优化罕见问题和长尾知识的处理能力</p>
+          </div>
+          
+          <div class="case-results">
+            <h4>业务效果</h4>
+            <div class="results-grid">
+              <div class="result-item">
+                <div class="result-icon">【需要图片：良品率提升图标】</div>
+                <div class="result-stat">
+                  <span class="result-number">+15.5%</span>
+                  <span class="result-label">良品率提升</span>
+                </div>
+              </div>
+              <div class="result-item">
+                <div class="result-icon">【需要图片：长尾问题图标】</div>
+                <div class="result-stat">
+                  <span class="result-number">90%</span>
+                  <span class="result-label">长尾问题覆盖</span>
+                </div>
+              </div>
+              <div class="result-item">
+                <div class="result-icon">【需要图片：转接率图标】</div>
+                <div class="result-stat">
+                  <span class="result-number">-60%</span>
+                  <span class="result-label">人工转接率降低</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Finance Case -->
+        <div class="detailed-case">
+          <div class="case-overview">
+            <div class="case-info">
+              <h3 class="case-title">金融领域 - IDEA FinAI经济超脑</h3>
+              <div class="case-tags">
+                <span class="tag">金融科技</span>
+                <span class="tag">经济分析</span>
+                <span class="tag">智能投研</span>
+              </div>
+              <p class="case-description">
+                与IDEA研究院合作开发FinAI经济超脑，通过语境图谱技术提升金融数据分析和投研能力。
+              </p>
+            </div>
+            <div class="case-visual">
+              <div class="case-placeholder">【需要图片：金融IDEA FinAI经济超脑】</div>
+            </div>
+          </div>
+          
+          <div class="case-challenge">
+            <h4>业务挑战</h4>
+            <p>构建企业知识图谱，提升竞对分析与行业监控的效率，实现跨文档复杂推理</p>
+          </div>
+          
+          <div class="case-solution">
+            <h4>DataArc解决方案</h4>
+            <p>通过语境图谱技术，实现金融行业企业知识的结构化管理，自动化采集海量数据并识别行业属性</p>
+          </div>
+          
+          <div class="case-results">
+            <h4>业务效果</h4>
+            <div class="results-grid">
+              <div class="result-item">
+                <div class="result-icon">【需要图片：数据增量图标】</div>
+                <div class="result-stat">
+                  <span class="result-number">20.3倍</span>
+                  <span class="result-label">研报数据增量</span>
+                </div>
+              </div>
+              <div class="result-item">
+                <div class="result-icon">【需要图片：推理准确率图标】</div>
+                <div class="result-stat">
+                  <span class="result-number">+21.2%</span>
+                  <span class="result-label">推理准确率提升</span>
+                </div>
+              </div>
+              <div class="result-item">
+                <div class="result-icon">【需要图片：识别准确率图标】</div>
+                <div class="result-stat">
+                  <span class="result-number">80%+</span>
+                  <span class="result-label">企业属性识别准确率</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Case -->
+        <div class="detailed-case">
+          <div class="case-overview">
+            <div class="case-info">
+              <h3 class="case-title">教培领域 - 上海高金金融知识大模型</h3>
+              <div class="case-tags">
+                <span class="tag">教育培训</span>
+                <span class="tag">金融知识</span>
+                <span class="tag">考试系统</span>
+              </div>
+              <p class="case-description">
+                为上海高金提供金融知识大模型，通过合成数据技术生成50万金融问答对，打造超越GPT-4的专业模型。
+              </p>
+            </div>
+            <div class="case-visual">
+              <div class="case-placeholder">【需要图片：上海高金金融知识大模型】</div>
+            </div>
+          </div>
+          
+          <div class="case-challenge">
+            <h4>业务挑战</h4>
+            <p>解决金融大模型的题库不足问题，提升考试通过率，打造专业级金融知识AI</p>
+          </div>
+          
+          <div class="case-solution">
+            <h4>DataArc解决方案</h4>
+            <p>通过合成数据技术生成大量高质量金融问答对，训练百亿参数级的金融知识大模型</p>
+          </div>
+          
+          <div class="case-results">
+            <h4>业务效果</h4>
+            <div class="results-grid">
+              <div class="result-item">
+                <div class="result-icon">【需要图片：题库数量图标】</div>
+                <div class="result-stat">
+                  <span class="result-number">50万</span>
+                  <span class="result-label">金融问答对</span>
+                </div>
+              </div>
+              <div class="result-item">
+                <div class="result-icon">【需要图片：考试通过图标】</div>
+                <div class="result-stat">
+                  <span class="result-number">CPA+CFA</span>
+                  <span class="result-label">考试通过</span>
+                </div>
+              </div>
+              <div class="result-item">
+                <div class="result-icon">【需要图片：性能超越图标】</div>
+                <div class="result-stat">
+                  <span class="result-number">超越GPT-4</span>
+                  <span class="result-label">模型效果</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industry Benchmarks Section -->
+    <section class="industry-benchmarks">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">行业标杆对比</h2>
+          <p class="section-subtitle">DataArc与国际领先方案的对比优势</p>
+        </div>
+        
+        <div class="benchmarks-grid">
+          <div class="benchmark-card">
+            <h3>Writer模型对比</h3>
+            <div class="benchmark-content">
+              <div class="benchmark-stat">
+                <span class="stat-label">传统训练成本</span>
+                <span class="stat-value">70万美元</span>
+              </div>
+              <div class="benchmark-stat">
+                <span class="stat-label">DataArc方案</span>
+                <span class="stat-value highlight">显著降低</span>
+              </div>
+            </div>
+            <div class="benchmark-improvement">
+              工具调用准确率提升19.3%
+            </div>
+          </div>
+          
+          <div class="benchmark-card">
+            <h3>数据合规风险</h3>
+            <div class="benchmark-content">
+              <div class="benchmark-stat">
+                <span class="stat-label">数据违规成本</span>
+                <span class="stat-value">1480万美元</span>
+              </div>
+              <div class="benchmark-stat">
+                <span class="stat-label">DataArc保障</span>
+                <span class="stat-value highlight">零风险</span>
+              </div>
+            </div>
+            <div class="benchmark-improvement">
+              通过SoE技术完全规避数据泄露风险
+            </div>
+          </div>
+          
+          <div class="benchmark-card">
+            <h3>Gretel对比优势</h3>
+            <div class="benchmark-content">
+              <div class="benchmark-stat">
+                <span class="stat-label">传统合成数据</span>
+                <span class="stat-value">基础功能</span>
+              </div>
+              <div class="benchmark-stat">
+                <span class="stat-label">DataArc SoG</span>
+                <span class="stat-value highlight">智能图谱</span>
+              </div>
+            </div>
+            <div class="benchmark-improvement">
+              基于知识图谱的深度合成技术
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     
     <AppFooter />
   </div>
@@ -631,5 +875,124 @@ const cases = [
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
+}
+
+/* ===== Detailed Cases Section ===== */
+.detailed-cases {
+  padding: var(--space-32) 0;
+  background: var(--bg-primary);
+}
+
+.detailed-case {
+  margin-bottom: var(--space-20);
+  padding: var(--space-12);
+  background: var(--glass-bg);
+  border-radius: var(--radius-2xl);
+  backdrop-filter: var(--glass-backdrop);
+  border: 1px solid var(--glass-border);
+}
+
+.case-overview {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-8);
+  margin-bottom: var(--space-8);
+}
+
+.case-title {
+  font-size: var(--font-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-4);
+}
+
+.case-tags {
+  display: flex;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.tag {
+  background: var(--primary-color);
+  color: var(--text-white);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  font-size: var(--font-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+}
+
+.result-item {
+  text-align: center;
+  padding: var(--space-4);
+  background: var(--glass-bg);
+  border-radius: var(--radius-lg);
+}
+
+.result-number {
+  font-size: var(--font-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--primary-color);
+  display: block;
+}
+
+.result-label {
+  font-size: var(--font-sm);
+  color: var(--text-tertiary);
+}
+
+/* Industry Benchmarks Section */
+.industry-benchmarks {
+  padding: var(--space-32) 0;
+  background: var(--bg-secondary);
+}
+
+.benchmarks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-8);
+}
+
+.benchmark-card {
+  background: var(--bg-primary);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-8);
+  border: 1px solid var(--neutral-200);
+}
+
+.benchmark-card h3 {
+  font-size: var(--font-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-6);
+  text-align: center;
+}
+
+.benchmark-stat {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--neutral-200);
+}
+
+.stat-value.highlight {
+  color: var(--primary-color);
+  font-weight: var(--font-weight-bold);
+}
+
+.benchmark-improvement {
+  text-align: center;
+  padding: var(--space-3);
+  background: var(--glass-bg);
+  border-radius: var(--radius-lg);
+  color: var(--primary-color);
+  font-weight: var(--font-weight-medium);
+  margin-top: var(--space-4);
 }
 </style> 

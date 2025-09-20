@@ -17,8 +17,11 @@
   /* 主色调 - 黑色酷炫风格的霓虹渐变 */
   --primary-gradient: linear-gradient(135deg, #00d4ff 0%, #090979 100%);
   --primary-color: #00d4ff;
+  --primary-rgb: 0, 212, 255;
   --primary-light: #66e0ff;
   --primary-dark: #0099cc;
+  
+  /* 小球颜色由 JavaScript 动态管理 */
   --secondary-gradient: linear-gradient(135deg, #ff006e 0%, #8338ec 100%);
   --accent-gradient: linear-gradient(135deg, #06ffa5 0%, #00d4ff 100%);
   

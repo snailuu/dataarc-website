@@ -16,19 +16,31 @@
               <span class="badge-divider">•</span>
               <span class="badge-text font-medium text-sm tracking-wide">智能化技术创新</span>
             </div>
-                          <h1 class="hero-title">
-                <div class="title-line">
-                  <span class="main-title">合成数据</span>
-                  <span class="title-en">Synthetic Data</span>
+                          <div class="title-container title-with-orbs orbs-hero">
+                <h1 class="hero-title">
+                  <div class="title-line">
+                    <span class="main-title">合成数据</span>
+                    <span class="title-en">Synthetic Data</span>
+                  </div>
+                  <div class="title-line">
+                    <span class="sub-title">将企业知识转化为</span>
+                  </div>
+                  <div class="title-line">
+                    <span class="highlight-title">AI 智能</span>
+                    <span class="title-en">Artificial Intelligence</span>
+                  </div>
+                </h1>
+                
+                <!-- Floating Orbs -->
+                <div class="floating-orbs" @mouseenter="handleMouseMove" @mouseleave="handleMouseLeave">
+                  <div 
+                    v-for="orb in orbSections.hero || []"
+                    :key="orb.id"
+                    class="orb"
+                    :style="getOrbStyle(orb)"
+                  ></div>
                 </div>
-                <div class="title-line">
-                  <span class="sub-title">将企业知识转化为</span>
-                </div>
-                <div class="title-line">
-                  <span class="highlight-title">AI 智能</span>
-                  <span class="title-en">Artificial Intelligence</span>
-                </div>
-              </h1>
+              </div>
                           <div class="hero-description">
                 <p class="main-desc">
                   通过合成数据驱动的智能体为核心，DataArc 提供多场景下的AI应用解决方案，涵盖金融、风险控制、智能投研、经济运营分析等多个领域。
@@ -50,13 +62,82 @@
       </div>
     </section>
 
+    <!-- Market Opportunity Section -->
+    <section class="market-opportunity">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-group title-with-orbs orbs-market">
+            <h2 class="section-title text-5xl font-extralight tracking-tight">市场机会</h2>
+            <p class="section-title-en text-base font-extralight tracking-wider opacity-50">Market Opportunity</p>
+            <div class="floating-orbs" @mouseenter="handleMouseMove" @mouseleave="handleMouseLeave">
+              <div 
+                v-for="orb in orbSections.market || []"
+                :key="orb.id"
+                class="orb"
+                :style="getOrbStyle(orb)"
+              ></div>
+            </div>
+          </div>
+          <p class="section-subtitle text-lg font-light text-tertiary leading-relaxed">
+            数据稀缺性问题日益严重，合成数据成为破局之路，市场迎来爆发式增长机遇。
+          </p>
+        </div>
+        
+        <div class="opportunity-grid">
+          <div class="opportunity-card glass-card">
+            <div class="opportunity-icon">
+              <div class="icon-placeholder">【需要图片：数据稀缺趋势图标】</div>
+            </div>
+            <h3 class="text-xl font-semibold text-primary mb-4">数据稀缺危机</h3>
+            <p class="text-secondary mb-4">根据Epoch AI估算，互联网上可用的人类文本数据可能会在2028年底前耗尽</p>
+            <div class="highlight-stat">
+              <span class="stat-number">2028年</span>
+              <span class="stat-label">数据耗尽预测</span>
+            </div>
+          </div>
+          
+          <div class="opportunity-card glass-card">
+            <div class="opportunity-icon">
+              <div class="icon-placeholder">【需要图片：市场增长图标】</div>
+            </div>
+            <h3 class="text-xl font-semibold text-primary mb-4">市场高速增长</h3>
+            <p class="text-secondary mb-4">全球合成数据市场预计在2023年至2028年复合年增长率达到45.7%</p>
+            <div class="highlight-stat">
+              <span class="stat-number">45.7%</span>
+              <span class="stat-label">年复合增长率</span>
+            </div>
+          </div>
+          
+          <div class="opportunity-card glass-card">
+            <div class="opportunity-icon">
+              <div class="icon-placeholder">【需要图片：行业共识图标】</div>
+            </div>
+            <h3 class="text-xl font-semibold text-primary mb-4">行业共识</h3>
+            <p class="text-secondary mb-4">OpenAI CEO Sam Altman表示相信很快所有数据都会是合成数据</p>
+            <div class="highlight-stat">
+              <span class="stat-number">98%</span>
+              <span class="stat-label">英伟达合成数据占比</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Products Section -->
     <section class="products">
       <div class="container">
         <div class="section-header">
-          <div class="section-title-group">
+          <div class="section-title-group title-with-orbs orbs-products">
             <h2 class="section-title text-5xl font-extralight tracking-tight">产品方案</h2>
             <p class="section-title-en text-base font-extralight tracking-wider opacity-50">Product Solutions</p>
+            <div class="floating-orbs" @mouseenter="handleMouseMove" @mouseleave="handleMouseLeave">
+              <div 
+                v-for="orb in orbSections.products || []"
+                :key="orb.id"
+                class="orb"
+                :style="getOrbStyle(orb)"
+              ></div>
+            </div>
           </div>
           <p class="section-subtitle text-lg font-light text-tertiary leading-relaxed">
             通过合成数据技术，解决大规模智能训练中的数据稀缺与质量问题，为各行业提供高质量、低成本的数据服务。
@@ -177,9 +258,17 @@
     <!-- Tech Advantages -->
     <section class="tech-advantages">
       <div class="container">
-        <div class="section-title-group text-center">
+        <div class="section-title-group text-center title-with-orbs orbs-tech">
           <h2 class="section-title text-5xl font-extralight tracking-tight">技术优势</h2>
           <p class="section-title-en text-base font-extralight tracking-wider opacity-50">Technical Advantages</p>
+          <div class="floating-orbs" @mouseenter="handleMouseMove" @mouseleave="handleMouseLeave">
+            <div 
+              v-for="orb in orbSections.tech || []"
+              :key="orb.id"
+              class="orb"
+              :style="getOrbStyle(orb)"
+            ></div>
+          </div>
         </div>
         <p class="section-subtitle text-lg font-light text-tertiary leading-relaxed text-center">
           DataArc 自主研发多项合成数据核心技术，覆盖从数据合成到模型训练的全周期，
@@ -247,7 +336,17 @@
     <!-- Context Graph -->
     <section class="context-graph">
       <div class="container">
-        <h2 class="section-title text-5xl font-extralight tracking-tight text-center">语境图谱: LLM Ready</h2>
+        <div class="title-with-orbs orbs-context">
+          <h2 class="section-title text-5xl font-extralight tracking-tight text-center">语境图谱: LLM Ready</h2>
+          <div class="floating-orbs" @mouseenter="handleMouseMove" @mouseleave="handleMouseLeave">
+            <div 
+              v-for="orb in orbSections.context || []"
+              :key="orb.id"
+              class="orb"
+              :style="getOrbStyle(orb)"
+            ></div>
+          </div>
+        </div>
         <p class="section-subtitle text-lg font-light text-tertiary leading-relaxed text-center">
           相比传统方案，建图效率提升 218倍，研究准确率提升至 90.2%，
           实战良品率提升至 95%，全面增强问答、洞察与决策能力。
@@ -258,10 +357,89 @@
       </div>
     </section>
 
+    <!-- Team Strength Section -->
+    <section class="team-strength">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-group title-with-orbs orbs-team">
+            <h2 class="section-title text-5xl font-extralight tracking-tight">团队实力</h2>
+            <p class="section-title-en text-base font-extralight tracking-wider opacity-50">Team Strength</p>
+            <div class="floating-orbs" @mouseenter="handleMouseMove" @mouseleave="handleMouseLeave">
+              <div 
+                v-for="orb in orbSections.team || []"
+                :key="orb.id"
+                class="orb"
+                :style="getOrbStyle(orb)"
+              ></div>
+            </div>
+          </div>
+          <p class="section-subtitle text-lg font-light text-tertiary leading-relaxed">
+            在沈向洋院士支持下由IDEA研究院孵化，拥有深厚研究积累和丰富项目资源的精英团队。
+          </p>
+        </div>
+        
+        <div class="team-grid">
+          <div class="team-card glass-card">
+            <div class="team-icon">
+              <div class="icon-placeholder">【需要图片：团队规模图标】</div>
+            </div>
+            <div class="team-stat">
+              <span class="stat-number">12人</span>
+              <span class="stat-label">精英团队</span>
+            </div>
+            <p class="text-secondary">全职核心团队，计划维持15-20人精英规模</p>
+          </div>
+          
+          <div class="team-card glass-card">
+            <div class="team-icon">
+              <div class="icon-placeholder">【需要图片：专家顾问图标】</div>
+            </div>
+            <div class="team-stat">
+              <span class="stat-number">世界级</span>
+              <span class="stat-label">专家顾问</span>
+            </div>
+            <p class="text-secondary">沈向洋院士支持，世界知名专家作为项目顾问团队</p>
+          </div>
+          
+          <div class="team-card glass-card">
+            <div class="team-icon">
+              <div class="icon-placeholder">【需要图片：研究积累图标】</div>
+            </div>
+            <div class="team-stat">
+              <span class="stat-number">深厚</span>
+              <span class="stat-label">研究积累</span>
+            </div>
+            <p class="text-secondary">团队相关领域研究积累深厚，业界知名度高</p>
+          </div>
+          
+          <div class="team-card glass-card">
+            <div class="team-icon">
+              <div class="icon-placeholder">【需要图片：IDEA研究院图标】</div>
+            </div>
+            <div class="team-stat">
+              <span class="stat-number">IDEA</span>
+              <span class="stat-label">研究院孵化</span>
+            </div>
+            <p class="text-secondary">由IDEA研究院推动孵化，项目资源丰富</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- News Section -->
     <section class="news">
       <div class="container">
-        <h2 class="section-title text-5xl font-extralight tracking-tight text-center">新闻媒体</h2>
+        <div class="title-with-orbs orbs-news">
+          <h2 class="section-title text-5xl font-extralight tracking-tight text-center">新闻媒体</h2>
+          <div class="floating-orbs" @mouseenter="handleMouseMove" @mouseleave="handleMouseLeave">
+            <div 
+              v-for="orb in orbSections.news || []"
+              :key="orb.id"
+              class="orb"
+              :style="getOrbStyle(orb)"
+            ></div>
+          </div>
+        </div>
         <p class="section-subtitle text-lg font-light text-tertiary leading-relaxed text-center">以合成数据驱动的智能体为核心，提供多场景 AI 应用方案。</p>
         
         <div class="news-grid">
@@ -333,9 +511,49 @@
 </template>
 
 <script setup>
+import { onMounted } from 'vue'
 import AppHeader from '@/components/AppHeader.vue'
 import AppFooter from '@/components/AppFooter.vue'
 import KnowledgeGraphAnimation from '@/components/KnowledgeGraphAnimation.vue'
+import { useFloatingOrbs } from '@/composables/useFloatingOrbs.js'
+
+// 初始化浮动小球
+const { orbSections, generateOrbs, getOrbStyle } = useFloatingOrbs()
+
+// 定义标题区域ID
+const sectionIds = ['hero', 'market', 'products', 'tech', 'context', 'team', 'news']
+
+onMounted(() => {
+  // 页面加载后生成随机小球
+  generateOrbs(sectionIds)
+})
+
+// 简单的鼠标跟随效果
+const handleMouseMove = (event) => {
+  const container = event.currentTarget
+  const orbs = container.querySelectorAll('.orb')
+  
+  orbs.forEach((orb, index) => {
+    // 不同小球有不同的随机偏移
+    const randomX = (Math.random() - 0.5) * 8 // -4px 到 4px
+    const randomY = (Math.random() - 0.5) * 8 // -4px 到 4px
+    
+    // 应用随机抖动效果
+    orb.style.transform = `translate(${randomX}px, ${randomY}px)`
+    orb.style.animationPlayState = 'paused'
+  })
+}
+
+const handleMouseLeave = (event) => {
+  const container = event.currentTarget
+  const orbs = container.querySelectorAll('.orb')
+  
+  orbs.forEach(orb => {
+    // 恢复动画和位置
+    orb.style.transform = ''
+    orb.style.animationPlayState = 'running'
+  })
+}
 </script>
 
 <style scoped>
@@ -397,6 +615,146 @@ import KnowledgeGraphAnimation from '@/components/KnowledgeGraphAnimation.vue'
   
   .main-desc {
     font-size: 1rem;
+  }
+}
+
+/* ===== Market Opportunity Section ===== */
+.market-opportunity {
+  padding: var(--space-32) 0;
+  background: var(--bg-primary);
+}
+
+.opportunity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--space-8);
+}
+
+.opportunity-card {
+  text-align: center;
+  padding: var(--space-8);
+}
+
+.opportunity-icon {
+  margin-bottom: var(--space-6);
+}
+
+.highlight-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+  margin-top: var(--space-4);
+}
+
+.stat-number {
+  font-size: var(--font-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--primary-color);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: var(--font-sm);
+  color: var(--text-tertiary);
+  font-weight: var(--font-weight-medium);
+}
+
+/* ===== Team Strength Section ===== */
+.team-strength {
+  padding: var(--space-32) 0;
+  background: var(--bg-secondary);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-6);
+}
+
+.team-card {
+  text-align: center;
+  padding: var(--space-6);
+}
+
+.team-icon {
+  margin-bottom: var(--space-4);
+}
+
+.team-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+  margin-bottom: var(--space-4);
+}
+
+/* ===== Floating Orbs ===== */
+.title-with-orbs {
+  position: relative;
+}
+
+.floating-orbs {
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  right: -30px;
+  bottom: -30px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  animation: floatOrb 6s ease-in-out infinite;
+  transition: transform 0.3s ease-out;
+}
+
+/* 动态小球样式由 JavaScript 生成，无需硬编码 */
+
+/* 所有小球样式由 JavaScript 动态生成 */
+
+@keyframes floatOrb {
+  0%, 100% { 
+    transform: translateY(0px) translateX(0px); 
+  }
+  25% { 
+    transform: translateY(-8px) translateX(3px); 
+  }
+  50% { 
+    transform: translateY(-12px) translateX(-2px); 
+  }
+  75% { 
+    transform: translateY(-6px) translateX(4px); 
+  }
+}
+
+/* 鼠标跟随效果由 JavaScript 处理 */
+
+@media (max-width: 768px) {
+  .opportunity-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+  
+  .stat-number {
+    font-size: var(--font-2xl);
+  }
+  
+  /* 移动端小球样式调整 */
+  .orb {
+    width: 4px !important;
+    height: 4px !important;
+    opacity: 0.25 !important;
+  }
+  
+  .floating-orbs {
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
   }
 }
 
@@ -476,6 +834,8 @@ import KnowledgeGraphAnimation from '@/components/KnowledgeGraphAnimation.vue'
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
+  position: relative;
+  z-index: 2;
 }
 
 .title-line {
@@ -628,6 +988,8 @@ import KnowledgeGraphAnimation from '@/components/KnowledgeGraphAnimation.vue'
   flex-direction: column;
   gap: 0.5rem;
   margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
 }
 
 .section-title-en {

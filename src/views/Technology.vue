@@ -123,6 +123,79 @@
           </div>
         </div>
 
+        <!-- Performance Comparison Section -->
+        <div class="performance-comparison">
+          <div class="section-header">
+            <h2 class="section-title">性能优势对比</h2>
+            <p class="section-subtitle">DataArc相比行业标杆的显著性能提升</p>
+          </div>
+          
+          <div class="comparison-grid">
+            <div class="comparison-card">
+              <div class="comparison-header">
+                <h3>建图效率对比</h3>
+                <div class="comparison-icon">【需要图片：建图效率对比图标】</div>
+              </div>
+              <div class="comparison-stats">
+                <div class="stat-item">
+                  <span class="stat-label">DataArc SoG</span>
+                  <span class="stat-value highlight">6分钟</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">LightRAG</span>
+                  <span class="stat-value">2小时</span>
+                </div>
+              </div>
+              <div class="improvement">
+                <span class="improvement-text">效率提升</span>
+                <span class="improvement-value">218倍</span>
+              </div>
+            </div>
+            
+            <div class="comparison-card">
+              <div class="comparison-header">
+                <h3>推理准确率对比</h3>
+                <div class="comparison-icon">【需要图片：准确率对比图标】</div>
+              </div>
+              <div class="comparison-stats">
+                <div class="stat-item">
+                  <span class="stat-label">DataArc SoG</span>
+                  <span class="stat-value highlight">90.2%</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">传统方案</span>
+                  <span class="stat-value">73.1%</span>
+                </div>
+              </div>
+              <div class="improvement">
+                <span class="improvement-text">准确率提升</span>
+                <span class="improvement-value">17个百分点</span>
+              </div>
+            </div>
+            
+            <div class="comparison-card">
+              <div class="comparison-header">
+                <h3>SoE 加密技术</h3>
+                <div class="comparison-icon">【需要图片：SoE加密图标】</div>
+              </div>
+              <div class="comparison-stats">
+                <div class="stat-item">
+                  <span class="stat-label">隐私保护</span>
+                  <span class="stat-value highlight">0%泄露</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">性能提升</span>
+                  <span class="stat-value highlight">+2%</span>
+                </div>
+              </div>
+              <div class="improvement">
+                <span class="improvement-text">安全性</span>
+                <span class="improvement-value">完全保障</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- FAQ部分 -->
         <div class="faq-section">
           <h2>常见问题</h2>
@@ -543,6 +616,76 @@ const toggleFaq = (type, index) => {
   .tech-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* ===== Performance Comparison Section ===== */
+.performance-comparison {
+  margin-top: var(--space-16);
+  padding: var(--space-12) 0;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-2xl);
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-6);
+  margin-top: var(--space-8);
+}
+
+.comparison-card {
+  background: var(--bg-primary);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  border: 1px solid var(--neutral-200);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.comparison-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.comparison-header h3 {
+  font-size: var(--font-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.comparison-icon {
+  color: var(--primary-color);
+  font-size: var(--font-sm);
+  margin-bottom: var(--space-4);
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--neutral-200);
+}
+
+.stat-value.highlight {
+  color: var(--primary-color);
+  font-weight: var(--font-weight-bold);
+}
+
+.improvement {
+  text-align: center;
+  padding: var(--space-3);
+  background: var(--glass-bg);
+  border-radius: var(--radius-lg);
+  margin-top: var(--space-4);
+}
+
+.improvement-value {
+  font-size: var(--font-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--primary-color);
+  display: block;
+  margin-top: var(--space-1);
 }
 </style> 
  
