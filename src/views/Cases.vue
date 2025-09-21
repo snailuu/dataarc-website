@@ -11,74 +11,270 @@
       <div class="container">
         <div class="hero-content">
           <div class="hero-badge">
-            <span class="badge-text">成功案例展示</span>
+            <span class="badge-text">头部企业AI转型实践</span>
           </div>
           <h1 class="hero-title">
-            <span class="title-line">客户案例</span>
-            <span class="title-highlight">创新应用</span>
+            <span class="title-line">客户成功案例</span>
+            <span class="title-highlight">创新应用与成果</span>
           </h1>
           <p class="hero-description">
-            DataArc 已成功为多家知名企业提供AI智能化解决方案，
-            覆盖金融、教育、制造、投资等多个行业领域。
+            DataArc 已成功为多家头部企业提供AI智能化解决方案，
+            覆盖金融投资、制造业、云计算、教育培训、AI服务等多个行业领域
           </p>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">头部企业客户</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">67%</span>
+              <span class="stat-label">AI准确率提升</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">90%</span>
+              <span class="stat-label">数据风险降低</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Cases Section -->
-    <section class="cases-section">
+    <!-- Industry Coverage -->
+    <section class="industry-coverage">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">成功案例</h2>
-          <p class="section-subtitle">
-            从概念到实施，我们与客户携手共创智能化未来
-          </p>
+          <h2 class="section-title">行业覆盖</h2>
+          <p class="section-subtitle">DataArc在多个核心行业领域都有成功实践</p>
         </div>
+        
+        <div class="industry-grid">
+          <div class="industry-item">
+            <div class="industry-icon">【需要图片：金融投资行业icon】</div>
+            <h3>金融投资</h3>
+            <p>头部投资机构、保险服务机构</p>
+            <div class="industry-highlights">
+              <span class="highlight">投资分析</span>
+              <span class="highlight">风险控制</span>
+              <span class="highlight">知识管理</span>
+            </div>
+          </div>
+          
+          <div class="industry-item">
+            <div class="industry-icon">【需要图片：制造业icon】</div>
+            <h3>制造业</h3>
+            <p>头部制造企业</p>
+            <div class="industry-highlights">
+              <span class="highlight">工艺知识</span>
+              <span class="highlight">质量管控</span>
+              <span class="highlight">人才培训</span>
+            </div>
+          </div>
+          
+          <div class="industry-item">
+            <div class="industry-icon">【需要图片：云计算icon】</div>
+            <h3>云计算</h3>
+            <p>头部云服务商</p>
+            <div class="industry-highlights">
+              <span class="highlight">医疗AI</span>
+              <span class="highlight">数据整合</span>
+              <span class="highlight">平台服务</span>
+            </div>
+          </div>
+          
+          <div class="industry-item">
+            <div class="industry-icon">【需要图片：教育培训icon】</div>
+            <h3>教育培训</h3>
+            <p>头部教育机构</p>
+            <div class="industry-highlights">
+              <span class="highlight">智能分类</span>
+              <span class="highlight">知识图谱</span>
+              <span class="highlight">考试系统</span>
+            </div>
+          </div>
+          
+          <div class="industry-item">
+            <div class="industry-icon">【需要图片：AI服务icon】</div>
+            <h3>AI服务</h3>
+            <p>头部AI服务商</p>
+            <div class="industry-highlights">
+              <span class="highlight">智能客服</span>
+              <span class="highlight">意图识别</span>
+              <span class="highlight">合成数据</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Detailed Customer Cases -->
+    <section class="detailed-cases">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">详细客户案例</h2>
+          <p class="section-subtitle">深入了解头部企业的AI转型实践与显著成果</p>
+        </div>
+        
         <div class="cases-grid">
-          <div 
-            v-for="(caseItem, index) in cases" 
-            :key="caseItem.id"
-            class="case-card glass-card"
-            :class="`case-${index + 1}`"
-          >
+          <!-- Case 1: 头部投资机构 -->
+          <div class="case-card premium-case">
             <div class="case-header">
-              <div class="case-icon">
-                <div class="icon-placeholder">【需要图片：案例页-{{ caseItem.name }}-logo.png - 客户公司logo】</div>
+              <div class="case-badge livingkb-badge">LivingKB</div>
+              <div class="case-title-group">
+                <h3>头部投资机构</h3>
+                <span class="case-category">金融知识库</span>
               </div>
-              <div class="case-category">{{ caseItem.category }}</div>
+              <div class="case-industry">金融投资</div>
             </div>
             
-            <div class="case-content">
-              <h3 class="case-title">{{ caseItem.name }}</h3>
-              <p class="case-description">{{ caseItem.description }}</p>
+            <div class="case-body">
+              <div class="case-section">
+                <h4 class="section-label">客户背景</h4>
+                <p>国内知名投资机构，管理资产规模数百亿，专注于科技、医疗、消费等多个领域的投资</p>
+              </div>
               
-              <div class="case-highlights">
-                <div class="highlight-item" v-for="highlight in caseItem.highlights" :key="highlight">
-                  <div class="highlight-icon">
-                    <svg viewBox="0 0 20 20" class="check-icon">
-                      <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                    </svg>
+              <div class="case-section">
+                <h4 class="section-label">业务挑战</h4>
+                <div class="challenge-list">
+                  <div class="challenge-item">
+                    <span class="challenge-icon">📊</span>
+                    <p>投资项目信息管理与分析效率低下</p>
                   </div>
-                  <span>{{ highlight }}</span>
+                  <div class="challenge-item">
+                    <span class="challenge-icon">🔍</span>
+                    <p>知识分散在各个系统，难以有效利用</p>
+                  </div>
+                  <div class="challenge-item">
+                    <span class="challenge-icon">⏱️</span>
+                    <p>项目尽调周期长，决策效率有待提升</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="case-section">
+                <h4 class="section-label">解决方案</h4>
+                <div class="solution-overview">
+                  <div class="solution-title">LivingKB + 投资分析Agent</div>
+                  <div class="solution-details">
+                    <div class="solution-module">
+                      <h5>知识图谱构建</h5>
+                      <p>整合企业尽调报告、财务数据、市场分析等多源信息，构建动态投资知识图谱</p>
+                    </div>
+                    <div class="solution-module">
+                      <h5>智能分析工具</h5>
+                      <p>基于ToG技术的投资分析Agent，提供项目评估、风险分析、行业对比等功能</p>
+                    </div>
+                    <div class="solution-module">
+                      <h5>决策支持系统</h5>
+                      <p>利用RAG技术实现精准检索，为投资决策提供全面的知识支撑</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="case-section">
+                <h4 class="section-label">实施效果</h4>
+                <div class="results-grid">
+                  <div class="result-item">
+                    <div class="result-icon">【需要图片：效率提升icon】</div>
+                    <h5>项目分析效率提升</h5>
+                    <p>尽调周期缩短30%，分析准确性显著提高</p>
+                  </div>
+                  <div class="result-item">
+                    <div class="result-icon">【需要图片：知识检索icon】</div>
+                    <h5>知识检索速度改善</h5>
+                    <p>信息检索时间从小时级降低到分钟级</p>
+                  </div>
+                  <div class="result-item">
+                    <div class="result-icon">【需要图片：决策质量icon】</div>
+                    <h5>决策质量提升</h5>
+                    <p>基于全量数据的智能分析，降低投资风险</p>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="case-footer">
-              <div class="case-results">
-                <div class="result-item">
-                  <span class="result-label">效率提升</span>
-                  <span class="result-value">{{ caseItem.efficiency }}</span>
+          <!-- Case 2: 头部AI服务商 -->
+          <div class="case-card premium-case">
+            <div class="case-header">
+              <div class="case-badge syndata-badge">SynData Platform</div>
+              <div class="case-title-group">
+                <h3>头部AI服务商</h3>
+                <span class="case-category">智能客服优化</span>
+              </div>
+              <div class="case-industry">AI服务</div>
+            </div>
+            
+            <div class="case-body">
+              <div class="case-section">
+                <h4 class="section-label">客户背景</h4>
+                <p>国内领先的银行AI客服解决方案提供商，服务于多家大型银行，处理日均百万级客服咨询</p>
+              </div>
+              
+              <div class="case-section">
+                <h4 class="section-label">业务挑战</h4>
+                <div class="challenge-list">
+                  <div class="challenge-item">
+                    <span class="challenge-icon">📉</span>
+                    <p>意图识别准确率仅为60%，影响客户体验</p>
+                  </div>
+                  <div class="challenge-item">
+                    <span class="challenge-icon">💾</span>
+                    <p>训练数据稀缺，特别是长尾场景数据不足</p>
+                  </div>
+                  <div class="challenge-item">
+                    <span class="challenge-icon">🔄</span>
+                    <p>模型迭代周期长，难以快速响应业务需求</p>
+                  </div>
                 </div>
-                <div class="result-item">
-                  <span class="result-label">成本降低</span>
-                  <span class="result-value">{{ caseItem.cost }}</span>
+              </div>
+              
+              <div class="case-section">
+                <h4 class="section-label">解决方案</h4>
+                <div class="solution-overview">
+                  <div class="solution-title">SynData Platform + 合成对话数据</div>
+                  <div class="solution-details">
+                    <div class="solution-module">
+                      <h5>合成对话数据生成</h5>
+                      <p>基于SoG技术生成高质量银行客服对话数据，覆盖各种业务场景</p>
+                    </div>
+                    <div class="solution-module">
+                      <h5>意图识别优化</h5>
+                      <p>利用合成数据扩充训练集，重点补强长尾场景和新业务场景</p>
+                    </div>
+                    <div class="solution-module">
+                      <h5>模型持续迭代</h5>
+                      <p>建立合成数据驱动的模型迭代流程，快速响应业务变化</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="case-section">
+                <h4 class="section-label">实施效果</h4>
+                <div class="results-grid">
+                  <div class="result-item highlighted-result">
+                    <div class="result-icon">【需要图片：准确率提升icon】</div>
+                    <h5>意图识别准确率提升</h5>
+                    <p>从60%提升到67%，提升幅度11.7%</p>
+                  </div>
+                  <div class="result-item">
+                    <div class="result-icon">【需要图片：数据质量icon】</div>
+                    <h5>训练数据质量改善</h5>
+                    <p>合成数据覆盖率提升3倍，数据分布更均衡</p>
+                  </div>
+                  <div class="result-item">
+                    <div class="result-icon">【需要图片：迭代速度icon】</div>
+                    <h5>模型迭代速度提升</h5>
+                    <p>迭代周期从月级缩短到周级</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
         <!-- Stats Section -->
         <div class="stats-section">

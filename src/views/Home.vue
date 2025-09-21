@@ -19,15 +19,15 @@
                           <div class="title-container title-with-orbs orbs-hero">
               <h1 class="hero-title">
                   <div class="title-line">
-                    <span class="main-title">合成数据</span>
-                    <span class="title-en">Synthetic Data</span>
+                    <span class="main-title">让企业知识库变得Living</span>
+                    <span class="title-en">Living Knowledge Base</span>
                 </div>
                   <div class="title-line">
-                    <span class="sub-title">将企业知识转化为</span>
+                    <span class="sub-title">LivingKB + SynData Platform</span>
                   </div>
                   <div class="title-line">
-                    <span class="highlight-title">AI 智能</span>
-                    <span class="title-en">Artificial Intelligence</span>
+                    <span class="highlight-title">通过合成数据让企业AI更智能</span>
+                    <span class="title-en">Smarter AI with Synthetic Data</span>
                 </div>
               </h1>
                 
@@ -43,7 +43,8 @@
               </div>
                           <div class="hero-description">
                 <p class="main-desc">
-                  通过合成数据驱动的智能体为核心，DataArc 提供多场景下的AI应用解决方案，涵盖金融、风险控制、智能投研、经济运营分析等多个领域。
+                  DataArc 通过企业知识+合成数据的深度融合，提供适配GenAI的完整技术栈。
+                  让知识库像「活体」一样不断丰富和更新，为企业AI各个场景带来价值。
                 </p>
               </div>
               <div class="hero-actions">
@@ -271,8 +272,8 @@
           </div>
         </div>
         <p class="section-subtitle text-lg font-light text-tertiary leading-relaxed text-center">
-          DataArc 自主研发多项合成数据核心技术，覆盖从数据合成到模型训练的全周期，
-          助力模型更准确、更高效、更安全。
+          DataArc 自主研发7项核心技术，以语境图谱为基础，结合合成数据能力，
+          让企业知识库真正适配GenAI，实现知识的动态更新与智能应用。
         </p>
         
         <div class="tech-grid">
@@ -337,7 +338,7 @@
     <section class="context-graph">
       <div class="container">
         <div class="title-with-orbs orbs-context">
-        <h2 class="section-title text-5xl font-extralight tracking-tight text-center">语境图谱: LLM Ready</h2>
+        <h2 class="section-title text-5xl font-extralight tracking-tight text-center">Living Knowledge Base 核心技术</h2>
           <div class="floating-orbs" @mouseenter="handleMouseMove" @mouseleave="handleMouseLeave">
             <div 
               v-for="orb in orbSections.context || []"
