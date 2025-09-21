@@ -9,27 +9,27 @@
         <div class="hero-pattern"></div>
       </div>
       <div class="hero-content-wrapper">
-        <div class="container">
-          <div class="hero-text">
-            <div class="hero-badge">
-              <span class="badge-text font-medium text-sm tracking-wide">AI合规管理</span>
-              <span class="badge-divider">•</span>
-              <span class="badge-text font-medium text-sm tracking-wide">智能化技术创新</span>
-            </div>
+      <div class="container">
+                      <div class="hero-text">
+              <div class="hero-badge">
+                <span class="badge-text font-medium text-sm tracking-wide">AI合规管理</span>
+                <span class="badge-divider">•</span>
+                <span class="badge-text font-medium text-sm tracking-wide">智能化技术创新</span>
+              </div>
                           <div class="title-container title-with-orbs orbs-hero">
-                <h1 class="hero-title">
+              <h1 class="hero-title">
                   <div class="title-line">
                     <span class="main-title">合成数据</span>
                     <span class="title-en">Synthetic Data</span>
-                  </div>
+                </div>
                   <div class="title-line">
                     <span class="sub-title">将企业知识转化为</span>
                   </div>
                   <div class="title-line">
                     <span class="highlight-title">AI 智能</span>
                     <span class="title-en">Artificial Intelligence</span>
-                  </div>
-                </h1>
+                </div>
+              </h1>
                 
                 <!-- Floating Orbs -->
                 <div class="floating-orbs" @mouseenter="handleMouseMove" @mouseleave="handleMouseLeave">
@@ -50,13 +50,13 @@
                 <a href="#" class="btn btn-primary btn-lg">立即登录</a>
                 <a href="#contact" class="btn btn-secondary btn-lg">联系我们</a>
               </div>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <div class="visual-container">
-            <!-- <img src="/images/icons/首页面-首屏-图.png" alt="数据智能化3D插图" class="hero-image"> -->
-            <KnowledgeGraphAnimation />
-            <div class="visual-glow"></div>
+              </div>
+            </div>
+          <div class="hero-visual">
+            <div class="visual-container">
+              <!-- <img src="/images/icons/首页面-首屏-图.png" alt="数据智能化3D插图" class="hero-image"> -->
+              <KnowledgeGraphAnimation />
+              <div class="visual-glow"></div>
           </div>
         </div>
       </div>
@@ -337,7 +337,7 @@
     <section class="context-graph">
       <div class="container">
         <div class="title-with-orbs orbs-context">
-          <h2 class="section-title text-5xl font-extralight tracking-tight text-center">语境图谱: LLM Ready</h2>
+        <h2 class="section-title text-5xl font-extralight tracking-tight text-center">语境图谱: LLM Ready</h2>
           <div class="floating-orbs" @mouseenter="handleMouseMove" @mouseleave="handleMouseLeave">
             <div 
               v-for="orb in orbSections.context || []"
@@ -430,7 +430,7 @@
     <section class="news">
       <div class="container">
         <div class="title-with-orbs orbs-news">
-          <h2 class="section-title text-5xl font-extralight tracking-tight text-center">新闻媒体</h2>
+        <h2 class="section-title text-5xl font-extralight tracking-tight text-center">新闻媒体</h2>
           <div class="floating-orbs" @mouseenter="handleMouseMove" @mouseleave="handleMouseLeave">
             <div 
               v-for="orb in orbSections.news || []"
@@ -528,28 +528,32 @@ onMounted(() => {
   generateOrbs(sectionIds)
 })
 
-// 简单的鼠标跟随效果
+// 鼠标互动效果
 const handleMouseMove = (event) => {
+  console.log('鼠标进入标题区域！')
   const container = event.currentTarget
   const orbs = container.querySelectorAll('.orb')
   
+  console.log(`找到 ${orbs.length} 个小球`)
+  
   orbs.forEach((orb, index) => {
-    // 不同小球有不同的随机偏移
-    const randomX = (Math.random() - 0.5) * 8 // -4px 到 4px
-    const randomY = (Math.random() - 0.5) * 8 // -4px 到 4px
+    // 随机抖动偏移
+    const randomX = (Math.random() - 0.5) * 12 // -6px 到 6px
+    const randomY = (Math.random() - 0.5) * 12 // -6px 到 6px
     
-    // 应用随机抖动效果
+    // 应用抖动效果
     orb.style.transform = `translate(${randomX}px, ${randomY}px)`
     orb.style.animationPlayState = 'paused'
   })
 }
 
 const handleMouseLeave = (event) => {
+  console.log('鼠标离开标题区域！')
   const container = event.currentTarget
   const orbs = container.querySelectorAll('.orb')
   
   orbs.forEach(orb => {
-    // 恢复动画和位置
+    // 恢复正常状态
     orb.style.transform = ''
     orb.style.animationPlayState = 'running'
   })
@@ -700,7 +704,7 @@ const handleMouseLeave = (event) => {
   left: -30px;
   right: -30px;
   bottom: -30px;
-  pointer-events: none;
+  pointer-events: auto;
   z-index: 0;
 }
 
@@ -839,11 +843,11 @@ const handleMouseLeave = (event) => {
 }
 
 .title-line {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   margin-bottom: var(--space-2);
-}
+  }
 
 .main-title {
   font-size: 4.5rem;
@@ -851,7 +855,7 @@ const handleMouseLeave = (event) => {
   line-height: 1.1;
   color: var(--text-primary);
   letter-spacing: -0.02em;
-}
+  }
 
 .sub-title {
   font-size: 3.5rem;
@@ -859,7 +863,7 @@ const handleMouseLeave = (event) => {
   line-height: 1.2;
   color: var(--text-secondary);
   letter-spacing: -0.015em;
-}
+  }
 
 .highlight-title {
   font-size: 4.5rem;
@@ -880,22 +884,22 @@ const handleMouseLeave = (event) => {
 }
 
 .hero-description {
-  margin-bottom: var(--space-8);
+    margin-bottom: var(--space-8);
   max-width: 580px;
   animation: fadeInUp 1s var(--ease-out);
-}
+  }
 
 .main-desc {
   font-size: 1.125rem;
-  line-height: 1.6;
+    line-height: 1.6;
   color: var(--text-secondary);
   font-weight: 400;
-}
+  }
 
-.badge-divider {
-  margin: 0 0.75rem;
-  opacity: 0.5;
-  color: var(--text-quaternary);
+  .badge-divider {
+    margin: 0 0.75rem;
+    opacity: 0.5;
+    color: var(--text-quaternary);
 }
 
 .hero-actions {

@@ -303,7 +303,7 @@
         </div>
       </div>
     </section>
-
+    
     <!-- Company Details Section -->
     <section class="company-details">
       <div class="container">
