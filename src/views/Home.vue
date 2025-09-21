@@ -11,25 +11,20 @@
       <div class="hero-content-wrapper">
       <div class="container">
                       <div class="hero-text">
-              <div class="hero-badge">
-                <span class="badge-text font-medium text-sm tracking-wide">AI合规管理</span>
-                <span class="badge-divider">•</span>
-                <span class="badge-text font-medium text-sm tracking-wide">智能化技术创新</span>
+              <div class="badge-bilingual">
+                <span class="badge-gray">面向大模型的合成数据</span>
+                <span class="badge-divider">|</span>
+                <span class="badge-gray">让企业AI更智能</span>
               </div>
                           <div class="title-container title-with-orbs orbs-hero">
-              <h1 class="hero-title">
-                  <div class="title-line">
-                    <span class="main-title">让企业知识库变得Living</span>
-                    <span class="title-en">Living Knowledge Base</span>
+              <div class="title-hierarchy">
+                <h1 class="title-level-1">
+                  <span class="title-main">合成数据</span>
+                </h1>
+                <h1 class="title-level-1 hero-main-title">
+                  <span class="title-main">让企业数据沉淀为AI智能</span>
+                </h1>
                 </div>
-                  <div class="title-line">
-                    <span class="sub-title">LivingKB + SynData Platform</span>
-                  </div>
-                  <div class="title-line">
-                    <span class="highlight-title">通过合成数据让企业AI更智能</span>
-                    <span class="title-en">Smarter AI with Synthetic Data</span>
-                </div>
-              </h1>
                 
                 <!-- Floating Orbs -->
                 <div class="floating-orbs" @mouseenter="handleMouseMove" @mouseleave="handleMouseLeave">
@@ -41,15 +36,28 @@
                   ></div>
                 </div>
               </div>
-                          <div class="hero-description">
-                <p class="main-desc">
+                          <div class="content-bilingual">
+                <p class="content-main">
                   DataArc 通过企业知识+合成数据的深度融合，提供适配GenAI的完整技术栈。
                   让知识库像「活体」一样不断丰富和更新，为企业AI各个场景带来价值。
                 </p>
+                <p class="content-en">
+                  DataArc integrates enterprise knowledge with synthetic data to provide 
+                  a complete GenAI-ready technology stack, making knowledge bases "living" 
+                  and continuously evolving for enterprise AI applications.
+                </p>
               </div>
               <div class="hero-actions">
-                <a href="#" class="btn btn-primary btn-lg">立即登录</a>
-                <a href="#contact" class="btn btn-secondary btn-lg">联系我们</a>
+                <a href="#" class="btn btn-primary btn-lg btn-capsule">
+                  <span class="btn-text-main">立即登录</span>
+                  <span class="btn-separator"> | </span>
+                  <span class="btn-text-en">Sign In</span>
+                </a>
+                <a href="#contact" class="btn btn-secondary btn-lg btn-capsule btn-white">
+                  <span class="btn-text-main">联系我们</span>
+                  <span class="btn-separator"> | </span>
+                  <span class="btn-text-en">Contact Us</span>
+                </a>
               </div>
               </div>
             </div>
@@ -64,12 +72,14 @@
     </section>
 
     <!-- Market Opportunity Section -->
-    <section class="market-opportunity">
+          <section id="market-opportunity" class="market-opportunity">
       <div class="container">
         <div class="section-header">
           <div class="section-title-group title-with-orbs orbs-market">
-            <h2 class="section-title text-5xl font-extralight tracking-tight">市场机会</h2>
-            <p class="section-title-en text-base font-extralight tracking-wider opacity-50">Market Opportunity</p>
+            <h2 class="section-title title-stacked">
+              <span class="title-main">为什么合成数据</span>
+              <span class="title-en">Why Synthetic Data</span>
+            </h2>
             <div class="floating-orbs" @mouseenter="handleMouseMove" @mouseleave="handleMouseLeave">
               <div 
                 v-for="orb in orbSections.market || []"
@@ -79,45 +89,82 @@
               ></div>
             </div>
           </div>
-          <p class="section-subtitle text-lg font-light text-tertiary leading-relaxed">
-            数据稀缺性问题日益严重，合成数据成为破局之路，市场迎来爆发式增长机遇。
-          </p>
+          <div class="content-bilingual">
+            <p class="content-main">数据稀缺性问题日益严重，合成数据成为破局之路，市场迎来爆发式增长机遇。</p>
+            <p class="content-en">Data scarcity is becoming increasingly serious. Synthetic data offers a breakthrough solution, bringing explosive market growth opportunities.</p>
+          </div>
         </div>
         
         <div class="opportunity-grid">
-          <div class="opportunity-card glass-card">
+          <div class="opportunity-card light-card">
             <div class="opportunity-icon">
-              <div class="icon-placeholder">【需要图片：数据稀缺趋势图标】</div>
+              <div class="icon-wrapper market-icon-wrapper">
+                <img src="/images/icons/数据稀缺趋势图标.png" alt="数据稀缺趋势" class="icon-img market-icon">
+                <div class="icon-glow market-glow"></div>
+              </div>
             </div>
-            <h3 class="text-xl font-semibold text-primary mb-4">数据稀缺危机</h3>
-            <p class="text-secondary mb-4">根据Epoch AI估算，互联网上可用的人类文本数据可能会在2028年底前耗尽</p>
+            <div class="title-stacked">
+              <h3 class="title-main">数据稀缺危机</h3>
+              <span class="title-en">Data Scarcity Crisis</span>
+            </div>
+            <div class="content-bilingual">
+              <p class="content-main">根据Epoch AI估算，互联网上可用的人类文本数据可能会在2028年底前耗尽</p>
+              <p class="content-en">According to Epoch AI estimates, available human text data on the internet may be exhausted by the end of 2028</p>
+            </div>
             <div class="highlight-stat">
-              <span class="stat-number">2028年</span>
-              <span class="stat-label">数据耗尽预测</span>
+              <span class="stat-number">2028</span>
+              <div class="stat-label-bilingual">
+                <span class="stat-main">数据耗尽预测</span>
+                <span class="stat-en">Data Exhaustion Prediction</span>
+              </div>
             </div>
           </div>
           
-          <div class="opportunity-card glass-card">
+          <div class="opportunity-card light-card">
             <div class="opportunity-icon">
-              <div class="icon-placeholder">【需要图片：市场增长图标】</div>
+              <div class="icon-wrapper market-icon-wrapper">
+                <img src="/images/icons/市场增长图标.png" alt="市场增长" class="icon-img market-icon">
+                <div class="icon-glow market-glow"></div>
+              </div>
             </div>
-            <h3 class="text-xl font-semibold text-primary mb-4">市场高速增长</h3>
-            <p class="text-secondary mb-4">全球合成数据市场预计在2023年至2028年复合年增长率达到45.7%</p>
+            <div class="title-stacked">
+              <h3 class="title-main">市场高速增长</h3>
+              <span class="title-en">Rapid Market Growth</span>
+            </div>
+            <div class="content-bilingual">
+              <p class="content-main">全球合成数据市场预计在2023年至2028年复合年增长率达到45.7%</p>
+              <p class="content-en">The global synthetic data market is expected to achieve a CAGR of 45.7% from 2023 to 2028</p>
+            </div>
             <div class="highlight-stat">
               <span class="stat-number">45.7%</span>
-              <span class="stat-label">年复合增长率</span>
+              <div class="stat-label-bilingual">
+                <span class="stat-main">年复合增长率</span>
+                <span class="stat-en">Annual CAGR</span>
+              </div>
             </div>
           </div>
           
-          <div class="opportunity-card glass-card">
+          <div class="opportunity-card light-card">
             <div class="opportunity-icon">
-              <div class="icon-placeholder">【需要图片：行业共识图标】</div>
+              <div class="icon-wrapper market-icon-wrapper">
+                <img src="/images/icons/行业共识图标.png" alt="行业共识" class="icon-img market-icon">
+                <div class="icon-glow market-glow"></div>
+              </div>
             </div>
-            <h3 class="text-xl font-semibold text-primary mb-4">行业共识</h3>
-            <p class="text-secondary mb-4">OpenAI CEO Sam Altman表示相信很快所有数据都会是合成数据</p>
+            <div class="title-stacked">
+              <h3 class="title-main">行业共识</h3>
+              <span class="title-en">Industry Consensus</span>
+            </div>
+            <div class="content-bilingual">
+              <p class="content-main">OpenAI CEO Sam Altman表示相信很快所有数据都会是合成数据</p>
+              <p class="content-en">OpenAI CEO Sam Altman believes that soon all data will be synthetic data</p>
+            </div>
             <div class="highlight-stat">
               <span class="stat-number">98%</span>
-              <span class="stat-label">英伟达合成数据占比</span>
+              <div class="stat-label-bilingual">
+                <span class="stat-main">英伟达合成数据占比</span>
+                <span class="stat-en">NVIDIA Synthetic Data Ratio</span>
+              </div>
             </div>
           </div>
         </div>
@@ -125,12 +172,14 @@
     </section>
 
     <!-- Products Section -->
-    <section class="products">
+    <section id="products-overview" class="products">
       <div class="container">
         <div class="section-header">
           <div class="section-title-group title-with-orbs orbs-products">
-            <h2 class="section-title text-5xl font-extralight tracking-tight">产品方案</h2>
-            <p class="section-title-en text-base font-extralight tracking-wider opacity-50">Product Solutions</p>
+            <h2 class="section-title title-stacked">
+              <span class="title-main">产品方案</span>
+              <span class="title-en">Product Solutions</span>
+            </h2>
             <div class="floating-orbs" @mouseenter="handleMouseMove" @mouseleave="handleMouseLeave">
               <div 
                 v-for="orb in orbSections.products || []"
@@ -138,18 +187,18 @@
                 class="orb"
                 :style="getOrbStyle(orb)"
               ></div>
-            </div>
           </div>
-          <p class="section-subtitle text-lg font-light text-tertiary leading-relaxed">
-            通过合成数据技术，解决大规模智能训练中的数据稀缺与质量问题，为各行业提供高质量、低成本的数据服务。
-          </p>
+          </div>
+          <div class="content-bilingual">
+            <p class="content-main">通过合成数据技术，解决大规模智能训练中的数据稀缺与质量问题，为各行业提供高质量、低成本的数据服务。</p>
+            <p class="content-en">Through synthetic data technology, solve data scarcity and quality issues in large-scale intelligent training, providing high-quality, low-cost data services for various industries.</p>
+          </div>
         </div>
         
         <div class="products-grid">
           <div class="product-card glass-card">
-            <div class="product-badge-dual">
-              <span class="badge-zh">合成数据作为能力</span>
-              <span class="badge-en">Synthetic Data as Capability</span>
+            <div class="product-badge">
+              <span class="badge-text">合成数据作为能力</span>
             </div>
             <div class="product-header">
               <div class="product-visual">
@@ -157,46 +206,35 @@
                 <div class="icon-glow"></div>
               </div>
               <div class="product-content">
-                <h3 class="text-2xl font-medium text-primary">DataArc Living KB</h3>
-                <div class="product-desc-dual">
-                  <p class="desc-zh text-base font-light text-secondary">基于合成数据预设一批能力智能体&轻量化使用</p>
-                  <p class="desc-en text-sm font-extralight text-quaternary opacity-75">Pre-configured intelligent agents based on synthetic data for lightweight usage</p>
+                <h3 class="title-level-3">DataArc Living KB</h3>
+                <div class="content-bilingual">
+                  <p class="content-main">基于合成数据预设一批能力智能体&轻量化使用</p>
+                  <p class="content-en">Pre-configured intelligent agents based on synthetic data for lightweight usage</p>
                 </div>
               </div>
             </div>
             
             <div class="product-features">
-              <div class="feature-item">
-                <div class="feature-check">
-                  <svg viewBox="0 0 20 20" class="check-icon">
-                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                  </svg>
-                </div>
-                <span>高效整合企业多源异构数据,让AI可读</span>
-              </div>
-              <div class="feature-item">
-                <div class="feature-check">
-                  <svg viewBox="0 0 20 20" class="check-icon">
-                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                  </svg>
-                </div>
-                <span>支持三元组与语境理解</span>
-              </div>
-              <div class="feature-item">
-                <div class="feature-check">
-                  <svg viewBox="0 0 20 20" class="check-icon">
-                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                  </svg>
-                </div>
-                <span>高效调用多种工具，在图上思考</span>
-              </div>
+              <ul class="list-bilingual">
+                <li class="list-item-bilingual">
+                  <span class="list-main">高效整合企业多源异构数据,让AI可读</span>
+                  <span class="list-en">Efficiently integrate enterprise multi-source heterogeneous data for AI readability</span>
+                </li>
+                <li class="list-item-bilingual">
+                  <span class="list-main">支持三元组与语境理解</span>
+                  <span class="list-en">Support triplets and contextual understanding</span>
+                </li>
+                <li class="list-item-bilingual">
+                  <span class="list-main">高效调用多种工具，在图上思考</span>
+                  <span class="list-en">Efficiently invoke multiple tools, thinking on graphs</span>
+                </li>
+              </ul>
             </div>
           </div>
 
           <div class="product-card glass-card">
-            <div class="product-badge-dual">
-              <span class="badge-zh">合成数据作为产品</span>
-              <span class="badge-en">Synthetic Data as Product</span>
+            <div class="product-badge">
+              <span class="badge-text">合成数据作为产品</span>
             </div>
             <div class="product-header">
               <div class="product-visual">
@@ -204,64 +242,45 @@
                 <div class="icon-glow"></div>
               </div>
               <div class="product-content">
-                <h3 class="text-2xl font-medium text-primary">DataArc SynData Platform</h3>
-                <div class="product-desc-dual">
-                  <p class="desc-zh text-base font-light text-secondary">打造企业专家Agent/个人Agent</p>
-                  <p class="desc-en text-sm font-extralight text-quaternary opacity-75">Build enterprise expert agents and personal agents</p>
+                <h3 class="title-level-3">DataArc SynData Platform</h3>
+                <div class="content-bilingual">
+                  <p class="content-main">打造企业专家Agent/个人Agent</p>
+                  <p class="content-en">Build enterprise expert agents and personal agents</p>
                 </div>
               </div>
             </div>
             
             <div class="product-features">
-              <div class="feature-item">
-                <div class="feature-check">
-                  <svg viewBox="0 0 20 20" class="check-icon">
-                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                  </svg>
-                </div>
-                <span>持续合成数据，让Living KB可更新</span>
-              </div>
-              <div class="feature-item">
-                <div class="feature-check">
-                  <svg viewBox="0 0 20 20" class="check-icon">
-                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                  </svg>
-                </div>
-                <span>大模型自动评估反馈，强化学习，迭代进化</span>
-              </div>
-              <div class="feature-item">
-                <div class="feature-check">
-                  <svg viewBox="0 0 20 20" class="check-icon">
-                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                  </svg>
-                </div>
-                <span>数据加密训练，规避隐私风险</span>
-              </div>
-              <div class="feature-item">
-                <div class="feature-check">
-                  <svg viewBox="0 0 20 20" class="check-icon">
-                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                  </svg>
-                </div>
-                <span>自研合成数据核心模块</span>
-              </div>
+              <ul class="list-bilingual">
+                <li class="list-item-bilingual">
+                  <span class="list-main">持续合成数据，让Living KB可更新</span>
+                  <span class="list-en">Continuous synthetic data generation for Living KB updates</span>
+                </li>
+                <li class="list-item-bilingual">
+                  <span class="list-main">大模型自动评估反馈，强化学习，迭代进化</span>
+                  <span class="list-en">LLM automatic evaluation feedback, reinforcement learning, iterative evolution</span>
+                </li>
+                <li class="list-item-bilingual">
+                  <span class="list-main">数据加密训练，规避隐私风险</span>
+                  <span class="list-en">Encrypted data training, avoiding privacy risks</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
 
-        <!-- 自研合成数据核心模块 -->
-        <div class="core-module">
-          <p>自研合成数据核心模块</p>
-        </div>
+
       </div>
     </section>
 
     <!-- Tech Advantages -->
-    <section class="tech-advantages">
+    <section id="tech-advantages" class="tech-advantages">
       <div class="container">
         <div class="section-title-group text-center title-with-orbs orbs-tech">
-          <h2 class="section-title text-5xl font-extralight tracking-tight">技术优势</h2>
-          <p class="section-title-en text-base font-extralight tracking-wider opacity-50">Technical Advantages</p>
+          <h2 class="section-title title-stacked">
+            <span class="title-main">技术优势</span>
+            <span class="title-en">Technical Advantages</span>
+          </h2>
           <div class="floating-orbs" @mouseenter="handleMouseMove" @mouseleave="handleMouseLeave">
             <div 
               v-for="orb in orbSections.tech || []"
@@ -269,66 +288,164 @@
               class="orb"
               :style="getOrbStyle(orb)"
             ></div>
-          </div>
         </div>
-        <p class="section-subtitle text-lg font-light text-tertiary leading-relaxed text-center">
-          DataArc 自主研发7项核心技术，以语境图谱为基础，结合合成数据能力，
-          让企业知识库真正适配GenAI，实现知识的动态更新与智能应用。
-        </p>
+        </div>
+        <div class="content-bilingual">
+          <p class="content-main">
+            DataArc 自主研发7项核心技术，以语境图谱为基础，结合合成数据能力，
+            让企业知识库真正适配GenAI，实现知识的动态更新与智能应用。
+          </p>
+          <p class="content-en">
+            DataArc has independently developed 7 core technologies, based on context graphs and combined with synthetic data capabilities, 
+            making enterprise knowledge bases truly GenAI-compatible for dynamic knowledge updates and intelligent applications.
+          </p>
+        </div>
         
-        <div class="tech-grid">
-          <div class="tech-item">
-            <div class="tech-icon-placeholder">【需要图片：首页-技术优势-更懂行.png - 行业专家/大脑图标】</div>
-            <div class="tech-title-dual">
-              <h4 class="text-xl font-semibold text-primary">更懂行</h4>
-              <span class="tech-en text-xs font-light opacity-60">Industry Expert</span>
+        <div class="tech-architecture">
+          <!-- 核心基础：语境图谱 -->
+          <div class="core-foundation">
+            <div class="foundation-card">
+              <div class="foundation-title title-stacked-new">
+                <h3 class="title-main">语境图谱</h3>
+                <span class="title-en">Context Graph</span>
+              </div>
+              <div class="foundation-description">
+                <div class="foundation-desc-main">
+                  DataArc 自主研发7项核心技术，以语境图谱为基础，结合合成数据与智能搜索，
+                  相比传统方案，建图效率提升218倍，研究准确率提升至90.2%，
+                  实战良品率提升至95%，全面增强问答、洞察与决策能力。
+                </div>
+              </div>
             </div>
-            <p class="text-sm font-normal text-tertiary">SoG提升模型能力 25.4%</p>
           </div>
-          
-          <div class="tech-item">
-            <div class="tech-icon-placeholder">【需要图片：首页-技术优势-更聪明.png - AI芯片/智能图标】</div>
-            <div class="tech-title-dual">
-              <h4 class="text-xl font-semibold text-primary">更聪明</h4>
-              <span class="tech-en text-xs font-light opacity-60">Smarter</span>
+
+          <!-- 连接指示器 -->
+          <div class="connection-indicators">
+            <div class="connection-indicator left">
+              <div class="connection-arrow">↓</div>
+              <div class="connection-label">
+                <div class="connection-main">在图上思考</div>
+                <div class="connection-en">Think on Graph</div>
+              </div>
             </div>
-            <p class="text-sm font-normal text-tertiary">ToG 推理更准，升至 90.2%</p>
+            <div class="connection-indicator right">
+              <div class="connection-arrow">↓</div>
+              <div class="connection-label">
+                <div class="connection-main">在图上合成</div>
+                <div class="connection-en">Synthesis on Graph</div>
+              </div>
+            </div>
           </div>
-          
-          <div class="tech-item">
-            <div class="tech-icon-placeholder">【需要图片：首页-技术优势-更靠谱.png - 安全盾牌/认证图标】</div>
-            <div class="tech-title-dual">
-              <h4 class="text-xl font-semibold text-primary">更靠谱</h4>
-              <span class="tech-en text-xs font-light opacity-60">Reliable</span>
+
+          <!-- 技术分支 -->
+          <div class="tech-branches">
+            <!-- 左排：搜索技术 -->
+            <div class="branch-section">
+              <div class="tech-item">
+                <div class="tech-title">
+                  <div class="icon-wrapper">
+                    <img src="/images/tech-icons/icon_01.png" alt="更聪明" class="tech-icon-img">
+                    <div class="icon-glow"></div>
+                  </div>
+                  <div class="title-stacked-new">
+                    <span class="title-main">更聪明</span>
+                    <span class="title-en">Smarter</span>
+                  </div>
+                </div>
+                <div class="tech-content">
+                  <div class="tech-desc-main">ToG：推理更准，升至 90.2%</div>
+                  <div class="tech-desc-en">ToG: More accurate reasoning, up to 90.2%</div>
+                </div>
+              </div>
+              
+              <div class="tech-item">
+                <div class="tech-title">
+                  <div class="icon-wrapper">
+                    <img src="/images/tech-icons/icon_02.png" alt="更专业" class="tech-icon-img">
+                    <div class="icon-glow"></div>
+                  </div>
+                  <div class="title-stacked-new">
+                    <span class="title-main">更专业</span>
+                    <span class="title-en">Professional</span>
+                  </div>
+                </div>
+                <div class="tech-content">
+                  <div class="tech-desc-main">SQL-R1：数据查询更便捷</div>
+                  <div class="tech-desc-en">SQL-R1: More convenient data querying</div>
+                </div>
+              </div>
+              
+              <div class="tech-item">
+                <div class="tech-title">
+                  <div class="icon-wrapper">
+                    <img src="/images/tech-icons/icon_03.png" alt="更准确" class="tech-icon-img">
+                    <div class="icon-glow"></div>
+                  </div>
+                  <div class="title-stacked-new">
+                    <span class="title-main">更准确</span>
+                    <span class="title-en">Accurate</span>
+                  </div>
+                </div>
+                <div class="tech-content">
+                  <div class="tech-desc-main">RAG：准确率 提升至 92%</div>
+                  <div class="tech-desc-en">RAG: Accuracy improved to 92%</div>
+                </div>
+              </div>
             </div>
-            <p class="text-sm font-normal text-tertiary">Judge：降低90%的数据风险</p>
-          </div>
-          
-          <div class="tech-item">
-            <div class="tech-icon-placeholder">【需要图片：首页-技术优势-更专业.png - 专业工具/代码图标】</div>
-            <div class="tech-title-dual">
-              <h4 class="text-xl font-semibold text-primary">更专业</h4>
-              <span class="tech-en text-xs font-light opacity-60">Professional</span>
+
+            <!-- 右排：合成数据技术 -->
+            <div class="branch-section">
+              <div class="tech-item">
+                <div class="tech-title">
+                  <div class="icon-wrapper">
+                    <img src="/images/tech-icons/icon_04.png" alt="更懂行" class="tech-icon-img">
+                    <div class="icon-glow"></div>
+                  </div>
+                  <div class="title-stacked-new">
+                    <span class="title-main">更懂行</span>
+                    <span class="title-en">Expert</span>
+                  </div>
+                </div>
+                <div class="tech-content">
+                  <div class="tech-desc-main">SoG：提升模型能力 25.4%</div>
+                  <div class="tech-desc-en">SoG: Model capability improved by 25.4%</div>
+                </div>
+              </div>
+              
+              <div class="tech-item">
+                <div class="tech-title">
+                  <div class="icon-wrapper">
+                    <img src="/images/tech-icons/icon_05.png" alt="更靠谱" class="tech-icon-img">
+                    <div class="icon-glow"></div>
+                  </div>
+                  <div class="title-stacked-new">
+                    <span class="title-main">更靠谱</span>
+                    <span class="title-en">Reliable</span>
+                  </div>
+                </div>
+                <div class="tech-content">
+                  <div class="tech-desc-main">Judge：降低90%的数据风险</div>
+                  <div class="tech-desc-en">Judge: Reduce data risk by 90%</div>
+                </div>
+              </div>
+              
+              <div class="tech-item">
+                <div class="tech-title">
+                  <div class="icon-wrapper">
+                    <img src="/images/tech-icons/icon_06.png" alt="更安全" class="tech-icon-img">
+                    <div class="icon-glow"></div>
+                  </div>
+                  <div class="title-stacked-new">
+                    <span class="title-main">更安全</span>
+                    <span class="title-en">Secure</span>
+                  </div>
+                </div>
+                <div class="tech-content">
+                  <div class="tech-desc-main">SoE：敏感数据0泄露</div>
+                  <div class="tech-desc-en">SoE: Zero sensitive data leakage</div>
+                </div>
+              </div>
             </div>
-            <p class="text-sm font-normal text-tertiary">SQL-R1:数据查询更便捷</p>
-          </div>
-          
-          <div class="tech-item">
-            <div class="tech-icon-placeholder">【需要图片：首页-技术优势-更安全.png - 安全锁/防护图标】</div>
-            <div class="tech-title-dual">
-              <h4 class="text-xl font-semibold text-primary">更安全</h4>
-              <span class="tech-en text-xs font-light opacity-60">Secure</span>
-            </div>
-            <p class="text-sm font-normal text-tertiary">SoE：敏感数据0泄露</p>
-          </div>
-          
-          <div class="tech-item">
-            <div class="tech-icon-placeholder">【需要图片：首页-技术优势-更准确.png - 精确目标/准确率图标】</div>
-            <div class="tech-title-dual">
-              <h4 class="text-xl font-semibold text-primary">更准确</h4>
-              <span class="tech-en text-xs font-light opacity-60">Accurate</span>
-            </div>
-            <p class="text-sm font-normal text-tertiary">RAG：准确率 提升至 92%</p>
           </div>
         </div>
       </div>
@@ -338,7 +455,10 @@
     <section class="context-graph">
       <div class="container">
         <div class="title-with-orbs orbs-context">
-        <h2 class="section-title text-5xl font-extralight tracking-tight text-center">Living Knowledge Base 核心技术</h2>
+        <h2 class="section-title title-stacked text-center">
+          <span class="title-main">Living Knowledge Base 核心技术</span>
+          <span class="title-en">Core Technology</span>
+        </h2>
           <div class="floating-orbs" @mouseenter="handleMouseMove" @mouseleave="handleMouseLeave">
             <div 
               v-for="orb in orbSections.context || []"
@@ -348,23 +468,117 @@
             ></div>
           </div>
         </div>
-        <p class="section-subtitle text-lg font-light text-tertiary leading-relaxed text-center">
+        <div class="content-bilingual">
+          <p class="content-main">
           相比传统方案，建图效率提升 218倍，研究准确率提升至 90.2%，
           实战良品率提升至 95%，全面增强问答、洞察与决策能力。
         </p>
+          <p class="content-en">
+            Compared to traditional solutions, graph building efficiency improved by 218x, research accuracy improved to 90.2%, 
+            actual good product rate improved to 95%, comprehensively enhancing Q&A, insights and decision-making capabilities.
+          </p>
+        </div>
         <div class="graph-visual-placeholder">
           【需要图片：首页-语境图谱-可视化图表.png - 知识图谱网络图/数据连接图】
         </div>
       </div>
     </section>
 
+    <!-- News Section -->
+    <section class="news">
+      <div class="container">
+        <div class="title-with-orbs orbs-news">
+        <h2 class="section-title title-stacked">
+          <span class="title-main">新闻媒体</span>
+          <span class="title-en">News & Media</span>
+        </h2>
+          <div class="floating-orbs" @mouseenter="handleMouseMove" @mouseleave="handleMouseLeave">
+            <div 
+              v-for="orb in orbSections.news || []"
+              :key="orb.id"
+              class="orb"
+              :style="getOrbStyle(orb)"
+            ></div>
+          </div>
+        </div>
+        <div class="content-bilingual">
+          <p class="content-main">以合成数据驱动的智能体为核心，提供多场景 AI 应用方案。</p>
+          <p class="content-en">With synthetic data-driven agents at the core, providing multi-scenario AI application solutions.</p>
+        </div>
+        
+        <div class="news-grid">
+          <div class="news-card">
+            <div class="news-image">
+              <div class="news-placeholder">【需要图片：首页-新闻-AI教育趋势.png】</div>
+            </div>
+            <div class="news-content">
+              <h4 class="title-level-4">AI赋能教育：新趋势与洞察</h4>
+              <p class="news-date text-sm font-normal text-quaternary">2024年5月12日</p>
+            </div>
+          </div>
+          
+          <div class="news-card">
+            <div class="news-image">
+              <div class="news-placeholder">【需要图片：首页-新闻-数据安全.png】</div>
+            </div>
+            <div class="news-content">
+              <h4 class="title-level-4">合成数据保护企业隐私安全</h4>
+              <p class="news-date text-sm font-normal text-quaternary">2024年4月28日</p>
+            </div>
+          </div>
+          
+          <div class="news-card">
+            <div class="news-image">
+              <div class="news-placeholder">【需要图片：首页-新闻-行业峰会.png】</div>
+            </div>
+            <div class="news-content">
+                              <h4 class="title-level-4">DataArc亮相AI行业峰会</h4>
+              <p class="news-date text-sm font-normal text-quaternary">2024年4月15日</p>
+            </div>
+          </div>
+          
+          <div class="news-card">
+            <div class="news-image">
+              <div class="news-placeholder">【需要图片：首页-新闻-技术创新.png】</div>
+            </div>
+            <div class="news-content">
+                              <h4 class="title-level-4">语境图谱技术重大突破</h4>
+              <p class="news-date text-sm font-normal text-quaternary">2024年3月30日</p>
+            </div>
+          </div>
+          
+          <div class="news-card">
+            <div class="news-image">
+              <div class="news-placeholder">【需要图片：首页-新闻-合作伙伴.png】</div>
+            </div>
+            <div class="news-content">
+                              <h4 class="title-level-4">与知名企业达成战略合作</h4>
+              <p class="news-date text-sm font-normal text-quaternary">2024年3月20日</p>
+            </div>
+          </div>
+          
+          <div class="news-card">
+            <div class="news-image">
+              <div class="news-placeholder">【需要图片：首页-新闻-产品发布.png】</div>
+            </div>
+            <div class="news-content">
+                              <h4 class="title-level-4">Living KB 2.0正式发布</h4>
+              <p class="news-date text-sm font-normal text-quaternary">2024年3月10日</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Team Strength Section -->
-    <section class="team-strength">
+    <section id="team-strength" class="team-strength">
       <div class="container">
         <div class="section-header">
           <div class="section-title-group title-with-orbs orbs-team">
-            <h2 class="section-title text-5xl font-extralight tracking-tight">团队实力</h2>
-            <p class="section-title-en text-base font-extralight tracking-wider opacity-50">Team Strength</p>
+            <h2 class="section-title title-stacked">
+              <span class="title-main">团队实力</span>
+              <span class="title-en">Team Strength</span>
+            </h2>
             <div class="floating-orbs" @mouseenter="handleMouseMove" @mouseleave="handleMouseLeave">
               <div 
                 v-for="orb in orbSections.team || []"
@@ -382,7 +596,10 @@
         <div class="team-grid">
           <div class="team-card glass-card">
             <div class="team-icon">
-              <div class="icon-placeholder">【需要图片：团队规模图标】</div>
+              <div class="icon-wrapper">
+                <img src="/images/icons/团队规模图标.png" alt="团队规模" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
             </div>
             <div class="team-stat">
               <span class="stat-number">12人</span>
@@ -393,7 +610,10 @@
           
           <div class="team-card glass-card">
             <div class="team-icon">
-              <div class="icon-placeholder">【需要图片：专家顾问图标】</div>
+              <div class="icon-wrapper">
+                <img src="/images/icons/专家顾问图标.png" alt="专家顾问" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
             </div>
             <div class="team-stat">
               <span class="stat-number">世界级</span>
@@ -404,7 +624,10 @@
           
           <div class="team-card glass-card">
             <div class="team-icon">
-              <div class="icon-placeholder">【需要图片：研究积累图标】</div>
+              <div class="icon-wrapper">
+                <img src="/images/icons/研究积累图标.png" alt="研究积累" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
             </div>
             <div class="team-stat">
               <span class="stat-number">深厚</span>
@@ -415,93 +638,16 @@
           
           <div class="team-card glass-card">
             <div class="team-icon">
-              <div class="icon-placeholder">【需要图片：IDEA研究院图标】</div>
+              <div class="icon-wrapper">
+                <img src="/images/icons/IDEA研究院图标.png" alt="IDEA研究院" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
             </div>
             <div class="team-stat">
               <span class="stat-number">IDEA</span>
               <span class="stat-label">研究院孵化</span>
             </div>
             <p class="text-secondary">由IDEA研究院推动孵化，项目资源丰富</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- News Section -->
-    <section class="news">
-      <div class="container">
-        <div class="title-with-orbs orbs-news">
-        <h2 class="section-title text-5xl font-extralight tracking-tight text-center">新闻媒体</h2>
-          <div class="floating-orbs" @mouseenter="handleMouseMove" @mouseleave="handleMouseLeave">
-            <div 
-              v-for="orb in orbSections.news || []"
-              :key="orb.id"
-              class="orb"
-              :style="getOrbStyle(orb)"
-            ></div>
-          </div>
-        </div>
-        <p class="section-subtitle text-lg font-light text-tertiary leading-relaxed text-center">以合成数据驱动的智能体为核心，提供多场景 AI 应用方案。</p>
-        
-        <div class="news-grid">
-          <div class="news-card">
-            <div class="news-image">
-              <div class="news-placeholder">【需要图片：首页-新闻-AI教育趋势.png】</div>
-            </div>
-            <div class="news-content">
-              <h4 class="text-lg font-medium text-primary">AI赋能教育：新趋势与洞察</h4>
-              <p class="news-date text-sm font-normal text-quaternary">2024年5月12日</p>
-            </div>
-          </div>
-          
-          <div class="news-card">
-            <div class="news-image">
-              <div class="news-placeholder">【需要图片：首页-新闻-数据安全.png】</div>
-            </div>
-            <div class="news-content">
-              <h4 class="text-lg font-medium text-primary">合成数据保护企业隐私安全</h4>
-              <p class="news-date text-sm font-normal text-quaternary">2024年4月28日</p>
-            </div>
-          </div>
-          
-          <div class="news-card">
-            <div class="news-image">
-              <div class="news-placeholder">【需要图片：首页-新闻-行业峰会.png】</div>
-            </div>
-            <div class="news-content">
-              <h4 class="text-lg font-medium text-primary">DataArc亮相AI行业峰会</h4>
-              <p class="news-date text-sm font-normal text-quaternary">2024年4月15日</p>
-            </div>
-          </div>
-          
-          <div class="news-card">
-            <div class="news-image">
-              <div class="news-placeholder">【需要图片：首页-新闻-技术创新.png】</div>
-            </div>
-            <div class="news-content">
-              <h4 class="text-lg font-medium text-primary">语境图谱技术重大突破</h4>
-              <p class="news-date text-sm font-normal text-quaternary">2024年3月30日</p>
-            </div>
-          </div>
-          
-          <div class="news-card">
-            <div class="news-image">
-              <div class="news-placeholder">【需要图片：首页-新闻-合作伙伴.png】</div>
-            </div>
-            <div class="news-content">
-              <h4 class="text-lg font-medium text-primary">与知名企业达成战略合作</h4>
-              <p class="news-date text-sm font-normal text-quaternary">2024年3月20日</p>
-            </div>
-          </div>
-          
-          <div class="news-card">
-            <div class="news-image">
-              <div class="news-placeholder">【需要图片：首页-新闻-产品发布.png】</div>
-            </div>
-            <div class="news-content">
-              <h4 class="text-lg font-medium text-primary">Living KB 2.0正式发布</h4>
-              <p class="news-date text-sm font-normal text-quaternary">2024年3月10日</p>
-            </div>
           </div>
         </div>
       </div>
@@ -627,21 +773,46 @@ const handleMouseLeave = (event) => {
 .market-opportunity {
   padding: var(--space-32) 0;
   background: var(--bg-primary);
+  overflow: visible;
 }
 
 .opportunity-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: var(--space-8);
+  overflow: visible;
 }
 
 .opportunity-card {
   text-align: center;
   padding: var(--space-8);
+  overflow: visible;
+}
+
+.light-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: var(--space-4) !important;
+  transition: all var(--duration-normal) var(--ease-out);
+  overflow: visible !important;
+}
+
+.light-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
 }
 
 .opportunity-icon {
   margin-bottom: var(--space-6);
+  padding: 30px;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .highlight-stat {
@@ -1471,7 +1642,247 @@ const handleMouseLeave = (event) => {
   letter-spacing: 0.05em;
   text-transform: capitalize;
 }
+
+/* ===== Tech Architecture - 逻辑架构设计 ===== */
+.tech-architecture {
+  position: relative;
+  margin-top: var(--space-16);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+}
+
+/* 核心基础：语境图谱 */
+.core-foundation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--space-8);
+}
+
+.foundation-card {
+  background: linear-gradient(135deg, rgba(135, 173, 255, 0.15) 0%, rgba(135, 173, 255, 0.05) 100%);
+  border: 2px solid rgba(135, 173, 255, 0.3);
+  border-radius: 20px;
+  padding: var(--space-8) var(--space-10);
+  text-align: center;
+  max-width: 600px;
+  position: relative;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.foundation-title {
+  font-size: var(--font-3xl);
+  font-weight: var(--font-weight-extralight);
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-2);
+}
+
+.foundation-subtitle {
+  font-size: var(--font-lg);
+  color: var(--primary-color);
+  font-weight: 500;
+  margin-bottom: var(--space-6);
+  opacity: 0.9;
+}
+
+.foundation-description {
+  font-size: var(--font-sm);
+  color: rgba(255, 255, 255, 0.8);
+  line-height: var(--leading-relaxed);
+  font-weight: 300;
+}
+
+/* 技术分支容器 */
+.tech-branches {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  position: relative;
+}
+
+/* 分支区域 */
+.branch-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.branch-header {
+  text-align: center;
+  margin-bottom: var(--space-6);
+}
+
+.branch-title {
+  font-size: var(--font-2xl);
+  font-weight: var(--font-weight-extralight);
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-2);
+}
+
+.branch-subtitle {
+  font-size: var(--font-sm);
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+}
+
+/* 技术流程 */
+.tech-flow {
+  display: flex;
+  align-items: center;
+}
+
+/* 并列流程 (搜索技术) */
+.parallel-flow {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+/* 递进流程 (合成数据技术) */
+.sequential-flow {
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+/* 技术项目 */
+.tech-item {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: var(--space-6);
+  text-align: center;
+  transition: all 0.4s ease;
+  flex: 1;
+  min-width: 0;
+}
+
+.sequential-flow .tech-item {
+  width: 280px;
+  flex: none;
+}
+
+.tech-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(135, 173, 255, 0.3);
+  transform: translateY(-4px);
+}
+
+.tech-label {
+  font-size: var(--font-sm);
+  font-weight: 700;
+  color: var(--primary-color);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-2);
+}
+
+.tech-name {
+  font-size: var(--font-lg);
+  font-weight: var(--font-weight-extralight);
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  margin-bottom: var(--space-3);
+}
+
+.tech-desc {
+  font-size: var(--font-xs);
+  color: rgba(255, 255, 255, 0.7);
+  line-height: var(--leading-relaxed);
+  font-weight: 300;
+}
+
+/* 流程连接符 */
+.flow-connector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-xl);
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+  margin: var(--space-2);
+}
+
+.flow-connector.parallel {
+  width: 30px;
+  height: 30px;
+}
+
+.flow-connector.sequential {
+  width: 40px;
+  height: 40px;
+  font-size: var(--font-2xl);
+}
+
+/* 架构连接线 */
+.architecture-connections {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+  .tech-branches {
+    gap: var(--space-12);
+  }
+  
+  .parallel-flow {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+  
+  .flow-connector.parallel {
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-architecture {
+    gap: var(--space-12);
+  }
+  
+  .tech-branches {
+    grid-template-columns: 1fr;
+    gap: var(--space-16);
+  }
+  
+  .foundation-card {
+    padding: var(--space-6);
+  }
+  
+  .foundation-title {
+    font-size: var(--font-2xl);
+  }
+  
+  .sequential-flow .tech-item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .foundation-card {
+    padding: var(--space-5);
+  }
+  
+  .tech-item {
+    padding: var(--space-4);
+  }
+  
+  .branch-title {
+    font-size: var(--font-xl);
+  }
+}
 </style> 
+
+
 
 
 

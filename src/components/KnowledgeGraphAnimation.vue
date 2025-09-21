@@ -512,29 +512,29 @@ onUnmounted(() => {
   width: 100%;
   height: 480px;
   position: relative;
-  background: var(--glass-bg);
-  backdrop-filter: var(--glass-backdrop);
-  -webkit-backdrop-filter: var(--glass-backdrop);
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
   overflow: hidden;
   border-radius: var(--radius-2xl);
-  /* 先移除边缘效果，看基本的glass效果 */
 }
 
 .knowledge-graph-container::after {
   content: '';
   position: absolute;
-  top: -30px;
-  left: -30px;
-  right: -30px;
-  bottom: -30px;
-  background: radial-gradient(
-    ellipse at center, 
-    transparent 60%, 
-    var(--bg-primary) 85%
-  );
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle at 2px 2px, var(--primary-color) 1px, transparent 0);
+  opacity: 0.05;
+  background-size: 40px 40px;
+  animation: float 30s ease-in-out infinite;
   pointer-events: none;
   z-index: 1;
-  border-radius: var(--radius-2xl);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
 }
 
 /* 知识图谱模式 */
@@ -549,7 +549,7 @@ onUnmounted(() => {
 .graph-svg {
   width: 100%;
   height: 100%;
-  background: var(--bg-secondary);
+  background: transparent;
   position: relative;
   z-index: 15;
 }

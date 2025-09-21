@@ -13,9 +13,10 @@
             <img src="/images/icons/企业logo.png" alt="DataArc Logo" class="logo-image">
             <span class="brand-text">DataArc</span>
           </div>
-          <p class="brand-description">
-            通过合成数据技术推动人工智能创新，为企业提供智能化解决方案。
-          </p>
+          <div class="content-bilingual">
+            <p class="content-main">通过合成数据技术推动人工智能创新，为企业提供智能化解决方案。</p>
+            <p class="content-en">Drive AI innovation through synthetic data technology, providing intelligent solutions for enterprises.</p>
+          </div>
           <div class="social-links">
             <a href="#" class="social-link" aria-label="微信">
               <svg viewBox="0 0 24 24" class="social-icon">
@@ -38,43 +39,85 @@
         <!-- Navigation Links -->
         <div class="footer-nav">
           <div class="nav-section">
-            <h3 class="nav-title">产品方案</h3>
+            <div class="title-stacked-new">
+              <h3 class="title-main">产品方案</h3>
+              <span class="title-en">Products</span>
+            </div>
             <ul class="nav-links">
               <li><router-link to="/products" class="nav-link">Living KB</router-link></li>
               <li><router-link to="/products" class="nav-link">SynData Platform</router-link></li>
-              <li><a href="#" class="nav-link">API 文档</a></li>
-              <li><a href="#" class="nav-link">开发者工具</a></li>
+              <li><a href="#" class="nav-link nav-bilingual">
+                <span class="nav-main">API 文档</span>
+                <span class="nav-en">API Docs</span>
+              </a></li>
+              <li><a href="#" class="nav-link nav-bilingual">
+                <span class="nav-main">开发者工具</span>
+                <span class="nav-en">Dev Tools</span>
+              </a></li>
             </ul>
           </div>
 
           <div class="nav-section">
-            <h3 class="nav-title">技术支持</h3>
+            <div class="title-stacked-new">
+              <h3 class="title-main">技术支持</h3>
+              <span class="title-en">Support</span>
+            </div>
             <ul class="nav-links">
-              <li><router-link to="/technology" class="nav-link">技术优势</router-link></li>
-              <li><a href="#" class="nav-link">技术文档</a></li>
+              <li><router-link to="/technology" class="nav-link nav-bilingual">
+                <span class="nav-main">技术优势</span>
+                <span class="nav-en">Technology</span>
+              </router-link></li>
+              <li><a href="#" class="nav-link nav-bilingual">
+                <span class="nav-main">技术文档</span>
+                <span class="nav-en">Tech Docs</span>
+              </a></li>
               <li><a href="#" class="nav-link">FAQ</a></li>
-              <li><a href="#" class="nav-link">技术博客</a></li>
+              <li><a href="#" class="nav-link nav-bilingual">
+                <span class="nav-main">技术博客</span>
+                <span class="nav-en">Tech Blog</span>
+              </a></li>
             </ul>
           </div>
 
           <div class="nav-section">
-            <h3 class="nav-title">关于我们</h3>
+            <div class="title-stacked-new">
+              <h3 class="title-main">关于我们</h3>
+              <span class="title-en">About Us</span>
+            </div>
             <ul class="nav-links">
-              <li><router-link to="/company" class="nav-link">公司介绍</router-link></li>
-              <li><router-link to="/cases" class="nav-link">成功案例</router-link></li>
-              <li><a href="#" class="nav-link">新闻动态</a></li>
-              <li><a href="#" class="nav-link">加入我们</a></li>
+              <li><router-link to="/company" class="nav-link nav-bilingual">
+                <span class="nav-main">公司介绍</span>
+                <span class="nav-en">Company</span>
+              </router-link></li>
+              <li><router-link to="/cases" class="nav-link nav-bilingual">
+                <span class="nav-main">成功案例</span>
+                <span class="nav-en">Cases</span>
+              </router-link></li>
+              <li><a href="#" class="nav-link nav-bilingual">
+                <span class="nav-main">新闻动态</span>
+                <span class="nav-en">News</span>
+              </a></li>
+              <li><a href="#" class="nav-link nav-bilingual">
+                <span class="nav-main">加入我们</span>
+                <span class="nav-en">Careers</span>
+              </a></li>
             </ul>
           </div>
 
           <div class="nav-section">
-            <h3 class="nav-title">联系方式</h3>
+            <div class="title-stacked-new">
+              <h3 class="title-main">联系方式</h3>
+              <span class="title-en">Contact</span>
+            </div>
             <div class="contact-info">
               <div class="contact-item">
                 <svg viewBox="0 0 24 24" class="contact-icon">
                   <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                 </svg>
-                <span>深圳市南山区科技园</span>
+                <div class="content-bilingual">
+                  <span class="content-main">深圳市南山区科技园</span>
+                  <span class="content-en">Shenzhen Nanshan Technology Park</span>
+                </div>
               </div>
               <div class="contact-item">
                 <svg viewBox="0 0 24 24" class="contact-icon">
@@ -98,12 +141,24 @@
         <div class="footer-divider"></div>
         <div class="footer-bottom-content">
           <div class="copyright">
-            <p>&copy; 2024 数创弧光科技有限公司. 保留所有权利.</p>
+            <div class="content-bilingual">
+              <p class="content-main">&copy; 2024 数创弧光科技有限公司. 保留所有权利.</p>
+              <p class="content-en">&copy; 2024 DataArc Technology Co., Ltd. All rights reserved.</p>
+            </div>
           </div>
           <div class="footer-links">
-            <a href="#" class="footer-link">隐私政策</a>
-            <a href="#" class="footer-link">服务条款</a>
-            <a href="#" class="footer-link">Cookie 政策</a>
+            <a href="#" class="footer-link nav-bilingual">
+              <span class="nav-main">隐私政策</span>
+              <span class="nav-en">Privacy</span>
+            </a>
+            <a href="#" class="footer-link nav-bilingual">
+              <span class="nav-main">服务条款</span>
+              <span class="nav-en">Terms</span>
+            </a>
+            <a href="#" class="footer-link nav-bilingual">
+              <span class="nav-main">Cookie 政策</span>
+              <span class="nav-en">Cookies</span>
+            </a>
             <span class="footer-separator">|</span>
             <span class="icp">粤ICP备2024000000号</span>
           </div>

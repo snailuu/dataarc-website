@@ -10,46 +10,57 @@
       </div>
       <div class="container">
         <div class="hero-content">
-          <div class="hero-badge">
-            <span class="badge-text">关于DataArc</span>
-          </div>
-          <h1 class="hero-title">
-            <span class="title-line">数创弧光科技</span>
-            <span class="title-highlight">智能化未来</span>
+          <h1 class="hero-title title-multilevel company-super-title">
+            <span class="title-main company-main-title">数创弧光科技有限公司</span>
+            <span class="title-highlight title-multilevel">
+              <span class="title-main company-future-title">智能化未来</span>
+            </span>
+            <span class="subtitle-en company-english-line">DATAARC TECHNOLOGY CO., LTD. • INTELLIGENT FUTURE</span>
           </h1>
-          <p class="hero-description">
-            专注于人工智能合规管理与智能化技术创新，
-            通过合成数据技术推动企业数字化转型。
-          </p>
+          <div class="hero-description content-bilingual">
+            <p class="content-main">专注于人工智能合规管理与智能化技术创新，通过合成数据技术推动企业数字化转型。</p>
+            <p class="content-en">Focus on AI compliance management and intelligent technology innovation, driving enterprise digital transformation through synthetic data technology.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Company Introduction -->
-    <section class="company-intro">
+    <section id="about-dataarc" class="company-intro">
       <div class="container">
         <div class="intro-content">
           <div class="intro-text">
-            <h2 class="section-title">关于 DataArc</h2>
-            <p class="intro-description">
-              DataArc 数创弧光科技有限公司，成立于2025年1月，是一家专注于人工智能合成数据与智能体技术创新的科技公司。
-              公司由沈向洋院士在IDEA研究院推动孵化，致力于通过精准的数据模拟与增强技术，
-              解决金融、制造等知识密集型行业在大数据模型训练和应用过程中面临的数据稀缺与高定制成本的难题，
-              帮助各行各业实现高效决策与业务优化。
-            </p>
+            <div class="title-bilingual">
+              <h2 class="title-main">关于 DataArc</h2>
+              <span class="title-divider">|</span>
+              <span class="title-en">About DataArc</span>
+            </div>
+            <div class="content-bilingual">
+              <p class="content-main">DataArc 数创弧光科技有限公司，成立于2025年1月，是一家专注于人工智能合成数据与智能体技术创新的科技公司。公司由沈向洋院士在IDEA研究院推动孵化，致力于通过精准的数据模拟与增强技术，解决金融、制造等知识密集型行业在大数据模型训练和应用过程中面临的数据稀缺与高定制成本的难题，帮助各行各业实现高效决策与业务优化。</p>
+              <p class="content-en">DataArc Technology Co., Ltd., established in January 2025, is a technology company focusing on AI synthetic data and intelligent agent technology innovation. Incubated by Academician Shen Xiangyang at IDEA Research Institute, the company is committed to solving data scarcity and high customization costs faced by knowledge-intensive industries such as finance and manufacturing in big data model training and application through precise data simulation and enhancement technologies, helping all industries achieve efficient decision-making and business optimization.</p>
+            </div>
             
             <div class="company-stats">
               <div class="stat-item">
                 <div class="stat-number">2025</div>
-                <div class="stat-label">成立年份</div>
+                <div class="stat-label-bilingual">
+                  <span class="stat-main">成立年份</span>
+                  <span class="stat-en">Founded</span>
+                </div>
               </div>
               <div class="stat-item">
                 <div class="stat-number">50+</div>
-                <div class="stat-label">技术专利</div>
+                <div class="stat-label-bilingual">
+                  <span class="stat-main">技术专利</span>
+                  <span class="stat-en">Patents</span>
+                </div>
               </div>
               <div class="stat-item">
                 <div class="stat-number">30+</div>
-                <div class="stat-label">合作企业</div>
+                <div class="stat-label-bilingual">
+                  <span class="stat-main">合作企业</span>
+                  <span class="stat-en">Partners</span>
+                </div>
               </div>
             </div>
           </div>
@@ -58,11 +69,18 @@
     </section>
 
     <!-- Team Section -->
-    <section class="team-section">
+    <section id="core-team" class="team-section">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">核心团队</h2>
-          <p class="section-subtitle">汇聚顶尖人才，打造技术创新团队</p>
+          <div class="title-bilingual">
+            <h2 class="title-main">核心团队</h2>
+            <span class="title-divider">|</span>
+            <span class="title-en">Core Team</span>
+          </div>
+          <div class="content-bilingual">
+            <p class="content-main">汇聚顶尖人才，打造技术创新团队</p>
+            <p class="content-en">Gather top talents to build a technology innovation team</p>
+          </div>
         </div>
 
         <!-- Leadership Team -->
@@ -77,7 +95,7 @@
               </div>
             </div>
             <div class="leader-info">
-              <h3 class="leader-name">徐铖晋 博士</h3>
+              <h3 class="title-level-3">徐铖晋 博士</h3>
               <div class="leader-title">CTO · 首席技术官</div>
               <p class="leader-bio">
                 负责合成数据项目工程研发、算法创新、及技术路线规划，确保技术的领先性和解决方案的可行性。
@@ -108,7 +126,7 @@
               </div>
             </div>
             <div class="leader-info">
-              <h3 class="leader-name">江旭晖 博士</h3>
+              <h3 class="title-level-3">江旭晖 博士</h3>
               <div class="leader-title">CEO · 首席执行官</div>
               <p class="leader-bio">
                 负责公司战略规划、融资及团队建设，参与技术路线规划、推动公司业务发展和市场落地。
@@ -131,31 +149,68 @@
 
         <!-- Team Features -->
         <div class="team-features glass-card">
-          <h3 class="features-title">团队技术优势</h3>
-          <p class="features-subtitle">合成数据相关技术丰富积累</p>
+          <div class="title-bilingual">
+            <h3 class="title-main">团队技术优势</h3>
+            <span class="title-divider">|</span>
+            <span class="title-en">Team Technical Advantages</span>
+          </div>
+          <div class="content-bilingual">
+            <p class="content-main">合成数据相关技术丰富积累</p>
+            <p class="content-en">Rich accumulation of synthetic data related technologies</p>
+          </div>
           
           <div class="features-grid">
             <div class="feature-item">
-              <div class="feature-icon-placeholder">【需要图片：关于我们-技术-采样技术.png - 采样/数据收集图标】</div>
+              <div class="icon-wrapper">
+                <img src="/images/icons/采样技术图标.png" alt="采样技术" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
               <div class="feature-content">
-                <h4>采样技术</h4>
-                <p>语境图谱技术</p>
+                <div class="title-bilingual">
+                  <h4 class="title-main">采样技术</h4>
+                  <span class="title-divider">|</span>
+                  <span class="title-en">Sampling Technology</span>
+                </div>
+                <div class="content-bilingual">
+                  <p class="content-main">语境图谱技术</p>
+                  <p class="content-en">Context Graph Technology</p>
+                </div>
               </div>
             </div>
             
             <div class="feature-item">
-              <div class="feature-icon-placeholder">【需要图片：关于我们-技术-合成技术.png - 合成/创造图标】</div>
+              <div class="icon-wrapper">
+                <img src="/images/icons/合成技术图标.png" alt="合成技术" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
               <div class="feature-content">
-                <h4>合成技术</h4>
-                <p>思维图谱（Think-on-Graph）</p>
+                <div class="title-bilingual">
+                  <h4 class="title-main">合成技术</h4>
+                  <span class="title-divider">|</span>
+                  <span class="title-en">Synthesis Technology</span>
+                </div>
+                <div class="content-bilingual">
+                  <p class="content-main">思维图谱（Think-on-Graph）</p>
+                  <p class="content-en">Think-on-Graph</p>
+                </div>
               </div>
             </div>
             
             <div class="feature-item">
-              <div class="feature-icon-placeholder">【需要图片：关于我们-技术-训练技术.png - 训练/机器学习图标】</div>
+              <div class="icon-wrapper">
+                <img src="/images/icons/训练技术图标.png" alt="训练技术" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
               <div class="feature-content">
-                <h4>训练技术</h4>
-                <p>垂域大模型开发</p>
+                <div class="title-bilingual">
+                  <h4 class="title-main">训练技术</h4>
+                  <span class="title-divider">|</span>
+                  <span class="title-en">Training Technology</span>
+                </div>
+                <div class="content-bilingual">
+                  <p class="content-main">垂域大模型开发</p>
+                  <p class="content-en">Vertical Domain Large Model Development</p>
+                </div>
               </div>
             </div>
           </div>
@@ -163,22 +218,31 @@
 
         <!-- Other Team Members -->
         <div class="other-members">
-          <h3 class="members-title">核心团队成员</h3>
+                      <h3 class="title-level-3">核心团队成员</h3>
           <div class="members-grid">
             <div class="member-card glass-card">
-              <div class="member-icon-placeholder">【需要图片：关于我们-成员-COO.png - COO/运营官图标】</div>
+              <div class="icon-wrapper">
+                <img src="/images/icons/COO图标.png" alt="COO" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
               <div class="member-role">COO</div>
               <div class="member-description">连续创业者，FinTech独角兽公司负责人</div>
             </div>
             
             <div class="member-card glass-card">
-              <div class="member-icon-placeholder">【需要图片：关于我们-成员-算法团队.png - 算法/代码图标】</div>
+              <div class="icon-wrapper">
+                <img src="/images/icons/算法团队图标.png" alt="算法团队" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
               <div class="member-role">算法核心团队</div>
               <div class="member-description">前科技公司CTO、阿里P8业务负责人</div>
             </div>
             
             <div class="member-card glass-card">
-              <div class="member-icon-placeholder">【需要图片：关于我们-成员-投融资BD.png - 投资/商务图标】</div>
+              <div class="icon-wrapper">
+                <img src="/images/icons/投融资BD图标.png" alt="投融资BD" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
               <div class="member-role">投融资负责人&BD</div>
               <div class="member-description">前国内头部VC投资总监</div>
             </div>
@@ -238,7 +302,7 @@
 
           <div class="contact-form-wrapper">
             <form class="contact-form glass-card" @submit.prevent="submitForm">
-              <h3 class="form-title">留言咨询</h3>
+              <h3 class="title-level-3">留言咨询</h3>
               
               <div class="form-group">
                 <label for="name">姓名 *</label>
@@ -305,7 +369,7 @@
     </section>
     
     <!-- Company Details Section -->
-    <section class="company-details">
+    <section id="about-dataarc" class="company-details">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">公司基本信息</h2>
@@ -314,38 +378,86 @@
         
         <div class="details-grid">
           <div class="detail-card">
-            <div class="detail-icon">【需要图片：公司标识图标】</div>
-            <h3>公司全称</h3>
-            <p>数创弧光（深圳）科技有限公司</p>
-            <p class="detail-en">DataArc Technology Co., Ltd.</p>
+            <div class="icon-wrapper">
+                <img src="/images/icons/公司标识图标.png" alt="公司标识" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
+            <div class="title-bilingual">
+              <h3 class="title-main">公司全称</h3>
+              <span class="title-divider">|</span>
+              <span class="title-en">Company Name</span>
+            </div>
+            <div class="content-bilingual">
+              <p class="content-main">数创弧光（深圳）科技有限公司</p>
+              <p class="content-en">DataArc Technology Co., Ltd.</p>
+            </div>
           </div>
           
           <div class="detail-card">
-            <div class="detail-icon">【需要图片：成立时间图标】</div>
-            <h3>成立时间</h3>
-            <p>2025年1月</p>
-            <p class="detail-description">在沈向洋院士支持下成立</p>
+            <div class="icon-wrapper">
+                <img src="/images/icons/成立时间图标.png" alt="成立时间" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
+            <div class="title-bilingual">
+              <h3 class="title-main">成立时间</h3>
+              <span class="title-divider">|</span>
+              <span class="title-en">Founded</span>
+            </div>
+            <div class="content-bilingual">
+              <p class="content-main">2025年1月</p>
+              <p class="content-en">January 2025</p>
+            </div>
+            <div class="content-bilingual">
+              <p class="content-main">在沈向洋院士支持下成立</p>
+              <p class="content-en">Founded with support from Academician Shen Xiangyang</p>
+            </div>
           </div>
           
           <div class="detail-card">
-            <div class="detail-icon">【需要图片：地址位置图标】</div>
-            <h3>公司地址</h3>
-            <p>深圳市福田区河套保税区</p>
-            <p class="detail-description">长富金茂大厦3901</p>
+            <div class="icon-wrapper">
+                <img src="/images/icons/地址位置图标.png" alt="地址位置" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
+            <div class="title-bilingual">
+              <h3 class="title-main">公司地址</h3>
+              <span class="title-divider">|</span>
+              <span class="title-en">Address</span>
+            </div>
+            <div class="content-bilingual">
+              <p class="content-main">深圳市福田区河套保税区</p>
+              <p class="content-en">Shenzhen Nanshan Technology Park</p>
+            </div>
+            <div class="content-bilingual">
+              <p class="content-main">长富金茂大厦3901</p>
+              <p class="content-en">Suite 3901, Changfu Jinmao Building</p>
+            </div>
           </div>
           
           <div class="detail-card">
-            <div class="detail-icon">【需要图片：愿景目标图标】</div>
-            <h3>发展愿景</h3>
-            <p>打造合成数据时代的ScaleAI</p>
-            <p class="detail-description">成为中国的下一代ScaleAI</p>
+            <div class="icon-wrapper">
+                <img src="/images/icons/愿景目标图标.png" alt="愿景目标" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
+            <div class="title-bilingual">
+              <h3 class="title-main">发展愿景</h3>
+              <span class="title-divider">|</span>
+              <span class="title-en">Vision</span>
+            </div>
+            <div class="content-bilingual">
+              <p class="content-main">打造合成数据时代的ScaleAI</p>
+              <p class="content-en">Build the ScaleAI of the synthetic data era</p>
+            </div>
+            <div class="content-bilingual">
+              <p class="content-main">成为中国的下一代ScaleAI</p>
+              <p class="content-en">Become China's next-generation ScaleAI</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Team Details Section -->
-    <section class="team-details">
+    <section id="core-team" class="team-details">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">团队详细介绍</h2>
@@ -354,39 +466,86 @@
         
         <div class="team-overview">
           <div class="team-info">
-            <h3>团队规模与结构</h3>
-            <p>团队现全职12人，计划维持15-20人的精英规模。团队相关领域研究积累深厚，业界知名度高，拥有世界知名专家作为项目顾问团队。</p>
+            <div class="title-bilingual">
+              <h3 class="title-main">团队规模与结构</h3>
+              <span class="title-divider">|</span>
+              <span class="title-en">Team Scale & Structure</span>
+            </div>
+            <div class="content-bilingual">
+              <p class="content-main">团队现全职12人，计划维持15-20人的精英规模。团队相关领域研究积累深厚，业界知名度高，拥有世界知名专家作为项目顾问团队。</p>
+              <p class="content-en">Current team of 12 full-time members, planned to maintain an elite scale of 15-20 people. The team has deep research accumulation in related fields, high industry reputation, and world-renowned experts as project advisory team.</p>
+            </div>
             
             <div class="team-advantages">
               <div class="advantage-item">
-                <div class="advantage-icon">【需要图片：研究积累图标】</div>
+                <div class="icon-wrapper">
+                <img src="/images/icons/研究积累图标.png" alt="研究积累" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
                 <div class="advantage-content">
-                  <h4>深厚研究积累</h4>
-                  <p>团队在相关领域有深厚的研究基础和技术积累</p>
+                  <div class="title-bilingual">
+                    <h4 class="title-main">深厚研究积累</h4>
+                    <span class="title-divider">|</span>
+                    <span class="title-en">Deep Research Accumulation</span>
+                  </div>
+                  <div class="content-bilingual">
+                    <p class="content-main">团队在相关领域有深厚的研究基础和技术积累</p>
+                    <p class="content-en">Team has deep research foundation and technical accumulation in related fields</p>
+                  </div>
                 </div>
               </div>
               
               <div class="advantage-item">
-                <div class="advantage-icon">【需要图片：业界知名图标】</div>
+                <div class="icon-wrapper">
+                <img src="/images/icons/业界知名图标.png" alt="业界知名" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
                 <div class="advantage-content">
-                  <h4>业界知名度高</h4>
-                  <p>在人工智能和合成数据领域享有较高声誉</p>
+                  <div class="title-bilingual">
+                    <h4 class="title-main">业界知名度高</h4>
+                    <span class="title-divider">|</span>
+                    <span class="title-en">High Industry Recognition</span>
+                  </div>
+                  <div class="content-bilingual">
+                    <p class="content-main">在人工智能和合成数据领域享有较高声誉</p>
+                    <p class="content-en">Enjoys high reputation in artificial intelligence and synthetic data fields</p>
+                  </div>
                 </div>
               </div>
               
               <div class="advantage-item">
-                <div class="advantage-icon">【需要图片：专家顾问图标】</div>
+                <div class="icon-wrapper">
+                <img src="/images/icons/专家顾问图标.png" alt="专家顾问" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
                 <div class="advantage-content">
-                  <h4>专家顾问团队</h4>
-                  <p>世界知名专家担任项目顾问，提供战略指导</p>
+                  <div class="title-bilingual">
+                    <h4 class="title-main">专家顾问团队</h4>
+                    <span class="title-divider">|</span>
+                    <span class="title-en">Expert Advisory Team</span>
+                  </div>
+                  <div class="content-bilingual">
+                    <p class="content-main">世界知名专家担任项目顾问，提供战略指导</p>
+                    <p class="content-en">World-renowned experts serve as project advisors, providing strategic guidance</p>
+                  </div>
                 </div>
               </div>
               
               <div class="advantage-item">
-                <div class="advantage-icon">【需要图片：项目资源图标】</div>
+                <div class="icon-wrapper">
+                <img src="/images/icons/项目资源图标.png" alt="项目资源" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
                 <div class="advantage-content">
-                  <h4>项目资源丰富</h4>
-                  <p>通过IDEA研究院获得丰富的项目资源支持</p>
+                  <div class="title-bilingual">
+                    <h4 class="title-main">项目资源丰富</h4>
+                    <span class="title-divider">|</span>
+                    <span class="title-en">Rich Project Resources</span>
+                  </div>
+                  <div class="content-bilingual">
+                    <p class="content-main">通过IDEA研究院获得丰富的项目资源支持</p>
+                    <p class="content-en">Rich project resource support through IDEA Research Institute</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -398,18 +557,18 @@
         </div>
         
         <div class="advisors-section">
-          <h3>项目顾问委员会</h3>
+          <h3 class="title-level-3">项目顾问委员会</h3>
           <div class="advisors-grid">
             <div class="advisor-card">
               <div class="advisor-avatar">【需要图片：沈向洋院士头像】</div>
-              <h4>沈向洋院士</h4>
+              <h4 class="title-level-4">沈向洋院士</h4>
               <p class="advisor-title">项目主要支持者</p>
               <p class="advisor-bio">IDEA研究院理事长，微软前全球执行副总裁</p>
             </div>
             
             <div class="advisor-card">
               <div class="advisor-avatar">【需要图片：顾问专家头像占位符】</div>
-              <h4>世界级专家</h4>
+              <h4 class="title-level-4">世界级专家</h4>
               <p class="advisor-title">技术顾问团队</p>
               <p class="advisor-bio">来自国际顶尖科研机构的技术专家</p>
             </div>
@@ -419,11 +578,18 @@
     </section>
 
     <!-- Funding Section -->
-    <section class="funding-section">
+    <section id="funding-status" class="funding-section">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">融资情况</h2>
-          <p class="section-subtitle">获得头部投资机构认可，快速发展中</p>
+          <div class="title-bilingual">
+            <h2 class="title-main">融资情况</h2>
+            <span class="title-divider">|</span>
+            <span class="title-en">Funding Status</span>
+          </div>
+          <div class="content-bilingual">
+            <p class="content-main">获得头部投资机构认可，快速发展中</p>
+            <p class="content-en">Recognized by leading investment institutions, rapidly developing</p>
+          </div>
         </div>
         
         <div class="funding-timeline">
@@ -432,12 +598,19 @@
               <div class="timeline-number">1</div>
             </div>
             <div class="timeline-content">
-              <h3>种子轮</h3>
+              <div class="title-bilingual">
+                <h3 class="title-main">种子轮</h3>
+                <span class="title-divider">|</span>
+                <span class="title-en">Seed Round</span>
+              </div>
               <div class="funding-stats">
                 <span class="funding-amount">8000万估值</span>
                 <span class="funding-date">2025年初</span>
               </div>
-              <p>获得首轮种子投资，验证产品市场需求</p>
+              <div class="content-bilingual">
+                <p class="content-main">获得首轮种子投资，验证产品市场需求</p>
+                <p class="content-en">Secured first seed investment, validated product-market demand</p>
+              </div>
             </div>
           </div>
           
@@ -446,12 +619,19 @@
               <div class="timeline-number">2</div>
             </div>
             <div class="timeline-content">
-              <h3>种子加轮</h3>
+              <div class="title-bilingual">
+                <h3 class="title-main">种子加轮</h3>
+                <span class="title-divider">|</span>
+                <span class="title-en">Seed Plus Round</span>
+              </div>
               <div class="funding-stats">
                 <span class="funding-amount">1.5亿估值</span>
                 <span class="funding-date">2025年中</span>
               </div>
-              <p>快速发展阶段，估值大幅提升</p>
+              <div class="content-bilingual">
+                <p class="content-main">快速发展阶段，估值大幅提升</p>
+                <p class="content-en">Rapid development phase, significant valuation increase</p>
+              </div>
             </div>
           </div>
           
@@ -460,12 +640,19 @@
               <div class="timeline-number">3</div>
             </div>
             <div class="timeline-content">
-              <h3>加加轮</h3>
+              <div class="title-bilingual">
+                <h3 class="title-main">加加轮</h3>
+                <span class="title-divider">|</span>
+                <span class="title-en">Series A+</span>
+              </div>
               <div class="funding-stats">
                 <span class="funding-amount">2.5亿估值</span>
                 <span class="funding-date">2025年下半年</span>
               </div>
-              <p>业务快速增长，市场认可度持续提升</p>
+              <div class="content-bilingual">
+                <p class="content-main">业务快速增长，市场认可度持续提升</p>
+                <p class="content-en">Rapid business growth, continuous market recognition improvement</p>
+              </div>
             </div>
           </div>
           
@@ -474,26 +661,45 @@
               <div class="timeline-number">4</div>
             </div>
             <div class="timeline-content">
-              <h3>拟天使轮</h3>
+              <div class="title-bilingual">
+                <h3 class="title-main">拟天使轮</h3>
+                <span class="title-divider">|</span>
+                <span class="title-en">Pre-Angel Round</span>
+              </div>
               <div class="funding-stats">
                 <span class="funding-amount">5亿估值</span>
                 <span class="funding-date">进行中</span>
               </div>
-              <p>目标成为合成数据领域的领军企业</p>
+              <div class="content-bilingual">
+                <p class="content-main">目标成为合成数据领域的领军企业</p>
+                <p class="content-en">Aiming to become a leading enterprise in synthetic data field</p>
+              </div>
             </div>
           </div>
         </div>
         
         <div class="investors-section">
-          <h3>投资机构</h3>
+          <div class="title-bilingual">
+            <h3 class="title-main">投资机构</h3>
+            <span class="title-divider">|</span>
+            <span class="title-en">Investment Institutions</span>
+          </div>
           <div class="investors-grid">
             <div class="investor-category">
-              <h4>头部投资机构</h4>
+              <div class="title-bilingual">
+                <h4 class="title-main">头部投资机构</h4>
+                <span class="title-divider">|</span>
+                <span class="title-en">Leading Investment Institutions</span>
+              </div>
               <div class="investor-placeholder">【需要图片：头部投资机构展示】</div>
             </div>
             
             <div class="investor-category">
-              <h4>产业集团投资方</h4>
+              <div class="title-bilingual">
+                <h4 class="title-main">产业集团投资方</h4>
+                <span class="title-divider">|</span>
+                <span class="title-en">Industrial Group Investors</span>
+              </div>
               <div class="investor-placeholder">【需要图片：产业集团投资方】</div>
             </div>
           </div>
@@ -502,48 +708,97 @@
     </section>
 
     <!-- Development Milestones Section -->
-    <section class="milestones">
+    <section id="development-history" class="milestones">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">发展历程</h2>
-          <p class="section-subtitle">从概念到实现，持续创新的发展之路</p>
+          <div class="title-bilingual">
+            <h2 class="title-main">发展历程</h2>
+            <span class="title-divider">|</span>
+            <span class="title-en">Development History</span>
+          </div>
+          <div class="content-bilingual">
+            <p class="content-main">从概念到实现，持续创新的发展之路</p>
+            <p class="content-en">From concept to implementation, a path of continuous innovation and development</p>
+          </div>
         </div>
         
         <div class="milestones-grid">
           <div class="milestone-card">
             <div class="milestone-date">2025年1月</div>
-            <h3>公司成立</h3>
-            <p>在沈向洋院士支持下，由IDEA研究院推动孵化成立</p>
+            <div class="title-bilingual">
+              <h3 class="title-main">公司成立</h3>
+              <span class="title-divider">|</span>
+              <span class="title-en">Company Founded</span>
+            </div>
+            <div class="content-bilingual">
+              <p class="content-main">在沈向洋院士支持下，由IDEA研究院推动孵化成立</p>
+              <p class="content-en">Founded with support from Academician Shen Xiangyang and incubated by IDEA Research Institute</p>
+            </div>
           </div>
           
           <div class="milestone-card">
             <div class="milestone-date">2025年3月</div>
-            <h3>业务启动</h3>
-            <p>开始正式业务运营，进入PMF阶段</p>
+            <div class="title-bilingual">
+              <h3 class="title-main">业务启动</h3>
+              <span class="title-divider">|</span>
+              <span class="title-en">Business Launch</span>
+            </div>
+            <div class="content-bilingual">
+              <p class="content-main">开始正式业务运营，进入PMF阶段</p>
+              <p class="content-en">Commenced formal business operations, entered PMF phase</p>
+            </div>
           </div>
           
           <div class="milestone-card">
             <div class="milestone-date">2025年6月</div>
-            <h3>技术突破</h3>
-            <p>完成核心技术研发，推出Living KB和SynData Platform</p>
+            <div class="title-bilingual">
+              <h3 class="title-main">技术突破</h3>
+              <span class="title-divider">|</span>
+              <span class="title-en">Technology Breakthrough</span>
+            </div>
+            <div class="content-bilingual">
+              <p class="content-main">完成核心技术研发，推出Living KB和SynData Platform</p>
+              <p class="content-en">Completed core technology R&D, launched Living KB and SynData Platform</p>
+            </div>
           </div>
           
           <div class="milestone-card">
             <div class="milestone-date">2025年9月</div>
-            <h3>客户验证</h3>
-            <p>完成多个POC项目，获得客户认可</p>
+            <div class="title-bilingual">
+              <h3 class="title-main">客户验证</h3>
+              <span class="title-divider">|</span>
+              <span class="title-en">Customer Validation</span>
+            </div>
+            <div class="content-bilingual">
+              <p class="content-main">完成多个POC项目，获得客户认可</p>
+              <p class="content-en">Completed multiple POC projects, gained customer recognition</p>
+            </div>
           </div>
           
           <div class="milestone-card">
             <div class="milestone-date">2025年12月</div>
-            <h3>规模扩张</h3>
-            <p>业务快速发展，团队规模持续优化</p>
+            <div class="title-bilingual">
+              <h3 class="title-main">规模扩张</h3>
+              <span class="title-divider">|</span>
+              <span class="title-en">Scale Expansion</span>
+            </div>
+            <div class="content-bilingual">
+              <p class="content-main">业务快速发展，团队规模持续优化</p>
+              <p class="content-en">Rapid business development, continuous team optimization</p>
+            </div>
           </div>
           
           <div class="milestone-card future">
             <div class="milestone-date">2026年+</div>
-            <h3>未来规划</h3>
-            <p>成为中国的下一代ScaleAI，引领合成数据时代</p>
+            <div class="title-bilingual">
+              <h3 class="title-main">未来规划</h3>
+              <span class="title-divider">|</span>
+              <span class="title-en">Future Planning</span>
+            </div>
+            <div class="content-bilingual">
+              <p class="content-main">成为中国的下一代ScaleAI，引领合成数据时代</p>
+              <p class="content-en">Become China's next-generation ScaleAI, leading the synthetic data era</p>
+            </div>
           </div>
         </div>
       </div>
@@ -630,7 +885,7 @@ const submitForm = () => {
 .hero-content {
   text-align: center;
   color: var(--text-white);
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -679,6 +934,21 @@ const submitForm = () => {
   max-width: 600px;
   margin: 0 auto;
   animation: fadeInUp 1s var(--ease-out);
+}
+
+/* Hero section文字颜色修复 */
+.hero .company-super-title .company-main-title,
+.hero .company-super-title .company-future-title {
+  color: var(--text-white) !important;
+}
+
+.hero .company-super-title .company-english-line {
+  color: var(--text-white-secondary) !important;
+}
+
+.hero .hero-description .content-main,
+.hero .hero-description .content-en {
+  color: var(--text-white-secondary) !important;
 }
 
 /* ===== Company Introduction ===== */

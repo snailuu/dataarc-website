@@ -2,139 +2,309 @@
   <div class="technology-page">
     <AppHeader />
     
-    <section class="page-hero">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-background">
+        <div class="hero-gradient"></div>
+        <div class="hero-pattern"></div>
+      </div>
       <div class="container">
-        <h1>产品方案</h1>
-        <p>Living KB 动态知识库合成数据平台</p>
+        <div class="hero-content">
+          <h1 class="hero-title title-multilevel company-super-title">
+            <span class="title-main company-main-title">技术优势</span>
+            <span class="title-highlight title-multilevel">
+              <span class="title-main company-future-title">核心技术栈</span>
+            </span>
+            <span class="subtitle-en company-english-line">TECHNOLOGY ADVANTAGES • CORE TECHNOLOGY STACK</span>
+          </h1>
+          <div class="hero-description content-bilingual">
+            <p class="content-main">Living KB 动态知识库合成数据平台，七项核心技术驱动AI智能化升级。</p>
+            <p class="content-en">Living KB Dynamic Knowledge Base & Synthetic Data Platform with seven core technologies driving AI intelligent upgrades.</p>
+          </div>
+        </div>
       </div>
     </section>
     
     <section class="page-content">
       <div class="container">
         <!-- 产品流程步骤 -->
-        <div class="process-steps">
+        <div id="product-process" class="process-steps">
           <div class="step-item">
-            <div class="step-icon">【需要图片：技术页-流程-数据采集.png - 数据收集/文档图标】</div>
+                            <div class="icon-wrapper">
+                  <img src="/images/icons/数据采集图标.png" alt="数据采集" class="icon-img">
+                  <div class="icon-glow"></div>
+                </div>
             <div class="step-line"></div>
             <div class="step-content">
-              <h3>用户数据</h3>
-              <p>对企业多模态、跨部门、跨系统的原始数据（如 PDF、Word 、PPT 汇报、SQL 数据库、会议录屏等）等内容，进行抽取、结构化和建模等工作，让 AI 真正"读懂"企业知识。</p>
+              <div class="title-bilingual">
+                <h3 class="title-main">用户数据</h3>
+                <span class="title-divider">|</span>
+                <span class="title-en">User Data</span>
+              </div>
+              <div class="content-bilingual">
+                <p class="content-main">对企业多模态、跨部门、跨系统的原始数据（如 PDF、Word 、PPT 汇报、SQL 数据库、会议录屏等）等内容，进行抽取、结构化和建模等工作，让 AI 真正"读懂"企业知识。</p>
+                <p class="content-en">Extract, structure and model enterprise multi-modal, cross-department, cross-system raw data (PDFs, Word, PPT reports, SQL databases, meeting recordings, etc.) to enable AI to truly "understand" enterprise knowledge.</p>
+              </div>
             </div>
           </div>
           
           <div class="step-item">
-            <div class="step-icon">【需要图片：技术页-流程-图谱构建.png - 网络图谱/节点连接图标】</div>
+                            <div class="icon-wrapper">
+                  <img src="/images/icons/图谱构建图标.png" alt="图谱构建" class="icon-img">
+                  <div class="icon-glow"></div>
+                </div>
             <div class="step-line"></div>
             <div class="step-content">
-              <h3>语境图谱构建</h3>
-              <p>语境图谱将分散的企业数据转化为动态知识网络，让隐藏的知识脉络和数据关联清晰可见。</p>
+              <div class="title-bilingual">
+                <h3 class="title-main">语境图谱构建</h3>
+                <span class="title-divider">|</span>
+                <span class="title-en">Context Graph Construction</span>
+              </div>
+              <div class="content-bilingual">
+                <p class="content-main">语境图谱将分散的企业数据转化为动态知识网络，让隐藏的知识脉络和数据关联清晰可见。</p>
+                <p class="content-en">Context graphs transform scattered enterprise data into dynamic knowledge networks, making hidden knowledge connections and data correlations clearly visible.</p>
+              </div>
             </div>
           </div>
           
           <div class="step-item">
-            <div class="step-icon">【需要图片：技术页-流程-多能体平台.png - 机器人/AI智能体图标】</div>
+                            <div class="icon-wrapper">
+                  <img src="/images/icons/多能体平台图标.png" alt="多能体平台" class="icon-img">
+                  <div class="icon-glow"></div>
+                </div>
             <div class="step-line"></div>
             <div class="step-content">
-              <h3>多能体平台</h3>
-              <p>智能体可自主调用数据库、浏览器、语境图谱等多类工具，并借助合成数据持续训练与进化，快速掌握行业知识、人类偏好与协作模式，从而以更低成本、更高效率完成复杂业务的智能化执行。</p>
+              <div class="title-bilingual">
+                <h3 class="title-main">多能体平台</h3>
+                <span class="title-divider">|</span>
+                <span class="title-en">Multi-Agent Platform</span>
+              </div>
+              <div class="content-bilingual">
+                <p class="content-main">智能体可自主调用数据库、浏览器、语境图谱等多类工具，并借助合成数据持续训练与进化，快速掌握行业知识、人类偏好与协作模式，从而以更低成本、更高效率完成复杂业务的智能化执行。</p>
+                <p class="content-en">Agents can autonomously invoke databases, browsers, context graphs and other tools, continuously training and evolving with synthetic data to quickly master industry knowledge, human preferences and collaboration patterns, thus completing intelligent execution of complex business with lower cost and higher efficiency.</p>
+              </div>
             </div>
           </div>
           
           <div class="step-item">
-            <div class="step-icon">【需要图片：技术页-流程-交互平台.png - 对话框/交互界面图标】</div>
+            <div class="icon-wrapper">
+                <img src="/images/icons/交互平台图标.png" alt="交互平台" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
             <div class="step-line"></div>
             <div class="step-content">
-              <h3>交互平台</h3>
-              <p>可通过自然对话、图交互等多模态交互方式与产品互动，让用户高效、安全地获取知识和完成任务，大幅提升信息利用率与业务执行力。</p>
+              <div class="title-bilingual">
+                <h3 class="title-main">交互平台</h3>
+                <span class="title-divider">|</span>
+                <span class="title-en">Interactive Platform</span>
+              </div>
+              <div class="content-bilingual">
+                <p class="content-main">可通过自然对话、图交互等多模态交互方式与产品互动，让用户高效、安全地获取知识和完成任务，大幅提升信息利用率与业务执行力。</p>
+                <p class="content-en">Interact with products through natural dialogue, graph interaction and other multi-modal interaction methods, enabling users to efficiently and safely acquire knowledge and complete tasks, significantly improving information utilization and business execution capabilities.</p>
+              </div>
             </div>
           </div>
           
           <div class="step-item">
-            <div class="step-icon">【需要图片：技术页-流程-自适应化.png - 自适应/进化图标】</div>
+            <div class="icon-wrapper">
+                <img src="/images/icons/自适应化图标.png" alt="自适应化" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
             <div class="step-line"></div>
             <div class="step-content">
-              <h3>图谱自适化</h3>
-              <p>AI 搜索和应用使用过程中产生的新数据会持续补全图谱，让 Living KB 始终保持鲜活。</p>
+              <div class="title-bilingual">
+                <h3 class="title-main">图谱自适化</h3>
+                <span class="title-divider">|</span>
+                <span class="title-en">Graph Self-Adaptation</span>
+              </div>
+              <div class="content-bilingual">
+                <p class="content-main">AI 搜索和应用使用过程中产生的新数据会持续补全图谱，让 Living KB 始终保持鲜活。</p>
+                <p class="content-en">New data generated during AI search and application usage continuously supplements the graph, keeping Living KB always fresh and alive.</p>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- 核心功能和产品特点 -->
-        <div class="feature-cards">
+<div id="core-features" class="feature-cards">
           <div class="feature-card">
             <img src="/images/icons/核心技术页面-核心功能-icon.png" alt="核心功能" class="feature-icon">
-            <h3>核心功能</h3>
-            <p>以 Context Graph 为核心，实现企业知识管理并使企业知识"LLM Ready"。通过知识挖掘、语境图谱和合成数据能力不断扩充企业的知识和语境，让 AI 和人类可以基于最新的企业数据进行检索、分析和决策。</p>
+            <div class="title-bilingual">
+              <h3 class="title-main">核心功能</h3>
+              <span class="title-divider">|</span>
+              <span class="title-en">Core Functionality</span>
+            </div>
+            <div class="content-bilingual">
+              <p class="content-main">以 Context Graph 为核心，实现企业知识管理并使企业知识"LLM Ready"。通过知识挖掘、语境图谱和合成数据能力不断扩充企业的知识和语境，让 AI 和人类可以基于最新的企业数据进行检索、分析和决策。</p>
+              <p class="content-en">With Context Graph as the core, achieve enterprise knowledge management and make enterprise knowledge "LLM Ready". Through knowledge mining, context graphs and synthetic data capabilities, continuously expand enterprise knowledge and context, enabling AI and humans to retrieve, analyze and make decisions based on the latest enterprise data.</p>
+            </div>
           </div>
           
           <div class="feature-card">
             <img src="/images/icons/核心技术页面-产品特点-icon.png" alt="产品特点" class="feature-icon">
-            <h3>产品特点</h3>
-            <ul>
-              <li>高效构建知识图谱，提升数据处理和理解能力。</li>
-              <li>支持三元组(实体-边-实体)与语境理解。</li>
-              <li>提升图谱推理与信息查询效率，节省数据管理成本。</li>
-              <li>采用更高效的Graph交互方式，提示工作效率与体验。</li>
+            <div class="title-bilingual">
+              <h3 class="title-main">产品特点</h3>
+              <span class="title-divider">|</span>
+              <span class="title-en">Product Features</span>
+            </div>
+            <ul class="list-bilingual">
+              <li class="list-item-bilingual">
+                <span class="list-main">高效构建知识图谱，提升数据处理和理解能力</span>
+                <span class="list-en">Efficiently build knowledge graphs, enhance data processing and understanding capabilities</span>
+              </li>
+              <li class="list-item-bilingual">
+                <span class="list-main">支持三元组(实体-边-实体)与语境理解</span>
+                <span class="list-en">Support triplet (entity-relation-entity) and context understanding</span>
+              </li>
+              <li class="list-item-bilingual">
+                <span class="list-main">提升图谱推理与信息查询效率，节省数据管理成本</span>
+                <span class="list-en">Improve graph reasoning and information query efficiency, save data management costs</span>
+              </li>
+              <li class="list-item-bilingual">
+                <span class="list-main">采用更高效的Graph交互方式，提升工作效率与体验</span>
+                <span class="list-en">Adopt more efficient Graph interaction methods, improve work efficiency and experience</span>
+              </li>
             </ul>
           </div>
         </div>
 
         <!-- 技术优势 -->
-        <div class="tech-section">
-          <h2>技术优势</h2>
-          <p class="tech-subtitle">DataArc 自主研发多项合成数据核心技术，覆盖从数据合成到模型训练的全周期，助力模型更准确、更高效、更安全。依托知识驱动的大模型推理框架，有效解决企业业务场景中推理深度不足、数据调用不准及多模态处理受限等难题。</p>
+        <div id="tech-advantages" class="tech-section">
+          <div class="title-bilingual">
+            <h2 class="title-main">技术优势</h2>
+            <span class="title-divider">|</span>
+            <span class="title-en">Technical Advantages</span>
+          </div>
+          <div class="content-bilingual">
+            <p class="content-main">DataArc 自主研发多项合成数据核心技术，覆盖从数据合成到模型训练的全周期，助力模型更准确、更高效、更安全。依托知识驱动的大模型推理框架，有效解决企业业务场景中推理深度不足、数据调用不准及多模态处理受限等难题。</p>
+            <p class="content-en">DataArc independently develops multiple core synthetic data technologies, covering the full cycle from data synthesis to model training, helping models become more accurate, efficient and secure. Relying on knowledge-driven large model reasoning framework, effectively solving problems such as insufficient reasoning depth, inaccurate data calls and limited multi-modal processing in enterprise business scenarios.</p>
+          </div>
           
           <div class="tech-grid">
             <div class="tech-item">
-              <div class="tech-icon-placeholder">【需要图片：技术页-优势-更懂行.png - 专家/行业知识图标】</div>
-              <h4>更懂行</h4>
-              <p>SoG提升模型能力 25.4%</p>
+              <div class="icon-wrapper">
+                <img src="/images/icons/更懂行图标.png" alt="更懂行" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
+              <div class="title-bilingual">
+                <h4 class="title-main">更懂行</h4>
+                <span class="title-divider">|</span>
+                <span class="title-en">More Industry-Savvy</span>
+              </div>
+              <div class="content-bilingual">
+                <p class="content-main">SoG提升模型能力 25.4%</p>
+                <p class="content-en">SoG improves model capabilities by 25.4%</p>
+              </div>
             </div>
             
             <div class="tech-item">
-              <div class="tech-icon-placeholder">【需要图片：技术页-优势-更聪明.png - AI大脑/智能图标】</div>
-              <h4>更聪明</h4>
-              <p>ToG 推理更准，升至 90.2%</p>
+              <div class="icon-wrapper">
+                <img src="/images/icons/更聪明图标.png" alt="更聪明" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
+              <div class="title-bilingual">
+                <h4 class="title-main">更聪明</h4>
+                <span class="title-divider">|</span>
+                <span class="title-en">Smarter</span>
+              </div>
+              <div class="content-bilingual">
+                <p class="content-main">ToG 推理更准，升至 90.2%</p>
+                <p class="content-en">ToG reasoning more accurate, improved to 90.2%</p>
+              </div>
             </div>
             
             <div class="tech-item">
-              <div class="tech-icon-placeholder">【需要图片：技术页-优势-更靠谱.png - 信任/可靠图标】</div>
-              <h4>更靠谱</h4>
-              <p>Judge：降低90%的数据风险</p>
+              <div class="icon-wrapper">
+                <img src="/images/icons/更靠谱图标.png" alt="更靠谱" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
+              <div class="title-bilingual">
+                <h4 class="title-main">更靠谱</h4>
+                <span class="title-divider">|</span>
+                <span class="title-en">More Reliable</span>
+              </div>
+              <div class="content-bilingual">
+                <p class="content-main">Judge：降低90%的数据风险</p>
+                <p class="content-en">Judge: Reduce 90% of data risks</p>
+              </div>
             </div>
             
             <div class="tech-item">
-              <div class="tech-icon-placeholder">【需要图片：技术页-优势-更专业.png - 专业工具/技术图标】</div>
-              <h4>更专业</h4>
-              <p>SQL-R1:数据查询更便捷</p>
+              <div class="icon-wrapper">
+                <img src="/images/icons/更专业图标.png" alt="更专业" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
+              <div class="title-bilingual">
+                <h4 class="title-main">更专业</h4>
+                <span class="title-divider">|</span>
+                <span class="title-en">More Professional</span>
+              </div>
+              <div class="content-bilingual">
+                <p class="content-main">SQL-R1:数据查询更便捷</p>
+                <p class="content-en">SQL-R1: More convenient data querying</p>
+              </div>
             </div>
             
             <div class="tech-item">
-              <div class="tech-icon-placeholder">【需要图片：技术页-优势-更安全.png - 安全防护/加密图标】</div>
-              <h4>更安全</h4>
-              <p>SoE：敏感数据0泄露</p>
+              <div class="icon-wrapper">
+                <img src="/images/icons/更安全图标.png" alt="更安全" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
+              <div class="title-bilingual">
+                <h4 class="title-main">更安全</h4>
+                <span class="title-divider">|</span>
+                <span class="title-en">More Secure</span>
+              </div>
+              <div class="content-bilingual">
+                <p class="content-main">SoE：敏感数据0泄露</p>
+                <p class="content-en">SoE: Zero sensitive data leakage</p>
+              </div>
             </div>
             
             <div class="tech-item">
-              <div class="tech-icon-placeholder">【需要图片：技术页-优势-更准确.png - 精确/准确率图标】</div>
-              <h4>更准确</h4>
-              <p>RAG：准确率 提升至 92%</p>
+              <div class="icon-wrapper">
+                <img src="/images/icons/更准确图标.png" alt="更准确" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
+              <div class="title-bilingual">
+                <h4 class="title-main">更准确</h4>
+                <span class="title-divider">|</span>
+                <span class="title-en">More Accurate</span>
+              </div>
+              <div class="content-bilingual">
+                <p class="content-main">RAG：准确率 提升至 92%</p>
+                <p class="content-en">RAG: Accuracy improved to 92%</p>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- Performance Comparison Section -->
-        <div class="performance-comparison">
+        <div id="performance-comparison" class="performance-comparison">
           <div class="section-header">
-            <h2 class="section-title">性能优势对比</h2>
-            <p class="section-subtitle">DataArc相比行业标杆的显著性能提升</p>
+            <div class="title-bilingual">
+              <h2 class="title-main">性能优势对比</h2>
+              <span class="title-divider">|</span>
+              <span class="title-en">Performance Comparison</span>
+            </div>
+            <div class="content-bilingual">
+              <p class="content-main">DataArc相比行业标杆的显著性能提升</p>
+              <p class="content-en">DataArc's significant performance improvements compared to industry benchmarks</p>
+            </div>
           </div>
           
           <div class="comparison-grid">
             <div class="comparison-card">
               <div class="comparison-header">
-                <h3>建图效率对比</h3>
-                <div class="comparison-icon">【需要图片：建图效率对比图标】</div>
+                <div class="title-bilingual">
+                  <h3 class="title-main">建图效率对比</h3>
+                  <span class="title-divider">|</span>
+                  <span class="title-en">Graph Building Efficiency Comparison</span>
+                </div>
+                <div class="icon-wrapper">
+                <img src="/images/icons/建图效率对比图标.png" alt="建图效率对比" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
               </div>
               <div class="comparison-stats">
                 <div class="stat-item">
@@ -154,8 +324,11 @@
             
             <div class="comparison-card">
               <div class="comparison-header">
-                <h3>推理准确率对比</h3>
-                <div class="comparison-icon">【需要图片：准确率对比图标】</div>
+                <h3 class="title-level-3">推理准确率对比</h3>
+                <div class="icon-wrapper">
+                <img src="/images/icons/准确率对比图标.png" alt="准确率对比" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
               </div>
               <div class="comparison-stats">
                 <div class="stat-item">
@@ -175,8 +348,11 @@
             
             <div class="comparison-card">
               <div class="comparison-header">
-                <h3>SoE 加密技术</h3>
-                <div class="comparison-icon">【需要图片：SoE加密图标】</div>
+                <h3 class="title-level-3">SoE 加密技术</h3>
+                <div class="icon-wrapper">
+                <img src="/images/icons/SoE加密图标.png" alt="SoE加密" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
               </div>
               <div class="comparison-stats">
                 <div class="stat-item">
@@ -197,8 +373,12 @@
         </div>
 
         <!-- FAQ部分 -->
-        <div class="faq-section">
-          <h2>常见问题</h2>
+        <div id="faq" class="faq-section">
+          <div class="title-bilingual">
+            <h2 class="title-main">常见问题</h2>
+            <span class="title-divider">|</span>
+            <span class="title-en">FAQ</span>
+          </div>
           
           <div class="faq-tabs">
             <button 
@@ -686,6 +866,74 @@ const toggleFaq = (type, index) => {
   color: var(--primary-color);
   display: block;
   margin-top: var(--space-1);
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.hero-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.hero-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.1) 1px, transparent 0);
+  background-size: 20px 20px;
+  animation: float 20s ease-in-out infinite;
+}
+
+.hero-content {
+  text-align: center;
+  color: var(--text-white);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-description {
+  font-size: var(--font-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--text-white-secondary);
+  max-width: 600px;
+  margin: var(--space-6) auto 0;
+}
+
+/* Hero section文字颜色修复 */
+.hero .company-super-title .company-main-title,
+.hero .company-super-title .company-future-title {
+  color: var(--text-white) !important;
+}
+
+.hero .company-super-title .company-english-line {
+  color: var(--text-white-secondary) !important;
+}
+
+.hero .hero-description .content-main,
+.hero .hero-description .content-en {
+  color: var(--text-white-secondary) !important;
 }
 </style> 
  
