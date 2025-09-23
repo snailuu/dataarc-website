@@ -298,7 +298,6 @@
               <div class="comparison-header">
                 <div class="title-bilingual">
                   <h3 class="title-main">建图效率对比</h3>
-                  <span class="title-divider">|</span>
                   <span class="title-en">Graph Building Efficiency Comparison</span>
                 </div>
                 <div class="icon-wrapper">

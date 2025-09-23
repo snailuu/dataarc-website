@@ -2,310 +2,99 @@
   <header class="header" :class="{ 'header-scrolled': isScrolled }">
     <nav class="nav container">
       <div class="nav-brand">
-        <router-link to="/" class="brand-link">
+        <RouterLink to="/" class="brand-link" @click="closeMobileMenu">
           <div class="brand-logo">
-            <img src="/images/icons/企业logo.png" alt="DataArc Logo" class="logo-image">
-            <span class="brand-text">DataArc</span>
+            <img src="/images/icons/企业logo.png" :alt="`${t('common.brand')} Logo`" class="logo-image">
+            <span class="brand-text">{{ t('common.brand') }}</span>
           </div>
-        </router-link>
+        </RouterLink>
       </div>
-      
+
       <ul class="nav-links" :class="{ 'nav-links-open': isMobileMenuOpen }">
-        <li class="nav-item dropdown-wrapper" @mouseenter="showDropdown('home')" @mouseleave="hideDropdown">
-          <router-link to="/" class="nav-link">
+        <li
+          v-for="item in navItems"
+          :key="item.id"
+          class="nav-item dropdown-wrapper"
+          @mouseenter="showDropdown(item.id)"
+          @mouseleave="hideDropdown"
+        >
+          <RouterLink :to="item.route" class="nav-link" @click="closeMobileMenu">
             <div class="nav-bilingual">
-              <span class="nav-main">首页</span>
-              <span class="nav-separator">|</span>
-              <span class="nav-en">Home</span>
+              <span class="nav-main">{{ item.label }}</span>
             </div>
-            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none">
-              <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg
+              v-if="item.dropdown.length"
+              class="dropdown-icon"
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+            >
+              <path
+                d="M3 4.5L6 7.5L9 4.5"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
             </svg>
-          </router-link>
-          <div class="dropdown-menu" v-show="activeDropdown === 'home'" @mouseenter="showDropdown('home')" @mouseleave="hideDropdown">
-            <div class="dropdown-content">
-              <a href="#market-opportunity" class="dropdown-item" @click="closeMobileMenu">
-                <svg class="dropdown-item-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M8 2L15 6V14H1V6L8 2Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <div class="dropdown-item-content">
-                  <span class="dropdown-item-title">市场机会 | Market Opportunity</span>
-                  <span class="dropdown-item-desc">数据稀缺危机与行业增长</span>
-                </div>
-              </a>
-              <a href="#products-overview" class="dropdown-item" @click="closeMobileMenu">
-                <svg class="dropdown-item-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M2 3H14V13H2V3Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M8 7H8.01" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <div class="dropdown-item-content">
-                  <span class="dropdown-item-title">产品方案 | Products</span>
-                  <span class="dropdown-item-desc">LivingKB + SynData Platform</span>
-                </div>
-              </a>
-              <a href="#tech-advantages" class="dropdown-item" @click="closeMobileMenu">
-                <svg class="dropdown-item-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M8 1L9.5 6H15L10.5 9.5L12 15L8 11.5L4 15L5.5 9.5L1 6H6.5L8 1Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <div class="dropdown-item-content">
-                  <span class="dropdown-item-title">技术优势 | Technology</span>
-                  <span class="dropdown-item-desc">更懂行、更聪明、更靠谱</span>
-                </div>
-              </a>
-              <a href="#team-strength" class="dropdown-item" @click="closeMobileMenu">
-                <svg class="dropdown-item-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M8 8C10.2091 8 12 6.20914 12 4C12 1.79086 10.2091 0 8 0C5.79086 0 4 1.79086 4 4C4 6.20914 5.79086 8 8 8Z" fill="currentColor"/>
-                  <path d="M8 10C4.69 10 2 12.69 2 16H14C14 12.69 11.31 10 8 10Z" fill="currentColor"/>
-                </svg>
-                <div class="dropdown-item-content">
-                  <span class="dropdown-item-title">团队实力 | Team Strength</span>
-                  <span class="dropdown-item-desc">专业团队与技术积累</span>
-                </div>
-              </a>
-            </div>
-          </div>
-        </li>
+          </RouterLink>
 
-        <li class="nav-item dropdown-wrapper" @mouseenter="showDropdown('products')" @mouseleave="hideDropdown">
-          <router-link to="/products" class="nav-link">
-            <div class="nav-bilingual">
-              <span class="nav-main">产品方案</span>
-              <span class="nav-separator">|</span>
-              <span class="nav-en">Products</span>
-            </div>
-            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none">
-              <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </router-link>
-          <div class="dropdown-menu" v-show="activeDropdown === 'products'" @mouseenter="showDropdown('products')" @mouseleave="hideDropdown">
+          <div
+            v-if="item.dropdown.length"
+            class="dropdown-menu"
+            v-show="activeDropdown === item.id"
+            @mouseenter="showDropdown(item.id)"
+            @mouseleave="hideDropdown"
+          >
             <div class="dropdown-content">
-              <router-link to="/products#comparison-matrix" class="dropdown-item" @click="closeMobileMenu">
-                <svg class="dropdown-item-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M3 3H13V13H3V3Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M8 3V13" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M3 8H13" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <RouterLink
+                v-for="dropdownItem in item.dropdown"
+                :key="dropdownItem.key"
+                class="dropdown-item"
+                :to="dropdownItem.to"
+                @click="closeMobileMenu"
+              >
+                <svg
+                  class="dropdown-item-icon"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M6 12L10 8L6 4"
+                    stroke="currentColor"
+                    stroke-width="1.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M3 8H9"
+                    stroke="currentColor"
+                    stroke-width="1.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
                 </svg>
                 <div class="dropdown-item-content">
-                  <span class="dropdown-item-title">产品对比矩阵 | Comparison Matrix</span>
-                  <span class="dropdown-item-desc">核心定位与功能对比</span>
+                  <span class="dropdown-item-title">{{ dropdownItem.title }}</span>
+                  <span class="dropdown-item-desc">{{ dropdownItem.description }}</span>
                 </div>
-              </router-link>
-              <router-link to="/products#livingkb-intro" class="dropdown-item" @click="closeMobileMenu">
-                <svg class="dropdown-item-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M4 6H12V10H4V6Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M2 2H14V14H2V2Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <circle cx="8" cy="8" r="1" fill="currentColor"/>
-                </svg>
-                <div class="dropdown-item-content">
-                  <span class="dropdown-item-title">LivingKB | Living Knowledge Base</span>
-                  <span class="dropdown-item-desc">企业知识库智能化平台</span>
-                </div>
-              </router-link>
-              <router-link to="/products#syndata-intro" class="dropdown-item" @click="closeMobileMenu">
-                <svg class="dropdown-item-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M2 14L8 2L14 14H2Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M6 10H10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <div class="dropdown-item-content">
-                  <span class="dropdown-item-title">SynData Platform | 合成数据平台</span>
-                  <span class="dropdown-item-desc">智能合成数据生成平台</span>
-                </div>
-              </router-link>
-              <router-link to="/products#synergy-value" class="dropdown-item" @click="closeMobileMenu">
-                <svg class="dropdown-item-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M8 1L9.5 6H15L10.5 9.5L12 15L8 11.5L4 15L5.5 9.5L1 6H6.5L8 1Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <div class="dropdown-item-content">
-                  <span class="dropdown-item-title">协同价值 | Synergy Value</span>
-                  <span class="dropdown-item-desc">双产品闭环生态价值</span>
-                </div>
-              </router-link>
-              <router-link to="/products#success-cases" class="dropdown-item" @click="closeMobileMenu">
-                <svg class="dropdown-item-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M6 8L7.5 9.5L10.5 6.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <div class="dropdown-item-content">
-                  <span class="dropdown-item-title">成功案例 | Success Cases</span>
-                  <span class="dropdown-item-desc">客户实施效果与反馈</span>
-                </div>
-              </router-link>
-            </div>
-          </div>
-        </li>
-
-        <li class="nav-item dropdown-wrapper" @mouseenter="showDropdown('technology')" @mouseleave="hideDropdown">
-          <router-link to="/technology" class="nav-link">
-            <div class="nav-bilingual">
-              <span class="nav-main">技术优势</span>
-              <span class="nav-separator">|</span>
-              <span class="nav-en">Technology</span>
-            </div>
-            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none">
-              <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </router-link>
-          <div class="dropdown-menu" v-show="activeDropdown === 'technology'" @mouseenter="showDropdown('technology')" @mouseleave="hideDropdown">
-            <div class="dropdown-content">
-              <router-link to="/technology#product-process" class="dropdown-item" @click="closeMobileMenu">
-                <svg class="dropdown-item-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M3 8H13" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M10 5L13 8L10 11" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <circle cx="5" cy="8" r="2" stroke="currentColor" stroke-width="1.2"/>
-                </svg>
-                <div class="dropdown-item-content">
-                  <span class="dropdown-item-title">技术流程 | Technical Process</span>
-                  <span class="dropdown-item-desc">从数据到智能决策的完整流程</span>
-                </div>
-              </router-link>
-              <router-link to="/technology#tech-advantages" class="dropdown-item" @click="closeMobileMenu">
-                <svg class="dropdown-item-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M8 1L9.5 6H15L10.5 9.5L12 15L8 11.5L4 15L5.5 9.5L1 6H6.5L8 1Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <div class="dropdown-item-content">
-                  <span class="dropdown-item-title">核心优势 | Core Advantages</span>
-                  <span class="dropdown-item-desc">六大技术优势详解</span>
-                </div>
-              </router-link>
-              <router-link to="/technology#performance-comparison" class="dropdown-item" @click="closeMobileMenu">
-                <svg class="dropdown-item-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M2 13L4 9L7 11L14 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M11 3H14V6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <div class="dropdown-item-content">
-                  <span class="dropdown-item-title">性能对比 | Performance</span>
-                  <span class="dropdown-item-desc">建图效率与准确率优势</span>
-                </div>
-              </router-link>
-              <router-link to="/technology#faq" class="dropdown-item" @click="closeMobileMenu">
-                <svg class="dropdown-item-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M6 6C6 5.33696 6.26339 4.70107 6.73223 4.23223C7.20107 3.76339 7.83696 3.5 8.5 3.5C9.16304 3.5 9.79893 3.76339 10.2678 4.23223C10.7366 4.70107 11 5.33696 11 6C11 6.66304 10.7366 7.29893 10.2678 7.76777C9.79893 8.23661 9.16304 8.5 8.5 8.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M8.5 11.5H8.51" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <div class="dropdown-item-content">
-                  <span class="dropdown-item-title">常见问题 | FAQ</span>
-                  <span class="dropdown-item-desc">技术问题解答</span>
-                </div>
-              </router-link>
-            </div>
-          </div>
-        </li>
-
-        <li class="nav-item dropdown-wrapper" @mouseenter="showDropdown('cases')" @mouseleave="hideDropdown">
-          <router-link to="/cases" class="nav-link">
-            <div class="nav-bilingual">
-              <span class="nav-main">客户案例</span>
-              <span class="nav-separator">|</span>
-              <span class="nav-en">Cases</span>
-            </div>
-            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none">
-              <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </router-link>
-          <div class="dropdown-menu" v-show="activeDropdown === 'cases'" @mouseenter="showDropdown('cases')" @mouseleave="hideDropdown">
-            <div class="dropdown-content">
-              <router-link to="/cases#industry-coverage" class="dropdown-item" @click="closeMobileMenu">
-                <svg class="dropdown-item-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M2 2H14V14H2V2Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M8 2V14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M2 8H14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <div class="dropdown-item-content">
-                  <span class="dropdown-item-title">行业覆盖 | Industry Coverage</span>
-                  <span class="dropdown-item-desc">金融、制造、云计算等行业</span>
-                </div>
-              </router-link>
-              <router-link to="/cases#detailed-cases" class="dropdown-item" @click="closeMobileMenu">
-                <svg class="dropdown-item-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M3 4H13V12H3V4Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M5 2V4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M11 2V4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M3 8H13" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <div class="dropdown-item-content">
-                  <span class="dropdown-item-title">详细案例 | Detailed Cases</span>
-                  <span class="dropdown-item-desc">客户挑战、解决方案、效果</span>
-                </div>
-              </router-link>
-              <router-link to="/cases#benchmark-comparison" class="dropdown-item" @click="closeMobileMenu">
-                <svg class="dropdown-item-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M2 13L4 9L7 11L14 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M11 3H14V6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <div class="dropdown-item-content">
-                  <span class="dropdown-item-title">标杆对比 | Benchmark</span>
-                  <span class="dropdown-item-desc">与行业标杆产品对比</span>
-                </div>
-              </router-link>
-            </div>
-          </div>
-        </li>
-
-        <li class="nav-item dropdown-wrapper" @mouseenter="showDropdown('company')" @mouseleave="hideDropdown">
-          <router-link to="/company" class="nav-link">
-            <div class="nav-bilingual">
-              <span class="nav-main">关于我们</span>
-              <span class="nav-separator">|</span>
-              <span class="nav-en">About</span>
-            </div>
-            <svg class="dropdown-icon" width="12" height="12" viewBox="0 0 12 12" fill="none">
-              <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </router-link>
-          <div class="dropdown-menu" v-show="activeDropdown === 'company'" @mouseenter="showDropdown('company')" @mouseleave="hideDropdown">
-            <div class="dropdown-content">
-              <router-link to="/company#about-dataarc" class="dropdown-item" @click="closeMobileMenu">
-                <svg class="dropdown-item-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M8 1L15 6V14H1V6L8 1Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M6 14V10H10V14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <div class="dropdown-item-content">
-                  <span class="dropdown-item-title">公司介绍 | About DataArc</span>
-                  <span class="dropdown-item-desc">公司愿景与发展理念</span>
-                </div>
-              </router-link>
-              <router-link to="/company#core-team" class="dropdown-item" @click="closeMobileMenu">
-                <svg class="dropdown-item-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M8 8C10.2091 8 12 6.20914 12 4C12 1.79086 10.2091 0 8 0C5.79086 0 4 1.79086 4 4C4 6.20914 5.79086 8 8 8Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M8 10C4.69 10 2 12.69 2 16H14C14 12.69 11.31 10 8 10Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <div class="dropdown-item-content">
-                  <span class="dropdown-item-title">核心团队 | Core Team</span>
-                  <span class="dropdown-item-desc">团队介绍与技术优势</span>
-                </div>
-              </router-link>
-              <router-link to="/company#funding-status" class="dropdown-item" @click="closeMobileMenu">
-                <svg class="dropdown-item-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M8 1V15" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M12 5L8 1L4 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M1 8H15" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <div class="dropdown-item-content">
-                  <span class="dropdown-item-title">融资情况 | Funding</span>
-                  <span class="dropdown-item-desc">融资轮次与投资机构</span>
-                </div>
-              </router-link>
-              <router-link to="/company#development-history" class="dropdown-item" @click="closeMobileMenu">
-                <svg class="dropdown-item-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M8 4V8L11 11" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <div class="dropdown-item-content">
-                  <span class="dropdown-item-title">发展历程 | Development</span>
-                  <span class="dropdown-item-desc">公司成长历程与里程碑</span>
-                </div>
-              </router-link>
+              </RouterLink>
             </div>
           </div>
         </li>
       </ul>
-      
+
       <div class="nav-actions">
-        <button 
+        <LanguageSwitcher />
+        <button
           class="mobile-menu-btn"
           @click="toggleMobileMenu"
           :class="{ 'mobile-menu-btn-active': isMobileMenuOpen }"
+          type="button"
+          aria-label="Toggle navigation"
         >
           <span class="menu-line"></span>
           <span class="menu-line"></span>
@@ -317,13 +106,95 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
-import ThemeToggle from './ThemeToggle.vue'
+import { ref, onMounted, onUnmounted, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+import LanguageSwitcher from './LanguageSwitcher.vue'
+
+const navDefinition = [
+  {
+    id: 'home',
+    route: '/',
+    dropdown: [
+      { key: 'market', route: '/', hash: '#market-opportunity' },
+      { key: 'products', route: '/', hash: '#products-overview' },
+      { key: 'technology', route: '/', hash: '#tech-advantages' },
+      { key: 'team', route: '/', hash: '#team-strength' },
+    ],
+  },
+  {
+    id: 'products',
+    route: '/products',
+    dropdown: [
+      { key: 'comparison', route: '/products', hash: '#comparison-matrix' },
+      { key: 'livingkb', route: '/products', hash: '#livingkb-intro' },
+      { key: 'syndata', route: '/products', hash: '#syndata-intro' },
+      { key: 'synergy', route: '/products', hash: '#synergy-value' },
+      { key: 'cases', route: '/products', hash: '#success-cases' },
+    ],
+  },
+  {
+    id: 'technology',
+    route: '/technology',
+    dropdown: [
+      { key: 'process', route: '/technology', hash: '#product-process' },
+      { key: 'advantages', route: '/technology', hash: '#tech-advantages' },
+      { key: 'performance', route: '/technology', hash: '#performance-comparison' },
+      { key: 'faq', route: '/technology', hash: '#faq' },
+    ],
+  },
+  {
+    id: 'cases',
+    route: '/cases',
+    dropdown: [
+      { key: 'coverage', route: '/cases', hash: '#industry-coverage' },
+      { key: 'detail', route: '/cases', hash: '#detailed-cases' },
+      { key: 'benchmark', route: '/cases', hash: '#benchmark-comparison' },
+    ],
+  },
+  {
+    id: 'company',
+    route: '/company',
+    dropdown: [
+      { key: 'about', route: '/company', hash: '#about-dataarc' },
+      { key: 'team', route: '/company', hash: '#core-team' },
+      { key: 'funding', route: '/company', hash: '#funding-status' },
+      { key: 'history', route: '/company', hash: '#development-history' },
+    ],
+  },
+]
 
 const isScrolled = ref(false)
 const isMobileMenuOpen = ref(false)
 const activeDropdown = ref(null)
 let hideTimer = null
+
+const { t, tm } = useI18n()
+
+const navItems = computed(() =>
+  navDefinition.map((item) => {
+    const dropdownMessages = tm(`header.dropdowns.${item.id}`) || {}
+    const dropdown = (item.dropdown ?? []).map((entry) => {
+      const message = dropdownMessages?.[entry.key] ?? {}
+      const targetRoute = entry.route ?? item.route
+      const to =
+        entry.to ??
+        (entry.hash
+          ? { path: targetRoute, hash: entry.hash }
+          : { path: targetRoute })
+      return {
+        ...entry,
+        title: message.title ?? '',
+        description: message.description ?? '',
+        to,
+      }
+    })
+    return {
+      ...item,
+      label: t(`nav.${item.id}.label`),
+      dropdown,
+    }
+  })
+)
 
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 20
@@ -362,6 +233,9 @@ onMounted(() => {
 
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
+  if (hideTimer) {
+    clearTimeout(hideTimer)
+  }
 })
 </script>
 
@@ -531,16 +405,16 @@ onUnmounted(() => {
 }
 
 .nav-link:hover {
-  background: rgba(74, 144, 180, 0.25);  /* 更深的蓝色，更高透明度 */
+  background: rgba(74, 144, 180, 0.25);
   transform: translateY(0);
 }
 
 .nav-link:hover .nav-main {
-  color: #4a90b4;  /* 更深的蓝色 */
+  color: #4a90b4;
 }
 
 .nav-link:hover .nav-en {
-  color: #4a90b4;  /* 更深的蓝色 */
+  color: #4a90b4;
   opacity: 1;
 }
 
@@ -554,12 +428,12 @@ onUnmounted(() => {
 }
 
 .nav-link.router-link-active .nav-main {
-  color: #4a90b4;  /* 更深的蓝色 */
+  color: #4a90b4;
   font-weight: 600;
 }
 
 .nav-link.router-link-active .nav-en {
-  color: #4a90b4;  /* 更深的蓝色 */
+  color: #4a90b4;
   opacity: 1;
 }
 
@@ -597,7 +471,7 @@ onUnmounted(() => {
 }
 
 .dropdown-item:hover {
-  background: rgba(74, 144, 180, 0.15);  /* 更深的蓝色，更高透明度 */
+  background: rgba(74, 144, 180, 0.15);
   transform: translateX(0);
   margin: 0;
 }
@@ -610,7 +484,7 @@ onUnmounted(() => {
 }
 
 .dropdown-item:hover .dropdown-item-icon {
-  color: #4a90b4;  /* 更深的蓝色 */
+  color: #4a90b4;
 }
 
 .dropdown-item-content {
@@ -628,7 +502,7 @@ onUnmounted(() => {
 }
 
 .dropdown-item:hover .dropdown-item-title {
-  color: #4a90b4;  /* 更深的蓝色 */
+  color: #4a90b4;
 }
 
 .dropdown-item-desc {
@@ -794,8 +668,6 @@ onUnmounted(() => {
   .brand-text {
     font-size: var(--font-lg);
   }
-  
-
 }
 
 @media (max-width: 480px) {
@@ -823,8 +695,6 @@ onUnmounted(() => {
   .brand-text {
     font-size: var(--font-base);
   }
-  
-
   
   .dropdown-item {
     padding: var(--space-2);
@@ -919,5 +789,4 @@ onUnmounted(() => {
     background: rgba(255, 255, 255, 0.9);
   }
 }
-</style> 
- 
+</style>
