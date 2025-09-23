@@ -537,7 +537,7 @@ const toggleFaq = (type, index) => {
 }
 
 .step-content p {
-  color: #64748b;
+  color: var(--text-secondary);
   line-height: 1.6;
   font-size: 0.95rem;
 }
@@ -612,13 +612,13 @@ const toggleFaq = (type, index) => {
 
 .tech-section h2 {
   font-size: 2rem;
-  color: #1e293b;
+  color: var(--text-primary);
   margin-bottom: 16px;
   font-weight: 600;
 }
 
 .tech-subtitle {
-  color: #64748b;
+  color: var(--text-secondary);
   max-width: 800px;
   margin: 0 auto 50px;
   line-height: 1.6;
@@ -652,14 +652,14 @@ const toggleFaq = (type, index) => {
 }
 
 .tech-item h4 {
-  color: #1e293b;
+  color: var(--text-primary);
   font-size: 1.1rem;
   margin-bottom: 8px;
   font-weight: 600;
 }
 
 .tech-item p {
-  color: #64748b;
+  color: var(--text-secondary);
   font-size: 0.9rem;
 }
 
@@ -672,7 +672,7 @@ const toggleFaq = (type, index) => {
 .faq-section h2 {
   text-align: center;
   font-size: 2rem;
-  color: #1e293b;
+  color: var(--text-primary);
   margin-bottom: 40px;
   font-weight: 600;
 }
@@ -727,7 +727,7 @@ const toggleFaq = (type, index) => {
 }
 
 .faq-question:hover {
-  background: #f8fafc;
+  background: rgba(var(--primary-rgb), 0.08);
 }
 
 .faq-number {
@@ -748,7 +748,7 @@ const toggleFaq = (type, index) => {
 .faq-text {
   flex: 1;
   font-weight: 600;
-  color: #1e293b;
+  color: var(--text-primary);
   font-size: 0.95rem;
 }
 
@@ -765,7 +765,7 @@ const toggleFaq = (type, index) => {
 }
 
 .faq-answer p {
-  color: #64748b;
+  color: var(--text-secondary);
   line-height: 1.6;
   font-size: 0.9rem;
 }

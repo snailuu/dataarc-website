@@ -1553,13 +1553,15 @@ import AppFooter from '@/components/AppFooter.vue'
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
   color: white;
   padding: var(--space-6) var(--space-8);
+  padding-left: calc(var(--space-8) + 70px);
   position: relative;
 }
 
 .module-number {
   position: absolute;
-  top: -10px;
-  left: var(--space-8);
+  top: 50%;
+  left: var(--space-6);
+  transform: translateY(-50%);
   width: 60px;
   height: 60px;
   background: white;
@@ -2010,7 +2012,12 @@ import AppFooter from '@/components/AppFooter.vue'
   
   .module-number {
     position: static;
+    transform: none;
     margin-bottom: var(--space-4);
+  }
+  
+  .module-header {
+    padding-left: var(--space-6);
   }
   
   .module-title,
