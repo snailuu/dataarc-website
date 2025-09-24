@@ -182,7 +182,7 @@ export default {
       {
         icon: '/images/icons/团队规模图标.png',
         iconAlt: 'Team size',
-        stat: '12',
+        stat: '12 people',
         label: 'Elite Team Members',
         description: 'A full-time core team, staying lean at 15–20 specialists.',
       },

@@ -1,7 +1,7 @@
 <template>
   <div class="cases-page">
     <AppHeader />
-    
+
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-background">
@@ -68,13 +68,13 @@
             <p class="content-en">DataArc has successful practices across multiple core industry sectors</p>
           </div>
         </div>
-        
+
         <div class="industry-grid">
           <div class="industry-item">
-                            <div class="icon-wrapper">
-                  <img src="/images/icons/金融投资行业图标.png" alt="金融投资行业" class="icon-img large">
-                  <div class="icon-glow"></div>
-                </div>
+            <div class="icon-wrapper">
+              <img src="/images/icons/金融投资行业图标.png" alt="金融投资行业" class="icon-img large">
+              <div class="icon-glow"></div>
+            </div>
             <div class="title-bilingual">
               <h3 class="title-main">金融投资</h3>
               <span class="title-divider">|</span>
@@ -90,9 +90,9 @@
               <span class="highlight">知识管理 | Knowledge Management</span>
             </div>
           </div>
-          
+
           <div class="industry-item">
-                            <img src="/images/icons/制造业图标.png" alt="制造业" class="icon-img large">
+            <img src="/images/icons/制造业图标.png" alt="制造业" class="icon-img large">
             <div class="title-bilingual">
               <h3 class="title-main">制造业</h3>
               <span class="title-divider">|</span>
@@ -108,12 +108,12 @@
               <span class="highlight">人才培训 | Talent Training</span>
             </div>
           </div>
-          
+
           <div class="industry-item">
             <div class="icon-wrapper">
-                <img src="/images/icons/云计算图标.png" alt="云计算" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
+              <img src="/images/icons/云计算图标.png" alt="云计算" class="icon-img">
+              <div class="icon-glow"></div>
+            </div>
             <div class="title-bilingual">
               <h3 class="title-main">云计算</h3>
               <span class="title-divider">|</span>
@@ -129,12 +129,12 @@
               <span class="highlight">平台服务 | Platform Services</span>
             </div>
           </div>
-          
+
           <div class="industry-item">
             <div class="icon-wrapper">
-                <img src="/images/icons/教育培训图标.png" alt="教育培训" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
+              <img src="/images/icons/教育培训图标.png" alt="教育培训" class="icon-img">
+              <div class="icon-glow"></div>
+            </div>
             <div class="title-bilingual">
               <h3 class="title-main">教育培训</h3>
               <span class="title-divider">|</span>
@@ -150,12 +150,12 @@
               <span class="highlight">考试系统 | Exam System</span>
             </div>
           </div>
-          
+
           <div class="industry-item">
             <div class="icon-wrapper">
-                <img src="/images/icons/AI服务图标.png" alt="AI服务" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
+              <img src="/images/icons/AI服务图标.png" alt="AI服务" class="icon-img">
+              <div class="icon-glow"></div>
+            </div>
             <div class="title-bilingual">
               <h3 class="title-main">AI服务</h3>
               <span class="title-divider">|</span>
@@ -186,7 +186,8 @@
           </h2>
           <div class="content-bilingual">
             <p class="content-main">深入了解头部企业的AI转型实践与显著成果</p>
-            <p class="content-en">In-depth insights into leading enterprises' AI transformation practices and significant results</p>
+            <p class="content-en">In-depth insights into leading enterprises' AI transformation practices and
+              significant results</p>
           </div>
         </div>
 
@@ -200,7 +201,7 @@
                   <h3 class="title-main">头部投资机构</h3>
                   <span class="title-divider">|</span>
                   <span class="title-en">Leading Investment Institution</span>
-              </div>
+                </div>
                 <div class="content-bilingual">
                   <span class="content-main">金融知识库</span>
                   <span class="content-en">Financial Knowledge Base</span>
@@ -211,7 +212,7 @@
                 <span class="content-en">Finance & Investment</span>
               </div>
             </div>
-            
+
             <div class="case-body">
               <div class="case-section">
                 <div class="title-bilingual">
@@ -221,22 +222,23 @@
                 </div>
                 <div class="content-bilingual">
                   <p class="content-main">国内知名投资机构，管理资产规模数百亿，专注于科技、医疗、消费等多个领域的投资</p>
-                  <p class="content-en">Well-known domestic investment institution managing hundreds of billions in assets, focusing on technology, healthcare, consumer goods and other sectors</p>
+                  <p class="content-en">Well-known domestic investment institution managing hundreds of billions in
+                    assets, focusing on technology, healthcare, consumer goods and other sectors</p>
                 </div>
               </div>
-              
+
               <div class="case-section">
                 <div class="title-bilingual">
                   <h4 class="title-main">业务挑战</h4>
                   <span class="title-divider">|</span>
                   <span class="title-en">Business Challenges</span>
-                  </div>
+                </div>
                 <div class="challenge-list">
                   <div class="challenge-item">
                     <div class="icon-wrapper">
-                <img src="/images/icons/数据分析图标.png" alt="数据分析" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
+                      <img src="/images/icons/数据分析图标.png" alt="数据分析" class="icon-img">
+                      <div class="icon-glow"></div>
+                    </div>
                     <div class="content-bilingual">
                       <p class="content-main">投资项目信息管理与分析效率低下</p>
                       <p class="content-en">Low efficiency in investment project information management and analysis</p>
@@ -244,9 +246,9 @@
                   </div>
                   <div class="challenge-item">
                     <div class="icon-wrapper">
-                <img src="/images/icons/知识检索图标.png" alt="知识检索" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
+                      <img src="/images/icons/知识检索图标.png" alt="知识检索" class="icon-img">
+                      <div class="icon-glow"></div>
+                    </div>
                     <div class="content-bilingual">
                       <p class="content-main">知识分散在各个系统，难以有效利用</p>
                       <p class="content-en">Knowledge scattered across systems, difficult to utilize effectively</p>
@@ -254,16 +256,16 @@
                   </div>
                   <div class="challenge-item">
                     <div class="icon-wrapper">
-                <img src="/images/icons/时间效率图标.png" alt="时间效率" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
+                      <img src="/images/icons/时间效率图标.png" alt="时间效率" class="icon-img">
+                      <div class="icon-glow"></div>
+                    </div>
                     <div class="content-bilingual">
                       <p class="content-main">项目尽调周期长，决策效率有待提升</p>
                       <p class="content-en">Long due diligence cycles, decision efficiency needs improvement</p>
                     </div>
+                  </div>
                 </div>
               </div>
-            </div>
 
               <div class="case-section">
                 <div class="title-bilingual">
@@ -286,7 +288,8 @@
                       </div>
                       <div class="content-bilingual">
                         <p class="content-main">整合企业尽调报告、财务数据、市场分析等多源信息，构建动态投资知识图谱</p>
-                        <p class="content-en">Integrate multi-source information including due diligence reports, financial data, and market analysis to build dynamic investment knowledge graphs</p>
+                        <p class="content-en">Integrate multi-source information including due diligence reports,
+                          financial data, and market analysis to build dynamic investment knowledge graphs</p>
                       </div>
                     </div>
                     <div class="solution-module">
@@ -297,7 +300,8 @@
                       </div>
                       <div class="content-bilingual">
                         <p class="content-main">基于ToG技术的投资分析Agent，提供项目评估、风险分析、行业对比等功能</p>
-                        <p class="content-en">Investment analysis Agent based on ToG technology, providing project evaluation, risk analysis, industry comparison and other functions</p>
+                        <p class="content-en">Investment analysis Agent based on ToG technology, providing project
+                          evaluation, risk analysis, industry comparison and other functions</p>
                       </div>
                     </div>
                     <div class="solution-module">
@@ -308,13 +312,14 @@
                       </div>
                       <div class="content-bilingual">
                         <p class="content-main">利用RAG技术实现精准检索，为投资决策提供全面的知识支撑</p>
-                        <p class="content-en">Utilize RAG technology for precise retrieval, providing comprehensive knowledge support for investment decisions</p>
+                        <p class="content-en">Utilize RAG technology for precise retrieval, providing comprehensive
+                          knowledge support for investment decisions</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              
+
               <div class="case-section">
                 <div class="title-bilingual">
                   <h4 class="title-main">实施效果</h4>
@@ -324,9 +329,9 @@
                 <div class="results-grid">
                   <div class="result-item">
                     <div class="icon-wrapper">
-                <img src="/images/icons/效率提升图标.png" alt="效率提升" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
+                      <img src="/images/icons/效率提升图标.png" alt="效率提升" class="icon-img">
+                      <div class="icon-glow"></div>
+                    </div>
                     <div class="title-bilingual">
                       <h5 class="title-main">项目分析效率提升</h5>
                       <span class="title-divider">|</span>
@@ -334,14 +339,15 @@
                     </div>
                     <div class="content-bilingual">
                       <p class="content-main">尽调周期缩短30%，分析准确性显著提高</p>
-                      <p class="content-en">Due diligence cycle reduced by 30%, analysis accuracy significantly improved</p>
+                      <p class="content-en">Due diligence cycle reduced by 30%, analysis accuracy significantly improved
+                      </p>
                     </div>
                   </div>
                   <div class="result-item">
                     <div class="icon-wrapper">
-                <img src="/images/icons/知识检索图标.png" alt="知识检索" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
+                      <img src="/images/icons/知识检索图标.png" alt="知识检索" class="icon-img">
+                      <div class="icon-glow"></div>
+                    </div>
                     <div class="title-bilingual">
                       <h5 class="title-main">知识检索速度改善</h5>
                       <span class="title-divider">|</span>
@@ -354,9 +360,9 @@
                   </div>
                   <div class="result-item">
                     <div class="icon-wrapper">
-                <img src="/images/icons/决策质量图标.png" alt="决策质量" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
+                      <img src="/images/icons/决策质量图标.png" alt="决策质量" class="icon-img">
+                      <div class="icon-glow"></div>
+                    </div>
                     <div class="title-bilingual">
                       <h5 class="title-main">决策质量提升</h5>
                       <span class="title-divider">|</span>
@@ -364,7 +370,8 @@
                     </div>
                     <div class="content-bilingual">
                       <p class="content-main">基于全量数据的智能分析，降低投资风险</p>
-                      <p class="content-en">Intelligent analysis based on comprehensive data, reducing investment risks</p>
+                      <p class="content-en">Intelligent analysis based on comprehensive data, reducing investment risks
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -392,7 +399,7 @@
                 <span class="content-en">AI Services</span>
               </div>
             </div>
-            
+
             <div class="case-body">
               <div class="case-section">
                 <div class="title-bilingual">
@@ -402,10 +409,11 @@
                 </div>
                 <div class="content-bilingual">
                   <p class="content-main">国内领先的银行AI客服解决方案提供商，服务于多家大型银行，处理日均百万级客服咨询</p>
-                  <p class="content-en">Leading domestic provider of AI customer service solutions for banks, serving multiple large banks and handling millions of daily customer inquiries</p>
+                  <p class="content-en">Leading domestic provider of AI customer service solutions for banks, serving
+                    multiple large banks and handling millions of daily customer inquiries</p>
                 </div>
               </div>
-              
+
               <div class="case-section">
                 <div class="title-bilingual">
                   <h4 class="title-main">业务挑战</h4>
@@ -415,9 +423,9 @@
                 <div class="challenge-list">
                   <div class="challenge-item">
                     <div class="icon-wrapper">
-                <img src="/images/icons/准确率下降图标.png" alt="准确率下降" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
+                      <img src="/images/icons/准确率下降图标.png" alt="准确率下降" class="icon-img">
+                      <div class="icon-glow"></div>
+                    </div>
                     <div class="content-bilingual">
                       <p class="content-main">意图识别准确率仅为60%，影响客户体验</p>
                       <p class="content-en">Intent recognition accuracy only 60%, affecting customer experience</p>
@@ -425,9 +433,9 @@
                   </div>
                   <div class="challenge-item">
                     <div class="icon-wrapper">
-                <img src="/images/icons/数据稀缺图标.png" alt="数据稀缺" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
+                      <img src="/images/icons/数据稀缺图标.png" alt="数据稀缺" class="icon-img">
+                      <div class="icon-glow"></div>
+                    </div>
                     <div class="content-bilingual">
                       <p class="content-main">训练数据稀缺，特别是长尾场景数据不足</p>
                       <p class="content-en">Scarce training data, especially insufficient long-tail scenario data</p>
@@ -435,17 +443,18 @@
                   </div>
                   <div class="challenge-item">
                     <div class="icon-wrapper">
-                <img src="/images/icons/迭代周期图标.png" alt="迭代周期" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
+                      <img src="/images/icons/迭代周期图标.png" alt="迭代周期" class="icon-img">
+                      <div class="icon-glow"></div>
+                    </div>
                     <div class="content-bilingual">
                       <p class="content-main">模型迭代周期长，难以快速响应业务需求</p>
-                      <p class="content-en">Long model iteration cycles, difficult to respond quickly to business needs</p>
+                      <p class="content-en">Long model iteration cycles, difficult to respond quickly to business needs
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
-              
+
               <div class="case-section">
                 <div class="title-bilingual">
                   <h4 class="title-main">解决方案</h4>
@@ -467,7 +476,8 @@
                       </div>
                       <div class="content-bilingual">
                         <p class="content-main">基于SoG技术生成高质量银行客服对话数据，覆盖各种业务场景</p>
-                        <p class="content-en">Generate high-quality banking customer service dialog data based on SoG technology, covering various business scenarios</p>
+                        <p class="content-en">Generate high-quality banking customer service dialog data based on SoG
+                          technology, covering various business scenarios</p>
                       </div>
                     </div>
                     <div class="solution-module">
@@ -478,7 +488,8 @@
                       </div>
                       <div class="content-bilingual">
                         <p class="content-main">利用合成数据扩充训练集，重点补强长尾场景和新业务场景</p>
-                        <p class="content-en">Use synthetic data to expand training sets, focusing on strengthening long-tail and new business scenarios</p>
+                        <p class="content-en">Use synthetic data to expand training sets, focusing on strengthening
+                          long-tail and new business scenarios</p>
                       </div>
                     </div>
                     <div class="solution-module">
@@ -489,13 +500,14 @@
                       </div>
                       <div class="content-bilingual">
                         <p class="content-main">建立合成数据驱动的模型迭代流程，快速响应业务变化</p>
-                        <p class="content-en">Establish synthetic data-driven model iteration process to quickly respond to business changes</p>
+                        <p class="content-en">Establish synthetic data-driven model iteration process to quickly respond
+                          to business changes</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              
+
               <div class="case-section">
                 <div class="title-bilingual">
                   <h4 class="title-main">实施效果</h4>
@@ -505,9 +517,9 @@
                 <div class="results-grid">
                   <div class="result-item highlighted-result">
                     <div class="icon-wrapper">
-                <img src="/images/icons/准确率提升图标.png" alt="准确率提升" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
+                      <img src="/images/icons/准确率提升图标.png" alt="准确率提升" class="icon-img">
+                      <div class="icon-glow"></div>
+                    </div>
                     <div class="title-bilingual">
                       <h5 class="title-main">意图识别准确率提升</h5>
                       <span class="title-divider">|</span>
@@ -520,9 +532,9 @@
                   </div>
                   <div class="result-item">
                     <div class="icon-wrapper">
-                <img src="/images/icons/数据质量图标.png" alt="数据质量" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
+                      <img src="/images/icons/数据质量图标.png" alt="数据质量" class="icon-img">
+                      <div class="icon-glow"></div>
+                    </div>
                     <div class="title-bilingual">
                       <h5 class="title-main">训练数据质量改善</h5>
                       <span class="title-divider">|</span>
@@ -535,9 +547,9 @@
                   </div>
                   <div class="result-item">
                     <div class="icon-wrapper">
-                <img src="/images/icons/迭代速度图标.png" alt="迭代速度" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
+                      <img src="/images/icons/迭代速度图标.png" alt="迭代速度" class="icon-img">
+                      <div class="icon-glow"></div>
+                    </div>
                     <div class="title-bilingual">
                       <h5 class="title-main">模型迭代速度提升</h5>
                       <span class="title-divider">|</span>
@@ -578,7 +590,8 @@
                   为大型保险公司提供AI智能客服解决方案，通过合成数据技术显著提升客服系统的对话质量和处理效率。
                 </p>
                 <p class="content-en">
-                  Provide AI smart customer service solutions for large insurance companies, significantly improving dialog quality and processing efficiency through synthetic data technology.
+                  Provide AI smart customer service solutions for large insurance companies, significantly improving
+                  dialog quality and processing efficiency through synthetic data technology.
                 </p>
               </div>
             </div>
@@ -586,7 +599,7 @@
               <div class="case-placeholder">【需要图片：保险行业智能客服案例总览】</div>
             </div>
           </div>
-          
+
           <div class="case-challenge">
             <div class="title-bilingual">
               <h4 class="title-main">业务挑战</h4>
@@ -595,10 +608,11 @@
             </div>
             <div class="content-bilingual">
               <p class="content-main">提升AI保险客服的对话质量，解决长尾问题和反例问题，降低人工转接率</p>
-              <p class="content-en">Improve AI insurance customer service dialog quality, solve long-tail and counter-example issues, reduce human transfer rate</p>
+              <p class="content-en">Improve AI insurance customer service dialog quality, solve long-tail and
+                counter-example issues, reduce human transfer rate</p>
             </div>
           </div>
-          
+
           <div class="case-solution">
             <div class="title-bilingual">
               <h4 class="title-main">DataArc解决方案</h4>
@@ -607,22 +621,23 @@
             </div>
             <div class="content-bilingual">
               <p class="content-main">通过合成数据技术，为AI客服模型提供高质量训练数据，优化罕见问题和长尾知识的处理能力</p>
-              <p class="content-en">Through synthetic data technology, provide high-quality training data for AI customer service models, optimizing handling of rare and long-tail knowledge</p>
+              <p class="content-en">Through synthetic data technology, provide high-quality training data for AI
+                customer service models, optimizing handling of rare and long-tail knowledge</p>
             </div>
           </div>
-          
-              <div class="case-results">
+
+          <div class="case-results">
             <div class="title-bilingual">
               <h4 class="title-main">业务效果</h4>
               <span class="title-divider">|</span>
               <span class="title-en">Business Results</span>
             </div>
             <div class="results-grid">
-                <div class="result-item">
+              <div class="result-item">
                 <div class="icon-wrapper">
-                <img src="/images/icons/良品率提升图标.png" alt="良品率提升" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
+                  <img src="/images/icons/良品率提升图标.png" alt="良品率提升" class="icon-img">
+                  <div class="icon-glow"></div>
+                </div>
                 <div class="result-stat">
                   <span class="result-number">+15.5%</span>
                   <div class="result-label-bilingual">
@@ -630,12 +645,12 @@
                     <span class="result-en">Quality Rate Improvement</span>
                   </div>
                 </div>
-                </div>
-                <div class="result-item">
-                <div class="icon-wrapper">
-                <img src="/images/icons/长尾问题图标.png" alt="长尾问题" class="icon-img">
-                <div class="icon-glow"></div>
               </div>
+              <div class="result-item">
+                <div class="icon-wrapper">
+                  <img src="/images/icons/长尾问题图标.png" alt="长尾问题" class="icon-img">
+                  <div class="icon-glow"></div>
+                </div>
                 <div class="result-stat">
                   <span class="result-number">90%</span>
                   <div class="result-label-bilingual">
@@ -646,9 +661,9 @@
               </div>
               <div class="result-item">
                 <div class="icon-wrapper">
-                <img src="/images/icons/转接率图标.png" alt="转接率" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
+                  <img src="/images/icons/转接率图标.png" alt="转接率" class="icon-img">
+                  <div class="icon-glow"></div>
+                </div>
                 <div class="result-stat">
                   <span class="result-number">-60%</span>
                   <div class="result-label-bilingual">
@@ -669,26 +684,27 @@
                 <h3 class="title-main">金融领域 - IDEA FinAI经济超脑</h3>
                 <span class="title-divider">|</span>
                 <span class="title-en">Finance - IDEA FinAI Economic Super Brain</span>
-            </div>
+              </div>
               <div class="tag-group">
                 <span class="tag">金融科技 | FinTech</span>
                 <span class="tag">经济分析 | Economic Analysis</span>
                 <span class="tag">智能投研 | Smart Investment Research</span>
-            </div>
+              </div>
               <div class="content-bilingual">
                 <p class="content-main">
                   与IDEA研究院合作开发FinAI经济超脑，通过语境图谱技术提升金融数据分析和投研能力。
                 </p>
                 <p class="content-en">
-                  Collaborate with IDEA Institute to develop FinAI Economic Super Brain, enhancing financial data analysis and investment research capabilities through context graph technology.
+                  Collaborate with IDEA Institute to develop FinAI Economic Super Brain, enhancing financial data
+                  analysis and investment research capabilities through context graph technology.
                 </p>
-            </div>
+              </div>
             </div>
             <div class="case-visual">
               <div class="case-placeholder">【需要图片：金融IDEA FinAI经济超脑】</div>
             </div>
           </div>
-          
+
           <div class="case-challenge">
             <div class="title-bilingual">
               <h4 class="title-main">业务挑战</h4>
@@ -697,10 +713,11 @@
             </div>
             <div class="content-bilingual">
               <p class="content-main">构建企业知识图谱，提升竞对分析与行业监控的效率，实现跨文档复杂推理</p>
-              <p class="content-en">Build enterprise knowledge graphs, improve efficiency of competitive analysis and industry monitoring, achieve complex cross-document reasoning</p>
+              <p class="content-en">Build enterprise knowledge graphs, improve efficiency of competitive analysis and
+                industry monitoring, achieve complex cross-document reasoning</p>
             </div>
           </div>
-          
+
           <div class="case-solution">
             <div class="title-bilingual">
               <h4 class="title-main">DataArc解决方案</h4>
@@ -709,10 +726,11 @@
             </div>
             <div class="content-bilingual">
               <p class="content-main">通过语境图谱技术，实现金融行业企业知识的结构化管理，自动化采集海量数据并识别行业属性</p>
-              <p class="content-en">Through context graph technology, achieve structured management of financial industry enterprise knowledge, automatically collect massive data and identify industry attributes</p>
+              <p class="content-en">Through context graph technology, achieve structured management of financial
+                industry enterprise knowledge, automatically collect massive data and identify industry attributes</p>
             </div>
           </div>
-          
+
           <div class="case-results">
             <div class="title-bilingual">
               <h4 class="title-main">业务效果</h4>
@@ -722,9 +740,9 @@
             <div class="results-grid">
               <div class="result-item">
                 <div class="icon-wrapper">
-                <img src="/images/icons/数据增量图标.png" alt="数据增量" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
+                  <img src="/images/icons/数据增量图标.png" alt="数据增量" class="icon-img">
+                  <div class="icon-glow"></div>
+                </div>
                 <div class="result-stat">
                   <span class="result-number">20.3倍</span>
                   <div class="result-label-bilingual">
@@ -735,9 +753,9 @@
               </div>
               <div class="result-item">
                 <div class="icon-wrapper">
-                <img src="/images/icons/推理准确率图标.png" alt="推理准确率" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
+                  <img src="/images/icons/推理准确率图标.png" alt="推理准确率" class="icon-img">
+                  <div class="icon-glow"></div>
+                </div>
                 <div class="result-stat">
                   <span class="result-number">+21.2%</span>
                   <div class="result-label-bilingual">
@@ -748,9 +766,9 @@
               </div>
               <div class="result-item">
                 <div class="icon-wrapper">
-                <img src="/images/icons/识别准确率图标.png" alt="识别准确率" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
+                  <img src="/images/icons/识别准确率图标.png" alt="识别准确率" class="icon-img">
+                  <div class="icon-glow"></div>
+                </div>
                 <div class="result-stat">
                   <span class="result-number">80%+</span>
                   <div class="result-label-bilingual">
@@ -782,7 +800,9 @@
                   为上海高金提供金融知识大模型，通过合成数据技术生成50万金融问答对，打造超越GPT-4的专业模型。
                 </p>
                 <p class="content-en">
-                  Provide financial knowledge large model for Shanghai Advanced Institute of Finance, generate 500,000 financial Q&A pairs through synthetic data technology, creating a professional model that surpasses GPT-4.
+                  Provide financial knowledge large model for Shanghai Advanced Institute of Finance, generate 500,000
+                  financial Q&A pairs through synthetic data technology, creating a professional model that surpasses
+                  GPT-4.
                 </p>
               </div>
             </div>
@@ -790,7 +810,7 @@
               <div class="case-placeholder">【需要图片：上海高金金融知识大模型】</div>
             </div>
           </div>
-          
+
           <div class="case-challenge">
             <div class="title-bilingual">
               <h4 class="title-main">业务挑战</h4>
@@ -799,10 +819,11 @@
             </div>
             <div class="content-bilingual">
               <p class="content-main">解决金融大模型的题库不足问题，提升考试通过率，打造专业级金融知识AI</p>
-              <p class="content-en">Solve the problem of insufficient question banks for financial large models, improve exam pass rates, create professional-level financial knowledge AI</p>
+              <p class="content-en">Solve the problem of insufficient question banks for financial large models, improve
+                exam pass rates, create professional-level financial knowledge AI</p>
             </div>
           </div>
-          
+
           <div class="case-solution">
             <div class="title-bilingual">
               <h4 class="title-main">DataArc解决方案</h4>
@@ -811,10 +832,11 @@
             </div>
             <div class="content-bilingual">
               <p class="content-main">通过合成数据技术生成大量高质量金融问答对，训练百亿参数级的金融知识大模型</p>
-              <p class="content-en">Generate large amounts of high-quality financial Q&A pairs through synthetic data technology, train a hundred-billion parameter financial knowledge large model</p>
+              <p class="content-en">Generate large amounts of high-quality financial Q&A pairs through synthetic data
+                technology, train a hundred-billion parameter financial knowledge large model</p>
             </div>
           </div>
-          
+
           <div class="case-results">
             <div class="title-bilingual">
               <h4 class="title-main">业务效果</h4>
@@ -824,9 +846,9 @@
             <div class="results-grid">
               <div class="result-item">
                 <div class="icon-wrapper">
-                <img src="/images/icons/题库数量图标.png" alt="题库数量" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
+                  <img src="/images/icons/题库数量图标.png" alt="题库数量" class="icon-img">
+                  <div class="icon-glow"></div>
+                </div>
                 <div class="result-stat">
                   <span class="result-number">50万</span>
                   <div class="result-label-bilingual">
@@ -837,9 +859,9 @@
               </div>
               <div class="result-item">
                 <div class="icon-wrapper">
-                <img src="/images/icons/考试通过图标.png" alt="考试通过" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
+                  <img src="/images/icons/考试通过图标.png" alt="考试通过" class="icon-img">
+                  <div class="icon-glow"></div>
+                </div>
                 <div class="result-stat">
                   <span class="result-number">CPA+CFA</span>
                   <div class="result-label-bilingual">
@@ -850,9 +872,9 @@
               </div>
               <div class="result-item">
                 <div class="icon-wrapper">
-                <img src="/images/icons/性能超越图标.png" alt="性能超越" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
+                  <img src="/images/icons/性能超越图标.png" alt="性能超越" class="icon-img">
+                  <div class="icon-glow"></div>
+                </div>
                 <div class="result-stat">
                   <span class="result-number">超越GPT-4</span>
                   <div class="result-label-bilingual">
@@ -881,7 +903,7 @@
             <p class="content-en">DataArc's competitive advantages compared to international leading solutions</p>
           </div>
         </div>
-        
+
         <div class="benchmarks-grid">
           <div class="benchmark-card">
             <div class="title-bilingual">
@@ -912,7 +934,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="benchmark-card">
             <div class="title-bilingual">
               <h3 class="title-main">数据合规风险</h3>
@@ -942,7 +964,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="benchmark-card">
             <div class="title-bilingual">
               <h3 class="title-main">Gretel对比优势</h3>
@@ -975,7 +997,7 @@
         </div>
       </div>
     </section>
-    
+
     <AppFooter />
   </div>
 </template>
@@ -1172,6 +1194,11 @@ const cases = [
   animation: fadeInUp 1s var(--ease-out);
 }
 
+.case-title-group .content-bilingual{
+  display: flex;
+  justify-content: center;
+}
+
 /* Hero section文字颜色修复 */
 .hero .company-super-title .company-main-title,
 .hero .company-super-title .company-future-title {
@@ -1223,6 +1250,8 @@ const cases = [
 .case-card {
   position: relative;
   transition: all var(--duration-normal) var(--ease-out);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
 }
 
 .case-card:hover {
@@ -1330,6 +1359,7 @@ const cases = [
 
 .case-results {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   gap: var(--space-4);
 }
@@ -1459,21 +1489,49 @@ const cases = [
   animation: fadeInUp 0.6s var(--ease-out);
 }
 
-.case-card.case-1 { animation-delay: 0.1s; }
-.case-card.case-2 { animation-delay: 0.2s; }
-.case-card.case-3 { animation-delay: 0.3s; }
-.case-card.case-4 { animation-delay: 0.4s; }
-.case-card.case-5 { animation-delay: 0.5s; }
-.case-card.case-6 { animation-delay: 0.6s; }
+.case-card.case-1 {
+  animation-delay: 0.1s;
+}
+
+.case-card.case-2 {
+  animation-delay: 0.2s;
+}
+
+.case-card.case-3 {
+  animation-delay: 0.3s;
+}
+
+.case-card.case-4 {
+  animation-delay: 0.4s;
+}
+
+.case-card.case-5 {
+  animation-delay: 0.5s;
+}
+
+.case-card.case-6 {
+  animation-delay: 0.6s;
+}
 
 .stat-card {
   animation: fadeInScale 0.6s var(--ease-out);
 }
 
-.stat-card:nth-child(1) { animation-delay: 0.1s; }
-.stat-card:nth-child(2) { animation-delay: 0.2s; }
-.stat-card:nth-child(3) { animation-delay: 0.3s; }
-.stat-card:nth-child(4) { animation-delay: 0.4s; }
+.stat-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.stat-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.stat-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.stat-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
 
 /* ===== Responsive Design ===== */
 @media (max-width: 768px) {
@@ -1481,20 +1539,29 @@ const cases = [
     min-height: 60vh;
     padding: var(--space-20) 0;
   }
-  
+
   .hero-title {
     font-size: var(--font-4xl);
   }
-  
+
   .cases-grid {
     grid-template-columns: 1fr;
     gap: var(--space-6);
   }
-  
+
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
+
+  .title-bilingual{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
   .case-results {
     flex-direction: column;
     gap: var(--space-2);
@@ -1505,19 +1572,26 @@ const cases = [
   .hero-title {
     font-size: var(--font-3xl);
   }
-  
+
   .stats-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .cases-grid {
     gap: var(--space-4);
   }
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 /* ===== Industry Coverage Section ===== */
@@ -1579,7 +1653,8 @@ const cases = [
 }
 
 /* ===== Detailed Cases Section ===== */
-.detailed-cases, .additional-cases {
+.detailed-cases,
+.additional-cases {
   padding: var(--space-32) 0;
   background: var(--bg-primary);
 }
@@ -1591,6 +1666,9 @@ const cases = [
   border-radius: var(--radius-2xl);
   backdrop-filter: var(--glass-backdrop);
   border: 1px solid var(--glass-border);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .premium-case {
@@ -1609,11 +1687,13 @@ const cases = [
 
 .case-badge {
   padding: var(--space-2) var(--space-4);
-  border-radius: var(--radius-full);
+  border-bottom-right-radius: 12px;
+  border-top-left-radius: 16px;
   font-size: var(--font-sm);
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  position: absolute;
 }
 
 .livingkb-badge {
@@ -1632,12 +1712,16 @@ const cases = [
 }
 
 .industry-bilingual {
-  background: var(--neutral-100);
+  background: var(--neutral-400);
   padding: var(--space-2) var(--space-3);
   border-radius: var(--radius-md);
   font-size: var(--font-sm);
   color: var(--text-secondary);
   text-align: center;
+  border: 1px solid var(--neutral-200);
+  position: absolute;
+  right: 4px;
+  top: 4px;
 }
 
 .case-body {
@@ -1686,6 +1770,13 @@ const cases = [
   flex-direction: column;
   gap: var(--space-4);
   margin-top: var(--space-4);
+}
+
+.challenge-item{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-left: transparent;
 }
 
 /* Tag styles */
@@ -1740,7 +1831,9 @@ const cases = [
   width: 100%;
 }
 
-.case-challenge, .case-solution, .case-results {
+.case-challenge,
+.case-solution,
+.case-results {
   background: var(--glass-bg);
   padding: var(--space-6);
   border-radius: var(--radius-lg);
@@ -1972,11 +2065,11 @@ const cases = [
     grid-template-columns: 1fr;
     gap: var(--space-4);
   }
-  
+
   .solution-details {
     grid-template-columns: 1fr;
   }
-  
+
   .results-grid {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: var(--space-4);
@@ -1988,40 +2081,43 @@ const cases = [
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: var(--space-4);
   }
-  
+
   .case-header {
     flex-direction: column;
     align-items: stretch;
   }
-  
+
   .case-title-group {
     margin: 0;
   }
-  
+
   .hero-stats {
     gap: var(--space-4);
   }
-  
+
   .benchmarks-grid {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 480px) {
-  .detailed-case, .case-overview, .case-section {
+
+  .detailed-case,
+  .case-overview,
+  .case-section {
     padding: var(--space-4);
   }
-  
+
   .results-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .industry-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .stat-number {
     font-size: var(--font-2xl);
   }
 }
-</style> 
+</style>

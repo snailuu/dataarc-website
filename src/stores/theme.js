@@ -3,7 +3,7 @@ import { ref, watchEffect, computed } from 'vue'
 
 export const useThemeStore = defineStore('theme', () => {
   // 主题状态，默认为light
-  const theme = ref(localStorage.getItem('theme') || 'light')
+  const theme = ref('dark')
 
   // 切换主题
   const toggleTheme = () => {
@@ -37,7 +37,7 @@ export const useThemeStore = defineStore('theme', () => {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       return 'dark'
     }
-    return 'light'
+    return 'dark'
   }
 
   // 是否为暗色主题

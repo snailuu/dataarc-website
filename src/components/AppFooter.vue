@@ -443,11 +443,14 @@ const normalizedPhone = computed(() => contactSection.value.phone.replace(/\s+/g
 @media (max-width: 768px) {
   .footer-content {
     padding: var(--space-16) 0 var(--space-12);
+    text-align: center;
+    justify-items: center;
   }
   
   .footer-nav {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: var(--space-8);
+    justify-items: center;
   }
   
   .footer-bottom-content {
@@ -462,6 +465,35 @@ const normalizedPhone = computed(() => contactSection.value.phone.replace(/\s+/g
   
   .nav-section {
     min-height: auto;
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  .nav-title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-title::after {
+    position: relative;
+    bottom: 0;
+    margin-top: 8px;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-info {
+    align-items: center;
+  }
+  
+  .contact-item {
+    justify-content: center;
   }
   
   .social-links {

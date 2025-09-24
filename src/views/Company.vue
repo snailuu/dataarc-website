@@ -11,15 +11,15 @@
       <div class="container">
         <div class="hero-content">
           <h1 class="hero-title title-multilevel company-super-title">
-            <span class="title-main company-main-title">数创弧光科技有限公司</span>
+            <span class="title-main company-main-title">{{ t('company.hero.title') }}</span>
             <span class="title-highlight title-multilevel">
-              <span class="title-main company-future-title">智能化未来</span>
+              <span class="title-main company-future-title">{{ t('company.hero.subtitle') }}</span>
             </span>
-            <span class="subtitle-en company-english-line">DATAARC TECHNOLOGY CO., LTD. • INTELLIGENT FUTURE</span>
+            <span class="subtitle-en company-english-line">{{ t('company.hero.englishLine') }}</span>
           </h1>
           <div class="hero-description content-bilingual">
-            <p class="content-main">专注于人工智能合规管理与智能化技术创新，通过合成数据技术推动企业数字化转型。</p>
-            <p class="content-en">Focus on AI compliance management and intelligent technology innovation, driving enterprise digital transformation through synthetic data technology.</p>
+            <p class="content-main">{{ t('company.hero.description') }}</p>
+            <p class="content-en">{{ t('company.hero.descriptionEn') }}</p>
           </div>
         </div>
       </div>
@@ -31,35 +31,35 @@
         <div class="intro-content">
           <div class="intro-text">
             <div class="title-bilingual">
-              <h2 class="title-main">关于 DataArc</h2>
+              <h2 class="title-main">{{ t('company.about.title') }}</h2>
               <span class="title-divider">|</span>
-              <span class="title-en">About DataArc</span>
+              <span class="title-en">{{ t('company.about.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
-              <p class="content-main">DataArc 数创弧光科技有限公司，成立于2025年1月，是一家专注于人工智能合成数据与智能体技术创新的科技公司。公司由沈向洋院士在IDEA研究院推动孵化，致力于通过精准的数据模拟与增强技术，解决金融、制造等知识密集型行业在大数据模型训练和应用过程中面临的数据稀缺与高定制成本的难题，帮助各行各业实现高效决策与业务优化。</p>
-              <p class="content-en">DataArc Technology Co., Ltd., established in January 2025, is a technology company focusing on AI synthetic data and intelligent agent technology innovation. Incubated by Academician Shen Xiangyang at IDEA Research Institute, the company is committed to solving data scarcity and high customization costs faced by knowledge-intensive industries such as finance and manufacturing in big data model training and application through precise data simulation and enhancement technologies, helping all industries achieve efficient decision-making and business optimization.</p>
+              <p class="content-main">{{ t('company.about.description') }}</p>
+              <p class="content-en">{{ t('company.about.descriptionEn') }}</p>
             </div>
             
             <div class="company-stats">
               <div class="stat-item">
-                <div class="stat-number">2025</div>
+                <div class="stat-number">{{ t('company.about.stats.founded.number') }}</div>
                 <div class="stat-label-bilingual">
-                  <span class="stat-main">成立年份</span>
-                  <span class="stat-en">Founded</span>
+                  <span class="stat-main">{{ t('company.about.stats.founded.label') }}</span>
+                  <span class="stat-en">{{ t('company.about.stats.founded.labelEn') }}</span>
                 </div>
               </div>
               <div class="stat-item">
-                <div class="stat-number">50+</div>
+                <div class="stat-number">{{ t('company.about.stats.patents.number') }}</div>
                 <div class="stat-label-bilingual">
-                  <span class="stat-main">技术专利</span>
-                  <span class="stat-en">Patents</span>
+                  <span class="stat-main">{{ t('company.about.stats.patents.label') }}</span>
+                  <span class="stat-en">{{ t('company.about.stats.patents.labelEn') }}</span>
                 </div>
               </div>
               <div class="stat-item">
-                <div class="stat-number">30+</div>
+                <div class="stat-number">{{ t('company.about.stats.partners.number') }}</div>
                 <div class="stat-label-bilingual">
-                  <span class="stat-main">合作企业</span>
-                  <span class="stat-en">Partners</span>
+                  <span class="stat-main">{{ t('company.about.stats.partners.label') }}</span>
+                  <span class="stat-en">{{ t('company.about.stats.partners.labelEn') }}</span>
                 </div>
               </div>
             </div>
@@ -73,13 +73,13 @@
       <div class="container">
         <div class="section-header">
           <div class="title-bilingual">
-            <h2 class="title-main">核心团队</h2>
+            <h2 class="title-main">{{ t('company.team.title') }}</h2>
             <span class="title-divider">|</span>
-            <span class="title-en">Core Team</span>
+            <span class="title-en">{{ t('company.team.titleEn') }}</span>
           </div>
           <div class="content-bilingual">
-            <p class="content-main">汇聚顶尖人才，打造技术创新团队</p>
-            <p class="content-en">Gather top talents to build a technology innovation team</p>
+            <p class="content-main">{{ t('company.team.description') }}</p>
+            <p class="content-en">{{ t('company.team.descriptionEn') }}</p>
           </div>
         </div>
 
@@ -95,22 +95,24 @@
               </div>
             </div>
             <div class="leader-info">
-              <h3 class="title-level-3">徐铖晋 博士</h3>
-              <div class="leader-title">CTO · 首席技术官</div>
+              <h3 class="title-level-3">{{ t('company.team.cto.name') }}</h3>
+              <div class="leader-title">{{ t('company.team.cto.title') }}</div>
               <p class="leader-bio">
-                负责合成数据项目工程研发、算法创新、及技术路线规划，确保技术的领先性和解决方案的可行性。
+                {{ t('company.team.cto.bio') }}
               </p>
               <div class="leader-highlights">
-                <div class="highlight-tag">德国波恩大学博士</div>
-                <div class="highlight-tag">浙大竺可桢本硕</div>
-                <div class="highlight-tag">华为天才少年offer</div>
-                <div class="highlight-tag">IDEA研究科学家</div>
-                <div class="highlight-tag">深圳市特聘专家</div>
+                <div 
+                  v-for="(highlight, index) in ctoHighlights" 
+                  :key="index" 
+                  class="highlight-tag"
+                >
+                  {{ highlight }}
+                </div>
               </div>
               <div class="leader-achievements">
                 <div class="achievement-item">
-                  <span class="achievement-number">50+</span>
-                  <span class="achievement-label">顶会论文</span>
+                  <span class="achievement-number">{{ t('company.team.cto.achievements.papers') }}</span>
+                  <span class="achievement-label">{{ t('company.team.cto.achievements.papersLabel') }}</span>
                 </div>
               </div>
             </div>
@@ -126,21 +128,24 @@
               </div>
             </div>
             <div class="leader-info">
-              <h3 class="title-level-3">江旭晖 博士</h3>
-              <div class="leader-title">CEO · 首席执行官</div>
+              <h3 class="title-level-3">{{ t('company.team.ceo.name') }}</h3>
+              <div class="leader-title">{{ t('company.team.ceo.title') }}</div>
               <p class="leader-bio">
-                负责公司战略规划、融资及团队建设，参与技术路线规划、推动公司业务发展和市场落地。
+                {{ t('company.team.ceo.bio') }}
               </p>
               <div class="leader-highlights">
-                <div class="highlight-tag">中科院博士</div>
-                <div class="highlight-tag">腾讯技术大咖offer</div>
-                <div class="highlight-tag">IDEA研究科学家</div>
-                <div class="highlight-tag">知识图谱研发负责人</div>
+                <div 
+                  v-for="(highlight, index) in ceoHighlights" 
+                  :key="index" 
+                  class="highlight-tag"
+                >
+                  {{ highlight }}
+                </div>
               </div>
               <div class="leader-achievements">
                 <div class="achievement-item">
-                  <span class="achievement-number">20+</span>
-                  <span class="achievement-label">顶会论文</span>
+                  <span class="achievement-number">{{ t('company.team.ceo.achievements.papers') }}</span>
+                  <span class="achievement-label">{{ t('company.team.ceo.achievements.papersLabel') }}</span>
                 </div>
               </div>
             </div>
@@ -150,13 +155,13 @@
         <!-- Team Features -->
         <div class="team-features glass-card">
           <div class="title-bilingual">
-            <h3 class="title-main">团队技术优势</h3>
+            <h3 class="title-main">{{ t('company.team.advantages.title') }}</h3>
             <span class="title-divider">|</span>
-            <span class="title-en">Team Technical Advantages</span>
+            <span class="title-en">{{ t('company.team.advantages.titleEn') }}</span>
           </div>
           <div class="content-bilingual">
-            <p class="content-main">合成数据相关技术丰富积累</p>
-            <p class="content-en">Rich accumulation of synthetic data related technologies</p>
+            <p class="content-main">{{ t('company.team.advantages.description') }}</p>
+            <p class="content-en">{{ t('company.team.advantages.descriptionEn') }}</p>
           </div>
           
           <div class="features-grid">
@@ -167,13 +172,13 @@
               </div>
               <div class="feature-content">
                 <div class="title-bilingual">
-                  <h4 class="title-main">采样技术</h4>
+                  <h4 class="title-main">{{ t('company.team.advantages.sampling.title') }}</h4>
                   <span class="title-divider">|</span>
-                  <span class="title-en">Sampling Technology</span>
+                  <span class="title-en">{{ t('company.team.advantages.sampling.titleEn') }}</span>
                 </div>
                 <div class="content-bilingual">
-                  <p class="content-main">语境图谱技术</p>
-                  <p class="content-en">Context Graph Technology</p>
+                  <p class="content-main">{{ t('company.team.advantages.sampling.description') }}</p>
+                  <p class="content-en">{{ t('company.team.advantages.sampling.descriptionEn') }}</p>
                 </div>
               </div>
             </div>
@@ -185,13 +190,13 @@
               </div>
               <div class="feature-content">
                 <div class="title-bilingual">
-                  <h4 class="title-main">合成技术</h4>
+                  <h4 class="title-main">{{ t('company.team.advantages.synthesis.title') }}</h4>
                   <span class="title-divider">|</span>
-                  <span class="title-en">Synthesis Technology</span>
+                  <span class="title-en">{{ t('company.team.advantages.synthesis.titleEn') }}</span>
                 </div>
                 <div class="content-bilingual">
-                  <p class="content-main">思维图谱（Think-on-Graph）</p>
-                  <p class="content-en">Think-on-Graph</p>
+                  <p class="content-main">{{ t('company.team.advantages.synthesis.description') }}</p>
+                  <p class="content-en">{{ t('company.team.advantages.synthesis.descriptionEn') }}</p>
                 </div>
               </div>
             </div>
@@ -203,13 +208,13 @@
               </div>
               <div class="feature-content">
                 <div class="title-bilingual">
-                  <h4 class="title-main">训练技术</h4>
+                  <h4 class="title-main">{{ t('company.team.advantages.training.title') }}</h4>
                   <span class="title-divider">|</span>
-                  <span class="title-en">Training Technology</span>
+                  <span class="title-en">{{ t('company.team.advantages.training.titleEn') }}</span>
                 </div>
                 <div class="content-bilingual">
-                  <p class="content-main">垂域大模型开发</p>
-                  <p class="content-en">Vertical Domain Large Model Development</p>
+                  <p class="content-main">{{ t('company.team.advantages.training.description') }}</p>
+                  <p class="content-en">{{ t('company.team.advantages.training.descriptionEn') }}</p>
                 </div>
               </div>
             </div>
@@ -218,15 +223,15 @@
 
         <!-- Other Team Members -->
         <div class="other-members">
-                      <h3 class="title-level-3">核心团队成员</h3>
+          <h3 class="title-level-3">{{ t('company.team.otherMembers.title') }}</h3>
           <div class="members-grid">
             <div class="member-card glass-card">
               <div class="icon-wrapper">
                 <img src="/images/icons/COO图标.png" alt="COO" class="icon-img">
                 <div class="icon-glow"></div>
               </div>
-              <div class="member-role">COO</div>
-              <div class="member-description">连续创业者，FinTech独角兽公司负责人</div>
+              <div class="member-role">{{ t('company.team.otherMembers.coo.role') }}</div>
+              <div class="member-description">{{ t('company.team.otherMembers.coo.description') }}</div>
             </div>
             
             <div class="member-card glass-card">
@@ -234,8 +239,8 @@
                 <img src="/images/icons/算法团队图标.png" alt="算法团队" class="icon-img">
                 <div class="icon-glow"></div>
               </div>
-              <div class="member-role">算法核心团队</div>
-              <div class="member-description">前科技公司CTO、阿里P8业务负责人</div>
+              <div class="member-role">{{ t('company.team.otherMembers.algorithm.role') }}</div>
+              <div class="member-description">{{ t('company.team.otherMembers.algorithm.description') }}</div>
             </div>
             
             <div class="member-card glass-card">
@@ -243,137 +248,22 @@
                 <img src="/images/icons/投融资BD图标.png" alt="投融资BD" class="icon-img">
                 <div class="icon-glow"></div>
               </div>
-              <div class="member-role">投融资负责人&BD</div>
-              <div class="member-description">前国内头部VC投资总监</div>
+              <div class="member-role">{{ t('company.team.otherMembers.bd.role') }}</div>
+              <div class="member-description">{{ t('company.team.otherMembers.bd.description') }}</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact-section">
-      <div class="container">
-        <div class="contact-content">
-          <div class="contact-info">
-            <h2 class="section-title">联系我们</h2>
-            <p class="contact-description">
-              我们期待与您的合作，共同探索AI技术的无限可能。
-            </p>
-            
-            <div class="contact-details">
-              <div class="contact-item">
-                <div class="contact-icon">
-                  <svg viewBox="0 0 24 24" class="icon">
-                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                  </svg>
-                </div>
-                <div class="contact-text">
-                  <div class="contact-label">地址</div>
-                  <div class="contact-value">深圳市南山区科技园</div>
-                </div>
-              </div>
-              
-              <div class="contact-item">
-                <div class="contact-icon">
-                  <svg viewBox="0 0 24 24" class="icon">
-                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                  </svg>
-                </div>
-                <div class="contact-text">
-                  <div class="contact-label">邮箱</div>
-                  <div class="contact-value">contact@dataarc.tech</div>
-                </div>
-              </div>
-              
-              <div class="contact-item">
-                <div class="contact-icon">
-                  <svg viewBox="0 0 24 24" class="icon">
-                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                  </svg>
-                </div>
-                <div class="contact-text">
-                  <div class="contact-label">电话</div>
-                  <div class="contact-value">+86 400-123-4567</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="contact-form-wrapper">
-            <form class="contact-form glass-card" @submit.prevent="submitForm">
-              <h3 class="title-level-3">留言咨询</h3>
-              
-              <div class="form-group">
-                <label for="name">姓名 *</label>
-                <input 
-                  type="text" 
-                  id="name" 
-                  v-model="form.name" 
-                  required 
-                  placeholder="请输入您的姓名"
-                  class="form-input"
-                >
-              </div>
-              
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="email">邮箱 *</label>
-                  <input 
-                    type="email" 
-                    id="email" 
-                    v-model="form.email" 
-                    required 
-                    placeholder="name@example.com"
-                    class="form-input"
-                  >
-                </div>
-                <div class="form-group">
-                  <label for="phone">电话 *</label>
-                  <input 
-                    type="tel" 
-                    id="phone" 
-                    v-model="form.phone" 
-                    required 
-                    placeholder="请输入联系电话"
-                    class="form-input"
-                  >
-                </div>
-              </div>
-              
-              <div class="form-group">
-                <label for="message">咨询内容 *</label>
-                <textarea 
-                  id="message" 
-                  v-model="form.message" 
-                  required 
-                  placeholder="请简单说明您想咨询的内容和目标"
-                  class="form-textarea"
-                ></textarea>
-              </div>
-              
-              <div class="form-group checkbox-group">
-                <input type="checkbox" id="agree" v-model="form.agree" required class="form-checkbox">
-                <label for="agree" class="checkbox-label">
-                  我已经阅读并同意<a href="#" class="form-link">服务条款</a>和<a href="#" class="form-link">隐私声明</a>
-                </label>
-              </div>
-              
-              <button type="submit" class="btn btn-primary btn-lg form-submit">
-                提交咨询
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+   
     
     <!-- Company Details Section -->
     <section id="about-dataarc" class="company-details">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">公司基本信息</h2>
-          <p class="section-subtitle">数创弧光(深圳)科技有限公司详细信息</p>
+          <h2 class="section-title">{{ t('company.companyDetails.title') }}</h2>
+          <p class="section-subtitle">{{ t('company.companyDetails.subtitle') }}</p>
         </div>
         
         <div class="details-grid">
@@ -383,13 +273,13 @@
                 <div class="icon-glow"></div>
               </div>
             <div class="title-bilingual">
-              <h3 class="title-main">公司全称</h3>
+              <h3 class="title-main">{{ t('company.companyDetails.companyName.title') }}</h3>
               <span class="title-divider">|</span>
-              <span class="title-en">Company Name</span>
+              <span class="title-en">{{ t('company.companyDetails.companyName.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
-              <p class="content-main">数创弧光（深圳）科技有限公司</p>
-              <p class="content-en">DataArc Technology Co., Ltd.</p>
+              <p class="content-main">{{ t('company.companyDetails.companyName.value') }}</p>
+              <p class="content-en">{{ t('company.companyDetails.companyName.valueEn') }}</p>
             </div>
           </div>
           
@@ -399,17 +289,17 @@
                 <div class="icon-glow"></div>
               </div>
             <div class="title-bilingual">
-              <h3 class="title-main">成立时间</h3>
+              <h3 class="title-main">{{ t('company.companyDetails.founded.title') }}</h3>
               <span class="title-divider">|</span>
-              <span class="title-en">Founded</span>
+              <span class="title-en">{{ t('company.companyDetails.founded.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
-              <p class="content-main">2025年1月</p>
-              <p class="content-en">January 2025</p>
+              <p class="content-main">{{ t('company.companyDetails.founded.value') }}</p>
+              <p class="content-en">{{ t('company.companyDetails.founded.valueEn') }}</p>
             </div>
             <div class="content-bilingual">
-              <p class="content-main">在沈向洋院士支持下成立</p>
-              <p class="content-en">Founded with support from Academician Shen Xiangyang</p>
+              <p class="content-main">{{ t('company.companyDetails.founded.description') }}</p>
+              <p class="content-en">{{ t('company.companyDetails.founded.descriptionEn') }}</p>
             </div>
           </div>
           
@@ -419,17 +309,17 @@
                 <div class="icon-glow"></div>
               </div>
             <div class="title-bilingual">
-              <h3 class="title-main">公司地址</h3>
+              <h3 class="title-main">{{ t('company.companyDetails.address.title') }}</h3>
               <span class="title-divider">|</span>
-              <span class="title-en">Address</span>
+              <span class="title-en">{{ t('company.companyDetails.address.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
-              <p class="content-main">深圳市福田区河套保税区</p>
-              <p class="content-en">Shenzhen Nanshan Technology Park</p>
+              <p class="content-main">{{ t('company.companyDetails.address.value') }}</p>
+              <p class="content-en">{{ t('company.companyDetails.address.valueEn') }}</p>
             </div>
             <div class="content-bilingual">
-              <p class="content-main">长富金茂大厦3901</p>
-              <p class="content-en">Suite 3901, Changfu Jinmao Building</p>
+              <p class="content-main">{{ t('company.companyDetails.address.detail') }}</p>
+              <p class="content-en">{{ t('company.companyDetails.address.detailEn') }}</p>
             </div>
           </div>
           
@@ -439,17 +329,17 @@
                 <div class="icon-glow"></div>
               </div>
             <div class="title-bilingual">
-              <h3 class="title-main">发展愿景</h3>
+              <h3 class="title-main">{{ t('company.companyDetails.vision.title') }}</h3>
               <span class="title-divider">|</span>
-              <span class="title-en">Vision</span>
+              <span class="title-en">{{ t('company.companyDetails.vision.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
-              <p class="content-main">打造合成数据时代的ScaleAI</p>
-              <p class="content-en">Build the ScaleAI of the synthetic data era</p>
+              <p class="content-main">{{ t('company.companyDetails.vision.value') }}</p>
+              <p class="content-en">{{ t('company.companyDetails.vision.valueEn') }}</p>
             </div>
             <div class="content-bilingual">
-              <p class="content-main">成为中国的下一代ScaleAI</p>
-              <p class="content-en">Become China's next-generation ScaleAI</p>
+              <p class="content-main">{{ t('company.companyDetails.vision.description') }}</p>
+              <p class="content-en">{{ t('company.companyDetails.vision.descriptionEn') }}</p>
             </div>
           </div>
         </div>
@@ -460,20 +350,20 @@
     <section id="core-team" class="team-details">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">团队详细介绍</h2>
-          <p class="section-subtitle">深厚的研究积累和丰富的项目资源</p>
+          <h2 class="section-title">{{ t('company.teamDetails.title') }}</h2>
+          <p class="section-subtitle">{{ t('company.teamDetails.subtitle') }}</p>
         </div>
         
         <div class="team-overview">
           <div class="team-info">
             <div class="title-bilingual">
-              <h3 class="title-main">团队规模与结构</h3>
+              <h3 class="title-main">{{ t('company.teamDetails.teamScale.title') }}</h3>
               <span class="title-divider">|</span>
-              <span class="title-en">Team Scale & Structure</span>
+              <span class="title-en">{{ t('company.teamDetails.teamScale.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
-              <p class="content-main">团队现全职12人，计划维持15-20人的精英规模。团队相关领域研究积累深厚，业界知名度高，拥有世界知名专家作为项目顾问团队。</p>
-              <p class="content-en">Current team of 12 full-time members, planned to maintain an elite scale of 15-20 people. The team has deep research accumulation in related fields, high industry reputation, and world-renowned experts as project advisory team.</p>
+              <p class="content-main">{{ t('company.teamDetails.teamScale.description') }}</p>
+              <p class="content-en">{{ t('company.teamDetails.teamScale.descriptionEn') }}</p>
             </div>
             
             <div class="team-advantages">
@@ -484,13 +374,13 @@
               </div>
                 <div class="advantage-content">
                   <div class="title-bilingual">
-                    <h4 class="title-main">深厚研究积累</h4>
+                    <h4 class="title-main">{{ t('company.teamDetails.advantages.research.title') }}</h4>
                     <span class="title-divider">|</span>
-                    <span class="title-en">Deep Research Accumulation</span>
+                    <span class="title-en">{{ t('company.teamDetails.advantages.research.titleEn') }}</span>
                   </div>
                   <div class="content-bilingual">
-                    <p class="content-main">团队在相关领域有深厚的研究基础和技术积累</p>
-                    <p class="content-en">Team has deep research foundation and technical accumulation in related fields</p>
+                    <p class="content-main">{{ t('company.teamDetails.advantages.research.description') }}</p>
+                    <p class="content-en">{{ t('company.teamDetails.advantages.research.descriptionEn') }}</p>
                   </div>
                 </div>
               </div>
@@ -502,13 +392,13 @@
               </div>
                 <div class="advantage-content">
                   <div class="title-bilingual">
-                    <h4 class="title-main">业界知名度高</h4>
+                    <h4 class="title-main">{{ t('company.teamDetails.advantages.reputation.title') }}</h4>
                     <span class="title-divider">|</span>
-                    <span class="title-en">High Industry Recognition</span>
+                    <span class="title-en">{{ t('company.teamDetails.advantages.reputation.titleEn') }}</span>
                   </div>
                   <div class="content-bilingual">
-                    <p class="content-main">在人工智能和合成数据领域享有较高声誉</p>
-                    <p class="content-en">Enjoys high reputation in artificial intelligence and synthetic data fields</p>
+                    <p class="content-main">{{ t('company.teamDetails.advantages.reputation.description') }}</p>
+                    <p class="content-en">{{ t('company.teamDetails.advantages.reputation.descriptionEn') }}</p>
                   </div>
                 </div>
               </div>
@@ -520,13 +410,13 @@
               </div>
                 <div class="advantage-content">
                   <div class="title-bilingual">
-                    <h4 class="title-main">专家顾问团队</h4>
+                    <h4 class="title-main">{{ t('company.teamDetails.advantages.advisory.title') }}</h4>
                     <span class="title-divider">|</span>
-                    <span class="title-en">Expert Advisory Team</span>
+                    <span class="title-en">{{ t('company.teamDetails.advantages.advisory.titleEn') }}</span>
                   </div>
                   <div class="content-bilingual">
-                    <p class="content-main">世界知名专家担任项目顾问，提供战略指导</p>
-                    <p class="content-en">World-renowned experts serve as project advisors, providing strategic guidance</p>
+                    <p class="content-main">{{ t('company.teamDetails.advantages.advisory.description') }}</p>
+                    <p class="content-en">{{ t('company.teamDetails.advantages.advisory.descriptionEn') }}</p>
                   </div>
                 </div>
               </div>
@@ -538,13 +428,13 @@
               </div>
                 <div class="advantage-content">
                   <div class="title-bilingual">
-                    <h4 class="title-main">项目资源丰富</h4>
+                    <h4 class="title-main">{{ t('company.teamDetails.advantages.resources.title') }}</h4>
                     <span class="title-divider">|</span>
-                    <span class="title-en">Rich Project Resources</span>
+                    <span class="title-en">{{ t('company.teamDetails.advantages.resources.titleEn') }}</span>
                   </div>
                   <div class="content-bilingual">
-                    <p class="content-main">通过IDEA研究院获得丰富的项目资源支持</p>
-                    <p class="content-en">Rich project resource support through IDEA Research Institute</p>
+                    <p class="content-main">{{ t('company.teamDetails.advantages.resources.description') }}</p>
+                    <p class="content-en">{{ t('company.teamDetails.advantages.resources.descriptionEn') }}</p>
                   </div>
                 </div>
               </div>
@@ -557,20 +447,20 @@
         </div>
         
         <div class="advisors-section">
-          <h3 class="title-level-3">项目顾问委员会</h3>
+          <h3 class="title-level-3">{{ t('company.teamDetails.advisors.title') }}</h3>
           <div class="advisors-grid">
             <div class="advisor-card">
               <div class="advisor-avatar">【需要图片：沈向洋院士头像】</div>
-              <h4 class="title-level-4">沈向洋院士</h4>
-              <p class="advisor-title">项目主要支持者</p>
-              <p class="advisor-bio">IDEA研究院理事长，微软前全球执行副总裁</p>
+              <h4 class="title-level-4">{{ t('company.teamDetails.advisors.shen.name') }}</h4>
+              <p class="advisor-title">{{ t('company.teamDetails.advisors.shen.title') }}</p>
+              <p class="advisor-bio">{{ t('company.teamDetails.advisors.shen.bio') }}</p>
             </div>
             
             <div class="advisor-card">
               <div class="advisor-avatar">【需要图片：顾问专家头像占位符】</div>
-              <h4 class="title-level-4">世界级专家</h4>
-              <p class="advisor-title">技术顾问团队</p>
-              <p class="advisor-bio">来自国际顶尖科研机构的技术专家</p>
+              <h4 class="title-level-4">{{ t('company.teamDetails.advisors.experts.name') }}</h4>
+              <p class="advisor-title">{{ t('company.teamDetails.advisors.experts.title') }}</p>
+              <p class="advisor-bio">{{ t('company.teamDetails.advisors.experts.bio') }}</p>
             </div>
           </div>
         </div>
@@ -582,13 +472,13 @@
       <div class="container">
         <div class="section-header">
           <div class="title-bilingual">
-            <h2 class="title-main">融资情况</h2>
+            <h2 class="title-main">{{ t('company.funding.title') }}</h2>
             <span class="title-divider">|</span>
-            <span class="title-en">Funding Status</span>
+            <span class="title-en">{{ t('company.funding.titleEn') }}</span>
           </div>
           <div class="content-bilingual">
-            <p class="content-main">获得头部投资机构认可，快速发展中</p>
-            <p class="content-en">Recognized by leading investment institutions, rapidly developing</p>
+            <p class="content-main">{{ t('company.funding.description') }}</p>
+            <p class="content-en">{{ t('company.funding.descriptionEn') }}</p>
           </div>
         </div>
         
@@ -599,17 +489,17 @@
             </div>
             <div class="timeline-content">
               <div class="title-bilingual">
-                <h3 class="title-main">种子轮</h3>
+                <h3 class="title-main">{{ t('company.funding.rounds.seed.title') }}</h3>
                 <span class="title-divider">|</span>
-                <span class="title-en">Seed Round</span>
+                <span class="title-en">{{ t('company.funding.rounds.seed.titleEn') }}</span>
               </div>
               <div class="funding-stats">
-                <span class="funding-amount">8000万估值</span>
-                <span class="funding-date">2025年初</span>
+                <span class="funding-amount">{{ t('company.funding.rounds.seed.amount') }}</span>
+                <span class="funding-date">{{ t('company.funding.rounds.seed.date') }}</span>
               </div>
               <div class="content-bilingual">
-                <p class="content-main">获得首轮种子投资，验证产品市场需求</p>
-                <p class="content-en">Secured first seed investment, validated product-market demand</p>
+                <p class="content-main">{{ t('company.funding.rounds.seed.description') }}</p>
+                <p class="content-en">{{ t('company.funding.rounds.seed.descriptionEn') }}</p>
               </div>
             </div>
           </div>
@@ -620,17 +510,17 @@
             </div>
             <div class="timeline-content">
               <div class="title-bilingual">
-                <h3 class="title-main">种子加轮</h3>
+                <h3 class="title-main">{{ t('company.funding.rounds.seedPlus.title') }}</h3>
                 <span class="title-divider">|</span>
-                <span class="title-en">Seed Plus Round</span>
+                <span class="title-en">{{ t('company.funding.rounds.seedPlus.titleEn') }}</span>
               </div>
               <div class="funding-stats">
-                <span class="funding-amount">1.5亿估值</span>
-                <span class="funding-date">2025年中</span>
+                <span class="funding-amount">{{ t('company.funding.rounds.seedPlus.amount') }}</span>
+                <span class="funding-date">{{ t('company.funding.rounds.seedPlus.date') }}</span>
               </div>
               <div class="content-bilingual">
-                <p class="content-main">快速发展阶段，估值大幅提升</p>
-                <p class="content-en">Rapid development phase, significant valuation increase</p>
+                <p class="content-main">{{ t('company.funding.rounds.seedPlus.description') }}</p>
+                <p class="content-en">{{ t('company.funding.rounds.seedPlus.descriptionEn') }}</p>
               </div>
             </div>
           </div>
@@ -641,17 +531,17 @@
             </div>
             <div class="timeline-content">
               <div class="title-bilingual">
-                <h3 class="title-main">加加轮</h3>
+                <h3 class="title-main">{{ t('company.funding.rounds.seriesA.title') }}</h3>
                 <span class="title-divider">|</span>
-                <span class="title-en">Series A+</span>
+                <span class="title-en">{{ t('company.funding.rounds.seriesA.titleEn') }}</span>
               </div>
               <div class="funding-stats">
-                <span class="funding-amount">2.5亿估值</span>
-                <span class="funding-date">2025年下半年</span>
+                <span class="funding-amount">{{ t('company.funding.rounds.seriesA.amount') }}</span>
+                <span class="funding-date">{{ t('company.funding.rounds.seriesA.date') }}</span>
               </div>
               <div class="content-bilingual">
-                <p class="content-main">业务快速增长，市场认可度持续提升</p>
-                <p class="content-en">Rapid business growth, continuous market recognition improvement</p>
+                <p class="content-main">{{ t('company.funding.rounds.seriesA.description') }}</p>
+                <p class="content-en">{{ t('company.funding.rounds.seriesA.descriptionEn') }}</p>
               </div>
             </div>
           </div>
@@ -662,17 +552,17 @@
             </div>
             <div class="timeline-content">
               <div class="title-bilingual">
-                <h3 class="title-main">拟天使轮</h3>
+                <h3 class="title-main">{{ t('company.funding.rounds.preAngel.title') }}</h3>
                 <span class="title-divider">|</span>
-                <span class="title-en">Pre-Angel Round</span>
+                <span class="title-en">{{ t('company.funding.rounds.preAngel.titleEn') }}</span>
               </div>
               <div class="funding-stats">
-                <span class="funding-amount">5亿估值</span>
-                <span class="funding-date">进行中</span>
+                <span class="funding-amount">{{ t('company.funding.rounds.preAngel.amount') }}</span>
+                <span class="funding-date">{{ t('company.funding.rounds.preAngel.date') }}</span>
               </div>
               <div class="content-bilingual">
-                <p class="content-main">目标成为合成数据领域的领军企业</p>
-                <p class="content-en">Aiming to become a leading enterprise in synthetic data field</p>
+                <p class="content-main">{{ t('company.funding.rounds.preAngel.description') }}</p>
+                <p class="content-en">{{ t('company.funding.rounds.preAngel.descriptionEn') }}</p>
               </div>
             </div>
           </div>
@@ -803,35 +693,259 @@
         </div>
       </div>
     </section>
+
+     <!-- Contact Section -->
+     <section class="contact-section">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-info">
+            <h2 class="section-title">{{ t('company.contact.title') }}</h2>
+            <p class="contact-description">
+              {{ t('company.contact.description') }}
+            </p>
+            
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" class="icon">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <div class="contact-label">{{ t('company.contact.address.label') }}</div>
+                  <div class="contact-value">{{ t('company.contact.address.value') }}</div>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" class="icon">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <div class="contact-label">{{ t('company.contact.email.label') }}</div>
+                  <div class="contact-value">{{ t('company.contact.email.value') }}</div>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" class="icon">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <div class="contact-label">{{ t('company.contact.phone.label') }}</div>
+                  <div class="contact-value">{{ t('company.contact.phone.value') }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <form class="contact-form glass-card" @submit.prevent="submitForm">
+              <h3 class="title-level-3">{{ t('company.contact.form.title') }}</h3>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstname">{{ t('company.contact.form.firstname.label') }} *</label>
+                  <input 
+                    type="text" 
+                    id="firstname" 
+                    v-model="form.firstname" 
+                    required 
+                    :placeholder="t('company.contact.form.firstname.placeholder')"
+                    class="form-input"
+                    :class="{ 'error': formErrors.firstname }"
+                  >
+                  <div v-if="formErrors.firstname" class="error-message">{{ formErrors.firstname }}</div>
+                </div>
+                <div class="form-group">
+                  <label for="lastname">{{ t('company.contact.form.lastname.label') }} *</label>
+                  <input 
+                    type="text" 
+                    id="lastname" 
+                    v-model="form.lastname" 
+                    required 
+                    :placeholder="t('company.contact.form.lastname.placeholder')"
+                    class="form-input"
+                    :class="{ 'error': formErrors.lastname }"
+                  >
+                  <div v-if="formErrors.lastname" class="error-message">{{ formErrors.lastname }}</div>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">{{ t('company.contact.form.email.label') }} *</label>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    v-model="form.email" 
+                    required 
+                    :placeholder="t('company.contact.form.email.placeholder')"
+                    class="form-input"
+                    :class="{ 'error': formErrors.email }"
+                  >
+                  <div v-if="formErrors.email" class="error-message">{{ formErrors.email }}</div>
+                </div>
+                <div class="form-group">
+                  <label for="phone">{{ t('company.contact.form.phone.label') }} *</label>
+                  <input 
+                    type="tel" 
+                    id="phone" 
+                    v-model="form.phone" 
+                    required 
+                    :placeholder="t('company.contact.form.phone.placeholder')"
+                    class="form-input"
+                    :class="{ 'error': formErrors.phone }"
+                  >
+                  <div v-if="formErrors.phone" class="error-message">{{ formErrors.phone }}</div>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">{{ t('company.contact.form.message.label') }} *</label>
+                <textarea 
+                  id="message" 
+                  v-model="form.other" 
+                  required 
+                  :placeholder="t('company.contact.form.message.placeholder')"
+                  class="form-textarea"
+                  :class="{ 'error': formErrors.message }"
+                ></textarea>
+                <div v-if="formErrors.message" class="error-message">{{ formErrors.message }}</div>
+              </div>
+              
+              <div class="form-group checkbox-group">
+                <input type="checkbox" id="agree" v-model="form.agree" required class="form-checkbox">
+                <label for="agree" class="checkbox-label">
+                  {{ t('company.contact.form.agree') }}<a href="#" class="form-link">{{ t('company.contact.form.terms') }}</a>和<a href="#" class="form-link">{{ t('company.contact.form.privacy') }}</a>
+                </label>
+              </div>
+              
+              <div v-if="submitError" class="form-error">
+                {{ submitError }}
+              </div>
+              
+              <div v-if="submitSuccess" class="form-success">
+                {{ submitSuccess }}
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-lg form-submit" :disabled="isSubmitting">
+                <span v-if="isSubmitting">{{ t('company.contact.form.submitting') }}</span>
+                <span v-else>{{ t('company.contact.form.submit') }}</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
     
     <AppFooter />
   </div>
 </template>
 
 <script setup>
-import { reactive } from 'vue'
+import { reactive, ref, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import AppHeader from '@/components/AppHeader.vue'
 import AppFooter from '@/components/AppFooter.vue'
+import { sendContactForm, validateContactForm } from '@/services/contact.js'
 
+const { t, tm } = useI18n()
+
+// 计算属性处理数组类型的翻译
+const ctoHighlights = computed(() => {
+  const highlights = tm('company.team.cto.highlights')
+  return Array.isArray(highlights) ? highlights : []
+})
+
+const ceoHighlights = computed(() => {
+  const highlights = tm('company.team.ceo.highlights')
+  return Array.isArray(highlights) ? highlights : []
+})
+
+// 表单数据
 const form = reactive({
-  name: '',
+  firstname: '',
+  lastname: '',
   email: '',
   phone: '',
-  message: '',
+  other: '',
   agree: false
 })
 
-const submitForm = () => {
-  if (form.agree) {
-    alert('感谢您的留言，我们会尽快与您联系！')
-    // 这里可以添加实际的表单提交逻辑
-    Object.assign(form, {
-      name: '',
-      email: '',
-      phone: '',
-      message: '',
-      agree: false
+// 表单状态
+const formErrors = ref({})
+const isSubmitting = ref(false)
+const submitError = ref('')
+const submitSuccess = ref('')
+
+// 重置表单
+const resetForm = () => {
+  Object.assign(form, {
+    firstname: '',
+    lastname: '',
+    email: '',
+    phone: '',
+    other: '',
+    agree: false
+  })
+  formErrors.value = {}
+  submitError.value = ''
+  submitSuccess.value = ''
+}
+
+// 提交表单
+const submitForm = async () => {
+  // 清除之前的错误和成功消息
+  formErrors.value = {}
+  submitError.value = ''
+  submitSuccess.value = ''
+
+  // 验证表单
+  const validation = validateContactForm(form)
+  if (!validation.isValid) {
+    formErrors.value = validation.errors
+    submitError.value = t('company.contact.form.error.validation')
+    return
+  }
+
+  if (!form.agree) {
+    submitError.value = t('company.contact.form.error.terms')
+    return
+  }
+
+  try {
+    isSubmitting.value = true
+    
+    // 发送到飞书
+    const result = await sendContactForm({
+      firstname: form.firstname.trim(),
+      lastname: form.lastname.trim(),
+      email: form.email.trim(),
+      phone: form.phone.trim(),
+      other: form.other.trim()
     })
+
+    if (result.success) {
+      submitSuccess.value = t('company.contact.form.success')
+      resetForm()
+      
+      // 5秒后清除成功消息
+      setTimeout(() => {
+        submitSuccess.value = ''
+      }, 5000)
+    } else {
+      submitError.value = result.error || t('company.contact.form.error.network')
+    }
+  } catch (error) {
+    console.error('Submit form error:', error)
+    submitError.value = t('company.contact.form.error.network')
+  } finally {
+    isSubmitting.value = false
   }
 }
 </script>
@@ -963,6 +1077,7 @@ const submitForm = () => {
   text-align: center;
 }
 
+
 .intro-description {
   font-size: var(--font-lg);
   line-height: var(--leading-relaxed);
@@ -1064,6 +1179,10 @@ const submitForm = () => {
 
 .leader-info {
   text-align: center;
+}
+
+.title-level-3{
+  margin-bottom: 16px;
 }
 
 .leader-name {
@@ -1334,11 +1453,18 @@ const submitForm = () => {
 .form-textarea {
   width: 100%;
   padding: var(--space-3) var(--space-4);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--glass-border);
   border-radius: var(--radius-md);
   font-size: var(--font-sm);
+  color: var(--text-primary);
   background: var(--bg-primary);
   transition: all var(--duration-normal) var(--ease-out);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: var(--text-tertiary);
+  opacity: 0.7;
 }
 
 .form-input:focus,
@@ -1390,6 +1516,68 @@ const submitForm = () => {
 .form-submit {
   width: 100%;
   margin-top: var(--space-4);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.form-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.form-submit:disabled:hover {
+  transform: none;
+  box-shadow: var(--shadow-medium);
+}
+
+/* ===== Form Validation Styles ===== */
+.form-input.error,
+.form-textarea.error {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.error-message {
+  color: #ef4444;
+  font-size: var(--font-xs);
+  margin-top: var(--space-1);
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.form-error {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+  color: #dc2626;
+  font-size: var(--font-sm);
+  margin-bottom: var(--space-4);
+  text-align: center;
+}
+
+.form-success {
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+  color: #16a34a;
+  font-size: var(--font-sm);
+  margin-bottom: var(--space-4);
+  text-align: center;
+  animation: slideInFromTop 0.3s var(--ease-out);
+}
+
+@keyframes slideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ===== Animations ===== */
@@ -1439,8 +1627,21 @@ const submitForm = () => {
   }
   
   .company-stats {
-    flex-direction: column;
-    gap: var(--space-6);
+    gap: var(--space-4);
+  }
+  
+  .stat-item {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .stat-number {
+    font-size: var(--font-2xl);
+  }
+  
+  .title-bilingual {
+    display: flex;
+    align-items: center;
   }
   
   .form-row {
@@ -1470,8 +1671,15 @@ const submitForm = () => {
   }
   
   .leader-highlights {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-2);
+  }
+  
+  .highlight-tag {
+    flex: 0 0 calc(50% - var(--space-1));
+    text-align: center;
   }
 }
 
@@ -1669,6 +1877,9 @@ const submitForm = () => {
   padding: var(--space-6);
   border: 1px solid var(--neutral-200);
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .timeline-content h3 {

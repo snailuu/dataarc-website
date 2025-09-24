@@ -1,7 +1,7 @@
 <template>
   <div class="technology-page">
     <AppHeader />
-    
+
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-background">
@@ -19,21 +19,22 @@
           </h1>
           <div class="hero-description content-bilingual">
             <p class="content-main">Living KB 动态知识库合成数据平台，七项核心技术驱动AI智能化升级。</p>
-            <p class="content-en">Living KB Dynamic Knowledge Base & Synthetic Data Platform with seven core technologies driving AI intelligent upgrades.</p>
+            <p class="content-en">Living KB Dynamic Knowledge Base & Synthetic Data Platform with seven core
+              technologies driving AI intelligent upgrades.</p>
           </div>
         </div>
       </div>
     </section>
-    
+
     <section class="page-content">
       <div class="container">
         <!-- 产品流程步骤 -->
         <div id="product-process" class="process-steps">
           <div class="step-item">
-                            <div class="icon-wrapper">
-                  <img src="/images/icons/数据采集图标.png" alt="数据采集" class="icon-img">
-                  <div class="icon-glow"></div>
-                </div>
+            <div class="icon-wrapper">
+              <img src="/images/icons/数据采集图标.png" alt="数据采集" class="icon-img">
+              <div class="icon-glow"></div>
+            </div>
             <div class="step-line"></div>
             <div class="step-content">
               <div class="title-bilingual">
@@ -42,17 +43,20 @@
                 <span class="title-en">User Data</span>
               </div>
               <div class="content-bilingual">
-                <p class="content-main">对企业多模态、跨部门、跨系统的原始数据（如 PDF、Word 、PPT 汇报、SQL 数据库、会议录屏等）等内容，进行抽取、结构化和建模等工作，让 AI 真正"读懂"企业知识。</p>
-                <p class="content-en">Extract, structure and model enterprise multi-modal, cross-department, cross-system raw data (PDFs, Word, PPT reports, SQL databases, meeting recordings, etc.) to enable AI to truly "understand" enterprise knowledge.</p>
+                <p class="content-main">对企业多模态、跨部门、跨系统的原始数据（如 PDF、Word 、PPT 汇报、SQL 数据库、会议录屏等）等内容，进行抽取、结构化和建模等工作，让 AI
+                  真正"读懂"企业知识。</p>
+                <p class="content-en">Extract, structure and model enterprise multi-modal, cross-department,
+                  cross-system raw data (PDFs, Word, PPT reports, SQL databases, meeting recordings, etc.) to enable AI
+                  to truly "understand" enterprise knowledge.</p>
               </div>
             </div>
           </div>
-          
+
           <div class="step-item">
-                            <div class="icon-wrapper">
-                  <img src="/images/icons/图谱构建图标.png" alt="图谱构建" class="icon-img">
-                  <div class="icon-glow"></div>
-                </div>
+            <div class="icon-wrapper">
+              <img src="/images/icons/图谱构建图标.png" alt="图谱构建" class="icon-img">
+              <div class="icon-glow"></div>
+            </div>
             <div class="step-line"></div>
             <div class="step-content">
               <div class="title-bilingual">
@@ -62,16 +66,17 @@
               </div>
               <div class="content-bilingual">
                 <p class="content-main">语境图谱将分散的企业数据转化为动态知识网络，让隐藏的知识脉络和数据关联清晰可见。</p>
-                <p class="content-en">Context graphs transform scattered enterprise data into dynamic knowledge networks, making hidden knowledge connections and data correlations clearly visible.</p>
+                <p class="content-en">Context graphs transform scattered enterprise data into dynamic knowledge
+                  networks, making hidden knowledge connections and data correlations clearly visible.</p>
               </div>
             </div>
           </div>
-          
+
           <div class="step-item">
-                            <div class="icon-wrapper">
-                  <img src="/images/icons/多能体平台图标.png" alt="多能体平台" class="icon-img">
-                  <div class="icon-glow"></div>
-                </div>
+            <div class="icon-wrapper">
+              <img src="/images/icons/多能体平台图标.png" alt="多能体平台" class="icon-img">
+              <div class="icon-glow"></div>
+            </div>
             <div class="step-line"></div>
             <div class="step-content">
               <div class="title-bilingual">
@@ -80,17 +85,21 @@
                 <span class="title-en">Multi-Agent Platform</span>
               </div>
               <div class="content-bilingual">
-                <p class="content-main">智能体可自主调用数据库、浏览器、语境图谱等多类工具，并借助合成数据持续训练与进化，快速掌握行业知识、人类偏好与协作模式，从而以更低成本、更高效率完成复杂业务的智能化执行。</p>
-                <p class="content-en">Agents can autonomously invoke databases, browsers, context graphs and other tools, continuously training and evolving with synthetic data to quickly master industry knowledge, human preferences and collaboration patterns, thus completing intelligent execution of complex business with lower cost and higher efficiency.</p>
+                <p class="content-main">
+                  智能体可自主调用数据库、浏览器、语境图谱等多类工具，并借助合成数据持续训练与进化，快速掌握行业知识、人类偏好与协作模式，从而以更低成本、更高效率完成复杂业务的智能化执行。</p>
+                <p class="content-en">Agents can autonomously invoke databases, browsers, context graphs and other
+                  tools, continuously training and evolving with synthetic data to quickly master industry knowledge,
+                  human preferences and collaboration patterns, thus completing intelligent execution of complex
+                  business with lower cost and higher efficiency.</p>
               </div>
             </div>
           </div>
-          
+
           <div class="step-item">
             <div class="icon-wrapper">
-                <img src="/images/icons/交互平台图标.png" alt="交互平台" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
+              <img src="/images/icons/交互平台图标.png" alt="交互平台" class="icon-img">
+              <div class="icon-glow"></div>
+            </div>
             <div class="step-line"></div>
             <div class="step-content">
               <div class="title-bilingual">
@@ -100,16 +109,19 @@
               </div>
               <div class="content-bilingual">
                 <p class="content-main">可通过自然对话、图交互等多模态交互方式与产品互动，让用户高效、安全地获取知识和完成任务，大幅提升信息利用率与业务执行力。</p>
-                <p class="content-en">Interact with products through natural dialogue, graph interaction and other multi-modal interaction methods, enabling users to efficiently and safely acquire knowledge and complete tasks, significantly improving information utilization and business execution capabilities.</p>
+                <p class="content-en">Interact with products through natural dialogue, graph interaction and other
+                  multi-modal interaction methods, enabling users to efficiently and safely acquire knowledge and
+                  complete tasks, significantly improving information utilization and business execution capabilities.
+                </p>
               </div>
             </div>
           </div>
-          
+
           <div class="step-item">
             <div class="icon-wrapper">
-                <img src="/images/icons/自适应化图标.png" alt="自适应化" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
+              <img src="/images/icons/自适应化图标.png" alt="自适应化" class="icon-img">
+              <div class="icon-glow"></div>
+            </div>
             <div class="step-line"></div>
             <div class="step-content">
               <div class="title-bilingual">
@@ -119,14 +131,15 @@
               </div>
               <div class="content-bilingual">
                 <p class="content-main">AI 搜索和应用使用过程中产生的新数据会持续补全图谱，让 Living KB 始终保持鲜活。</p>
-                <p class="content-en">New data generated during AI search and application usage continuously supplements the graph, keeping Living KB always fresh and alive.</p>
+                <p class="content-en">New data generated during AI search and application usage continuously supplements
+                  the graph, keeping Living KB always fresh and alive.</p>
               </div>
             </div>
           </div>
         </div>
 
         <!-- 核心功能和产品特点 -->
-<div id="core-features" class="feature-cards">
+        <div id="core-features" class="feature-cards">
           <div class="feature-card">
             <img src="/images/icons/核心技术页面-核心功能-icon.png" alt="核心功能" class="feature-icon">
             <div class="title-bilingual">
@@ -135,11 +148,15 @@
               <span class="title-en">Core Functionality</span>
             </div>
             <div class="content-bilingual">
-              <p class="content-main">以 Context Graph 为核心，实现企业知识管理并使企业知识"LLM Ready"。通过知识挖掘、语境图谱和合成数据能力不断扩充企业的知识和语境，让 AI 和人类可以基于最新的企业数据进行检索、分析和决策。</p>
-              <p class="content-en">With Context Graph as the core, achieve enterprise knowledge management and make enterprise knowledge "LLM Ready". Through knowledge mining, context graphs and synthetic data capabilities, continuously expand enterprise knowledge and context, enabling AI and humans to retrieve, analyze and make decisions based on the latest enterprise data.</p>
+              <p class="content-main">以 Context Graph 为核心，实现企业知识管理并使企业知识"LLM Ready"。通过知识挖掘、语境图谱和合成数据能力不断扩充企业的知识和语境，让 AI
+                和人类可以基于最新的企业数据进行检索、分析和决策。</p>
+              <p class="content-en">With Context Graph as the core, achieve enterprise knowledge management and make
+                enterprise knowledge "LLM Ready". Through knowledge mining, context graphs and synthetic data
+                capabilities, continuously expand enterprise knowledge and context, enabling AI and humans to retrieve,
+                analyze and make decisions based on the latest enterprise data.</p>
             </div>
           </div>
-          
+
           <div class="feature-card">
             <img src="/images/icons/核心技术页面-产品特点-icon.png" alt="产品特点" class="feature-icon">
             <div class="title-bilingual">
@@ -150,7 +167,8 @@
             <ul class="list-bilingual">
               <li class="list-item-bilingual">
                 <span class="list-main">高效构建知识图谱，提升数据处理和理解能力</span>
-                <span class="list-en">Efficiently build knowledge graphs, enhance data processing and understanding capabilities</span>
+                <span class="list-en">Efficiently build knowledge graphs, enhance data processing and understanding
+                  capabilities</span>
               </li>
               <li class="list-item-bilingual">
                 <span class="list-main">支持三元组(实体-边-实体)与语境理解</span>
@@ -158,11 +176,13 @@
               </li>
               <li class="list-item-bilingual">
                 <span class="list-main">提升图谱推理与信息查询效率，节省数据管理成本</span>
-                <span class="list-en">Improve graph reasoning and information query efficiency, save data management costs</span>
+                <span class="list-en">Improve graph reasoning and information query efficiency, save data management
+                  costs</span>
               </li>
               <li class="list-item-bilingual">
                 <span class="list-main">采用更高效的Graph交互方式，提升工作效率与体验</span>
-                <span class="list-en">Adopt more efficient Graph interaction methods, improve work efficiency and experience</span>
+                <span class="list-en">Adopt more efficient Graph interaction methods, improve work efficiency and
+                  experience</span>
               </li>
             </ul>
           </div>
@@ -176,10 +196,15 @@
             <span class="title-en">Technical Advantages</span>
           </div>
           <div class="content-bilingual">
-            <p class="content-main">DataArc 自主研发多项合成数据核心技术，覆盖从数据合成到模型训练的全周期，助力模型更准确、更高效、更安全。依托知识驱动的大模型推理框架，有效解决企业业务场景中推理深度不足、数据调用不准及多模态处理受限等难题。</p>
-            <p class="content-en">DataArc independently develops multiple core synthetic data technologies, covering the full cycle from data synthesis to model training, helping models become more accurate, efficient and secure. Relying on knowledge-driven large model reasoning framework, effectively solving problems such as insufficient reasoning depth, inaccurate data calls and limited multi-modal processing in enterprise business scenarios.</p>
+            <p class="content-main">DataArc
+              自主研发多项合成数据核心技术，覆盖从数据合成到模型训练的全周期，助力模型更准确、更高效、更安全。依托知识驱动的大模型推理框架，有效解决企业业务场景中推理深度不足、数据调用不准及多模态处理受限等难题。</p>
+            <p class="content-en">DataArc independently develops multiple core synthetic data technologies, covering the
+              full cycle from data synthesis to model training, helping models become more accurate, efficient and
+              secure. Relying on knowledge-driven large model reasoning framework, effectively solving problems such as
+              insufficient reasoning depth, inaccurate data calls and limited multi-modal processing in enterprise
+              business scenarios.</p>
           </div>
-          
+
           <div class="tech-grid">
             <div class="tech-item">
               <div class="icon-wrapper">
@@ -196,7 +221,7 @@
                 <p class="content-en">SoG improves model capabilities by 25.4%</p>
               </div>
             </div>
-            
+
             <div class="tech-item">
               <div class="icon-wrapper">
                 <img src="/images/icons/更聪明图标.png" alt="更聪明" class="icon-img">
@@ -212,7 +237,7 @@
                 <p class="content-en">ToG reasoning more accurate, improved to 90.2%</p>
               </div>
             </div>
-            
+
             <div class="tech-item">
               <div class="icon-wrapper">
                 <img src="/images/icons/更靠谱图标.png" alt="更靠谱" class="icon-img">
@@ -228,7 +253,7 @@
                 <p class="content-en">Judge: Reduce 90% of data risks</p>
               </div>
             </div>
-            
+
             <div class="tech-item">
               <div class="icon-wrapper">
                 <img src="/images/icons/更专业图标.png" alt="更专业" class="icon-img">
@@ -244,7 +269,7 @@
                 <p class="content-en">SQL-R1: More convenient data querying</p>
               </div>
             </div>
-            
+
             <div class="tech-item">
               <div class="icon-wrapper">
                 <img src="/images/icons/更安全图标.png" alt="更安全" class="icon-img">
@@ -260,7 +285,7 @@
                 <p class="content-en">SoE: Zero sensitive data leakage</p>
               </div>
             </div>
-            
+
             <div class="tech-item">
               <div class="icon-wrapper">
                 <img src="/images/icons/更准确图标.png" alt="更准确" class="icon-img">
@@ -292,7 +317,7 @@
               <p class="content-en">DataArc's significant performance improvements compared to industry benchmarks</p>
             </div>
           </div>
-          
+
           <div class="comparison-grid">
             <div class="comparison-card">
               <div class="comparison-header">
@@ -301,9 +326,9 @@
                   <span class="title-en">Graph Building Efficiency Comparison</span>
                 </div>
                 <div class="icon-wrapper">
-                <img src="/images/icons/建图效率对比图标.png" alt="建图效率对比" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
+                  <img src="/images/icons/建图效率对比图标.png" alt="建图效率对比" class="icon-img">
+                  <div class="icon-glow"></div>
+                </div>
               </div>
               <div class="comparison-stats">
                 <div class="stat-item">
@@ -320,14 +345,14 @@
                 <span class="improvement-value">218倍</span>
               </div>
             </div>
-            
+
             <div class="comparison-card">
               <div class="comparison-header">
                 <h3 class="title-level-3">推理准确率对比</h3>
                 <div class="icon-wrapper">
-                <img src="/images/icons/准确率对比图标.png" alt="准确率对比" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
+                  <img src="/images/icons/准确率对比图标.png" alt="准确率对比" class="icon-img">
+                  <div class="icon-glow"></div>
+                </div>
               </div>
               <div class="comparison-stats">
                 <div class="stat-item">
@@ -344,14 +369,14 @@
                 <span class="improvement-value">17个百分点</span>
               </div>
             </div>
-            
+
             <div class="comparison-card">
               <div class="comparison-header">
                 <h3 class="title-level-3">SoE 加密技术</h3>
                 <div class="icon-wrapper">
-                <img src="/images/icons/SoE加密图标.png" alt="SoE加密" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
+                  <img src="/images/icons/SoE加密图标.png" alt="SoE加密" class="icon-img">
+                  <div class="icon-glow"></div>
+                </div>
               </div>
               <div class="comparison-stats">
                 <div class="stat-item">
@@ -378,24 +403,16 @@
             <span class="title-divider">|</span>
             <span class="title-en">FAQ</span>
           </div>
-          
+
           <div class="faq-tabs">
-            <button 
-              class="faq-tab" 
-              :class="{ active: activeTab === 'kb' }"
-              @click="activeTab = 'kb'"
-            >
+            <button class="faq-tab" :class="{ active: activeTab === 'kb' }" @click="activeTab = 'kb'">
               关于知识库
             </button>
-            <button 
-              class="faq-tab" 
-              :class="{ active: activeTab === 'data' }"
-              @click="activeTab = 'data'"
-            >
+            <button class="faq-tab" :class="{ active: activeTab === 'data' }" @click="activeTab = 'data'">
               关于合成数据
             </button>
           </div>
-          
+
           <div class="faq-list" v-if="activeTab === 'kb'">
             <div class="faq-item" v-for="(item, index) in kbFaqs" :key="index">
               <div class="faq-question" @click="toggleFaq('kb', index)">
@@ -408,7 +425,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="faq-list" v-if="activeTab === 'data'">
             <div class="faq-item" v-for="(item, index) in dataFaqs" :key="index">
               <div class="faq-question" @click="toggleFaq('data', index)">
@@ -424,7 +441,7 @@
         </div>
       </div>
     </section>
-    
+
     <AppFooter />
   </div>
 </template>
@@ -518,19 +535,35 @@ const toggleFaq = (type, index) => {
   display: flex;
   margin-bottom: 40px;
   position: relative;
+  align-items: stretch;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .step-line {
   width: 4px;
   background: #2563eb;
-  margin-right: 24px;
+  margin: 0 12px;
   flex-shrink: 0;
   border-radius: 2px;
-  min-height: 80px;
+  height: auto;
+  align-self: stretch;
+}
+
+.step-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
 }
 
 .step-content h3 {
-  color: #2563eb;
+  color: #709dff;
   font-size: 1.2rem;
   margin-bottom: 12px;
   font-weight: 600;
@@ -562,9 +595,13 @@ const toggleFaq = (type, index) => {
   transition: all var(--duration-normal) var(--ease-out);
 }
 
+.list-item-bilingual{
+  white-space: nowrap;
+}
+
 .feature-icon {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   margin-bottom: 20px;
   border-radius: 8px;
 }
@@ -673,7 +710,6 @@ const toggleFaq = (type, index) => {
   text-align: center;
   font-size: 2rem;
   color: var(--text-primary);
-  margin-bottom: 40px;
   font-weight: 600;
 }
 
@@ -685,21 +721,54 @@ const toggleFaq = (type, index) => {
 }
 
 .faq-tab {
+  position: relative;
   padding: 12px 24px;
-  border: 2px solid #2563eb;
+  border: 2px solid rgba(37, 99, 235, 0.35);
   background: transparent;
   color: #2563eb;
-  border-radius: 6px;
+  border-radius: 10px;
   cursor: pointer;
   font-weight: 500;
   font-size: 0.95rem;
-  transition: all 0.3s ease;
+  overflow: hidden;
+  z-index: 0;
+  transition: color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease,
+    transform 0.3s ease;
 }
 
-.faq-tab.active,
+.faq-tab::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #2563eb 0%, #60a5fa 100%);
+  border-radius: inherit;
+  opacity: 0;
+  transform: scale(0.92, 0.88);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: -1;
+}
+
 .faq-tab:hover {
-  background: #2563eb;
-  color: white;
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.25);
+  transform: translateY(-3px);
+}
+
+.faq-tab:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.faq-tab.active {
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+}
+
+.faq-tab.active::after {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .faq-list {
@@ -727,7 +796,7 @@ const toggleFaq = (type, index) => {
 }
 
 .faq-question:hover {
-  background: rgba(var(--primary-rgb), 0.08);
+  background: rgba(#ffffff, 0.08);
 }
 
 .faq-number {
@@ -775,16 +844,21 @@ const toggleFaq = (type, index) => {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-  
+
   .tech-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
+  .title-bilingual{
+    display: flex;
+    align-items: center;
+  }
+
   .faq-tabs {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .faq-answer {
     margin-left: 0;
     padding-left: 24px;
@@ -800,7 +874,7 @@ const toggleFaq = (type, index) => {
 /* ===== Performance Comparison Section ===== */
 .performance-comparison {
   margin-top: var(--space-16);
-  padding: var(--space-12) 0;
+  padding: var(--space-12);
   background: var(--bg-secondary);
   border-radius: var(--radius-2xl);
 }
@@ -823,6 +897,12 @@ const toggleFaq = (type, index) => {
 .comparison-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
+}
+
+.comparison-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .comparison-header h3 {
@@ -934,5 +1014,4 @@ const toggleFaq = (type, index) => {
 .hero .hero-description .content-en {
   color: var(--text-white-secondary) !important;
 }
-</style> 
- 
+</style>

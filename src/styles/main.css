@@ -24,6 +24,7 @@
   /* 小球颜色由 JavaScript 动态管理 */
   --secondary-gradient: linear-gradient(135deg, #ff006e 0%, #8338ec 100%);
   --accent-gradient: linear-gradient(135deg, #06ffa5 0%, #00d4ff 100%);
+  --accent-color: #06ffa5;
   
   /* 精致的中性色调系统 */
   --neutral-50: #fafafa;
@@ -157,6 +158,7 @@
   --primary-dark: #0099cc;
   --secondary-gradient: linear-gradient(135deg, #ff006e 0%, #8338ec 100%);
   --accent-gradient: linear-gradient(135deg, #06ffa5 0%, #00d4ff 100%);
+  --accent-color: #06ffa5;
   
   /* 暗色主题文字颜色系统 */
   --text-primary: #ffffff;
@@ -686,7 +688,7 @@ h6, .h6 {
   align-items: center;
   gap: var(--space-1);
   line-height: var(--leading-tight);
-  margin-bottom: var(--space-4);
+  margin: var(--space-4);
 }
 
 .title-main {
@@ -787,7 +789,6 @@ h6, .h6 {
 /* 段落双语样式 */
 .content-bilingual {
   position: relative;
-  margin-bottom: var(--space-5);
 }
 
 .content-main {
@@ -2364,45 +2365,4 @@ h6, .h6 {
   }
 }
 
-/* ===== Locale visibility helpers ===== */
-html[lang='zh-Hans'] .content-bilingual .content-en,
-html[lang='zh-Hans'] .list-bilingual .list-en,
-html[lang='zh-Hans'] .title-bilingual .title-en,
-html[lang='zh-Hans'] .title-stacked .title-en,
-html[lang='zh-Hans'] .title-stacked-new .title-en,
-html[lang='zh-Hans'] .stat-label-bilingual .stat-en,
-html[lang='zh-Hans'] .list-item-bilingual .list-en,
-html[lang='zh-Hans'] .badge-bilingual .badge-en,
-html[lang='zh-Hans'] .btn-text-en,
-html[lang='zh-Hans'] .nav-bilingual .nav-en,
-html[lang='zh-Hans'] .company-english-line,
-html[lang='zh-Hans'] .subtitle-en,
-html[lang='zh-Hans'] .title-en,
-html[lang='zh-Hans'] .content-en {
-  display: none !important;
-}
-
-html[lang='en'] .content-bilingual .content-main,
-html[lang='en'] .list-bilingual .list-main,
-html[lang='en'] .title-bilingual .title-main,
-html[lang='en'] .title-stacked .title-main,
-html[lang='en'] .title-stacked-new .title-main,
-html[lang='en'] .stat-label-bilingual .stat-main,
-html[lang='en'] .list-item-bilingual .list-main,
-html[lang='en'] .btn-text-main,
-html[lang='en'] .nav-bilingual .nav-main,
-html[lang='en'] .company-main-title,
-html[lang='en'] .company-future-title,
-html[lang='en'] .subtitle-cn {
-  display: none !important;
-}
-
-html[lang='en'] .company-super-title .company-english-line {
-  display: block;
-  font-size: var(--font-5xl) !important;
-  font-weight: var(--font-weight-light);
-  letter-spacing: 0.08em;
-  color: var(--text-primary);
-}
-
-
+/* ===== End of main styles ===== */

@@ -1,4 +1,6 @@
 import home from './home/zh'
+import company from './company/zh'
+import products from './products/zh'
 
 const common = {
   brand: 'DataArc',
@@ -7,6 +9,32 @@ const common = {
     zh: '中文',
     en: '英语',
     ar: '阿拉伯语',
+  },
+  buttons: {
+    login: '立即登录',
+    contact: '联系我们',
+    getStarted: '立即体验',
+    learnMore: '了解更多',
+  },
+  graph: {
+    hint: '点击节点开始AI合成',
+    controls: '双击重新布局 | 拖拽节点交互',
+    aiDialogue: {
+      thinking: '正在思考...',
+      analyzing: '正在分析数据关系...',
+      generating: '正在生成合成数据...',
+      completed: 'AI 合成完成！',
+    },
+    sampleConversations: [
+      {q: "分析客户信贷风险等级", a: "基于历史交易数据，该客户风险等级为B+，建议授信额度50万"},
+      {q: "预测下季度投资趋势", a: "综合宏观经济指标，科技板块上涨概率72%，建议配置15%"},
+      {q: "识别异常交易行为", a: "检测到账户近7日交易频率异常，疑似洗钱风险，建议人工审核"},
+      {q: "优化资产配置策略", a: "当前组合波动率偏高，建议降低股票仓位至60%，增加债券配置"},
+      {q: "推荐个性化学习路径", a: "根据学习行为分析，建议优先加强数学基础模块，预计需要15天"},
+      {q: "优化生产线排程", a: "建议调整生产线A至85%产能，预计提升效率12%，节约成本8万"},
+      {q: "患者诊断辅助分析", a: "基于症状和检查结果，疑似心血管疾病，建议进一步心电图检查"},
+      {q: "AI模型性能优化", a: "通过超参数调优，模型准确率提升至94.5%，推理速度提升30%"}
+    ]
   },
 }
 
@@ -179,5 +207,7 @@ export default {
   nav,
   header,
   home,
+  company,
+  products,
   footer,
 }
