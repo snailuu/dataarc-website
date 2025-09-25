@@ -167,7 +167,7 @@
             <div v-for="orb in orbSections.tech || []" :key="orb.id" class="orb" :style="getOrbStyle(orb)"></div>
           </div>
         </div>
-        <div class="content-bilingual">
+        <div class="content-bilingual text-center">
           <p class="content-main">{{ technologyContent.description }}</p>
         </div>
 
@@ -202,7 +202,7 @@
 
           <div class="tech-branches">
             <div class="branch-section" v-for="branch in ['left', 'right']" :key="branch">
-              <div v-for="item in technologyContent.branches?.[branch] || []" :key="item.title" class="tech-item">
+              <div v-for="item in technologyContent.branches?.[branch] || []" :key="item.title" class="tech-item" :class="{ 'tech-item-premium': item.title.includes('更聪明') || item.title.includes('Smarter') }">
                 <div class="tech-title">
                   <div class="icon-wrapper">
                     <img :src="item.icon" :alt="item.iconAlt" class="tech-icon-img">
@@ -1816,6 +1816,138 @@ const submitBookingForm = async () => {
   transform: translateY(-4px);
 }
 
+/* ===== Premium Tech Item (更聪明卡片) ===== */
+.tech-item-premium {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: var(--space-4);
+  position: relative;
+  backdrop-filter: blur(16px);
+  transition: all 0.3s ease;
+}
+
+.tech-item-premium::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.tech-item-premium .tech-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.tech-item-premium .icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.tech-item-premium .tech-icon-img {
+  width: 32px;
+  height: 32px;
+  opacity: 0.8;
+  filter: 
+    brightness(0) 
+    invert(1)
+    drop-shadow(0 0 8px rgba(255, 255, 255, 0.6))
+    drop-shadow(0 0 16px rgba(255, 255, 255, 0.3));
+  transition: all 0.3s ease;
+}
+
+.tech-item-premium .title-stacked-new {
+  margin: 0;
+  flex: 1;
+}
+
+.tech-item-premium .title-stacked-new .title-main {
+  font-size: 1.4em !important;
+  font-weight: 200 !important;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  text-align: left;
+  position: relative;
+}
+
+.tech-item-premium .title-stacked-new .title-main::after {
+  content: '→';
+  margin-left: var(--space-2);
+  font-weight: 100;
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.6);
+  transition: all 0.3s ease;
+}
+
+
+
+.tech-item-premium .tech-content {
+  text-align: right;
+}
+
+.tech-item-premium .tech-desc-main {
+  font-size: var(--font-sm);
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  text-align: right;
+}
+
+.tech-item-premium:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.tech-item-premium:hover::before {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.tech-item-premium:hover .title-main {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400 !important;
+}
+
+
+
+.tech-item-premium .icon-glow {
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, transparent 70%);
+  opacity: 0.3;
+}
+
+.tech-item-premium:hover .icon-glow {
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, transparent 70%);
+  opacity: 0.6;
+}
+
+.tech-item-premium:hover .title-main::after {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 300;
+  transform: translateX(4px);
+}
+
+.tech-item-premium:hover .tech-icon-img {
+  opacity: 1;
+  filter: 
+    brightness(0) 
+    invert(1)
+    drop-shadow(0 0 12px rgba(255, 255, 255, 0.8))
+    drop-shadow(0 0 24px rgba(255, 255, 255, 0.5))
+    drop-shadow(0 0 36px rgba(255, 255, 255, 0.2));
+}
+
 .tech-label {
   font-size: var(--font-sm);
   font-weight: 700;
@@ -1919,6 +2051,38 @@ const submitBookingForm = async () => {
 
   .tech-item {
     padding: var(--space-4);
+  }
+
+  .tech-item-premium {
+    padding: var(--space-4);
+  }
+
+  .tech-item-premium::after {
+    display: none;
+  }
+
+  .tech-item-premium .tech-title {
+    gap: var(--space-2);
+    margin-bottom: var(--space-3);
+    padding-bottom: var(--space-2);
+  }
+
+  .tech-item-premium .icon-wrapper {
+    width: 32px;
+    height: 32px;
+  }
+
+  .tech-item-premium .tech-icon-img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .tech-item-premium .title-main {
+    font-size: var(--font-base);
+  }
+
+  .tech-item-premium .tech-desc-main {
+    font-size: var(--font-xs);
   }
 
   .branch-title {
