@@ -17,6 +17,9 @@ const common = {
     contact: 'Contact Us',
     getStarted: 'Get Started',
     learnMore: 'Learn More',
+    tryNow: 'Try Now',
+    backToHome: 'Back to Home',
+    continueReading: 'Continue Reading',
   },
   graph: {
     hint: 'Click node to start AI synthesis',

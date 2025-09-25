@@ -417,11 +417,11 @@
           
           <!-- Navigation Actions -->
           <div class="navigation-actions">
-            <a href="/#products-overview" class="btn btn-secondary btn-lg">
-              <span class="btn-text-main">返回首页</span>
-            </a>
+            <button @click="backToHome" class="btn btn-secondary btn-lg">
+              <span class="btn-text-main">{{ t('common.buttons.backToHome') }}</span>
+            </button>
             <a href="#synergy-value" class="btn btn-primary btn-lg">
-              <span class="btn-text-main">继续阅读</span>
+              <span class="btn-text-main">{{ t('common.buttons.continueReading') }}</span>
             </a>
           </div>
         </div>
@@ -670,11 +670,11 @@
           
           <!-- Navigation Actions -->
           <div class="navigation-actions">
-            <a href="/#products-overview" class="btn btn-secondary btn-lg">
-              <span class="btn-text-main">返回首页</span>
-            </a>
+            <button @click="backToHome" class="btn btn-secondary btn-lg">
+              <span class="btn-text-main">{{ t('common.buttons.backToHome') }}</span>
+            </button>
             <a href="#synergy-value" class="btn btn-primary btn-lg">
-              <span class="btn-text-main">继续阅读</span>
+              <span class="btn-text-main">{{ t('common.buttons.continueReading') }}</span>
             </a>
           </div>
         </div>
@@ -871,9 +871,19 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRouter } from 'vue-router'
 import AppHeader from '@/components/AppHeader.vue'
 
 const { t, locale, messages } = useI18n()
+const router = useRouter()
+
+// Handle back to home with language preservation
+const backToHome = () => {
+  router.push({ 
+    path: '/', 
+    hash: '#products-overview'
+  })
+}
 
 // Track which architecture tab is active
 const activeArchTab = ref('livingkb')

@@ -140,15 +140,15 @@
 
             <!-- Product Actions -->
             <div class="product-actions">
-              <a 
-                :href="card.title.includes('Living KB') ? '/products#livingkb-intro' : '/products#syndata-intro'" 
+              <button 
+                @click="goToProductDetail(card.title)" 
                 class="btn btn-secondary btn-lg">
                 <span class="btn-text-main">{{ t('common.buttons.learnMore') }}</span>
-              </a>
+              </button>
               <button 
                 @click="openBookingModal(card.title)" 
                 class="btn btn-primary btn-lg">
-                <span class="btn-text-main">立即试用</span>
+                <span class="btn-text-main">{{ t('common.buttons.tryNow') }}</span>
               </button>
             </div>
           </div>
@@ -373,6 +373,7 @@
 <script setup>
 import { onMounted, computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRouter } from 'vue-router'
 import AppHeader from '@/components/AppHeader.vue'
 import AppFooter from '@/components/AppFooter.vue'
 import KnowledgeGraphAnimation from '@/components/KnowledgeGraphAnimation.vue'
@@ -380,6 +381,16 @@ import { useFloatingOrbs } from '@/composables/useFloatingOrbs.js'
 import { sendContactForm, validateContactForm } from '@/services/contact.js'
 
 const { tm, t } = useI18n()
+const router = useRouter()
+
+// Handle learn more navigation with language preservation
+const goToProductDetail = (cardTitle) => {
+  const hash = cardTitle.includes('Living KB') ? '#livingkb-intro' : '#syndata-intro'
+  router.push({ 
+    path: '/products',
+    hash: hash
+  })
+}
 
 // 初始化浮动小球
 const { orbSections, generateOrbs, getOrbStyle } = useFloatingOrbs()
@@ -607,7 +618,7 @@ const submitBookingForm = async () => {
 /* ===== Market Opportunity Section ===== */
 .market-opportunity {
   padding: var(--space-32) 0;
-  background: #0c0c0c;
+  background: #000000;
   overflow: visible;
 }
 
@@ -1181,7 +1192,7 @@ const submitBookingForm = async () => {
 /* ===== Tech Advantages Section ===== */
 .tech-advantages {
   padding: var(--space-20) 0 var(--space-16) 0;
-  background: #0c0c0c;
+  background: #000000;
 }
 
 .tech-advantages h2 {

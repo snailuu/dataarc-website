@@ -17,6 +17,9 @@ const common = {
     contact: '联系我们',
     getStarted: '立即体验',
     learnMore: '了解更多',
+    tryNow: '立即试用',
+    backToHome: '返回首页',
+    continueReading: '继续阅读',
   },
   graph: {
     hint: '点击节点开始AI合成',

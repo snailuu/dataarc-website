@@ -17,6 +17,9 @@ const common = {
     contact: 'تواصل معنا',
     getStarted: 'ابدأ الآن',
     learnMore: 'تعرف على المزيد',
+    tryNow: 'جرب الآن',
+    backToHome: 'العودة إلى الرئيسية',
+    continueReading: 'متابعة القراءة',
   },
   graph: {
     hint: 'انقر على العقدة لبدء التركيب بالذكاء الاصطناعي',
