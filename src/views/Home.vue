@@ -1258,7 +1258,7 @@ const highlightNumbers = (text) => {
 
 /* ===== Tech Advantages Section ===== */
 .tech-advantages {
-  padding: var(--space-32) 0;
+  padding: var(--space-20) 0 var(--space-16) 0;
   background: var(--bg-primary);
 }
 
@@ -1319,7 +1319,7 @@ const highlightNumbers = (text) => {
 
 /* ===== Context Graph Section ===== */
 .context-graph {
-  padding: var(--space-32) 0;
+  padding: var(--space-16) 0 var(--space-32) 0;
   background: var(--bg-secondary);
 }
 
@@ -1700,17 +1700,17 @@ const highlightNumbers = (text) => {
 /* ===== Tech Architecture - 逻辑架构设计 ===== */
 .tech-architecture {
   position: relative;
-  margin-top: var(--space-16);
+  margin-top: var(--space-12);
   display: flex;
   flex-direction: column;
-  gap: var(--space-16);
+  gap: var(--space-10);
 }
 
 /* 核心基础：语境图谱 */
 .core-foundation {
   display: flex;
   justify-content: center;
-  margin-bottom: var(--space-8);
+  margin-bottom: var(--space-6);
 }
 
 .foundation-card {
@@ -1752,7 +1752,7 @@ const highlightNumbers = (text) => {
 .tech-branches {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space-16);
+  gap: var(--space-12);
   position: relative;
 }
 
@@ -1760,7 +1760,7 @@ const highlightNumbers = (text) => {
 .branch-section {
   display: flex;
   flex-direction: column;
-  gap: var(--space-8);
+  gap: var(--space-6);
 }
 
 .branch-header {
@@ -1987,6 +1987,41 @@ const highlightNumbers = (text) => {
   width: 40px;
   height: 40px;
   font-size: var(--font-2xl);
+}
+
+/* 连接指示器 */
+.connection-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: var(--space-0) 0;
+  gap: var(--space-32);
+}
+
+.connection-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.connection-indicator.left {
+  transform: translateX(var(--space-8));
+}
+
+.connection-indicator.right {
+  transform: translateX(calc(-1 * var(--space-8)));
+}
+
+.connection-arrow {
+  font-size: var(--font-2xl);
+  color: var(--text-primary);
+  margin-bottom: var(--space-1);
+}
+
+.connection-label {
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
 }
 
 /* 架构连接线 */
