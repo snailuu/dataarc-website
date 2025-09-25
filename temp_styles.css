@@ -1,0 +1,18 @@
+
+/* ===== Product Actions ===== */
+.product-actions {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--glass-border);
+}
+
+.product-actions .btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-weight-medium);
+  transition: all var(--duration-normal) var(--ease-out);
+}

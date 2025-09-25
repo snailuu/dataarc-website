@@ -414,6 +414,16 @@
               <p class="content-main">{{ t('products.livingkb.scenarios.items.decision.description') }}</p>
             </div>
           </div>
+          
+          <!-- Navigation Actions -->
+          <div class="navigation-actions">
+            <a href="/#products-overview" class="btn btn-secondary btn-lg">
+              <span class="btn-text-main">返回首页</span>
+            </a>
+            <a href="#synergy-value" class="btn btn-primary btn-lg">
+              <span class="btn-text-main">继续阅读</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -656,6 +666,16 @@
               <h4 class="title-main">{{ t('products.syndata.scenarios.items.support.title') }}</h4>
               <p class="content-main">{{ t('products.syndata.scenarios.items.support.description') }}</p>
             </div>
+          </div>
+          
+          <!-- Navigation Actions -->
+          <div class="navigation-actions">
+            <a href="/#products-overview" class="btn btn-secondary btn-lg">
+              <span class="btn-text-main">返回首页</span>
+            </a>
+            <a href="#synergy-value" class="btn btn-primary btn-lg">
+              <span class="btn-text-main">继续阅读</span>
+            </a>
           </div>
         </div>
       </div>
@@ -1894,5 +1914,76 @@ h3{
   font-weight: 600;
   margin-bottom: var(--space-2);
   color: var(--primary-color);
+}
+
+/* ===== Navigation Actions ===== */
+.navigation-actions {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--space-8);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--glass-border);
+}
+
+.navigation-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-weight-medium);
+  transition: all var(--duration-normal) var(--ease-out);
+  border-radius: var(--radius-full);
+  padding: var(--space-2) var(--space-6);
+  min-width: 120px;
+  text-decoration: none;
+}
+
+.navigation-actions .btn-primary {
+  background: rgba(0, 212, 255, 0.6);
+  color: var(--text-white);
+}
+
+.navigation-actions .btn-primary:hover {
+  background: rgba(0, 212, 255, 0.8);
+  transform: translateY(-1px);
+}
+
+.navigation-actions .btn-secondary {
+  background: var(--glass-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--glass-border);
+}
+
+.navigation-actions .btn-secondary:hover {
+  background: var(--neutral-50);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  transform: translateY(-1px);
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 768px) {
+  .navigation-actions {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  
+  .navigation-actions .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navigation-actions {
+    margin-top: var(--space-6);
+    padding-top: var(--space-4);
+  }
+  
+  .navigation-actions .btn {
+    padding: var(--space-3) var(--space-5);
+    font-size: var(--font-sm);
+  }
 }
 </style> 

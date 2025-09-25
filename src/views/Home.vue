@@ -137,6 +137,20 @@
                 </li>
               </ul>
             </div>
+
+            <!-- Product Actions -->
+            <div class="product-actions">
+              <a 
+                :href="card.title.includes('Living KB') ? '/products#livingkb-intro' : '/products#syndata-intro'" 
+                class="btn btn-secondary btn-lg">
+                <span class="btn-text-main">{{ t('common.buttons.learnMore') }}</span>
+              </a>
+              <button 
+                @click="openBookingModal(card.title)" 
+                class="btn btn-primary btn-lg">
+                <span class="btn-text-main">立即试用</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -292,22 +306,153 @@
       </div>
     </section>
 
+    <!-- Booking Modal -->
+    <div 
+      v-if="showBookingModal" 
+      class="modal-overlay" 
+      @click="closeBookingModal">
+      <div 
+        class="modal-content glass-card" 
+        @click.stop>
+        <div class="modal-header">
+          <h3 class="modal-title">{{ modalTitle }}</h3>
+          <button 
+            @click="closeBookingModal" 
+            class="modal-close"
+            aria-label="关闭">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+        
+        <form class="booking-form" @submit.prevent="submitBookingForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="booking-firstname">姓 *</label>
+              <input 
+                type="text" 
+                id="booking-firstname" 
+                v-model="bookingForm.firstname" 
+                required 
+                placeholder="请输入您的姓"
+                class="form-input"
+                :class="{ 'error': bookingErrors.firstname }">
+              <div v-if="bookingErrors.firstname" class="error-message">{{ bookingErrors.firstname }}</div>
+            </div>
+            <div class="form-group">
+              <label for="booking-lastname">名 *</label>
+              <input 
+                type="text" 
+                id="booking-lastname" 
+                v-model="bookingForm.lastname" 
+                required 
+                placeholder="请输入您的名"
+                class="form-input"
+                :class="{ 'error': bookingErrors.lastname }">
+              <div v-if="bookingErrors.lastname" class="error-message">{{ bookingErrors.lastname }}</div>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="booking-email">邮箱 *</label>
+              <input 
+                type="email" 
+                id="booking-email" 
+                v-model="bookingForm.email" 
+                required 
+                placeholder="请输入您的邮箱"
+                class="form-input"
+                :class="{ 'error': bookingErrors.email }">
+              <div v-if="bookingErrors.email" class="error-message">{{ bookingErrors.email }}</div>
+            </div>
+            <div class="form-group">
+              <label for="booking-phone">电话 *</label>
+              <input 
+                type="tel" 
+                id="booking-phone" 
+                v-model="bookingForm.phone" 
+                required 
+                placeholder="请输入您的联系电话"
+                class="form-input"
+                :class="{ 'error': bookingErrors.phone }">
+              <div v-if="bookingErrors.phone" class="error-message">{{ bookingErrors.phone }}</div>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="booking-message">试用需求 *</label>
+            <textarea 
+              id="booking-message" 
+              v-model="bookingForm.other" 
+              required 
+              placeholder="请描述您的试用需求和期望..."
+              class="form-textarea"
+              :class="{ 'error': bookingErrors.message }"></textarea>
+            <div v-if="bookingErrors.message" class="error-message">{{ bookingErrors.message }}</div>
+          </div>
+          
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="booking-agree" v-model="bookingForm.agree" required class="form-checkbox">
+            <label for="booking-agree" class="checkbox-label">
+              我同意<a href="#" class="form-link">服务条款</a>和<a href="#" class="form-link">隐私政策</a>
+            </label>
+          </div>
+          
+          <div v-if="bookingError" class="form-error">
+            {{ bookingError }}
+          </div>
+          
+          <div v-if="bookingSuccess" class="form-success">
+            {{ bookingSuccess }}
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-lg form-submit" :disabled="isBookingSubmitting">
+            <span v-if="isBookingSubmitting">提交中...</span>
+            <span v-else>提交试用申请</span>
+          </button>
+        </form>
+      </div>
+    </div>
+
     <AppFooter />
   </div>
 </template>
 
 <script setup>
-import { onMounted, computed } from 'vue'
+import { onMounted, computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import AppHeader from '@/components/AppHeader.vue'
 import AppFooter from '@/components/AppFooter.vue'
 import KnowledgeGraphAnimation from '@/components/KnowledgeGraphAnimation.vue'
 import { useFloatingOrbs } from '@/composables/useFloatingOrbs.js'
+import { sendContactForm, validateContactForm } from '@/services/contact.js'
 
 const { tm, t } = useI18n()
 
 // 初始化浮动小球
 const { orbSections, generateOrbs, getOrbStyle } = useFloatingOrbs()
+
+// 模态框状态
+const showBookingModal = ref(false)
+const modalTitle = ref('')
+const isBookingSubmitting = ref(false)
+const bookingError = ref('')
+const bookingSuccess = ref('')
+
+// 预约表单数据
+const bookingForm = ref({
+  firstname: '',
+  lastname: '',
+  email: '',
+  phone: '',
+  other: '',
+  agree: false
+})
+
+const bookingErrors = ref({})
 
 const heroContent = computed(() => {
   const content = tm('home.hero')
@@ -409,6 +554,81 @@ const handleMouseLeave = (event) => {
     orb.style.transform = ''
     orb.style.animationPlayState = 'running'
   })
+}
+
+// 模态框方法
+const openBookingModal = (productName) => {
+  modalTitle.value = `${productName} - 试用申请`
+  showBookingModal.value = true
+  resetBookingForm()
+}
+
+const closeBookingModal = () => {
+  showBookingModal.value = false
+  resetBookingForm()
+}
+
+const resetBookingForm = () => {
+  bookingForm.value = {
+    firstname: '',
+    lastname: '',
+    email: '',
+    phone: '',
+    other: '',
+    agree: false
+  }
+  bookingErrors.value = {}
+  bookingError.value = ''
+  bookingSuccess.value = ''
+}
+
+const submitBookingForm = async () => {
+  // 清除之前的错误
+  bookingErrors.value = {}
+  bookingError.value = ''
+  bookingSuccess.value = ''
+
+  // 验证表单
+  const validation = validateContactForm(bookingForm.value)
+  if (!validation.isValid) {
+    bookingErrors.value = validation.errors
+    bookingError.value = '请检查表单信息'
+    return
+  }
+
+  if (!bookingForm.value.agree) {
+    bookingError.value = '请先同意服务条款和隐私政策'
+    return
+  }
+
+  try {
+    isBookingSubmitting.value = true
+    
+    // 发送到飞书
+    const result = await sendContactForm({
+      firstname: bookingForm.value.firstname.trim(),
+      lastname: bookingForm.value.lastname.trim(),
+      email: bookingForm.value.email.trim(),
+      phone: bookingForm.value.phone.trim(),
+      other: `【${modalTitle.value}】${bookingForm.value.other.trim()}`
+    })
+
+    if (result.success) {
+      bookingSuccess.value = '申请提交成功！我们将尽快与您联系。'
+      
+      // 3秒后关闭模态框
+      setTimeout(() => {
+        closeBookingModal()
+      }, 3000)
+    } else {
+      bookingError.value = result.error || '提交失败，请稍后重试'
+    }
+  } catch (error) {
+    console.error('Submit booking error:', error)
+    bookingError.value = '网络错误，请稍后重试'
+  } finally {
+    isBookingSubmitting.value = false
+  }
 }
 </script>
 
@@ -1703,6 +1923,258 @@ const handleMouseLeave = (event) => {
 
   .branch-title {
     font-size: var(--font-xl);
+  }
+}
+
+
+/* ===== Product Actions ===== */
+.product-actions {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--glass-border);
+}
+
+.product-actions .btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-weight-medium);
+  transition: all var(--duration-normal) var(--ease-out);
+  border-radius: var(--radius-full);
+  padding: var(--space-2) var(--space-4);
+}
+
+.product-actions .btn-primary {
+  background: rgba(0, 212, 255, 0.6);
+  color: var(--text-white);
+}
+
+.product-actions .btn-primary:hover {
+  background: rgba(0, 212, 255, 0.8);
+}
+
+/* ===== Modal Styles ===== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+  animation: fadeIn 0.3s var(--ease-out);
+}
+
+.modal-content {
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: slideInUp 0.3s var(--ease-out);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.modal-title {
+  font-size: var(--font-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: var(--space-2);
+  border-radius: var(--radius-md);
+  transition: all var(--duration-normal) var(--ease-out);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close:hover {
+  color: var(--text-primary);
+  background: var(--glass-bg);
+}
+
+/* ===== Booking Form ===== */
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.form-group label {
+  font-size: var(--font-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+}
+
+.form-input,
+.form-textarea {
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  background: var(--glass-bg);
+  color: var(--text-primary);
+  font-size: var(--font-sm);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.1);
+}
+
+.form-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-input.error,
+.form-textarea.error {
+  border-color: #ef4444;
+}
+
+.error-message {
+  font-size: var(--font-xs);
+  color: #ef4444;
+  margin-top: var(--space-1);
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+}
+
+.form-checkbox {
+  margin-top: 2px;
+}
+
+.checkbox-label {
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.form-link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.form-link:hover {
+  text-decoration: underline;
+}
+
+.form-error {
+  padding: var(--space-3);
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: var(--radius-md);
+  color: #ef4444;
+  font-size: var(--font-sm);
+}
+
+.form-success {
+  padding: var(--space-3);
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  border-radius: var(--radius-md);
+  color: #22c55e;
+  font-size: var(--font-sm);
+}
+
+.form-submit {
+  width: 100%;
+  margin-top: var(--space-2);
+}
+
+.form-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+  from { 
+    opacity: 0; 
+    transform: translateY(30px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 768px) {
+  .product-actions {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+  
+  .modal-content {
+    width: 95%;
+    margin: var(--space-4);
+  }
+  
+  .modal-title {
+    font-size: var(--font-lg);
+  }
+}
+
+@media (max-width: 480px) {
+  .product-actions {
+    padding-top: var(--space-4);
+    margin-top: var(--space-4);
+  }
+  
+  .product-actions .btn {
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--font-sm);
   }
 }
 </style>
