@@ -11,16 +11,14 @@
       <div class="container">
         <div class="hero-content">
           <h1 class="hero-title title-multilevel company-super-title">
-            <span class="title-main company-main-title">技术优势</span>
+            <span class="title-main company-main-title">{{ t('technology.hero.title') }}</span>
             <span class="title-highlight title-multilevel">
-              <span class="title-main company-future-title">核心技术栈</span>
+              <span class="title-main company-future-title">{{ t('technology.hero.subtitle') }}</span>
             </span>
-            <span class="subtitle-en company-english-line">TECHNOLOGY ADVANTAGES • CORE TECHNOLOGY STACK</span>
+            <span class="subtitle-en company-english-line">{{ t('technology.hero.englishLine') }}</span>
           </h1>
           <div class="hero-description content-bilingual">
-            <p class="content-main">Living KB 动态知识库合成数据平台，七项核心技术驱动AI智能化升级。</p>
-            <p class="content-en">Living KB Dynamic Knowledge Base & Synthetic Data Platform with seven core
-              technologies driving AI intelligent upgrades.</p>
+            <p class="content-main">{{ t('technology.hero.description') }}</p>
           </div>
         </div>
       </div>
@@ -38,16 +36,10 @@
             <div class="step-line"></div>
             <div class="step-content">
               <div class="title-bilingual">
-                <h3 class="title-main">用户数据</h3>
-                <span class="title-divider">|</span>
-                <span class="title-en">User Data</span>
+                <h3 class="title-main">{{ t('technology.process.steps.userData.title') }}</h3>
               </div>
               <div class="content-bilingual">
-                <p class="content-main">对企业多模态、跨部门、跨系统的原始数据（如 PDF、Word 、PPT 汇报、SQL 数据库、会议录屏等）等内容，进行抽取、结构化和建模等工作，让 AI
-                  真正"读懂"企业知识。</p>
-                <p class="content-en">Extract, structure and model enterprise multi-modal, cross-department,
-                  cross-system raw data (PDFs, Word, PPT reports, SQL databases, meeting recordings, etc.) to enable AI
-                  to truly "understand" enterprise knowledge.</p>
+                <p class="content-main">{{ t('technology.process.steps.userData.description') }}</p>
               </div>
             </div>
           </div>
@@ -60,14 +52,10 @@
             <div class="step-line"></div>
             <div class="step-content">
               <div class="title-bilingual">
-                <h3 class="title-main">语境图谱构建</h3>
-                <span class="title-divider">|</span>
-                <span class="title-en">Context Graph Construction</span>
+                <h3 class="title-main">{{ t('technology.process.steps.contextGraph.title') }}</h3>
               </div>
               <div class="content-bilingual">
-                <p class="content-main">语境图谱将分散的企业数据转化为动态知识网络，让隐藏的知识脉络和数据关联清晰可见。</p>
-                <p class="content-en">Context graphs transform scattered enterprise data into dynamic knowledge
-                  networks, making hidden knowledge connections and data correlations clearly visible.</p>
+                <p class="content-main">{{ t('technology.process.steps.contextGraph.description') }}</p>
               </div>
             </div>
           </div>
@@ -80,17 +68,10 @@
             <div class="step-line"></div>
             <div class="step-content">
               <div class="title-bilingual">
-                <h3 class="title-main">多能体平台</h3>
-                <span class="title-divider">|</span>
-                <span class="title-en">Multi-Agent Platform</span>
+                <h3 class="title-main">{{ t('technology.process.steps.multiAgent.title') }}</h3>
               </div>
               <div class="content-bilingual">
-                <p class="content-main">
-                  智能体可自主调用数据库、浏览器、语境图谱等多类工具，并借助合成数据持续训练与进化，快速掌握行业知识、人类偏好与协作模式，从而以更低成本、更高效率完成复杂业务的智能化执行。</p>
-                <p class="content-en">Agents can autonomously invoke databases, browsers, context graphs and other
-                  tools, continuously training and evolving with synthetic data to quickly master industry knowledge,
-                  human preferences and collaboration patterns, thus completing intelligent execution of complex
-                  business with lower cost and higher efficiency.</p>
+                <p class="content-main">{{ t('technology.process.steps.multiAgent.description') }}</p>
               </div>
             </div>
           </div>
@@ -103,16 +84,10 @@
             <div class="step-line"></div>
             <div class="step-content">
               <div class="title-bilingual">
-                <h3 class="title-main">交互平台</h3>
-                <span class="title-divider">|</span>
-                <span class="title-en">Interactive Platform</span>
+                <h3 class="title-main">{{ t('technology.process.steps.interaction.title') }}</h3>
               </div>
               <div class="content-bilingual">
-                <p class="content-main">可通过自然对话、图交互等多模态交互方式与产品互动，让用户高效、安全地获取知识和完成任务，大幅提升信息利用率与业务执行力。</p>
-                <p class="content-en">Interact with products through natural dialogue, graph interaction and other
-                  multi-modal interaction methods, enabling users to efficiently and safely acquire knowledge and
-                  complete tasks, significantly improving information utilization and business execution capabilities.
-                </p>
+                <p class="content-main">{{ t('technology.process.steps.interaction.description') }}</p>
               </div>
             </div>
           </div>
@@ -125,14 +100,10 @@
             <div class="step-line"></div>
             <div class="step-content">
               <div class="title-bilingual">
-                <h3 class="title-main">图谱自适化</h3>
-                <span class="title-divider">|</span>
-                <span class="title-en">Graph Self-Adaptation</span>
+                <h3 class="title-main">{{ t('technology.process.steps.graphAdaptation.title') }}</h3>
               </div>
               <div class="content-bilingual">
-                <p class="content-main">AI 搜索和应用使用过程中产生的新数据会持续补全图谱，让 Living KB 始终保持鲜活。</p>
-                <p class="content-en">New data generated during AI search and application usage continuously supplements
-                  the graph, keeping Living KB always fresh and alive.</p>
+                <p class="content-main">{{ t('technology.process.steps.graphAdaptation.description') }}</p>
               </div>
             </div>
           </div>
@@ -143,46 +114,25 @@
           <div class="feature-card">
             <img src="/images/icons/核心技术页面-核心功能-icon.png" alt="核心功能" class="feature-icon">
             <div class="title-bilingual">
-              <h3 class="title-main">核心功能</h3>
-              <span class="title-divider">|</span>
-              <span class="title-en">Core Functionality</span>
+              <h3 class="title-main">{{ t('technology.features.core.title') }}</h3>
             </div>
             <div class="content-bilingual">
-              <p class="content-main">以 Context Graph 为核心，实现企业知识管理并使企业知识"LLM Ready"。通过知识挖掘、语境图谱和合成数据能力不断扩充企业的知识和语境，让 AI
-                和人类可以基于最新的企业数据进行检索、分析和决策。</p>
-              <p class="content-en">With Context Graph as the core, achieve enterprise knowledge management and make
-                enterprise knowledge "LLM Ready". Through knowledge mining, context graphs and synthetic data
-                capabilities, continuously expand enterprise knowledge and context, enabling AI and humans to retrieve,
-                analyze and make decisions based on the latest enterprise data.</p>
+              <p class="content-main">{{ t('technology.features.core.description') }}</p>
             </div>
           </div>
 
           <div class="feature-card">
             <img src="/images/icons/核心技术页面-产品特点-icon.png" alt="产品特点" class="feature-icon">
             <div class="title-bilingual">
-              <h3 class="title-main">产品特点</h3>
-              <span class="title-divider">|</span>
-              <span class="title-en">Product Features</span>
+              <h3 class="title-main">{{ t('technology.features.product.title') }}</h3>
             </div>
             <ul class="list-bilingual">
-              <li class="list-item-bilingual">
-                <span class="list-main">高效构建知识图谱，提升数据处理和理解能力</span>
-                <span class="list-en">Efficiently build knowledge graphs, enhance data processing and understanding
-                  capabilities</span>
-              </li>
-              <li class="list-item-bilingual">
-                <span class="list-main">支持三元组(实体-边-实体)与语境理解</span>
-                <span class="list-en">Support triplet (entity-relation-entity) and context understanding</span>
-              </li>
-              <li class="list-item-bilingual">
-                <span class="list-main">提升图谱推理与信息查询效率，节省数据管理成本</span>
-                <span class="list-en">Improve graph reasoning and information query efficiency, save data management
-                  costs</span>
-              </li>
-              <li class="list-item-bilingual">
-                <span class="list-main">采用更高效的Graph交互方式，提升工作效率与体验</span>
-                <span class="list-en">Adopt more efficient Graph interaction methods, improve work efficiency and
-                  experience</span>
+              <li
+                v-for="(item, index) in productFeatureItems"
+                :key="index"
+                class="list-item-bilingual"
+              >
+                <span class="list-main">{{ item }}</span>
               </li>
             </ul>
           </div>
@@ -191,18 +141,10 @@
         <!-- 技术优势 -->
         <div id="tech-advantages" class="tech-section">
           <div class="title-bilingual">
-            <h2 class="title-main">技术优势</h2>
-            <span class="title-divider">|</span>
-            <span class="title-en">Technical Advantages</span>
+            <h2 class="title-main">{{ t('technology.advantages.title') }}</h2>
           </div>
           <div class="content-bilingual">
-            <p class="content-main">DataArc
-              自主研发多项合成数据核心技术，覆盖从数据合成到模型训练的全周期，助力模型更准确、更高效、更安全。依托知识驱动的大模型推理框架，有效解决企业业务场景中推理深度不足、数据调用不准及多模态处理受限等难题。</p>
-            <p class="content-en">DataArc independently develops multiple core synthetic data technologies, covering the
-              full cycle from data synthesis to model training, helping models become more accurate, efficient and
-              secure. Relying on knowledge-driven large model reasoning framework, effectively solving problems such as
-              insufficient reasoning depth, inaccurate data calls and limited multi-modal processing in enterprise
-              business scenarios.</p>
+            <p class="content-main">{{ t('technology.advantages.description') }}</p>
           </div>
 
           <div class="tech-grid">
@@ -212,13 +154,10 @@
                 <div class="icon-glow"></div>
               </div>
               <div class="title-bilingual">
-                <h4 class="title-main">更懂行</h4>
-                <span class="title-divider">|</span>
-                <span class="title-en">More Industry-Savvy</span>
+                <h4 class="title-main">{{ t('technology.advantages.items.industry.title') }}</h4>
               </div>
               <div class="content-bilingual">
-                <p class="content-main">SoG提升模型能力 25.4%</p>
-                <p class="content-en">SoG improves model capabilities by 25.4%</p>
+                <p class="content-main">{{ t('technology.advantages.items.industry.description') }}</p>
               </div>
             </div>
 
@@ -228,13 +167,10 @@
                 <div class="icon-glow"></div>
               </div>
               <div class="title-bilingual">
-                <h4 class="title-main">更聪明</h4>
-                <span class="title-divider">|</span>
-                <span class="title-en">Smarter</span>
+                <h4 class="title-main">{{ t('technology.advantages.items.smart.title') }}</h4>
               </div>
               <div class="content-bilingual">
-                <p class="content-main">ToG 推理更准，升至 90.2%</p>
-                <p class="content-en">ToG reasoning more accurate, improved to 90.2%</p>
+                <p class="content-main">{{ t('technology.advantages.items.smart.description') }}</p>
               </div>
             </div>
 
@@ -244,13 +180,10 @@
                 <div class="icon-glow"></div>
               </div>
               <div class="title-bilingual">
-                <h4 class="title-main">更靠谱</h4>
-                <span class="title-divider">|</span>
-                <span class="title-en">More Reliable</span>
+                <h4 class="title-main">{{ t('technology.advantages.items.reliable.title') }}</h4>
               </div>
               <div class="content-bilingual">
-                <p class="content-main">Judge：降低90%的数据风险</p>
-                <p class="content-en">Judge: Reduce 90% of data risks</p>
+                <p class="content-main">{{ t('technology.advantages.items.reliable.description') }}</p>
               </div>
             </div>
 
@@ -260,13 +193,10 @@
                 <div class="icon-glow"></div>
               </div>
               <div class="title-bilingual">
-                <h4 class="title-main">更专业</h4>
-                <span class="title-divider">|</span>
-                <span class="title-en">More Professional</span>
+                <h4 class="title-main">{{ t('technology.advantages.items.professional.title') }}</h4>
               </div>
               <div class="content-bilingual">
-                <p class="content-main">SQL-R1:数据查询更便捷</p>
-                <p class="content-en">SQL-R1: More convenient data querying</p>
+                <p class="content-main">{{ t('technology.advantages.items.professional.description') }}</p>
               </div>
             </div>
 
@@ -276,13 +206,10 @@
                 <div class="icon-glow"></div>
               </div>
               <div class="title-bilingual">
-                <h4 class="title-main">更安全</h4>
-                <span class="title-divider">|</span>
-                <span class="title-en">More Secure</span>
+                <h4 class="title-main">{{ t('technology.advantages.items.secure.title') }}</h4>
               </div>
               <div class="content-bilingual">
-                <p class="content-main">SoE：敏感数据0泄露</p>
-                <p class="content-en">SoE: Zero sensitive data leakage</p>
+                <p class="content-main">{{ t('technology.advantages.items.secure.description') }}</p>
               </div>
             </div>
 
@@ -292,13 +219,10 @@
                 <div class="icon-glow"></div>
               </div>
               <div class="title-bilingual">
-                <h4 class="title-main">更准确</h4>
-                <span class="title-divider">|</span>
-                <span class="title-en">More Accurate</span>
+                <h4 class="title-main">{{ t('technology.advantages.items.accurate.title') }}</h4>
               </div>
               <div class="content-bilingual">
-                <p class="content-main">RAG：准确率 提升至 92%</p>
-                <p class="content-en">RAG: Accuracy improved to 92%</p>
+                <p class="content-main">{{ t('technology.advantages.items.accurate.description') }}</p>
               </div>
             </div>
           </div>
@@ -308,13 +232,10 @@
         <div id="performance-comparison" class="performance-comparison">
           <div class="section-header">
             <div class="title-bilingual">
-              <h2 class="title-main">性能优势对比</h2>
-              <span class="title-divider">|</span>
-              <span class="title-en">Performance Comparison</span>
+              <h2 class="title-main">{{ t('technology.performance.title') }}</h2>
             </div>
             <div class="content-bilingual">
-              <p class="content-main">DataArc相比行业标杆的显著性能提升</p>
-              <p class="content-en">DataArc's significant performance improvements compared to industry benchmarks</p>
+              <p class="content-main">{{ t('technology.performance.description') }}</p>
             </div>
           </div>
 
@@ -322,8 +243,7 @@
             <div class="comparison-card">
               <div class="comparison-header">
                 <div class="title-bilingual">
-                  <h3 class="title-main">建图效率对比</h3>
-                  <span class="title-en">Graph Building Efficiency Comparison</span>
+                  <h3 class="title-main">{{ t('technology.performance.cards.graph.title') }}</h3>
                 </div>
                 <div class="icon-wrapper">
                   <img src="/images/icons/建图效率对比图标.png" alt="建图效率对比" class="icon-img">
@@ -332,23 +252,25 @@
               </div>
               <div class="comparison-stats">
                 <div class="stat-item">
-                  <span class="stat-label">DataArc SoG</span>
-                  <span class="stat-value highlight">6分钟</span>
+                  <span class="stat-label">{{ t('technology.performance.cards.graph.stats.dataArc.label') }}</span>
+                  <span class="stat-value highlight">{{ t('technology.performance.cards.graph.stats.dataArc.value') }}</span>
                 </div>
                 <div class="stat-item">
-                  <span class="stat-label">LightRAG</span>
-                  <span class="stat-value">2小时</span>
+                  <span class="stat-label">{{ t('technology.performance.cards.graph.stats.benchmark.label') }}</span>
+                  <span class="stat-value">{{ t('technology.performance.cards.graph.stats.benchmark.value') }}</span>
                 </div>
               </div>
               <div class="improvement">
-                <span class="improvement-text">效率提升</span>
-                <span class="improvement-value">218倍</span>
+                <span class="improvement-text">{{ t('technology.performance.cards.graph.improvement.label') }}</span>
+                <span class="improvement-value">{{ t('technology.performance.cards.graph.improvement.value') }}</span>
               </div>
             </div>
 
             <div class="comparison-card">
               <div class="comparison-header">
-                <h3 class="title-level-3">推理准确率对比</h3>
+                <div class="title-bilingual">
+                  <h3 class="title-main">{{ t('technology.performance.cards.reasoning.title') }}</h3>
+                </div>
                 <div class="icon-wrapper">
                   <img src="/images/icons/准确率对比图标.png" alt="准确率对比" class="icon-img">
                   <div class="icon-glow"></div>
@@ -356,23 +278,25 @@
               </div>
               <div class="comparison-stats">
                 <div class="stat-item">
-                  <span class="stat-label">DataArc SoG</span>
-                  <span class="stat-value highlight">90.2%</span>
+                  <span class="stat-label">{{ t('technology.performance.cards.reasoning.stats.dataArc.label') }}</span>
+                  <span class="stat-value highlight">{{ t('technology.performance.cards.reasoning.stats.dataArc.value') }}</span>
                 </div>
                 <div class="stat-item">
-                  <span class="stat-label">传统方案</span>
-                  <span class="stat-value">73.1%</span>
+                  <span class="stat-label">{{ t('technology.performance.cards.reasoning.stats.benchmark.label') }}</span>
+                  <span class="stat-value">{{ t('technology.performance.cards.reasoning.stats.benchmark.value') }}</span>
                 </div>
               </div>
               <div class="improvement">
-                <span class="improvement-text">准确率提升</span>
-                <span class="improvement-value">17个百分点</span>
+                <span class="improvement-text">{{ t('technology.performance.cards.reasoning.improvement.label') }}</span>
+                <span class="improvement-value">{{ t('technology.performance.cards.reasoning.improvement.value') }}</span>
               </div>
             </div>
 
             <div class="comparison-card">
               <div class="comparison-header">
-                <h3 class="title-level-3">SoE 加密技术</h3>
+                <div class="title-bilingual">
+                  <h3 class="title-main">{{ t('technology.performance.cards.encryption.title') }}</h3>
+                </div>
                 <div class="icon-wrapper">
                   <img src="/images/icons/SoE加密图标.png" alt="SoE加密" class="icon-img">
                   <div class="icon-glow"></div>
@@ -380,17 +304,17 @@
               </div>
               <div class="comparison-stats">
                 <div class="stat-item">
-                  <span class="stat-label">隐私保护</span>
-                  <span class="stat-value highlight">0%泄露</span>
+                  <span class="stat-label">{{ t('technology.performance.cards.encryption.stats.privacy.label') }}</span>
+                  <span class="stat-value highlight">{{ t('technology.performance.cards.encryption.stats.privacy.value') }}</span>
                 </div>
                 <div class="stat-item">
-                  <span class="stat-label">性能提升</span>
-                  <span class="stat-value highlight">+2%</span>
+                  <span class="stat-label">{{ t('technology.performance.cards.encryption.stats.performance.label') }}</span>
+                  <span class="stat-value highlight">{{ t('technology.performance.cards.encryption.stats.performance.value') }}</span>
                 </div>
               </div>
               <div class="improvement">
-                <span class="improvement-text">安全性</span>
-                <span class="improvement-value">完全保障</span>
+                <span class="improvement-text">{{ t('technology.performance.cards.encryption.improvement.label') }}</span>
+                <span class="improvement-value">{{ t('technology.performance.cards.encryption.improvement.value') }}</span>
               </div>
             </div>
           </div>
@@ -399,41 +323,39 @@
         <!-- FAQ部分 -->
         <div id="faq" class="faq-section">
           <div class="title-bilingual">
-            <h2 class="title-main">常见问题</h2>
-            <span class="title-divider">|</span>
-            <span class="title-en">FAQ</span>
+            <h2 class="title-main">{{ t('technology.faq.title') }}</h2>
           </div>
 
           <div class="faq-tabs">
             <button class="faq-tab" :class="{ active: activeTab === 'kb' }" @click="activeTab = 'kb'">
-              关于知识库
+              {{ t('technology.faq.tabs.kb') }}
             </button>
             <button class="faq-tab" :class="{ active: activeTab === 'data' }" @click="activeTab = 'data'">
-              关于合成数据
+              {{ t('technology.faq.tabs.data') }}
             </button>
           </div>
 
           <div class="faq-list" v-if="activeTab === 'kb'">
-            <div class="faq-item" v-for="(item, index) in kbFaqs" :key="index">
+            <div class="faq-item" v-for="(item, index) in kbFaqItems" :key="index">
               <div class="faq-question" @click="toggleFaq('kb', index)">
                 <span class="faq-number">{{ String(index + 1).padStart(2, '0') }}</span>
                 <span class="faq-text">{{ item.question }}</span>
-                <span class="faq-toggle">{{ item.isOpen ? '-' : '+' }}</span>
+                <span class="faq-toggle">{{ kbFaqOpen[index] ? '-' : '+' }}</span>
               </div>
-              <div class="faq-answer" v-show="item.isOpen">
+              <div class="faq-answer" v-show="kbFaqOpen[index]">
                 <p>{{ item.answer }}</p>
               </div>
             </div>
           </div>
 
           <div class="faq-list" v-if="activeTab === 'data'">
-            <div class="faq-item" v-for="(item, index) in dataFaqs" :key="index">
+            <div class="faq-item" v-for="(item, index) in dataFaqItems" :key="index">
               <div class="faq-question" @click="toggleFaq('data', index)">
                 <span class="faq-number">{{ String(index + 1).padStart(2, '0') }}</span>
                 <span class="faq-text">{{ item.question }}</span>
-                <span class="faq-toggle">{{ item.isOpen ? '-' : '+' }}</span>
+                <span class="faq-toggle">{{ dataFaqOpen[index] ? '-' : '+' }}</span>
               </div>
-              <div class="faq-answer" v-show="item.isOpen">
+              <div class="faq-answer" v-show="dataFaqOpen[index]">
                 <p>{{ item.answer }}</p>
               </div>
             </div>
@@ -447,53 +369,52 @@
 </template>
 
 <script setup>
-import { ref, reactive } from 'vue'
+import { ref, computed, watchEffect } from 'vue'
+import { useI18n } from 'vue-i18n'
 import AppHeader from '@/components/AppHeader.vue'
 import AppFooter from '@/components/AppFooter.vue'
 
+const { t, tm } = useI18n()
+
 const activeTab = ref('kb')
 
-const kbFaqs = reactive([
-  {
-    question: '什么是DataArc的动态知识库？',
-    answer: 'DataArc的动态知识库（Context Graph）是一种结构化的数据管理系统，它通过抓取并整理企业信息，构建语境图谱，帮助企业以更加高效、直观的方式管理和利用知识。它使得企业能够快速提取和应用相关知识，优化模型训练过程。',
-    isOpen: true
-  },
-  {
-    question: '如何构建知识图谱？',
-    answer: '通过DataArc的动态知识库，企业可以将内部数据源转化为结构化的图谱，系统自动抓取企业的政策、文档、报告等信息，并将其转化为三元组形式（例如：政策-适用-企业）。这些知识点会自动连接并形成图谱，提升数据处理与知识管理效率。',
-    isOpen: false
-  },
-  {
-    question: '如何使用 DataArc 知识库进行数据查询？',
-    answer: 'DataArc的知识库支持多种查询方式，包括结构化查询与自然语言查询。通过图谱的语境理解功能，用户可以输入问题或查询条件，系统会自动从图谱中提取相关知识，提供最准确的信息。',
-    isOpen: false
-  },
-  {
-    question: 'DataArc的知识库能否与现有的企业系统兼容？',
-    answer: '是的，DataArc的知识库可以与现有的企业管理系统、CRM、ERP等无缝对接。我们提供灵活的API接口和技术支持，帮助企业将知识图谱与其他业务系统有效集成。',
-    isOpen: false
-  }
-])
+const productFeatureItems = computed(() => {
+  const items = tm('technology.features.product.items')
+  return Array.isArray(items) ? items : []
+})
 
-const dataFaqs = reactive([
-  {
-    question: '什么是合成数据？',
-    answer: '合成数据是通过算法生成的人工数据，它具有与真实数据相似的统计特性，但不包含实际的敏感信息。这种数据可以用于机器学习模型训练，同时保护隐私和降低数据获取成本。',
-    isOpen: false
-  },
-  {
-    question: '合成数据的质量如何保证？',
-    answer: 'DataArc采用先进的生成算法和质量评估体系，确保合成数据在保持统计特性的同时，具有足够的多样性和真实性。我们的系统会持续监控和优化数据质量。',
-    isOpen: false
+const kbFaqItems = computed(() => {
+  const items = tm('technology.faq.kb.items')
+  return Array.isArray(items) ? items : []
+})
+
+const dataFaqItems = computed(() => {
+  const items = tm('technology.faq.data.items')
+  return Array.isArray(items) ? items : []
+})
+
+const kbFaqOpen = ref([])
+const dataFaqOpen = ref([])
+
+watchEffect(() => {
+  const length = kbFaqItems.value.length
+  if (kbFaqOpen.value.length !== length) {
+    kbFaqOpen.value = Array.from({ length }, (_, index) => index === 0)
   }
-])
+})
+
+watchEffect(() => {
+  const length = dataFaqItems.value.length
+  if (dataFaqOpen.value.length !== length) {
+    dataFaqOpen.value = Array.from({ length }, () => false)
+  }
+})
 
 const toggleFaq = (type, index) => {
   if (type === 'kb') {
-    kbFaqs[index].isOpen = !kbFaqs[index].isOpen
+    kbFaqOpen.value[index] = !kbFaqOpen.value[index]
   } else {
-    dataFaqs[index].isOpen = !dataFaqs[index].isOpen
+    dataFaqOpen.value[index] = !dataFaqOpen.value[index]
   }
 }
 </script>
@@ -596,7 +517,7 @@ const toggleFaq = (type, index) => {
 }
 
 .list-item-bilingual{
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .feature-icon {
@@ -1010,8 +931,7 @@ const toggleFaq = (type, index) => {
   color: var(--text-white-secondary) !important;
 }
 
-.hero .hero-description .content-main,
-.hero .hero-description .content-en {
+.hero .hero-description .content-main {
   color: var(--text-white-secondary) !important;
 }
 </style>

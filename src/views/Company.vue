@@ -90,7 +90,7 @@
               <img src="/images/icons/关于我们-团队介绍-cto.png" alt="CTO 徐铖晋博士" class="leader-avatar">
               <div class="photo-overlay">
                 <div class="overlay-content">
-                  <div class="leader-role">首席技术官</div>
+                  <div class="leader-role">{{ t('company.team.cto.title') }}</div>
                 </div>
               </div>
             </div>
@@ -123,7 +123,7 @@
               <img src="/images/icons/关于我们-团队介绍-ceo.png" alt="CEO 江旭晖博士" class="leader-avatar">
               <div class="photo-overlay">
                 <div class="overlay-content">
-                  <div class="leader-role">首席执行官</div>
+                  <div class="leader-role">{{ t('company.team.ceo.title') }}</div>
                 </div>
               </div>
             </div>
@@ -442,7 +442,7 @@
           </div>
           
           <div class="team-visual">
-            <div class="team-placeholder">【需要图片：团队介绍页面设计】</div>
+            <div class="team-placeholder">{{ t('company.teamDetails.teamVisual.placeholder') }}</div>
           </div>
         </div>
         
@@ -450,14 +450,14 @@
           <h3 class="title-level-3">{{ t('company.teamDetails.advisors.title') }}</h3>
           <div class="advisors-grid">
             <div class="advisor-card">
-              <div class="advisor-avatar">【需要图片：沈向洋院士头像】</div>
+              <div class="advisor-avatar">{{ t('company.teamDetails.advisors.shen.avatar') }}</div>
               <h4 class="title-level-4">{{ t('company.teamDetails.advisors.shen.name') }}</h4>
               <p class="advisor-title">{{ t('company.teamDetails.advisors.shen.title') }}</p>
               <p class="advisor-bio">{{ t('company.teamDetails.advisors.shen.bio') }}</p>
             </div>
             
             <div class="advisor-card">
-              <div class="advisor-avatar">【需要图片：顾问专家头像占位符】</div>
+              <div class="advisor-avatar">{{ t('company.teamDetails.advisors.experts.avatar') }}</div>
               <h4 class="title-level-4">{{ t('company.teamDetails.advisors.experts.name') }}</h4>
               <p class="advisor-title">{{ t('company.teamDetails.advisors.experts.title') }}</p>
               <p class="advisor-bio">{{ t('company.teamDetails.advisors.experts.bio') }}</p>
@@ -570,27 +570,27 @@
         
         <div class="investors-section">
           <div class="title-bilingual">
-            <h3 class="title-main">投资机构</h3>
+            <h3 class="title-main">{{ t('company.funding.investors.title') }}</h3>
             <span class="title-divider">|</span>
-            <span class="title-en">Investment Institutions</span>
+            <span class="title-en">{{ t('company.funding.investors.titleEn') }}</span>
           </div>
           <div class="investors-grid">
             <div class="investor-category">
               <div class="title-bilingual">
-                <h4 class="title-main">头部投资机构</h4>
+                <h4 class="title-main">{{ t('company.funding.investors.leading.title') }}</h4>
                 <span class="title-divider">|</span>
-                <span class="title-en">Leading Investment Institutions</span>
+                <span class="title-en">{{ t('company.funding.investors.leading.titleEn') }}</span>
               </div>
-              <div class="investor-placeholder">【需要图片：头部投资机构展示】</div>
+              <div class="investor-placeholder">{{ t('company.funding.investors.leading.placeholder') }}</div>
             </div>
             
             <div class="investor-category">
               <div class="title-bilingual">
-                <h4 class="title-main">产业集团投资方</h4>
+                <h4 class="title-main">{{ t('company.funding.investors.industrial.title') }}</h4>
                 <span class="title-divider">|</span>
-                <span class="title-en">Industrial Group Investors</span>
+                <span class="title-en">{{ t('company.funding.investors.industrial.titleEn') }}</span>
               </div>
-              <div class="investor-placeholder">【需要图片：产业集团投资方】</div>
+              <div class="investor-placeholder">{{ t('company.funding.investors.industrial.placeholder') }}</div>
             </div>
           </div>
         </div>
@@ -602,92 +602,92 @@
       <div class="container">
         <div class="section-header">
           <div class="title-bilingual">
-            <h2 class="title-main">发展历程</h2>
+            <h2 class="title-main">{{ t('company.milestones.title') }}</h2>
             <span class="title-divider">|</span>
-            <span class="title-en">Development History</span>
+            <span class="title-en">{{ t('company.milestones.titleEn') }}</span>
           </div>
           <div class="content-bilingual">
-            <p class="content-main">从概念到实现，持续创新的发展之路</p>
-            <p class="content-en">From concept to implementation, a path of continuous innovation and development</p>
+            <p class="content-main">{{ t('company.milestones.description') }}</p>
+            <p class="content-en">{{ t('company.milestones.descriptionEn') }}</p>
           </div>
         </div>
         
         <div class="milestones-grid">
           <div class="milestone-card">
-            <div class="milestone-date">2025年1月</div>
+            <div class="milestone-date">{{ t('company.milestones.items.founded.date') }}</div>
             <div class="title-bilingual">
-              <h3 class="title-main">公司成立</h3>
+              <h3 class="title-main">{{ t('company.milestones.items.founded.title') }}</h3>
               <span class="title-divider">|</span>
-              <span class="title-en">Company Founded</span>
+              <span class="title-en">{{ t('company.milestones.items.founded.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
-              <p class="content-main">在沈向洋院士支持下，由IDEA研究院推动孵化成立</p>
-              <p class="content-en">Founded with support from Academician Shen Xiangyang and incubated by IDEA Research Institute</p>
+              <p class="content-main">{{ t('company.milestones.items.founded.description') }}</p>
+              <p class="content-en">{{ t('company.milestones.items.founded.descriptionEn') }}</p>
             </div>
           </div>
           
           <div class="milestone-card">
-            <div class="milestone-date">2025年3月</div>
+            <div class="milestone-date">{{ t('company.milestones.items.launch.date') }}</div>
             <div class="title-bilingual">
-              <h3 class="title-main">业务启动</h3>
+              <h3 class="title-main">{{ t('company.milestones.items.launch.title') }}</h3>
               <span class="title-divider">|</span>
-              <span class="title-en">Business Launch</span>
+              <span class="title-en">{{ t('company.milestones.items.launch.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
-              <p class="content-main">开始正式业务运营，进入PMF阶段</p>
-              <p class="content-en">Commenced formal business operations, entered PMF phase</p>
+              <p class="content-main">{{ t('company.milestones.items.launch.description') }}</p>
+              <p class="content-en">{{ t('company.milestones.items.launch.descriptionEn') }}</p>
             </div>
           </div>
           
           <div class="milestone-card">
-            <div class="milestone-date">2025年6月</div>
+            <div class="milestone-date">{{ t('company.milestones.items.breakthrough.date') }}</div>
             <div class="title-bilingual">
-              <h3 class="title-main">技术突破</h3>
+              <h3 class="title-main">{{ t('company.milestones.items.breakthrough.title') }}</h3>
               <span class="title-divider">|</span>
-              <span class="title-en">Technology Breakthrough</span>
+              <span class="title-en">{{ t('company.milestones.items.breakthrough.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
-              <p class="content-main">完成核心技术研发，推出Living KB和SynData Platform</p>
-              <p class="content-en">Completed core technology R&D, launched Living KB and SynData Platform</p>
+              <p class="content-main">{{ t('company.milestones.items.breakthrough.description') }}</p>
+              <p class="content-en">{{ t('company.milestones.items.breakthrough.descriptionEn') }}</p>
             </div>
           </div>
           
           <div class="milestone-card">
-            <div class="milestone-date">2025年9月</div>
+            <div class="milestone-date">{{ t('company.milestones.items.validation.date') }}</div>
             <div class="title-bilingual">
-              <h3 class="title-main">客户验证</h3>
+              <h3 class="title-main">{{ t('company.milestones.items.validation.title') }}</h3>
               <span class="title-divider">|</span>
-              <span class="title-en">Customer Validation</span>
+              <span class="title-en">{{ t('company.milestones.items.validation.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
-              <p class="content-main">完成多个POC项目，获得客户认可</p>
-              <p class="content-en">Completed multiple POC projects, gained customer recognition</p>
+              <p class="content-main">{{ t('company.milestones.items.validation.description') }}</p>
+              <p class="content-en">{{ t('company.milestones.items.validation.descriptionEn') }}</p>
             </div>
           </div>
           
           <div class="milestone-card">
-            <div class="milestone-date">2025年12月</div>
+            <div class="milestone-date">{{ t('company.milestones.items.expansion.date') }}</div>
             <div class="title-bilingual">
-              <h3 class="title-main">规模扩张</h3>
+              <h3 class="title-main">{{ t('company.milestones.items.expansion.title') }}</h3>
               <span class="title-divider">|</span>
-              <span class="title-en">Scale Expansion</span>
+              <span class="title-en">{{ t('company.milestones.items.expansion.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
-              <p class="content-main">业务快速发展，团队规模持续优化</p>
-              <p class="content-en">Rapid business development, continuous team optimization</p>
+              <p class="content-main">{{ t('company.milestones.items.expansion.description') }}</p>
+              <p class="content-en">{{ t('company.milestones.items.expansion.descriptionEn') }}</p>
             </div>
           </div>
           
           <div class="milestone-card future">
-            <div class="milestone-date">2026年+</div>
+            <div class="milestone-date">{{ t('company.milestones.items.future.date') }}</div>
             <div class="title-bilingual">
-              <h3 class="title-main">未来规划</h3>
+              <h3 class="title-main">{{ t('company.milestones.items.future.title') }}</h3>
               <span class="title-divider">|</span>
-              <span class="title-en">Future Planning</span>
+              <span class="title-en">{{ t('company.milestones.items.future.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
-              <p class="content-main">成为中国的下一代ScaleAI，引领合成数据时代</p>
-              <p class="content-en">Become China's next-generation ScaleAI, leading the synthetic data era</p>
+              <p class="content-main">{{ t('company.milestones.items.future.description') }}</p>
+              <p class="content-en">{{ t('company.milestones.items.future.descriptionEn') }}</p>
             </div>
           </div>
         </div>

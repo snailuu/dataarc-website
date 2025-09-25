@@ -1,6 +1,8 @@
 import home from './home/en'
 import company from './company/en'
 import products from './products/en'
+import technology from './technology/en'
+import cases from './cases/en'
 
 const common = {
   brand: 'DataArc',
@@ -209,5 +211,7 @@ export default {
   home,
   company,
   products,
+  technology,
+  cases,
   footer,
 }
