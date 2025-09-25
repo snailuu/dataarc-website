@@ -50,9 +50,28 @@ const router = createRouter({
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
       return savedPosition
-    } else {
-      return { top: 0 }
     }
+
+    if (to.hash) {
+      const findEl = () => document.querySelector(to.hash)
+      if (findEl()) {
+        return { el: to.hash, behavior: 'smooth' }
+      }
+
+      return new Promise((resolve) => {
+        requestAnimationFrame(() => {
+          if (findEl()) {
+            resolve({ el: to.hash, behavior: 'smooth' })
+          } else {
+            setTimeout(() => {
+              resolve({ el: to.hash, behavior: 'smooth' })
+            }, 300)
+          }
+        })
+      })
+    }
+
+    return { top: 0 }
   }
 })
 

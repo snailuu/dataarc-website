@@ -24,6 +24,7 @@
   /* 小球颜色由 JavaScript 动态管理 */
   --secondary-gradient: linear-gradient(135deg, #ff006e 0%, #8338ec 100%);
   --accent-gradient: linear-gradient(135deg, #06ffa5 0%, #00d4ff 100%);
+  --accent-color: #06ffa5;
   
   /* 精致的中性色调系统 */
   --neutral-50: #fafafa;
@@ -157,6 +158,7 @@
   --primary-dark: #0099cc;
   --secondary-gradient: linear-gradient(135deg, #ff006e 0%, #8338ec 100%);
   --accent-gradient: linear-gradient(135deg, #06ffa5 0%, #00d4ff 100%);
+  --accent-color: #06ffa5;
   
   /* 暗色主题文字颜色系统 */
   --text-primary: #ffffff;
@@ -686,7 +688,7 @@ h6, .h6 {
   align-items: center;
   gap: var(--space-1);
   line-height: var(--leading-tight);
-  margin-bottom: var(--space-4);
+  margin: var(--space-4);
 }
 
 .title-main {
@@ -787,7 +789,6 @@ h6, .h6 {
 /* 段落双语样式 */
 .content-bilingual {
   position: relative;
-  margin-bottom: var(--space-5);
 }
 
 .content-main {
@@ -2364,5 +2365,4 @@ h6, .h6 {
   }
 }
 
-
-
+/* ===== End of main styles ===== */

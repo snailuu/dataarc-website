@@ -4,163 +4,83 @@
       <div class="footer-gradient"></div>
       <div class="footer-pattern"></div>
     </div>
-    
+
     <div class="container">
       <div class="footer-content">
-        <!-- Brand Section -->
         <div class="footer-brand">
           <div class="brand-logo">
-            <img src="/images/icons/企业logo.png" alt="DataArc Logo" class="logo-image">
-            <span class="brand-text">DataArc</span>
+            <img src="/images/icons/企业logo.png" :alt="`${t('common.brand')} Logo`" class="logo-image">
+            <span class="brand-text">{{ t('common.brand') }}</span>
           </div>
-          <div class="content-bilingual">
-            <p class="content-main">通过合成数据技术推动人工智能创新，为企业提供智能化解决方案。</p>
-            <p class="content-en">Drive AI innovation through synthetic data technology, providing intelligent solutions for enterprises.</p>
-          </div>
+          <p class="brand-description">{{ t('footer.tagline') }}</p>
           <div class="social-links">
-            <a href="#" class="social-link" aria-label="微信">
+            <a href="#" class="social-link" :aria-label="t('footer.socials.wechat')">
               <svg viewBox="0 0 24 24" class="social-icon">
-                <path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 4.882-1.657 7.36-.5.468-3.644-2.857-6.876-7.231-6.876z"/>
+                <path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 4.882-1.657 7.36-.5.468-3.644-2.857-6.876-7.231-6.876z" />
               </svg>
             </a>
-            <a href="#" class="social-link" aria-label="微博">
+            <a href="#" class="social-link" :aria-label="t('footer.socials.weibo')">
               <svg viewBox="0 0 24 24" class="social-icon">
-                <path d="M20.194 14.197c0 3.362-3.53 6.085-7.885 6.085-4.354 0-7.885-2.723-7.885-6.085 0-3.361 3.531-6.084 7.885-6.084 4.355 0 7.885 2.723 7.885 6.084z"/>
+                <path d="M20.194 14.197c0 3.362-3.53 6.085-7.885 6.085-4.354 0-7.885-2.723-7.885-6.085 0-3.361 3.531-6.084 7.885-6.084 4.355 0 7.885 2.723 7.885 6.084z" />
               </svg>
             </a>
-            <a href="#" class="social-link" aria-label="邮箱">
+            <a :href="`mailto:${contactSection.email}`" class="social-link" :aria-label="t('footer.socials.email')">
               <svg viewBox="0 0 24 24" class="social-icon">
-                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
               </svg>
             </a>
           </div>
         </div>
 
-        <!-- Navigation Links -->
         <div class="footer-nav">
-          <div class="nav-section">
-            <div class="title-stacked-new">
-              <h3 class="title-main">产品方案</h3>
-              <span class="title-en">Products</span>
-            </div>
+          <div v-for="section in navSections" :key="section.key" class="nav-section">
+            <h3 class="nav-title">{{ section.title }}</h3>
             <ul class="nav-links">
-              <li><router-link to="/products" class="nav-link">Living KB</router-link></li>
-              <li><router-link to="/products" class="nav-link">SynData Platform</router-link></li>
-              <li><a href="#" class="nav-link nav-bilingual">
-                <span class="nav-main">API 文档</span>
-                <span class="nav-en">API Docs</span>
-              </a></li>
-              <li><a href="#" class="nav-link nav-bilingual">
-                <span class="nav-main">开发者工具</span>
-                <span class="nav-en">Dev Tools</span>
-              </a></li>
+              <li v-for="link in section.links" :key="link.key">
+                <RouterLink v-if="link.to" :to="link.to" class="nav-link">{{ link.label }}</RouterLink>
+                <a v-else :href="link.href" class="nav-link">{{ link.label }}</a>
+              </li>
             </ul>
           </div>
 
           <div class="nav-section">
-            <div class="title-stacked-new">
-              <h3 class="title-main">技术支持</h3>
-              <span class="title-en">Support</span>
-            </div>
-            <ul class="nav-links">
-              <li><router-link to="/technology" class="nav-link nav-bilingual">
-                <span class="nav-main">技术优势</span>
-                <span class="nav-en">Technology</span>
-              </router-link></li>
-              <li><a href="#" class="nav-link nav-bilingual">
-                <span class="nav-main">技术文档</span>
-                <span class="nav-en">Tech Docs</span>
-              </a></li>
-              <li><a href="#" class="nav-link">FAQ</a></li>
-              <li><a href="#" class="nav-link nav-bilingual">
-                <span class="nav-main">技术博客</span>
-                <span class="nav-en">Tech Blog</span>
-              </a></li>
-            </ul>
-          </div>
-
-          <div class="nav-section">
-            <div class="title-stacked-new">
-              <h3 class="title-main">关于我们</h3>
-              <span class="title-en">About Us</span>
-            </div>
-            <ul class="nav-links">
-              <li><router-link to="/company" class="nav-link nav-bilingual">
-                <span class="nav-main">公司介绍</span>
-                <span class="nav-en">Company</span>
-              </router-link></li>
-              <li><router-link to="/cases" class="nav-link nav-bilingual">
-                <span class="nav-main">成功案例</span>
-                <span class="nav-en">Cases</span>
-              </router-link></li>
-              <li><a href="#" class="nav-link nav-bilingual">
-                <span class="nav-main">新闻动态</span>
-                <span class="nav-en">News</span>
-              </a></li>
-              <li><a href="#" class="nav-link nav-bilingual">
-                <span class="nav-main">加入我们</span>
-                <span class="nav-en">Careers</span>
-              </a></li>
-            </ul>
-          </div>
-
-          <div class="nav-section">
-            <div class="title-stacked-new">
-              <h3 class="title-main">联系方式</h3>
-              <span class="title-en">Contact</span>
-            </div>
+            <h3 class="nav-title">{{ contactSection.title }}</h3>
             <div class="contact-info">
               <div class="contact-item">
                 <svg viewBox="0 0 24 24" class="contact-icon">
-                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                 </svg>
-                <div class="content-bilingual">
-                  <span class="content-main">深圳市南山区科技园</span>
-                  <span class="content-en">Shenzhen Nanshan Technology Park</span>
-                </div>
+                <span>{{ contactSection.address }}</span>
               </div>
               <div class="contact-item">
                 <svg viewBox="0 0 24 24" class="contact-icon">
-                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                 </svg>
-                <span>contact@dataarc.tech</span>
+                <a :href="`mailto:${contactSection.email}`" class="nav-link">{{ contactSection.email }}</a>
               </div>
               <div class="contact-item">
                 <svg viewBox="0 0 24 24" class="contact-icon">
-                  <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                  <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
                 </svg>
-                <span>+86 400-123-4567</span>
+                <a :href="`tel:${normalizedPhone}`" class="nav-link">{{ contactSection.phone }}</a>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Footer Bottom -->
       <div class="footer-bottom">
         <div class="footer-divider"></div>
         <div class="footer-bottom-content">
           <div class="copyright">
-            <div class="content-bilingual">
-              <p class="content-main">&copy; 2024 数创弧光科技有限公司. 保留所有权利.</p>
-              <p class="content-en">&copy; 2024 DataArc Technology Co., Ltd. All rights reserved.</p>
-            </div>
+            <p>{{ t('footer.bottom.copyright') }}</p>
           </div>
           <div class="footer-links">
-            <a href="#" class="footer-link nav-bilingual">
-              <span class="nav-main">隐私政策</span>
-              <span class="nav-en">Privacy</span>
-            </a>
-            <a href="#" class="footer-link nav-bilingual">
-              <span class="nav-main">服务条款</span>
-              <span class="nav-en">Terms</span>
-            </a>
-            <a href="#" class="footer-link nav-bilingual">
-              <span class="nav-main">Cookie 政策</span>
-              <span class="nav-en">Cookies</span>
-            </a>
+            <a href="#" class="footer-link">{{ t('footer.bottom.privacy') }}</a>
+            <a href="#" class="footer-link">{{ t('footer.bottom.terms') }}</a>
+            <a href="#" class="footer-link">{{ t('footer.bottom.cookies') }}</a>
             <span class="footer-separator">|</span>
-            <span class="icp">粤ICP备2024000000号</span>
+            <span class="icp">{{ t('footer.bottom.icp') }}</span>
           </div>
         </div>
       </div>
@@ -169,7 +89,60 @@
 </template>
 
 <script setup>
-// Footer component with modern glassmorphism design
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
+const navConfig = [
+  {
+    key: 'products',
+    links: [
+      { key: 'livingkb', to: '/products' },
+      { key: 'syndata', to: '/products' },
+      { key: 'apiDocs', href: '#' },
+      { key: 'devTools', href: '#' },
+    ],
+  },
+  {
+    key: 'support',
+    links: [
+      { key: 'technology', to: '/technology' },
+      { key: 'techDocs', href: '#' },
+      { key: 'faq', href: '#' },
+      { key: 'techBlog', href: '#' },
+    ],
+  },
+  {
+    key: 'about',
+    links: [
+      { key: 'company', to: '/company' },
+      { key: 'cases', to: '/cases' },
+      { key: 'news', href: '#' },
+      { key: 'careers', href: '#' },
+    ],
+  },
+]
+
+const navSections = computed(() =>
+  navConfig.map((section) => ({
+    key: section.key,
+    title: t(`footer.nav.${section.key}.title`),
+    links: section.links.map((link) => ({
+      ...link,
+      label: t(`footer.nav.${section.key}.links.${link.key}`),
+    })),
+  }))
+)
+
+const contactSection = computed(() => ({
+  title: t('footer.nav.contact.title'),
+  address: t('footer.nav.contact.address'),
+  email: t('footer.nav.contact.email'),
+  phone: t('footer.nav.contact.phone'),
+}))
+
+const normalizedPhone = computed(() => contactSection.value.phone.replace(/\s+/g, ''))
 </script>
 
 <style scoped>
@@ -390,7 +363,8 @@
   flex-shrink: 0;
 }
 
-.contact-item span {
+.contact-item span,
+.contact-item .nav-link {
   color: var(--text-secondary);
   font-size: var(--font-sm);
 }
@@ -469,11 +443,14 @@
 @media (max-width: 768px) {
   .footer-content {
     padding: var(--space-16) 0 var(--space-12);
+    text-align: center;
+    justify-items: center;
   }
   
   .footer-nav {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: var(--space-8);
+    justify-items: center;
   }
   
   .footer-bottom-content {
@@ -488,6 +465,35 @@
   
   .nav-section {
     min-height: auto;
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  .nav-title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-title::after {
+    position: relative;
+    bottom: 0;
+    margin-top: 8px;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-info {
+    align-items: center;
+  }
+  
+  .contact-item {
+    justify-content: center;
   }
   
   .social-links {
@@ -541,5 +547,4 @@
   75% { transform: translateX(-20px) translateY(10px); }
   100% { transform: translateX(0) translateY(0); }
 }
-</style> 
- 
+</style>

@@ -2,12 +2,19 @@
   <div class="knowledge-graph-container" ref="container">
         <!-- 知识图谱模式 -->
     <div v-if="mode === 'graph'" class="graph-mode" @click="startAIChat" @dblclick="restartForceLayout">
-      <svg ref="svgRef" class="graph-svg" :width="svgWidth" :height="svgHeight"></svg>
+      <svg 
+        ref="svgRef" 
+        class="graph-svg" 
+        :width="svgWidth" 
+        :height="svgHeight"
+        :viewBox="`0 0 ${svgWidth} ${svgHeight}`"
+        preserveAspectRatio="xMidYMid meet"
+      ></svg>
 
       <!-- 提示文字 -->
       <div class="graph-hint">
         <p class="hint-text">{{ hintText }}</p>
-        <p class="hint-sub">双击重新布局 | 拖拽节点交互</p>
+        <p class="hint-sub">{{ t('common.graph.controls') }}</p>
       </div>
     </div>
     
@@ -16,7 +23,7 @@
       <div class="chat-header">
         <div class="ai-indicator">
           <div class="ai-dot"></div>
-          <span>AI Agent 正在合成智能...</span>
+          <span>AI Agent {{ t('common.graph.aiDialogue.analyzing') }}</span>
         </div>
       </div>
       
@@ -36,7 +43,7 @@
       
       <!-- 重置按钮 -->
       <div class="reset-button" @click="resetToGraph">
-        <span>重新合成</span>
+        <span>{{ t('common.buttons.getStarted') }}</span>
       </div>
     </div>
   </div>
@@ -44,8 +51,11 @@
 
 <script setup>
 import { ref, reactive, onMounted, onUnmounted, computed, nextTick } from 'vue'
+import { useI18n } from 'vue-i18n'
 import * as d3 from 'd3'
 import knowledgeGraphData from '@/data/knowledgeGraph.json'
+
+const { t, tm } = useI18n()
 
 // 组件状态
 const mode = ref('graph') // 'graph' | 'chat'
@@ -53,9 +63,28 @@ const container = ref(null)
 const chatContainer = ref(null)
 const svgRef = ref(null)
 
-// SVG尺寸
-const svgWidth = 600
-const svgHeight = 400
+// SVG尺寸 - 响应式计算
+const svgWidth = ref(600)
+const svgHeight = ref(400)
+
+// 更新SVG尺寸函数
+const updateSvgDimensions = () => {
+  if (!container.value) return
+  
+  const containerRect = container.value.getBoundingClientRect()
+  const containerWidth = containerRect.width || container.value.offsetWidth
+  const containerHeight = containerRect.height || container.value.offsetHeight
+  
+  svgWidth.value = Math.max(containerWidth, 300) // 最小宽度300
+  svgHeight.value = Math.max(containerHeight, 200) // 最小高度200
+  
+  console.log('SVG尺寸更新:', { 
+    width: svgWidth.value, 
+    height: svgHeight.value,
+    containerWidth,
+    containerHeight
+  })
+}
 
 // 从YAML文件加载数据
 const graphData = knowledgeGraphData.graph || {
@@ -63,8 +92,25 @@ const graphData = knowledgeGraphData.graph || {
   links: []
 }
 
-// 从YAML文件加载QA对话数据
-const conversations = knowledgeGraphData.conversations || []
+// 使用国际化的对话内容
+const conversations = computed(() => {
+  const sampleConversations = tm('common.graph.sampleConversations')
+  return Array.isArray(sampleConversations) && sampleConversations.length > 0 
+    ? sampleConversations 
+    : knowledgeGraphData.conversations || []
+})
+
+// 窗口大小变化监听
+let resizeObserver = null
+const handleResize = () => {
+  updateSvgDimensions()
+  // 延迟重新初始化图形，确保尺寸更新完成
+  setTimeout(() => {
+    if (mode.value === 'graph') {
+      initializeForceSimulation()
+    }
+  }, 100)
+}
 
 // D3.js 专业力导向模拟 - 性能优化版
 let simulation = null
@@ -76,8 +122,8 @@ const allNodes = reactive(graphData.nodes.slice(0, maxNodes).map((node, index) =
   if (node.level === 1) {
     // 核心节点：环形分布
     const angle = (index * 2 * Math.PI) / 5
-    x = svgWidth / 2 + Math.cos(angle) * 80
-    y = svgHeight / 2 + Math.sin(angle) * 80
+    x = svgWidth.value / 2 + Math.cos(angle) * 80
+    y = svgHeight.value / 2 + Math.sin(angle) * 80
   } else {
     // 子节点和详细节点：随机分布但按组分开
     const groupOffset = {
@@ -88,8 +134,8 @@ const allNodes = reactive(graphData.nodes.slice(0, maxNodes).map((node, index) =
       'technology': { x: 80, y: 80 }
     }
     const offset = groupOffset[node.group] || { x: 0, y: 0 }
-    x = svgWidth / 2 + offset.x + (Math.random() - 0.5) * 60
-    y = svgHeight / 2 + offset.y + (Math.random() - 0.5) * 60
+    x = svgWidth.value / 2 + offset.x + (Math.random() - 0.5) * 60
+    y = svgHeight.value / 2 + offset.y + (Math.random() - 0.5) * 60
   }
   
   return {
@@ -215,25 +261,25 @@ const initializeForceSimulation = () => {
   
   // 添加鼠标悬停效果
   nodeGroups
-    .on("mouseenter", function(event, d) {
+    .on("mouseenter", function(_, d) {
       // 简化hover效果，减少DOM操作
       d3.select(this).select(".node-main")
         .transition().duration(150)
         .attr("r", getNodeRadius(d.level) * 1.15)
       
       // 更新提示文字（无需重新计算连接线）
-      hintText.value = `${d.label} | 点击开始AI合成`
+      hintText.value = `${d.label} | ${t('common.graph.hint')}`
     })
-    .on("mouseleave", function(event, d) {
+    .on("mouseleave", function(_, d) {
       // 简化恢复效果
       d3.select(this).select(".node-main")
         .transition().duration(150)
         .attr("r", getNodeRadius(d.level))
       
       // 恢复提示文字
-      hintText.value = '点击节点开始AI合成'
+      hintText.value = t('common.graph.hint')
     })
-    .on("click", function(event, d) {
+    .on("click", function(event) {
       event.stopPropagation()
       startAIChat()
     })
@@ -264,11 +310,11 @@ const initializeForceSimulation = () => {
        })
        .distanceMax(250)  // 扩大排斥作用范围
      )
-    .force('center', d3.forceCenter(svgWidth / 2, svgHeight / 2)
+    .force('center', d3.forceCenter(svgWidth.value / 2, svgHeight.value / 2)
       .strength(0.1)
     )
     // 添加群组聚集力 - 同领域节点相互吸引
-    .force('group', d3.forceRadial(80, svgWidth / 2, svgHeight / 2)
+    .force('group', d3.forceRadial(80, svgWidth.value / 2, svgHeight.value / 2)
       .radius(d => {
         // 根据群组设置不同的聚集半径
         const groupPositions = {
@@ -396,7 +442,7 @@ let svg, linkElements, nodeElements
   }
 
 // 提示文本
-const hintText = ref('点击节点开始AI合成')
+const hintText = ref(t('common.graph.hint'))
 
 // AI对话状态
 const visibleMessages = ref([])
@@ -432,8 +478,8 @@ const startMessageStream = () => {
   const speedUpRate = 0.75 // 每次加速比例
   
   const showNextMessage = () => {
-    if (currentMessageIndex.value < conversations.length) {
-      const conversation = conversations[currentMessageIndex.value]
+    if (currentMessageIndex.value < conversations.value.length) {
+      const conversation = conversations.value[currentMessageIndex.value]
       
       // 添加问题
       visibleMessages.value.push({
@@ -493,7 +539,29 @@ const resetToGraph = () => {
 
 onMounted(() => {
   nextTick(() => {
-    initializeForceSimulation()
+    // 首次更新SVG尺寸
+    updateSvgDimensions()
+    
+    // 设置ResizeObserver监听容器尺寸变化
+    if (container.value && window.ResizeObserver) {
+      resizeObserver = new ResizeObserver((entries) => {
+        for (const entry of entries) {
+          if (entry.target === container.value) {
+            handleResize()
+            break
+          }
+        }
+      })
+      resizeObserver.observe(container.value)
+    }
+    
+    // 监听窗口大小变化（备用方案）
+    window.addEventListener('resize', handleResize)
+    
+    // 延迟初始化，确保尺寸计算完成
+    setTimeout(() => {
+      initializeForceSimulation()
+    }, 50)
   })
 })
 
@@ -504,6 +572,13 @@ onUnmounted(() => {
   if (chatInterval.value) {
     clearTimeout(chatInterval.value)
   }
+  
+  // 清理resize监听器
+  if (resizeObserver) {
+    resizeObserver.disconnect()
+    resizeObserver = null
+  }
+  window.removeEventListener('resize', handleResize)
 })
 </script>
 
@@ -552,6 +627,8 @@ onUnmounted(() => {
   background: transparent;
   position: relative;
   z-index: 15;
+  display: block;
+  object-fit: contain;
 }
 
 
@@ -565,6 +642,8 @@ onUnmounted(() => {
   transform: translateX(-50%);
   text-align: center;
   z-index: 20;
+  white-space: nowrap;
+  min-width: max-content;
 }
 
 .hint-text {
@@ -593,6 +672,9 @@ onUnmounted(() => {
   border-radius: 8px 8px 20px 20px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
   box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.04);
+  white-space: nowrap;
+  overflow: visible;
+  text-overflow: clip;
 }
 
 /* AI对话模式 */
@@ -649,23 +731,30 @@ onUnmounted(() => {
 .chat-container {
   flex: 1;
   overflow-y: auto;
+  overflow-x: hidden;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
   background: transparent;
+  min-height: 0;
+  max-height: 100%;
 }
 
 .message-item {
   display: flex;
+  width: 100%;
+  margin-bottom: 4px;
   animation: fadeInUp 0.2s ease;
+  flex-shrink: 0;
 }
 
 .message-content {
   display: flex;
   gap: 12px;
-  max-width: 100%;
+  width: 100%;
   align-items: flex-start;
+  flex-wrap: nowrap;
 }
 
 .message-label {
@@ -784,5 +873,103 @@ onUnmounted(() => {
 
 .chat-container::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 0, 0, 0.3);
+}
+
+/* 移动端响应式优化 */
+@media screen and (max-width: 768px) {
+  .knowledge-graph-container {
+    height: 350px;
+  }
+  
+  .graph-svg {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  
+  .chat-container {
+    padding: 15px;
+    gap: 10px;
+  }
+  
+  .message-item {
+    margin-bottom: 6px;
+  }
+  
+  .message-content {
+    gap: 8px;
+  }
+  
+  .message-label {
+    width: 24px;
+    height: 24px;
+    font-size: 10px;
+  }
+  
+  .message-text {
+    font-size: 12px;
+    padding: 8px 12px;
+    line-height: 1.4;
+  }
+  
+  .hint-text {
+    font-size: 12px;
+    padding: 6px 12px 3px 12px;
+  }
+  
+  .hint-sub {
+    font-size: 10px;
+    padding: 0 12px 6px 12px;
+    white-space: nowrap;
+    overflow: visible;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .knowledge-graph-container {
+    height: 280px;
+  }
+  
+  .graph-hint {
+    white-space: normal;
+    min-width: auto;
+    max-width: 90%;
+  }
+  
+  .chat-container {
+    padding: 12px;
+    gap: 8px;
+  }
+  
+  .message-item {
+    margin-bottom: 4px;
+  }
+  
+  .message-content {
+    gap: 6px;
+  }
+  
+  .message-label {
+    width: 20px;
+    height: 20px;
+    font-size: 9px;
+  }
+  
+  .message-text {
+    font-size: 11px;
+    padding: 6px 10px;
+    line-height: 1.3;
+  }
+  
+  .hint-text {
+    font-size: 11px;
+  }
+  
+  .hint-sub {
+    font-size: 10px;
+    white-space: normal;
+    overflow: visible;
+    min-width: auto;
+    line-height: 1.3;
+  }
 }
 </style> 
