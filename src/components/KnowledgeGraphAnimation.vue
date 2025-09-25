@@ -183,26 +183,14 @@ const initializeForceSimulation = () => {
     .enter()
     .append("path")
     .attr("fill", "none")
-    .attr("stroke", d => {
-      // 根据连接强度使用渐变色，颜色更细腻
-      if (d.strength > 0.8) return "#1d4ed8"      // 深蓝色 - 超强连接
-      if (d.strength > 0.6) return "#3b82f6"      // 蓝色 - 强连接
-      if (d.strength > 0.4) return "#6366f1"      // 紫蓝色 - 中等连接  
-      if (d.strength > 0.2) return "#8b5cf6"      // 紫色 - 弱连接
-      return "#a78bfa"                             // 淡紫色 - 极弱连接
-    })
+    .attr("stroke", "#ffffff")                     // 统一白色
     .attr("stroke-width", d => {
       // 精致细线条，差异更明显
       if (d.strength > 0.7) return 0.8            // 强连接稍粗
       if (d.strength > 0.4) return 0.6            // 中等连接中等
       return 0.4                                   // 弱连接很细
     })
-    .attr("stroke-opacity", d => {
-      // 透明度随强度变化，层次感更丰富
-      if (d.strength > 0.7) return 0.9            // 强连接不透明
-      if (d.strength > 0.4) return 0.7            // 中等连接半透明
-      return 0.4                                   // 弱连接很透明
-    })
+         .attr("stroke-opacity", 0.2)                  // 透明度20%，更透明
     .attr("stroke-dasharray", d => {
       // 多种线型
       if (d.strength > 0.7) return "none"         // 实线 - 强连接
@@ -227,23 +215,34 @@ const initializeForceSimulation = () => {
 
   // 移除光晕效果，保持扁平化
   
-  // 添加节点圆圈（扁平化样式 + 透明度）
+  // 添加节点圆圈（按类别分色 + 统一透明度）
   nodeGroups
     .append("circle")
     .attr("r", d => getNodeRadius(d.level))
     .attr("fill", d => {
-      if (d.level === 1) return "#3b82f6"      // 纯蓝色
-      if (d.level === 2) return "#6366f1"      // 纯紫蓝色 
-      return "#8b5cf6"                          // 纯紫色
+      // 按类别分色 - 高饱和莫兰迪色系
+      const colors = {
+        'core': '#8fa4d3',          // 莫兰迪蓝 - 核心
+        'finance': '#7fb069',       // 莫兰迪绿 - 金融
+        'education': '#d4a574',     // 莫兰迪橙 - 教育
+        'industry': '#6fb3d3',      // 莫兰迪青蓝 - 工业
+        'healthcare': '#b185a7',    // 莫兰迪紫 - 医疗
+        'technology': '#a6a6a6'     // 莫兰迪灰 - 科技
+      }
+      
+      // 核心节点使用对应聚簇的颜色
+      if (d.level === 1) {
+        // 核心节点根据其所属领域使用相应颜色
+        if (d.id === 'finance') return colors['finance']
+        if (d.id === 'education') return colors['education']
+        if (d.id === 'industry') return colors['industry']
+        if (d.id === 'healthcare') return colors['healthcare']
+        if (d.id === 'technology') return colors['technology']
+      }
+      
+      return colors[d.group] || '#9ca3af'  // 默认灰色
     })
-    .attr("fill-opacity", d => {
-      if (d.level === 1) return 0.8            // 核心节点80%
-      if (d.level === 2) return 0.7            // 二级节点70%
-      return 0.6                                // 三级节点60%
-    })
-    .attr("stroke", "#fff")
-    .attr("stroke-width", 1)
-    .attr("stroke-opacity", 0.9)
+              .attr("fill-opacity", 0.35)             // 透明度25%，更透明
     .attr("class", "node-main")
     .style("cursor", "pointer")
   
@@ -363,22 +362,38 @@ const onTick = () => {
       const dy = d.target.y - d.source.y
       const distance = Math.sqrt(dx * dx + dy * dy)
       
+      if (distance === 0) return `M ${d.source.x} ${d.source.y} L ${d.target.x} ${d.target.y}`
+      
+      // 获取节点半径
+      const sourceRadius = getNodeRadius(d.source.level)
+      const targetRadius = getNodeRadius(d.target.level)
+      
+      // 计算单位向量
+      const unitX = dx / distance
+      const unitY = dy / distance
+      
+      // 计算边缘点坐标
+      const sourceEdgeX = d.source.x + unitX * sourceRadius
+      const sourceEdgeY = d.source.y + unitY * sourceRadius
+      const targetEdgeX = d.target.x - unitX * targetRadius
+      const targetEdgeY = d.target.y - unitY * targetRadius
+      
       // 计算弧线的弯曲程度，基于距离和连接强度
       const curvature = Math.min(distance * 0.25, 60) * d.strength
       
       // 计算控制点（垂直于连线方向）
-      const midX = (d.source.x + d.target.x) / 2
-      const midY = (d.source.y + d.target.y) / 2
+      const midX = (sourceEdgeX + targetEdgeX) / 2
+      const midY = (sourceEdgeY + targetEdgeY) / 2
       
       // 垂直偏移量创建弧度
-      const offsetX = -dy / distance * curvature
-      const offsetY = dx / distance * curvature
+      const offsetX = -unitY * curvature
+      const offsetY = unitX * curvature
       
       const controlX = midX + offsetX
       const controlY = midY + offsetY
       
-      // 生成SVG二次贝塞尔曲线路径
-      return `M ${d.source.x} ${d.source.y} Q ${controlX} ${controlY} ${d.target.x} ${d.target.y}`
+      // 生成SVG二次贝塞尔曲线路径，从边缘到边缘
+      return `M ${sourceEdgeX} ${sourceEdgeY} Q ${controlX} ${controlY} ${targetEdgeX} ${targetEdgeY}`
     })
   }
   
