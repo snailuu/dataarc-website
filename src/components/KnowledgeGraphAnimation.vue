@@ -602,24 +602,13 @@ onUnmounted(() => {
   width: 100%;
   height: 480px;
   position: relative;
-  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  background: #000000;
   overflow: hidden;
   border-radius: var(--radius-2xl);
 }
 
 .knowledge-graph-container::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: radial-gradient(circle at 2px 2px, var(--primary-color) 1px, transparent 0);
-  opacity: 0.05;
-  background-size: 40px 40px;
-  animation: float 30s ease-in-out infinite;
-  pointer-events: none;
-  z-index: 1;
+  display: none;
 }
 
 @keyframes float {
@@ -698,9 +687,7 @@ onUnmounted(() => {
   height: 100%;
   display: flex;
   flex-direction: column;
-  background: var(--glass-bg);
-  backdrop-filter: var(--glass-backdrop);
-  -webkit-backdrop-filter: var(--glass-backdrop);
+  background: #000000;
   overflow: hidden;
   position: relative;
   z-index: 10;
@@ -708,17 +695,15 @@ onUnmounted(() => {
 
 .chat-header {
   padding: 16px 20px;
-  background: var(--glass-bg-dark);
-  backdrop-filter: var(--glass-backdrop);
-  -webkit-backdrop-filter: var(--glass-backdrop);
-  box-shadow: inset 0 -1px 20px rgba(0, 0, 0, 0.03);
+  background: #000000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .ai-indicator {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 13px;
   font-weight: 400;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
@@ -764,12 +749,30 @@ onUnmounted(() => {
   flex-shrink: 0;
 }
 
+.question {
+  justify-content: flex-start;
+}
+
+.answer {
+  justify-content: flex-end;
+}
+
 .message-content {
   display: flex;
   gap: 12px;
   width: 100%;
   align-items: flex-start;
   flex-wrap: nowrap;
+}
+
+.question .message-content {
+  flex-direction: row;
+  width: 100%;
+}
+
+.answer .message-content {
+  flex-direction: row-reverse;
+  width: 100%;
 }
 
 .message-label {
@@ -789,69 +792,65 @@ onUnmounted(() => {
 }
 
 .question .message-label {
-  background: rgba(255, 255, 255, 0.9);
-  color: rgba(59, 130, 246, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.8);
+  color: rgba(59, 130, 246, 1);
+  border: 1px solid rgba(59, 130, 246, 0.3);
 }
 
 .answer .message-label {
-  background: rgba(255, 255, 255, 0.85);
-  color: rgba(16, 185, 129, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(0, 0, 0, 0.8);
+  color: rgba(16, 185, 129, 1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
 }
 
 .message-text {
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 13px;
   line-height: 1.5;
   flex: 1;
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(20px) saturate(120%);
-  -webkit-backdrop-filter: blur(20px) saturate(120%);
-  padding: 10px 14px;
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  padding: 6px 12px;
+  border-radius: 24px;
+  border: 1px dashed rgba(255, 255, 255, 0.15);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
 }
 
 .question .message-text {
   font-weight: 500;
-  background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 2px 16px rgba(255, 255, 255, 0.1);
+  border-left: 3px solid rgba(59, 130, 246, 0.8);
+  background: transparent;
 }
 
 .answer .message-text {
   font-weight: 400;
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  border-right: 3px solid rgba(16, 185, 129, 0.6) !important;
+  border-left: none !important;
+  background: transparent;
 }
 
 .reset-button {
   position: absolute;
-  top: 16px;
+  top: 8px;
   right: 20px;
-  padding: 8px 14px;
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(20px) saturate(120%);
-  -webkit-backdrop-filter: blur(20px) saturate(120%);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 4px 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 16px;
-  color: rgba(59, 130, 246, 0.9);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 12px;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
 }
 
 .reset-button:hover {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.15);
   transform: scale(1.02);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
 
 .reset-button:active {
