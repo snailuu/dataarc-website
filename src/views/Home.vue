@@ -590,13 +590,24 @@ const submitBookingForm = async () => {
   overflow-x: hidden;
   overflow-y: visible;
   padding: var(--space-12) 0;
+  background: var(--bg-secondary);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.1) 0%, transparent 50%);
 }
 
 
 /* ===== Market Opportunity Section ===== */
 .market-opportunity {
   padding: var(--space-32) 0;
-  background: var(--bg-primary);
+  background: #0c0c0c;
   overflow: visible;
 }
 
@@ -1170,7 +1181,7 @@ const submitBookingForm = async () => {
 /* ===== Tech Advantages Section ===== */
 .tech-advantages {
   padding: var(--space-20) 0 var(--space-16) 0;
-  background: var(--bg-primary);
+  background: #0c0c0c;
 }
 
 .tech-advantages h2 {
@@ -1233,7 +1244,18 @@ const submitBookingForm = async () => {
 /* ===== News Section ===== */
 .news {
   padding: var(--space-32) 0;
-  background: var(--bg-primary);
+  background: var(--bg-secondary);
+  position: relative;
+}
+
+.news::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.1) 0%, transparent 50%);
 }
 
 .news h2 {
