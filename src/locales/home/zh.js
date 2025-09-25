@@ -44,11 +44,11 @@ export default {
         icon: '/images/icons/首页面-二屏-lkb图标.png',
         iconAlt: 'Living KB 数据图表',
         title: 'DataArc Living KB',
-        description: '基于合成数据预设一批能力智能体，轻量化即可使用。',
+        description: '动态知识基座，基于合成数据能力，打造持续更新的"活态"知识库',
         features: [
           '高效整合企业多源异构数据，让 AI 可读。',
-          '支持三元组与语境理解。',
-          '高效调用多种工具，在图上思考。',
+          '企业知识库在使用过程中，不断更新',
+          '自动整理企业数据为知识脉络图，灵活调用多种工具，在图上思考',
         ],
       },
       {
@@ -56,9 +56,9 @@ export default {
         icon: '/images/icons/首页面-二屏-合成数据图标.png',
         iconAlt: 'SynData Platform 智能平台',
         title: 'DataArc SynData Platform',
-        description: '打造企业专家 Agent / 个人 Agent，实现持续合成数据供给。',
+        description: '合成数据平台，为企业专家 Agent，持续供应合成数据',
         features: [
-          '持续合成数据，让 Living KB 持续更新。',
+          '世界一流合成数据技术，合成海量多样化数据，用于企业Agent打造',
           '大模型自动评估反馈，强化学习并快速迭代。',
           '数据加密训练，规避隐私风险。',
         ],

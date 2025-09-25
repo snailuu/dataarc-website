@@ -54,11 +54,11 @@ export default {
         icon: '/images/icons/首页面-二屏-lkb图标.png',
         iconAlt: 'Living KB data visualization',
         title: 'DataArc Living KB',
-        description: 'Pre-configured intelligent agents based on synthetic data for lightweight usage.',
+        description: 'Dynamic knowledge foundation that creates continuously updating "living" knowledge bases using synthetic data capabilities.',
         features: [
           'Efficiently integrate multi-source heterogeneous enterprise data for AI readability.',
-          'Support knowledge triplets and contextual understanding.',
-          'Orchestrate multiple tools efficiently and reason directly on the graph.',
+          'Enterprise knowledge base continuously updates during usage.',
+          'Automatically organize enterprise data into knowledge graph, flexibly invoke multiple tools, and think on the graph.',
         ],
       },
       {
@@ -66,9 +66,9 @@ export default {
         icon: '/images/icons/首页面-二屏-合成数据图标.png',
         iconAlt: 'SynData Platform icon',
         title: 'DataArc SynData Platform',
-        description: 'Build enterprise expert agents and personal agents with continuous synthetic data.',
+        description: 'Synthetic data platform that continuously supplies synthetic data for enterprise expert agents.',
         features: [
-          'Keep Living KB fresh with continuous synthetic data updates.',
+          'World-class synthetic data technology that generates massive diverse data for enterprise agent development.',
           'LLM self-evaluation feedback with reinforcement learning for rapid iteration.',
           'Encrypted training pipelines that eliminate privacy risks.',
         ],
