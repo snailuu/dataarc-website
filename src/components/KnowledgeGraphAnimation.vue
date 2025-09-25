@@ -2,6 +2,14 @@
   <div class="knowledge-graph-container" ref="container">
         <!-- 知识图谱模式 -->
     <div v-if="mode === 'graph'" class="graph-mode" @click="startAIChat" @dblclick="restartForceLayout">
+      <!-- Graph头部指示器 -->
+      <div class="graph-header">
+        <div class="graph-indicator">
+          <div class="graph-dot"></div>
+          <span>拖动 or 点击 节点体验交互...</span>
+        </div>
+      </div>
+      
       <svg 
         ref="svgRef" 
         class="graph-svg" 
@@ -11,11 +19,6 @@
         preserveAspectRatio="xMidYMid meet"
       ></svg>
 
-      <!-- 提示文字 -->
-      <div class="graph-hint">
-        <p class="hint-text">{{ hintText }}</p>
-        <p class="hint-sub">{{ t('common.graph.controls') }}</p>
-      </div>
     </div>
     
     <!-- AI对话模式 -->
@@ -623,11 +626,35 @@ onUnmounted(() => {
   position: relative;
   cursor: pointer;
   z-index: 10;
+  }
+
+.graph-header {
+  padding: 16px 20px;
+  background: #000000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.graph-indicator {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 13px;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+}
+
+.graph-dot {
+  width: 8px;
+  height: 8px;
+  background: #ff4757;
+  border-radius: 50%;
+  animation: pulse 1s infinite;
 }
 
 .graph-svg {
   width: 100%;
-  height: 100%;
+  height: calc(100% - 60px);
   background: transparent;
   position: relative;
   z-index: 15;
@@ -639,47 +666,7 @@ onUnmounted(() => {
 
 /* D3完全控制节点和连接线样式 */
 
-.graph-hint {
-  position: absolute;
-  bottom: 24px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  z-index: 20;
-  white-space: nowrap;
-  min-width: max-content;
-}
 
-.hint-text {
-  color: var(--text-primary);
-  font-size: 13px;
-  font-weight: 500;
-  margin: 0 0 4px 0;
-  padding: 8px 16px 4px 16px;
-  background: var(--glass-bg);
-  backdrop-filter: var(--glass-backdrop);
-  -webkit-backdrop-filter: var(--glass-backdrop);
-  border-radius: 20px 20px 8px 8px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.05);
-}
-
-.hint-sub {
-  color: var(--text-secondary);
-  font-size: 11px;
-  font-weight: 400;
-  margin: 0;
-  padding: 0 16px 8px 16px;
-  background: var(--glass-bg);
-  backdrop-filter: var(--glass-backdrop);
-  -webkit-backdrop-filter: var(--glass-backdrop);
-  border-radius: 8px 8px 20px 20px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.04);
-  white-space: nowrap;
-  overflow: visible;
-  text-overflow: clip;
-}
 
 /* AI对话模式 */
 .chat-mode {
@@ -826,7 +813,7 @@ onUnmounted(() => {
   border-right: 3px solid rgba(16, 185, 129, 0.6) !important;
   border-left: none !important;
   background: transparent;
-}
+  }
 
 .reset-button {
   position: absolute;
