@@ -222,25 +222,7 @@
       </div>
     </section>
 
-    <!-- Context Graph -->
-    <section class="context-graph" v-if="contextContent">
-      <div class="container">
-        <div class="title-with-orbs orbs-context">
-          <h2 class="section-title title-stacked text-center">
-            <span class="title-main">{{ contextContent.title }}</span>
-          </h2>
-          <div class="floating-orbs" @mouseenter="handleMouseMove" @mouseleave="handleMouseLeave">
-            <div v-for="orb in orbSections.context || []" :key="orb.id" class="orb" :style="getOrbStyle(orb)"></div>
-          </div>
-        </div>
-        <div class="content-bilingual">
-          <p class="content-main context-description" v-html="highlightNumbers(contextContent.description)"></p>
-        </div>
-        <div class="graph-visual-placeholder">
-          {{ contextContent.placeholder }}
-        </div>
-      </div>
-    </section>
+
 
     <!-- News Section -->
     <section class="news" v-if="newsContent">
@@ -271,40 +253,7 @@
       </div>
     </section>
 
-    <!-- Team Strength Section -->
-    <section id="team-strength" class="team-strength" v-if="teamContent">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-title-group title-with-orbs orbs-team">
-            <h2 class="section-title title-stacked">
-              <span class="title-main">{{ teamContent.title }}</span>
-            </h2>
-            <div class="floating-orbs" @mouseenter="handleMouseMove" @mouseleave="handleMouseLeave">
-              <div v-for="orb in orbSections.team || []" :key="orb.id" class="orb" :style="getOrbStyle(orb)"></div>
-            </div>
-          </div>
-          <p class="section-subtitle text-lg font-light text-tertiary leading-relaxed">
-            {{ teamContent.subtitle }}
-          </p>
-        </div>
 
-        <div class="team-grid">
-          <div v-for="card in teamContent.cards" :key="card.label" class="team-card glass-card">
-            <div class="team-icon">
-              <div class="icon-wrapper">
-                <img :src="card.icon" :alt="card.iconAlt" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
-            </div>
-            <div class="team-stat">
-              <span class="stat-number">{{ card.stat }}</span>
-              <span class="stat-label">{{ card.label }}</span>
-            </div>
-            <p class="text-secondary">{{ card.description }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- Booking Modal -->
     <div 
@@ -502,23 +451,17 @@ const technologyContent = computed(() => {
   return content && Object.keys(content).length > 0 ? content : {}
 })
 
-const contextContent = computed(() => {
-  const content = tm('home.context')
-  return content && Object.keys(content).length > 0 ? content : {}
-})
+
 
 const newsContent = computed(() => {
   const content = tm('home.news')
   return content && Object.keys(content).length > 0 ? content : {}
 })
 
-const teamContent = computed(() => {
-  const content = tm('home.team')
-  return content && Object.keys(content).length > 0 ? content : {}
-})
+
 
 // 定义标题区域ID
-const sectionIds = ['hero', 'market', 'products', 'tech', 'context', 'team', 'news']
+const sectionIds = ['hero', 'market', 'products', 'tech', 'news']
 
 onMounted(() => {
   // 页面加载后生成随机小球
@@ -631,12 +574,7 @@ const submitBookingForm = async () => {
   }
 }
 
-// 数字高亮方法
-const highlightNumbers = (text) => {
-  if (!text) return ''
-  // 匹配数字和百分比
-  return text.replace(/(\d+(?:\.\d+)?%?)/g, '<span class="number">$1</span>')
-}
+
 </script>
 
 <style scoped>
@@ -722,34 +660,7 @@ const highlightNumbers = (text) => {
   font-weight: var(--font-weight-medium);
 }
 
-/* ===== Team Strength Section ===== */
-.team-strength {
-  padding: var(--space-32) 0;
-  background: var(--bg-secondary);
-}
 
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: var(--space-6);
-}
-
-.team-card {
-  text-align: center;
-  padding: var(--space-6);
-}
-
-.team-icon {
-  margin-bottom: var(--space-4);
-}
-
-.team-stat {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--space-1);
-  margin-bottom: var(--space-4);
-}
 
 /* ===== Floating Orbs ===== */
 .title-with-orbs {
@@ -1317,73 +1228,7 @@ const highlightNumbers = (text) => {
   line-height: var(--leading-normal);
 }
 
-/* ===== Context Graph Section ===== */
-.context-graph {
-  padding: var(--space-16) 0 var(--space-32) 0;
-  background: var(--bg-secondary);
-}
 
-.context-graph h2 {
-  text-align: center;
-  margin-bottom: var(--space-4);
-}
-
-.context-graph .section-subtitle {
-  text-align: center;
-  margin-bottom: var(--space-16);
-}
-
-
-
-.graph-visual {
-  text-align: center;
-  padding: var(--space-16);
-  background: var(--glass-bg);
-  border: 1px solid var(--glass-border);
-  border-radius: var(--radius-xl);
-  backdrop-filter: var(--glass-backdrop);
-  -webkit-backdrop-filter: var(--glass-backdrop);
-  margin-bottom: var(--space-12);
-}
-
-.graph-placeholder {
-  color: var(--text-secondary);
-  font-size: var(--font-lg);
-  font-style: italic;
-}
-
-.graph-metrics {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: var(--space-6);
-}
-
-.metric-card {
-  background: var(--bg-primary);
-  border-radius: var(--radius-lg);
-  padding: var(--space-6);
-  text-align: center;
-  box-shadow: var(--shadow-soft);
-  transition: all var(--duration-normal) var(--ease-out);
-}
-
-.metric-card:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-medium);
-}
-
-.metric-number {
-  font-size: var(--font-3xl);
-  font-weight: 800;
-  color: var(--primary-color);
-  margin-bottom: var(--space-2);
-}
-
-.metric-label {
-  color: var(--text-secondary);
-  font-size: var(--font-sm);
-  font-weight: 500;
-}
 
 /* ===== News Section ===== */
 .news {
