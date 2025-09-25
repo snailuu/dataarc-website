@@ -2365,4 +2365,46 @@ h6, .h6 {
   }
 }
 
+/* ===== 语境图谱卡片特殊样式 ===== */
+.context-graph .content-bilingual {
+  position: relative !important;
+  margin-bottom: 40px !important;
+}
+
+/* 语境图谱标题下的分割线 */
+.context-graph .content-bilingual::after {
+  content: '';
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+  border-radius: 2px;
+}
+
+/* 语境图谱内容右对齐 */
+.context-graph .content-main {
+  text-align: right !important;
+  direction: rtl !important;
+  unicode-bidi: bidi-override !important;
+}
+
+/* 语境图谱数字超大显示 */
+.context-graph .content-main span.number {
+  font-size: 3em !important;
+  font-weight: 900 !important;
+  color: var(--primary-color) !important;
+  background: linear-gradient(135deg, #00d4ff, #0099cc) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  display: inline-block !important;
+  text-shadow: 0 0 30px rgba(0, 212, 255, 0.6) !important;
+  margin: 0 0.2em !important;
+  direction: ltr !important;
+  filter: drop-shadow(0 0 10px rgba(0, 212, 255, 0.4)) !important;
+}
+
 /* ===== End of main styles ===== */
