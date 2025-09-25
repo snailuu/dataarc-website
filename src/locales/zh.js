@@ -20,7 +20,7 @@ const common = {
   },
   graph: {
     hint: '点击节点开始AI合成',
-    controls: '双击重新布局 | 拖拽节点交互',
+    controls: '拖拽节点交互',
     aiDialogue: {
       thinking: '正在思考...',
       analyzing: '正在分析数据关系...',

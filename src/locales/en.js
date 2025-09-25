@@ -20,7 +20,7 @@ const common = {
   },
   graph: {
     hint: 'Click node to start AI synthesis',
-    controls: 'Double-click to re-layout | Drag nodes to interact',
+    controls: 'Drag nodes to interact',
     aiDialogue: {
       thinking: 'Thinking...',
       analyzing: 'Analyzing data relationships...',
