@@ -395,14 +395,14 @@ body {
 
 /* 深蓝色按钮 */
 .btn-primary.btn-capsule {
-  background: #4a90b4;  /* 更深的蓝色 */
+  background: var(--primary-color);  /* 使用主色调 */
   color: var(--text-white);
 }
 
 .btn-primary.btn-capsule:hover {
-  background: #3a7ea5;
+  background: var(--primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(74, 144, 180, 0.4);
+  box-shadow: 0 8px 25px rgba(0, 212, 255, 0.4);
 }
 
 /* 粗白色边框按钮 */

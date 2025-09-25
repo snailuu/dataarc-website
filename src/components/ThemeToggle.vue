@@ -63,16 +63,16 @@ const themeStore = useThemeStore()
 }
 
 .theme-toggle:hover {
-  background: rgba(62, 70, 120, 0.15);  /* 深紫蓝色低饱和度 */
+  background: rgba(0, 212, 255, 0.15);  /* 使用主色调 */
   transform: translateY(0);
 }
 
 .theme-toggle:hover .nav-main {
-  color: #6b73b8;  /* 深紫蓝色 */
+  color: var(--primary-color);  /* 使用主色调变量 */
 }
 
 .theme-toggle:hover .nav-en {
-  color: #6b73b8;  /* 深紫蓝色 */
+  color: var(--primary-color);  /* 使用主色调变量 */
   opacity: 1;
 }
 </style> 

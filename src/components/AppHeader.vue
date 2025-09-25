@@ -501,16 +501,16 @@ onUnmounted(() => {
 }
 
 .nav-link:hover {
-  background: rgba(74, 144, 180, 0.25);
+  background: rgba(0, 212, 255, 0.15);
   transform: translateY(0);
 }
 
 .nav-link:hover .nav-main {
-  color: #4a90b4;
+  color: var(--primary-color);
 }
 
 .nav-link:hover .nav-en {
-  color: #4a90b4;
+  color: var(--primary-color);
   opacity: 1;
 }
 
@@ -524,7 +524,7 @@ onUnmounted(() => {
 }
 
 .nav-link.router-link-active .nav-main {
-  color: #4a90b4;
+  color: var(--primary-color);
   font-weight: 600;
 }
 
@@ -984,7 +984,7 @@ onUnmounted(() => {
   .nav-link:hover .nav-en,
   .nav-link.router-link-active .nav-main,
   .nav-link.router-link-active .nav-en {
-    color: var(--primary-light);
+    color: var(--primary-color);
   }
   
   .menu-line {
