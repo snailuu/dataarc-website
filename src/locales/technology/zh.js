@@ -3,7 +3,8 @@ export default {
     title: '技术优势',
     subtitle: '核心技术栈',
     englishLine: 'TECHNOLOGY ADVANTAGES • CORE TECHNOLOGY STACK',
-    description: 'Living KB 动态知识库合成数据平台，七项核心技术驱动 AI 智能化升级。'
+    description: 'Living KB 动态知识库合成数据平台，七项核心技术驱动 AI 智能化升级。',
+    descriptionEn: 'Living KB dynamic knowledge base synthetic data platform, with seven core technologies driving AI intelligent upgrades.'
   },
   process: {
     steps: {
@@ -48,6 +49,45 @@ export default {
         '采用更高效的 Graph 交互方式，提升工作效率与体验'
       ]
     }
+  },
+  techStats: {
+    items: [
+      {
+        key: 'tog',
+        prefix: 'ToG',
+        suffix: '思维图谱'
+      },
+      {
+        key: 'sqlR1',
+        prefix: 'SQL-R1',
+        suffix: '数据库查询'
+      },
+      {
+        key: 'rag',
+        prefix: 'RAG',
+        suffix: '检索增强生成'
+      },
+      {
+        key: 'sog',
+        prefix: 'SoG',
+        suffix: '合成数据'
+      },
+      {
+        key: 'judge',
+        prefix: 'Judge',
+        suffix: '自动评估'
+      },
+      {
+        key: 'soe',
+        prefix: 'SoE',
+        suffix: '加密训练'
+      },
+      {
+        key: 'contextGraph',
+        prefix: 'Context Graph',
+        suffix: '语境图谱'
+      }
+    ]
   },
   advantages: {
     title: '技术优势',

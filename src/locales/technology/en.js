@@ -3,7 +3,8 @@ export default {
     title: 'Technology Advantages',
     subtitle: 'Core Technology Stack',
     englishLine: 'TECHNOLOGY ADVANTAGES • CORE TECHNOLOGY STACK',
-    description: 'Living KB dynamic knowledge base and synthetic data platform with seven core technologies driving AI intelligence upgrades.'
+    description: 'Living KB dynamic knowledge base and synthetic data platform with seven core technologies driving AI intelligence upgrades.',
+    descriptionEn: 'Living KB dynamic knowledge base and synthetic data platform with seven core technologies driving AI intelligence upgrades.'
   },
   process: {
     steps: {
@@ -48,6 +49,45 @@ export default {
         'Adopt more efficient graph interaction methods to deliver better productivity and experience'
       ]
     }
+  },
+  techStats: {
+    items: [
+      {
+        key: 'tog',
+        prefix: 'ToG',
+        suffix: 'Thinking Graph'
+      },
+      {
+        key: 'sqlR1',
+        prefix: 'SQL-R1',
+        suffix: 'Database Query'
+      },
+      {
+        key: 'rag',
+        prefix: 'RAG',
+        suffix: 'Retrieval Augmented Generation'
+      },
+      {
+        key: 'sog',
+        prefix: 'SoG',
+        suffix: 'Synthetic Data'
+      },
+      {
+        key: 'judge',
+        prefix: 'Judge',
+        suffix: 'Auto Evaluation'
+      },
+      {
+        key: 'soe',
+        prefix: 'SoE',
+        suffix: 'Encrypted Training'
+      },
+      {
+        key: 'contextGraph',
+        prefix: 'Context Graph',
+        suffix: 'Context Mapping'
+      }
+    ]
   },
   advantages: {
     title: 'Technical Advantages',

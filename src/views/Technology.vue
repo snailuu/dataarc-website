@@ -19,6 +19,17 @@
           </h1>
           <div class="hero-description content-bilingual">
             <p class="content-main">{{ t('technology.hero.description') }}</p>
+            <p class="content-en">{{ t('technology.hero.descriptionEn') }}</p>
+          </div>
+          
+          <!-- Tech Stats in Hero -->
+          <div class="hero-stats">
+            <div v-for="tech in techStatsItems" :key="tech.key" class="stat-item">
+              <div class="stat-label-bilingual">
+                <span class="stat-prefix">{{ tech.prefix }}</span>
+                <span class="stat-suffix">{{ tech.suffix }}</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -391,6 +402,11 @@ const coreFeatureItems = computed(() => {
 
 const productFeatureItems = computed(() => {
   const items = tm('technology.features.product.items')
+  return Array.isArray(items) ? items : []
+})
+
+const techStatsItems = computed(() => {
+  const items = tm('technology.techStats.items')
   return Array.isArray(items) ? items : []
 })
 
@@ -924,12 +940,32 @@ const toggleFaq = (type, index) => {
   margin: 0 auto;
 }
 
+.hero-title {
+  font-size: var(--font-5xl);
+  font-weight: 800;
+  line-height: var(--leading-tight);
+  margin-bottom: var(--space-6);
+  animation: fadeInUp 0.8s var(--ease-out);
+}
+
+.title-line {
+  display: block;
+}
+
+.title-highlight {
+  background: linear-gradient(45deg, #ffecd2, #fcb69f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .hero-description {
   font-size: var(--font-lg);
   line-height: var(--leading-relaxed);
   color: var(--text-white-secondary);
   max-width: 600px;
-  margin: var(--space-6) auto 0;
+  margin: 0 auto;
+  animation: fadeInUp 1s var(--ease-out);
 }
 
 /* Hero section文字颜色修复 */
@@ -942,7 +978,81 @@ const toggleFaq = (type, index) => {
   color: var(--text-white-secondary) !important;
 }
 
-.hero .hero-description .content-main {
+.hero .hero-description .content-main,
+.hero .hero-description .content-en {
   color: var(--text-white-secondary) !important;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hero Stats */
+.hero .hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: var(--space-12) auto 0;
+}
+
+.hero .stat-item {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6) var(--space-4);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all var(--duration-normal) var(--ease-out);
+  flex: 0 0 auto;
+  min-width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .stat-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.hero .stat-label-bilingual {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  width: 100%;
+}
+
+.hero .stat-prefix {
+  font-size: var(--font-xl);
+  font-weight: 300;
+  color: var(--text-white);
+  line-height: 1.2;
+  display: block;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  margin-bottom: var(--space-1);
+}
+
+.hero .stat-suffix {
+  font-size: var(--font-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-white);
+  line-height: 1.3;
+  display: block;
+  word-break: break-word;
 }
 </style>

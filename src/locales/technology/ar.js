@@ -3,7 +3,8 @@ export default {
     title: 'مزايا التقنية',
     subtitle: 'حزمة التقنيات الأساسية',
     englishLine: 'TECHNOLOGY ADVANTAGES • CORE TECHNOLOGY STACK',
-    description: 'منصة Living KB للمعرفة الديناميكية والبيانات الاصطناعية بسبعة تقنيات أساسية تعزز ترقية الذكاء الاصطناعي.'
+    description: 'منصة Living KB للمعرفة الديناميكية والبيانات الاصطناعية بسبعة تقنيات أساسية تعزز ترقية الذكاء الاصطناعي.',
+    descriptionEn: 'Living KB dynamic knowledge base and synthetic data platform with seven core technologies driving AI intelligence upgrades.'
   },
   process: {
     steps: {
@@ -48,6 +49,45 @@ export default {
         'اعتماد أساليب تفاعل بالرسم أكثر كفاءة لتحسين التجربة وكفاءة العمل'
       ]
     }
+  },
+  techStats: {
+    items: [
+      {
+        key: 'tog',
+        prefix: 'ToG',
+        suffix: 'خريطة التفكير'
+      },
+      {
+        key: 'sqlR1',
+        prefix: 'SQL-R1',
+        suffix: 'استعلام قاعدة البيانات'
+      },
+      {
+        key: 'rag',
+        prefix: 'RAG',
+        suffix: 'الإنتاج المعزز بالاسترجاع'
+      },
+      {
+        key: 'sog',
+        prefix: 'SoG',
+        suffix: 'البيانات التركيبية'
+      },
+      {
+        key: 'judge',
+        prefix: 'Judge',
+        suffix: 'التقييم التلقائي'
+      },
+      {
+        key: 'soe',
+        prefix: 'SoE',
+        suffix: 'التدريب المشفر'
+      },
+      {
+        key: 'contextGraph',
+        prefix: 'Context Graph',
+        suffix: 'خريطة السياق'
+      }
+    ]
   },
   advantages: {
     title: 'مزايا تقنية',
