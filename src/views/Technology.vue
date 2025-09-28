@@ -532,16 +532,16 @@ const toggleFaq = (type, index) => {
 }
 
 .feature-icon {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 15px;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 12px;
   border-radius: 8px;
 }
 
 .feature-card h3 {
   color: var(--text-primary);
   font-size: 1.3rem;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   font-weight: 600;
 }
 

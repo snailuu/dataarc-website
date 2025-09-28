@@ -3,7 +3,8 @@ export default {
     title: 'حلول المنتجات',
     subtitle: 'مصفوفة المنتجات المزدوجة',
     englishLine: 'حلول المنتجات • مصفوفة المنتجات المزدوجة',
-    description: 'من خلال التكامل العميق لمعرفة المؤسسة والبيانات الاصطناعية، نوفر مجموعة تقنية كاملة متوافقة مع GenAI لمختلف الصناعات.'
+    description: 'من خلال التكامل العميق لمعرفة المؤسسة والبيانات الاصطناعية، نوفر مجموعة تقنية كاملة متوافقة مع GenAI لمختلف الصناعات.',
+    descriptionEn: 'Through deep integration of enterprise knowledge and synthetic data, providing complete GenAI-compatible technology stack for various industries.'
   },
   comparison: {
     title: 'مصفوفة مقارنة المنتجات',

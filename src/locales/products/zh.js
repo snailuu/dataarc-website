@@ -3,7 +3,8 @@ export default {
     title: '产品方案',
     subtitle: '双产品矩阵',
     englishLine: 'PRODUCT SOLUTIONS • DUAL PRODUCT MATRIX',
-    description: '通过企业知识+合成数据的深度融合，为各行业提供适配GenAI的完整技术栈。'
+    description: '通过企业知识+合成数据的深度融合，为各行业提供适配GenAI的完整技术栈。',
+    descriptionEn: 'Through deep integration of enterprise knowledge and synthetic data, providing complete GenAI-compatible technology stack for various industries.'
   },
   comparison: {
     title: '产品对比矩阵',

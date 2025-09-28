@@ -3,7 +3,8 @@ export default {
     title: 'Product Solutions',
     subtitle: 'Dual Product Matrix',
     englishLine: 'PRODUCT SOLUTIONS • DUAL PRODUCT MATRIX',
-    description: 'Through deep integration of enterprise knowledge and synthetic data, providing complete GenAI-compatible technology stack for various industries.'
+    description: 'Through deep integration of enterprise knowledge and synthetic data, providing complete GenAI-compatible technology stack for various industries.',
+    descriptionEn: 'Through deep integration of enterprise knowledge and synthetic data, providing complete GenAI-compatible technology stack for various industries.'
   },
   comparison: {
     title: 'Product Comparison Matrix',

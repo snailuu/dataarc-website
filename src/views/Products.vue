@@ -17,8 +17,9 @@
             </span>
             <span class="subtitle-en company-english-line">{{ t('products.hero.englishLine') }}</span>
           </h1>
-          <div class="hero-description">
+          <div class="hero-description content-bilingual">
             <p class="content-main">{{ t('products.hero.description') }}</p>
+            <p class="content-en">{{ t('products.hero.descriptionEn') }}</p>
           </div>
         </div>
       </div>
@@ -1052,13 +1053,22 @@ const productCases = computed(() => [
 }
 
 .hero-title {
-  font-size: 3.5rem;
-  font-weight: 200;
+  font-size: var(--font-5xl);
+  font-weight: 800;
+  line-height: var(--leading-tight);
   margin-bottom: var(--space-6);
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
-  background-clip: text;
+  animation: fadeInUp 0.8s var(--ease-out);
+}
+
+.title-line {
+  display: block;
+}
+
+.title-highlight {
+  background: linear-gradient(45deg, #ffecd2, #fcb69f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .hero-subtitle {
@@ -1833,7 +1843,7 @@ const productCases = computed(() => [
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 .hero-pattern {
@@ -1842,10 +1852,9 @@ const productCases = computed(() => [
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: radial-gradient(circle at 2px 2px, var(--primary-color) 1px, transparent 0);
-  opacity: 0.05;
-  background-size: 40px 40px;
-  animation: float 30s ease-in-out infinite;
+  background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.1) 1px, transparent 0);
+  background-size: 20px 20px;
+  animation: float 20s ease-in-out infinite;
 }
 
 .hero-content {
@@ -1860,7 +1869,8 @@ const productCases = computed(() => [
   line-height: var(--leading-relaxed);
   color: var(--text-white-secondary);
   max-width: 600px;
-  margin: var(--space-6) auto 0;
+  margin: 0 auto;
+  animation: fadeInUp 1s var(--ease-out);
 }
 
 /* Hero section文字颜色修复 */
