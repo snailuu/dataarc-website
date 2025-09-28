@@ -189,10 +189,6 @@ export default {
           answer: "DataArc's dynamic knowledge base (Context Graph) is a structured data management system that captures and organizes enterprise information to build context graphs, helping teams manage and utilize knowledge efficiently while optimizing model training."
         },
         {
-          question: 'How is the knowledge graph constructed?',
-          answer: 'With DataArc, enterprises transform internal data sources into structured graphs. The system automatically gathers policies, documents, and reports, converts them into triplets (e.g., policy-applies-enterprise), and links them to improve data processing and knowledge management efficiency.'
-        },
-        {
           question: 'How can I query data with the DataArc knowledge base?',
           answer: 'The knowledge base supports structured and natural language queries. Leveraging context understanding, users enter a question or filter, and the system extracts relevant knowledge from the graph to deliver accurate results.'
         },
