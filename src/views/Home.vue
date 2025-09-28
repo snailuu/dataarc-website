@@ -239,16 +239,18 @@
           <p class="content-main">{{ newsContent.subtitle }}</p>
         </div>
 
-        <div class="news-grid">
-          <a v-for="item in newsContent.items" :key="item.title" :href="item.link" target="_blank" class="news-card">
-            <div class="news-image">
-              <div class="news-placeholder">{{ item.placeholder }}</div>
-            </div>
-            <div class="news-content">
-              <h4 class="title-level-4">{{ item.title }}</h4>
-              <p class="news-date text-sm font-normal text-quaternary">{{ item.date }}</p>
-            </div>
-          </a>
+        <div class="news-scroll-container" @mouseenter="pauseScroll" @mouseleave="resumeScroll" @wheel="handleWheel">
+          <div class="news-track" ref="newsTrack">
+            <a v-for="item in duplicatedNews" :key="`${item.title}-${item.index}`" :href="item.link" target="_blank" class="news-card">
+              <div class="news-image">
+                <div class="news-placeholder">{{ item.placeholder }}</div>
+              </div>
+              <div class="news-content">
+                <h4 class="title-level-4">{{ item.title }}</h4>
+                <p class="news-date text-sm font-normal text-quaternary">{{ item.date }}</p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -371,7 +373,7 @@
 </template>
 
 <script setup>
-import { onMounted, computed, ref } from 'vue'
+import { onMounted, onBeforeUnmount, computed, ref, nextTick } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
 import AppHeader from '@/components/AppHeader.vue'
@@ -469,6 +471,61 @@ const newsContent = computed(() => {
   return content && Object.keys(content).length > 0 ? content : {}
 })
 
+// 复制新闻数据用于无缝滚动
+const duplicatedNews = computed(() => {
+  if (!newsContent.value.items) return []
+  const items = newsContent.value.items.map((item, index) => ({ ...item, index }))
+  return [...items, ...items] // 复制一份用于无缝循环
+})
+
+// 新闻滚动相关
+const newsTrack = ref(null)
+let scrollTimer = null
+const scrollSpeed = 0.5 // 滚动速度
+let currentScroll = 0
+let isScrollPaused = false
+
+// 自动滚动函数
+const autoScroll = () => {
+  if (!newsTrack.value || isScrollPaused) return
+  
+  currentScroll += scrollSpeed
+  const cardWidth = 344 // 卡片宽度320 + 间距24
+  const maxScroll = (newsContent.value.items?.length || 0) * cardWidth
+  
+  if (currentScroll >= maxScroll) {
+    currentScroll = 0
+  }
+  
+  newsTrack.value.style.transform = `translateX(-${currentScroll}px)`
+  requestAnimationFrame(autoScroll)
+}
+
+// 暂停滚动
+const pauseScroll = () => {
+  isScrollPaused = true
+}
+
+// 恢复滚动
+const resumeScroll = () => {
+  isScrollPaused = false
+}
+
+// 处理鼠标滚轮事件
+const handleWheel = (event) => {
+  event.preventDefault()
+  if (!newsTrack.value) return
+  
+  currentScroll += event.deltaY * 0.5
+  const cardWidth = 304
+  const maxScroll = (newsContent.value.items?.length || 0) * cardWidth
+  
+  if (currentScroll < 0) currentScroll = maxScroll - cardWidth
+  if (currentScroll >= maxScroll) currentScroll = 0
+  
+  newsTrack.value.style.transform = `translateX(-${currentScroll}px)`
+}
+
 
 
 // 定义标题区域ID
@@ -477,6 +534,15 @@ const sectionIds = ['hero', 'market', 'products', 'tech', 'news']
 onMounted(() => {
   // 页面加载后生成随机小球
   generateOrbs(sectionIds)
+  
+  // 启动自动滚动
+  nextTick(() => {
+    autoScroll()
+  })
+})
+
+onBeforeUnmount(() => {
+  isScrollPaused = true
 })
 
 // 鼠标互动效果
@@ -1274,10 +1340,19 @@ const submitBookingForm = async () => {
   margin-bottom: var(--space-16);
 }
 
-.news-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+/* 新闻滚动容器 */
+.news-scroll-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: var(--space-8);
+}
+
+.news-track {
+  display: flex;
   gap: var(--space-6);
+  transition: transform 0.3s ease;
+  will-change: transform;
 }
 
 .news-card {
@@ -1289,6 +1364,9 @@ const submitBookingForm = async () => {
   text-decoration: none;
   color: inherit;
   display: block;
+  flex-shrink: 0;
+  width: 320px;
+  height: 280px;
 }
 
 .news-card:hover {
@@ -1297,24 +1375,33 @@ const submitBookingForm = async () => {
 }
 
 .news-image {
-  height: 200px;
+  height: 160px;
   background: var(--bg-tertiary);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--text-tertiary);
+  font-size: var(--font-sm);
 }
 
 .news-content {
-  padding: var(--space-6);
+  padding: var(--space-5);
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .news-title {
-  font-size: var(--font-lg);
+  font-size: var(--font-base);
   font-weight: 600;
   color: var(--text-primary);
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   margin-bottom: var(--space-2);
-  line-height: var(--leading-tight);
 }
 
 .news-date {
@@ -1484,9 +1571,13 @@ const submitBookingForm = async () => {
   }
 
   .tech-grid,
-  .graph-metrics,
-  .news-grid {
+  .graph-metrics {
     grid-template-columns: 1fr;
+  }
+  
+  .news-card {
+    width: 250px;
+    height: 180px;
   }
 }
 
