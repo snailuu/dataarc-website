@@ -240,7 +240,7 @@
         </div>
 
         <div class="news-grid">
-          <div v-for="item in newsContent.items" :key="item.title" class="news-card">
+          <a v-for="item in newsContent.items" :key="item.title" :href="item.link" target="_blank" class="news-card">
             <div class="news-image">
               <div class="news-placeholder">{{ item.placeholder }}</div>
             </div>
@@ -248,7 +248,7 @@
               <h4 class="title-level-4">{{ item.title }}</h4>
               <p class="news-date text-sm font-normal text-quaternary">{{ item.date }}</p>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -1286,6 +1286,9 @@ const submitBookingForm = async () => {
   border-radius: var(--radius-lg);
   overflow: hidden;
   transition: all var(--duration-normal) var(--ease-out);
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 .news-card:hover {

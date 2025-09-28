@@ -131,35 +131,35 @@ export default {
     subtitle: '以合成数据驱动的智能体为核心，提供多场景 AI 应用方案。',
     items: [
       {
-        title: 'AI 赋能教育：新趋势与洞察',
-        date: '2024 年 5 月 12 日',
-        placeholder: '【需要图片：首页-新闻-AI教育趋势.png】',
+        title: 'DataArc观点 | 大模型下半场，怎样能让AI继续变强？',
+        date: '2025 年 1 月 15 日',
+        placeholder: '【需要图片：首页-新闻-AI发展.png】',
+        link: 'https://mp.weixin.qq.com/s/Eg7Ji_Ihq1I5mzXqCdToHw'
       },
       {
-        title: '合成数据保护企业隐私安全',
-        date: '2024 年 4 月 28 日',
-        placeholder: '【需要图片：首页-新闻-数据安全.png】',
+        title: 'DataArc章讯 | 数创弧光成为深圳市人工智能产业协会会员单位',
+        date: '2025 年 1 月 12 日',
+        placeholder: '【需要图片：首页-新闻-协会会员.png】',
+        link: 'https://mp.weixin.qq.com/s/KpVsB02xfOxdB4T6hMJgwA'
       },
       {
-        title: 'DataArc 亮相 AI 行业峰会',
-        date: '2024 年 4 月 15 日',
-        placeholder: '【需要图片：首页-新闻-行业峰会.png】',
+        title: '合成数据专题：Synthetic Data is All You Need（上）',
+        date: '2025 年 1 月 10 日',
+        placeholder: '【需要图片：首页-新闻-合成数据上.png】',
+        link: 'https://mp.weixin.qq.com/s/jy9aZDGbtpwkA17yW8QeOg'
       },
       {
-        title: '语境图谱技术重大突破',
-        date: '2024 年 3 月 30 日',
-        placeholder: '【需要图片：首页-新闻-技术创新.png】',
+        title: '合成数据专题：Synthetic Data is All You Need（下）',
+        date: '2025 年 1 月 8 日',
+        placeholder: '【需要图片：首页-新闻-合成数据下.png】',
+        link: 'https://mp.weixin.qq.com/s/LR3N0oxnwoJNAUBXxk15Kw'
       },
       {
-        title: '与知名企业达成战略合作',
-        date: '2024 年 3 月 20 日',
-        placeholder: '【需要图片：首页-新闻-合作伙伴.png】',
-      },
-      {
-        title: 'Living KB 2.0 正式发布',
-        date: '2024 年 3 月 10 日',
-        placeholder: '【需要图片：首页-新闻-产品发布.png】',
-      },
+        title: '知识管理 | 为什么你公司的AI用不好？',
+        date: '2025 年 1 月 5 日',
+        placeholder: '【需要图片：首页-新闻-知识管理.png】',
+        link: 'https://mp.weixin.qq.com/s/oOdiTftrHhnPhXpjgppYXg'
+      }
     ],
   },
   team: {

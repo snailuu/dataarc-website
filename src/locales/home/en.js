@@ -143,35 +143,35 @@ export default {
     subtitle: 'Synthetic data-driven agents power multi-scenario AI application solutions.',
     items: [
       {
-        title: 'AI Empowers Education: New Trends and Insights',
-        date: 'May 12, 2024',
-        placeholder: '【Image needed: homepage-news-ai-education.png】',
+        title: 'DataArc Viewpoint | How to Keep AI Getting Stronger in the Second Half of LLM Era?',
+        date: 'January 15, 2025',
+        placeholder: '【Image needed: homepage-news-ai-development.png】',
+        link: 'https://mp.weixin.qq.com/s/Eg7Ji_Ihq1I5mzXqCdToHw'
       },
       {
-        title: 'Synthetic Data Safeguards Enterprise Privacy',
-        date: 'April 28, 2024',
-        placeholder: '【Image needed: homepage-news-security.png】',
+        title: 'DataArc News | DataArc Becomes Member of Shenzhen AI Industry Association',
+        date: 'January 12, 2025',
+        placeholder: '【Image needed: homepage-news-association-member.png】',
+        link: 'https://mp.weixin.qq.com/s/KpVsB02xfOxdB4T6hMJgwA'
       },
       {
-        title: 'DataArc Shines at the AI Industry Summit',
-        date: 'April 15, 2024',
-        placeholder: '【Image needed: homepage-news-summit.png】',
+        title: 'Synthetic Data Special: Synthetic Data is All You Need (Part 1)',
+        date: 'January 10, 2025',
+        placeholder: '【Image needed: homepage-news-synthetic-data-1.png】',
+        link: 'https://mp.weixin.qq.com/s/jy9aZDGbtpwkA17yW8QeOg'
       },
       {
-        title: 'Breakthrough in Context Graph Technology',
-        date: 'March 30, 2024',
-        placeholder: '【Image needed: homepage-news-innovation.png】',
+        title: 'Synthetic Data Special: Synthetic Data is All You Need (Part 2)',
+        date: 'January 8, 2025',
+        placeholder: '【Image needed: homepage-news-synthetic-data-2.png】',
+        link: 'https://mp.weixin.qq.com/s/LR3N0oxnwoJNAUBXxk15Kw'
       },
       {
-        title: 'Strategic Partnership with Leading Enterprises',
-        date: 'March 20, 2024',
-        placeholder: '【Image needed: homepage-news-partners.png】',
-      },
-      {
-        title: 'Living KB 2.0 Officially Released',
-        date: 'March 10, 2024',
-        placeholder: '【Image needed: homepage-news-product-release.png】',
-      },
+        title: 'Knowledge Management | Why Does Your Company AI Not Work Well?',
+        date: 'January 5, 2025',
+        placeholder: '【Image needed: homepage-news-knowledge-management.png】',
+        link: 'https://mp.weixin.qq.com/s/oOdiTftrHhnPhXpjgppYXg'
+      }
     ],
   },
   team: {
