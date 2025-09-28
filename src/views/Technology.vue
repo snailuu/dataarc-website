@@ -116,9 +116,15 @@
             <div class="title-bilingual">
               <h3 class="title-main">{{ t('technology.features.core.title') }}</h3>
             </div>
-            <div class="content-bilingual">
-              <p class="content-main">{{ t('technology.features.core.description') }}</p>
-            </div>
+            <ul class="list-bilingual">
+              <li
+                v-for="(item, index) in coreFeatureItems"
+                :key="index"
+                class="list-item-bilingual"
+              >
+                <span class="list-main">{{ item }}</span>
+              </li>
+            </ul>
           </div>
 
           <div class="feature-card">
@@ -378,6 +384,11 @@ const { t, tm } = useI18n()
 
 const activeTab = ref('kb')
 
+const coreFeatureItems = computed(() => {
+  const items = tm('technology.features.core.items')
+  return Array.isArray(items) ? items : []
+})
+
 const productFeatureItems = computed(() => {
   const items = tm('technology.features.product.items')
   return Array.isArray(items) ? items : []
@@ -502,14 +513,14 @@ const toggleFaq = (type, index) => {
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   margin-bottom: 80px;
-  max-width: 800px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .feature-card {
   text-align: center;
-  padding: 40px 30px;
+  padding: 25px 30px;
   background: var(--bg-primary);
   border: 1px solid var(--neutral-200);
   border-radius: var(--radius-xl);
@@ -521,9 +532,9 @@ const toggleFaq = (type, index) => {
 }
 
 .feature-icon {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 20px;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
   border-radius: 8px;
 }
 
@@ -548,11 +559,11 @@ const toggleFaq = (type, index) => {
 
 .feature-card li {
   color: var(--text-secondary);
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   padding-left: 16px;
   position: relative;
   font-size: 0.95rem;
-  line-height: 1.6;
+  line-height: 1.3;
 }
 
 .feature-card li::before {

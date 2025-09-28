@@ -303,15 +303,15 @@ const initializeForceSimulation = () => {
       })
       .strength(d => d.strength)  // 使用实际强度值
     )
-    .force('charge', d3.forceManyBody()
-      .strength(d => {
-        // 增强排斥力，确保节点间距
-        if (d.level === 1) return -400      // 核心节点超强排斥
-        if (d.level === 2) return -200      // 子节点强排斥  
-        return -120                         // 详细节点中等排斥
-      })
-      .distanceMax(250)  // 扩大排斥作用范围
-    )
+          .force('charge', d3.forceManyBody()
+       .strength(d => {
+         // 增强排斥力，确保节点间距
+         if (d.level === 1) return -400      // 核心节点超强排斥
+         if (d.level === 2) return -200      // 子节点强排斥  
+         return -120                         // 详细节点中等排斥
+       })
+       .distanceMax(250)  // 扩大排斥作用范围
+     )
     .force('center', d3.forceCenter(svgWidth.value / 2, svgHeight.value / 2)
       .strength(0.1)
     )
@@ -331,11 +331,11 @@ const initializeForceSimulation = () => {
       })
       .strength(0.1)
     )
-    .force('collision', d3.forceCollide()
-      .radius(d => getNodeRadius(d.level) + 15)  // 增加碰撞半径，强制间距
-      .strength(1.0)  // 最大碰撞强度，严格防重叠
-      .iterations(3)  // 增加迭代次数，确保无重叠
-    )
+         .force('collision', d3.forceCollide()
+       .radius(d => getNodeRadius(d.level) + 15)  // 增加碰撞半径，强制间距
+       .strength(1.0)  // 最大碰撞强度，严格防重叠
+       .iterations(3)  // 增加迭代次数，确保无重叠
+     )
     .velocityDecay(0.6)
     .alphaDecay(0.02)  // 慢一点收敛，让聚集更自然
     .on('tick', throttledTick)
@@ -813,7 +813,7 @@ onUnmounted(() => {
   border-right: 3px solid rgba(16, 185, 129, 0.6) !important;
   border-left: none !important;
   background: transparent;
-  }
+}
 
 .reset-button {
   position: absolute;

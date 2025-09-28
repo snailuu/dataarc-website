@@ -32,7 +32,12 @@ export default {
   features: {
     core: {
       title: '核心功能',
-      description: '以 Context Graph 为核心，实现企业知识管理并使企业知识 “LLM Ready”。通过知识挖掘、语境图谱和合成数据能力不断扩充企业的知识与语境，让 AI 和人类可以基于最新的企业数据进行检索、分析和决策。'
+      items: [
+        '以 Context Graph 为核心，实现企业知识管理',
+        '使企业知识 "LLM Ready"',
+        '通过合成数据能力不断扩充企业知识库',
+        '让 AI 可以基于最新的企业数据进行检索、分析和决策'
+      ]
     },
     product: {
       title: '产品特点',

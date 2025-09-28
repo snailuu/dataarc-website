@@ -32,7 +32,12 @@ export default {
   features: {
     core: {
       title: 'Core Functionality',
-      description: 'With Context Graph as the core, manage enterprise knowledge and make it LLM ready. Knowledge mining, context graphs, and synthetic data continually expand enterprise knowledge so AI and people can retrieve, analyze, and decide using the latest data.'
+      items: [
+        'With Context Graph as the core, manage enterprise knowledge',
+        'Make enterprise knowledge "LLM Ready"',
+        'Continually expand enterprise knowledge base through synthetic data capabilities',
+        'Enable AI to retrieve, analyze, and make decisions based on the latest enterprise data'
+      ]
     },
     product: {
       title: 'Product Features',

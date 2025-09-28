@@ -821,7 +821,10 @@
               <div class="form-group checkbox-group">
                 <input type="checkbox" id="agree" v-model="form.agree" required class="form-checkbox">
                 <label for="agree" class="checkbox-label">
-                  {{ t('company.contact.form.agree') }}<a href="#" class="form-link">{{ t('company.contact.form.terms') }}</a>和<a href="#" class="form-link">{{ t('company.contact.form.privacy') }}</a>
+                  {{ t('company.contact.form.agree') }}
+                  <a href="#" class="form-link">{{ t('company.contact.form.terms') }}</a>
+                  和
+                  <a href="#" class="form-link">{{ t('company.contact.form.privacy') }}</a>
                 </label>
               </div>
               

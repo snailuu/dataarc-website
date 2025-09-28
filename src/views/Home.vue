@@ -274,7 +274,7 @@
               <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
             </svg>
           </button>
-        </div>
+            </div>
         
         <form class="booking-form" @submit.prevent="submitBookingForm">
           <div class="form-row">
@@ -289,7 +289,7 @@
                 class="form-input"
                 :class="{ 'error': bookingErrors.firstname }">
               <div v-if="bookingErrors.firstname" class="error-message">{{ bookingErrors.firstname }}</div>
-            </div>
+          </div>
             <div class="form-group">
               <label for="booking-lastname">名 *</label>
               <input 
@@ -302,8 +302,8 @@
                 :class="{ 'error': bookingErrors.lastname }">
               <div v-if="bookingErrors.lastname" class="error-message">{{ bookingErrors.lastname }}</div>
             </div>
-          </div>
-          
+        </div>
+
           <div class="form-row">
             <div class="form-group">
               <label for="booking-email">邮箱 *</label>
@@ -316,7 +316,7 @@
                 class="form-input"
                 :class="{ 'error': bookingErrors.email }">
               <div v-if="bookingErrors.email" class="error-message">{{ bookingErrors.email }}</div>
-            </div>
+              </div>
             <div class="form-group">
               <label for="booking-phone">电话 *</label>
               <input 
@@ -329,7 +329,7 @@
                 :class="{ 'error': bookingErrors.phone }">
               <div v-if="bookingErrors.phone" class="error-message">{{ bookingErrors.phone }}</div>
             </div>
-          </div>
+            </div>
           
           <div class="form-group">
             <label for="booking-message">试用需求 *</label>
@@ -348,11 +348,11 @@
             <label for="booking-agree" class="checkbox-label">
               我同意<a href="#" class="form-link">服务条款</a>和<a href="#" class="form-link">隐私政策</a>
             </label>
-          </div>
+        </div>
           
           <div v-if="bookingError" class="form-error">
             {{ bookingError }}
-          </div>
+      </div>
           
           <div v-if="bookingSuccess" class="form-success">
             {{ bookingSuccess }}

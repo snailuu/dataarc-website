@@ -1,0 +1,23 @@
+nohup: ignoring input
+
+> dataarctech-website@1.0.0 dev
+> vite --host 0.0.0.0 --port 8000
+
+
+  VITE v4.5.14  ready in 448 ms
+
+  ➜  Local:   http://localhost:8000/
+  ➜  Network: http://192.168.168.47:8000/
+1:37:11 PM [vite] hmr update /src/views/Technology.vue
+1:37:30 PM [vite] hmr update /src/views/Technology.vue?vue&type=style&index=0&scoped=cb42a6ad&lang.css
+1:37:43 PM [vite] hmr update /src/views/Technology.vue?vue&type=style&index=0&scoped=cb42a6ad&lang.css
+1:46:04 PM [vite] hmr update /src/views/Technology.vue
+1:46:24 PM [vite] hmr update /src/views/Technology.vue?vue&type=style&index=0&scoped=cb42a6ad&lang.css
+1:46:34 PM [vite] hmr update /src/views/Technology.vue?vue&type=style&index=0&scoped=cb42a6ad&lang.css
+npm ERR! path /root/dataarc_new
+npm ERR! command failed
+npm ERR! signal SIGHUP
+npm ERR! command sh -c -- vite --host 0.0.0.0 --port 8000
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2025-09-28T05_29_12_227Z-debug-0.log
