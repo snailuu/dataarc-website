@@ -437,25 +437,7 @@
           
 
         </div>
-        
-        <div class="advisors-section">
-          <h3 class="title-level-3">{{ t('company.teamDetails.advisors.title') }}</h3>
-          <div class="advisors-grid">
-            <div class="advisor-card">
-              <div class="advisor-avatar">{{ t('company.teamDetails.advisors.shen.avatar') }}</div>
-              <h4 class="title-level-4">{{ t('company.teamDetails.advisors.shen.name') }}</h4>
-              <p class="advisor-title">{{ t('company.teamDetails.advisors.shen.title') }}</p>
-              <p class="advisor-bio">{{ t('company.teamDetails.advisors.shen.bio') }}</p>
-            </div>
-            
-            <div class="advisor-card">
-              <div class="advisor-avatar">{{ t('company.teamDetails.advisors.experts.avatar') }}</div>
-              <h4 class="title-level-4">{{ t('company.teamDetails.advisors.experts.name') }}</h4>
-              <p class="advisor-title">{{ t('company.teamDetails.advisors.experts.title') }}</p>
-              <p class="advisor-bio">{{ t('company.teamDetails.advisors.experts.bio') }}</p>
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
 
@@ -1806,55 +1788,7 @@ const submitForm = async () => {
   justify-content: center;
 }
 
-.advisors-section h3 {
-  font-size: var(--font-2xl);
-  font-weight: var(--font-weight-semibold);
-  color: var(--text-primary);
-  margin-bottom: var(--space-8);
-  text-align: center;
-}
 
-.advisors-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--space-8);
-}
-
-.advisor-card {
-  background: var(--glass-bg);
-  border-radius: var(--radius-2xl);
-  padding: var(--space-8);
-  text-align: center;
-  backdrop-filter: var(--glass-backdrop);
-  border: 1px solid var(--glass-border);
-}
-
-.advisor-avatar {
-  width: 100px;
-  height: 100px;
-  background: var(--neutral-100);
-  border: 2px dashed var(--neutral-300);
-  border-radius: var(--radius-full);
-  margin: 0 auto var(--space-4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--neutral-500);
-  font-size: var(--font-xs);
-}
-
-.advisor-card h4 {
-  font-size: var(--font-xl);
-  font-weight: var(--font-weight-semibold);
-  color: var(--text-primary);
-  margin-bottom: var(--space-2);
-}
-
-.advisor-title {
-  color: var(--primary-color);
-  font-weight: var(--font-weight-medium);
-  margin-bottom: var(--space-3);
-}
 
 /* ===== Funding Section ===== */
 .funding-section {
@@ -2103,9 +2037,7 @@ const submitForm = async () => {
     max-width: 350px;
   }
   
-  .advisors-grid {
-    grid-template-columns: 1fr;
-  }
+
   
   .timeline-item {
     flex-direction: column;
