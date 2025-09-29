@@ -873,14 +873,14 @@ const labelsContent = computed(() => {
 }
 
 .detailed-case {
-  margin-bottom: var(--space-20);
-  padding: var(--space-12);
+  margin-bottom: var(--space-12);
+  padding: var(--space-8);
   background: transparent;
   border-radius: var(--radius-2xl);
   border: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--space-4);
 }
 
 .premium-case {
@@ -892,7 +892,7 @@ const labelsContent = computed(() => {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: var(--space-8);
+  margin-bottom: var(--space-4);
   flex-wrap: wrap;
   gap: var(--space-4);
 }
@@ -939,18 +939,18 @@ const labelsContent = computed(() => {
 .case-body {
   display: flex;
   flex-direction: column;
-  gap: var(--space-8);
+  gap: var(--space-4);
 }
 
 .case-section {
   background: var(--bg-primary);
-  padding: var(--space-6);
+  padding: var(--space-4);
   border-radius: var(--radius-lg);
 }
 
 .solution-overview {
   background: transparent;
-  padding: var(--space-6);
+  padding: var(--space-4);
   border-radius: var(--radius-lg);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -1047,7 +1047,7 @@ const labelsContent = computed(() => {
 .case-solution,
 .case-results {
   background: transparent;
-  padding: var(--space-6);
+  padding: var(--space-4);
   border-radius: var(--radius-lg);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -1057,8 +1057,8 @@ const labelsContent = computed(() => {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: var(--space-6);
-  margin-top: var(--space-6);
+  gap: var(--space-3);
+  margin-top: var(--space-2);
   flex-wrap: nowrap;
 }
 
@@ -1073,7 +1073,7 @@ const labelsContent = computed(() => {
 .result-item {
   background: var(--bg-primary);
   border-radius: var(--radius-lg);
-  padding: var(--space-6);
+  padding: var(--space-4);
   text-align: center;
   transition: all var(--duration-normal) var(--ease-out);
   border: 1px solid var(--neutral-200);
