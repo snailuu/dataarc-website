@@ -366,74 +366,70 @@
             
             <div class="team-advantages">
               <div class="advantage-item">
-                <div class="icon-wrapper">
-                <img src="/images/icons/研究积累图标.png" alt="研究积累" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
-                <div class="advantage-content">
+                <div class="title-with-icon">
+                  <div class="icon-wrapper">
+                    <img src="/images/icons/研究积累图标.png" alt="研究积累" class="icon-img">
+                    <div class="icon-glow"></div>
+                  </div>
                   <div class="title-bilingual">
                     <h4 class="title-main">{{ t('company.teamDetails.advantages.research.title') }}</h4>
-                    
                     <span class="title-en">{{ t('company.teamDetails.advantages.research.titleEn') }}</span>
                   </div>
-                  <div class="content-bilingual">
-                    <p class="content-main">{{ t('company.teamDetails.advantages.research.description') }}</p>
-                    <p class="content-en">{{ t('company.teamDetails.advantages.research.descriptionEn') }}</p>
-                  </div>
+                </div>
+                <div class="content-bilingual">
+                  <p class="content-main">{{ t('company.teamDetails.advantages.research.description') }}</p>
+                  <p class="content-en">{{ t('company.teamDetails.advantages.research.descriptionEn') }}</p>
                 </div>
               </div>
               
                             <div class="advantage-item">
-                <div class="icon-wrapper">
-                <img src="/images/icons/业界知名图标.png" alt="业界知名" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
-                <div class="advantage-content">
+                <div class="title-with-icon">
+                  <div class="icon-wrapper">
+                    <img src="/images/icons/业界知名图标.png" alt="业界知名" class="icon-img">
+                    <div class="icon-glow"></div>
+                  </div>
                   <div class="title-bilingual">
                     <h4 class="title-main">{{ t('company.teamDetails.advantages.reputation.title') }}</h4>
-                    
                     <span class="title-en">{{ t('company.teamDetails.advantages.reputation.titleEn') }}</span>
                   </div>
-                  <div class="content-bilingual">
-                    <p class="content-main">{{ t('company.teamDetails.advantages.reputation.description') }}</p>
-                    <p class="content-en">{{ t('company.teamDetails.advantages.reputation.descriptionEn') }}</p>
-                  </div>
+                </div>
+                <div class="content-bilingual">
+                  <p class="content-main">{{ t('company.teamDetails.advantages.reputation.description') }}</p>
+                  <p class="content-en">{{ t('company.teamDetails.advantages.reputation.descriptionEn') }}</p>
                 </div>
               </div>
               
               <div class="advantage-item">
-                <div class="icon-wrapper">
-                <img src="/images/icons/专家顾问图标.png" alt="专家顾问" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
-                <div class="advantage-content">
+                <div class="title-with-icon">
+                  <div class="icon-wrapper">
+                    <img src="/images/icons/专家顾问图标.png" alt="专家顾问" class="icon-img">
+                    <div class="icon-glow"></div>
+                  </div>
                   <div class="title-bilingual">
                     <h4 class="title-main">{{ t('company.teamDetails.advantages.advisory.title') }}</h4>
-                    
                     <span class="title-en">{{ t('company.teamDetails.advantages.advisory.titleEn') }}</span>
                   </div>
-                  <div class="content-bilingual">
-                    <p class="content-main">{{ t('company.teamDetails.advantages.advisory.description') }}</p>
-                    <p class="content-en">{{ t('company.teamDetails.advantages.advisory.descriptionEn') }}</p>
-                  </div>
+                </div>
+                <div class="content-bilingual">
+                  <p class="content-main">{{ t('company.teamDetails.advantages.advisory.description') }}</p>
+                  <p class="content-en">{{ t('company.teamDetails.advantages.advisory.descriptionEn') }}</p>
                 </div>
               </div>
               
               <div class="advantage-item">
-                <div class="icon-wrapper">
-                <img src="/images/icons/项目资源图标.png" alt="项目资源" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
-                <div class="advantage-content">
+                <div class="title-with-icon">
+                  <div class="icon-wrapper">
+                    <img src="/images/icons/项目资源图标.png" alt="项目资源" class="icon-img">
+                    <div class="icon-glow"></div>
+                  </div>
                   <div class="title-bilingual">
                     <h4 class="title-main">{{ t('company.teamDetails.advantages.resources.title') }}</h4>
-                    
                     <span class="title-en">{{ t('company.teamDetails.advantages.resources.titleEn') }}</span>
                   </div>
-                  <div class="content-bilingual">
-                    <p class="content-main">{{ t('company.teamDetails.advantages.resources.description') }}</p>
-                    <p class="content-en">{{ t('company.teamDetails.advantages.resources.descriptionEn') }}</p>
-                  </div>
+                </div>
+                <div class="content-bilingual">
+                  <p class="content-main">{{ t('company.teamDetails.advantages.resources.description') }}</p>
+                  <p class="content-en">{{ t('company.teamDetails.advantages.resources.descriptionEn') }}</p>
                 </div>
               </div>
             </div>
@@ -1712,7 +1708,7 @@ const submitForm = async () => {
   grid-template-columns: repeat(2, 1fr);
   gap: var(--space-6);
   margin: var(--space-8) auto 0 auto;
-  max-width: 800px;
+  max-width: 900px;
   width: 100%;
   justify-items: center;
 }
@@ -1720,11 +1716,31 @@ const submitForm = async () => {
 .advantage-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: var(--space-4);
+  align-items: flex-start;
+  text-align: left;
+  gap: var(--space-3);
   width: 100%;
-  max-width: 300px;
+  max-width: 380px;
+  justify-self: center;
+}
+
+.advantage-item .title-with-icon {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  width: 100%;
+}
+
+.advantage-item .title-bilingual {
+  flex: 1;
+  min-width: 0;
+}
+
+.advantage-item .title-bilingual .title-en {
+  font-size: var(--font-base);
+  line-height: 1.4;
+  word-break: break-word;
+  hyphens: auto;
 }
 
 .advantage-icon {
@@ -1734,14 +1750,47 @@ const submitForm = async () => {
 }
 
 .advantage-content {
-  text-align: center;
+  text-align: left;
   width: 100%;
+  flex: 1;
 }
 
 .advantage-content h4 {
   font-weight: var(--font-weight-semibold);
   color: var(--text-primary);
   margin-bottom: var(--space-2);
+}
+
+/* ===== Team Advantages Icons ===== */
+.team-advantages .icon-wrapper {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.team-advantages .icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 2;
+  position: relative;
+}
+
+.team-advantages .icon-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.2) 0%, transparent 70%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .team-placeholder {
