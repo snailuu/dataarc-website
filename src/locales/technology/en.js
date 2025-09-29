@@ -120,19 +120,19 @@ export default {
     }
   },
   performance: {
-    title: 'Performance Comparison',
-    description: "DataArc's significant performance improvements compared to industry benchmarks",
+    title: 'Industry Benchmarks',
+    description: "DataArc's competitive advantages versus global leaders",
     cards: {
       graph: {
-        title: 'Graph Building Efficiency Comparison',
+        title: 'vs GraphRAG',
         stats: {
           dataArc: {
-            label: 'DataArc SoG',
-            value: '6 minutes'
+            label: 'DataArc Context Graph',
+            value: '218x Faster'
           },
           benchmark: {
-            label: 'LightRAG',
-            value: '2 hours'
+            label: 'GraphRAG Construction',
+            value: 'Baseline'
           }
         },
         improvement: {
@@ -141,37 +141,37 @@ export default {
         }
       },
       reasoning: {
-        title: 'Reasoning Accuracy Comparison',
+        title: 'vs Stanford EntiGraph',
         stats: {
           dataArc: {
-            label: 'DataArc SoG',
-            value: '90.2%'
+            label: 'DataArc SoG Technology',
+            value: '25.4% Better'
           },
           benchmark: {
-            label: 'Traditional Solutions',
-            value: '73.1%'
+            label: 'EntiGraph Baseline',
+            value: 'Standard'
           }
         },
         improvement: {
-          label: 'Accuracy Gain',
-          value: '17 pts'
+          label: 'Effect Improvement',
+          value: '25.4%'
         }
       },
       encryption: {
-        title: 'SoE Encryption Technology',
+        title: 'Data Augmentation Capability',
         stats: {
           privacy: {
-            label: 'Privacy Protection',
-            value: '0% leakage'
+            label: 'DataArc SoG',
+            value: '30x + Diversity'
           },
           performance: {
-            label: 'Performance Boost',
-            value: '+2%'
+            label: 'Traditional Methods',
+            value: 'Quality Degrades'
           }
         },
         improvement: {
-          label: 'Security',
-          value: 'Fully safeguarded'
+          label: 'Data Scaling',
+          value: '30x with diversity'
         }
       }
     }

@@ -224,32 +224,32 @@ export default {
     ]
   },
   benchmarks: {
-    title: 'Industry Benchmarks',
-    description: "DataArc's competitive advantages versus global leaders",
+    title: 'Performance Advantages',
+    description: 'DataArc demonstrates significant performance improvements compared to industry benchmarks',
     cards: [
       {
-        title: 'vs GraphRAG',
+        title: 'Graph Construction Efficiency',
         stats: [
-          { label: 'GraphRAG Construction Efficiency', value: 'Baseline' },
-          { label: 'DataArc Context Graph', value: '218x Faster' }
+          { label: 'DataArc SoG', value: '6 minutes' },
+          { label: 'LightRAG', value: '2 hours' }
         ],
-        improvement: 'Context graph construction 218x faster than GraphRAG'
+        improvement: '218x efficiency improvement'
       },
       {
-        title: 'vs Stanford EntiGraph',
+        title: 'Reasoning Accuracy',
         stats: [
-          { label: 'EntiGraph Baseline Performance', value: 'Standard' },
-          { label: 'DataArc SoG Technology', value: '25.4% Better' }
+          { label: 'DataArc SoG', value: '90.2%' },
+          { label: 'Traditional Solutions', value: '73.1%' }
         ],
-        improvement: 'SoG synthetic data technology outperforms Stanford EntiGraph by 25.4%'
+        improvement: '17 percentage points accuracy improvement'
       },
       {
-        title: 'Data Augmentation Capability',
+        title: 'SoE Encryption Technology',
         stats: [
-          { label: 'Traditional Data Augmentation', value: 'Quality Degrades' },
-          { label: 'DataArc SoG', value: '30x + Diversity' }
+          { label: 'Privacy Protection', value: '0% Leakage' },
+          { label: 'Performance Enhancement', value: '+2%' }
         ],
-        improvement: 'SoG synthetic data technology scales 30x while maintaining diversity'
+        improvement: 'Complete security assurance'
       }
     ]
   },

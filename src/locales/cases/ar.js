@@ -224,32 +224,32 @@ export default {
     ]
   },
   benchmarks: {
-    title: 'مقارنة مع معايير الصناعة',
-    description: 'مزايا DataArc أمام الحلول العالمية الرائدة',
+    title: 'مقارنة الأداء',
+    description: 'تحسينات أداء ملحوظة لـ DataArc مقارنة برواد الصناعة',
     cards: [
       {
-        title: 'مقابل GraphRAG',
+        title: 'مقارنة كفاءة بناء الرسم',
         stats: [
-          { label: 'كفاءة بناء GraphRAG', value: 'المستوى الأساسي' },
-          { label: 'رسم سياق DataArc', value: 'تحسن بـ218 مرة' }
+          { label: 'DataArc SoG', value: '6 دقائق' },
+          { label: 'LightRAG', value: 'ساعتان' }
         ],
-        improvement: 'كفاءة بناء رسوم السياق تتفوق على GraphRAG بـ218 مرة'
+        improvement: 'زيادة الكفاءة 218 مرة'
       },
       {
-        title: 'مقابل Stanford EntiGraph',
+        title: 'مقارنة دقة الاستدلال',
         stats: [
-          { label: 'أداء EntiGraph الأساسي', value: 'الأداء المرجعي' },
-          { label: 'تقنية DataArc SoG', value: 'تحسن 25.4%' }
+          { label: 'DataArc SoG', value: '90.2%' },
+          { label: 'الحلول التقليدية', value: '73.1%' }
         ],
-        improvement: 'تقنية SoG للبيانات الاصطناعية تتفوق على Stanford EntiGraph بـ25.4%'
+        improvement: 'ارتفاع الدقة 17 نقطة'
       },
       {
-        title: 'قدرة توسيع البيانات',
+        title: 'تقنية تشفير SoE',
         stats: [
-          { label: 'توسيع البيانات التقليدي', value: 'تراجع الجودة' },
-          { label: 'DataArc SoG', value: '30 مرة + تنوع' }
+          { label: 'حماية الخصوصية', value: '0% تسرب' },
+          { label: 'تحسين الأداء', value: '+2%' }
         ],
-        improvement: 'تقنية SoG للبيانات الاصطناعية توسع البيانات 30 مرة مع الحفاظ على التنوع'
+        improvement: 'حماية كاملة'
       }
     ]
   },

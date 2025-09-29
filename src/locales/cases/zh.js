@@ -224,32 +224,32 @@ export default {
     ]
   },
   benchmarks: {
-    title: '行业标杆对比',
-    description: 'DataArc 与国际领先方案的对比优势',
+    title: '性能优势对比',
+    description: 'DataArc 相比行业标杆的显著性能提升',
     cards: [
       {
-        title: 'vs GraphRAG',
+        title: '建图效率对比',
         stats: [
-          { label: 'GraphRAG 建图效率', value: '基准水平' },
-          { label: 'DataArc 语境图谱', value: '218 倍提升' }
+          { label: 'DataArc SoG', value: '6 分钟' },
+          { label: 'LightRAG', value: '2 小时' }
         ],
-        improvement: '语境图谱建图效率比 GraphRAG 提升 218 倍'
+        improvement: '效率提升 218 倍'
       },
       {
-        title: 'vs Stanford EntiGraph',
+        title: '推理准确率对比',
         stats: [
-          { label: 'EntiGraph 基础效果', value: '基准表现' },
-          { label: 'DataArc SoG 技术', value: '25.4% 提升' }
+          { label: 'DataArc SoG', value: '90.2%' },
+          { label: '传统方案', value: '73.1%' }
         ],
-        improvement: 'SoG 合成数据技术比斯坦福 EntiGraph 效果提升 25.4%'
+        improvement: '准确率提升 17 个百分点'
       },
       {
-        title: '数据扩增能力',
+        title: 'SoE 加密技术',
         stats: [
-          { label: '传统数据扩增', value: '质量下降' },
-          { label: 'DataArc SoG', value: '30 倍 + 多样化' }
+          { label: '隐私保护', value: '0% 泄露' },
+          { label: '性能提升', value: '+2%' }
         ],
-        improvement: 'SoG 合成数据技术扩增 30 倍数据量还能保持多样化'
+        improvement: '安全性完全保障'
       }
     ]
   },

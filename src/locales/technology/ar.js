@@ -120,19 +120,19 @@ export default {
     }
   },
   performance: {
-    title: 'مقارنة الأداء',
-    description: 'تحسينات أداء ملحوظة لـ DataArc مقارنة برواد الصناعة',
+    title: 'مقارنة مع معايير الصناعة',
+    description: 'مزايا DataArc أمام الحلول العالمية الرائدة',
     cards: {
       graph: {
-        title: 'مقارنة كفاءة بناء الرسم',
+        title: 'مقابل GraphRAG',
         stats: {
           dataArc: {
-            label: 'DataArc SoG',
-            value: '6 دقائق'
+            label: 'رسم سياق DataArc',
+            value: 'تحسن بـ218 مرة'
           },
           benchmark: {
-            label: 'LightRAG',
-            value: 'ساعتان'
+            label: 'كفاءة بناء GraphRAG',
+            value: 'المستوى الأساسي'
           }
         },
         improvement: {
@@ -141,37 +141,37 @@ export default {
         }
       },
       reasoning: {
-        title: 'مقارنة دقة الاستدلال',
+        title: 'مقابل Stanford EntiGraph',
         stats: {
           dataArc: {
-            label: 'DataArc SoG',
-            value: '90.2%'
+            label: 'تقنية DataArc SoG',
+            value: 'تحسن 25.4%'
           },
           benchmark: {
-            label: 'الحلول التقليدية',
-            value: '73.1%'
+            label: 'أداء EntiGraph الأساسي',
+            value: 'الأداء المرجعي'
           }
         },
         improvement: {
-          label: 'ارتفاع الدقة',
-          value: '17 نقطة'
+          label: 'تحسن التأثير',
+          value: '25.4%'
         }
       },
       encryption: {
-        title: 'تقنية تشفير SoE',
+        title: 'قدرة توسيع البيانات',
         stats: {
           privacy: {
-            label: 'حماية الخصوصية',
-            value: '0% تسرب'
+            label: 'DataArc SoG',
+            value: '30 مرة + تنوع'
           },
           performance: {
-            label: 'تحسين الأداء',
-            value: '+2%'
+            label: 'توسيع البيانات التقليدي',
+            value: 'تراجع الجودة'
           }
         },
         improvement: {
-          label: 'الأمان',
-          value: 'حماية كاملة'
+          label: 'توسيع البيانات',
+          value: '30 مرة مع التنوع'
         }
       }
     }
