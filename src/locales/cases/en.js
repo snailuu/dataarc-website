@@ -50,7 +50,7 @@ export default {
         icon: '/images/icons/教育培训图标.png',
         iconAlt: 'Education and Training',
         glow: true,
-        highlights: ['Intelligent Classification', 'Knowledge Graph', 'Exam System']
+        highlights: ['Intelligent Classification', 'Context Graph', 'Exam System']
       },
       {
         key: 'aiServices',
@@ -83,8 +83,8 @@ export default {
           title: 'LivingKB + Investment Analysis Agent',
           modules: [
             {
-              title: 'Knowledge Graph Construction',
-              text: 'Integrate due diligence reports, financial data, and market analysis to build a dynamic investment knowledge graph.'
+              title: 'Context Graph Construction',
+              text: 'Integrate due diligence reports, financial data, and market analysis to build a dynamic investment context graph.'
             },
             {
               title: 'Intelligent Analysis Tools',
@@ -93,6 +93,10 @@ export default {
             {
               title: 'Decision Support System',
               text: 'Leverage RAG technology for precise retrieval and comprehensive knowledge support for investment decisions.'
+            },
+            {
+              title: 'Thinking on Graph',
+              text: 'Deep reasoning on context graphs that considers knowledge correlations, providing more intelligent insights than traditional methods.'
             }
           ]
         },
@@ -143,6 +147,10 @@ export default {
             {
               title: 'Continuous Model Iteration',
               text: 'Build a synthetic data-driven iteration pipeline to respond rapidly to business changes.'
+            },
+            {
+              title: 'Specialized Small Model Optimization',
+              text: 'Use synthetic data to fine-tune small models for precise domain-specific search, achieving exceptional performance in search scenarios.'
             }
           ]
         },
@@ -191,7 +199,7 @@ export default {
         tags: ['FinTech', 'Economic Analysis', 'Smart Research'],
         description: 'Partnered with IDEA Research Institute to build the FinAI Economic Super Brain, enhancing financial analysis and research with context graph technology.',
         placeholder: '[Image: IDEA FinAI Economic Super Brain]',
-        challenge: 'Build enterprise knowledge graphs to accelerate competitive analysis, industry monitoring, and complex cross-document reasoning.',
+        challenge: 'Build enterprise context graphs to accelerate competitive analysis, industry monitoring, and complex cross-document reasoning.',
         solution: 'Structure financial enterprise knowledge with context graphs, automatically gathering massive data and identifying industry attributes.',
         results: [
           { value: '20.3x', label: 'Research Data Volume', icon: '/images/icons/数据增量图标.png', iconAlt: 'Research Data Volume' },
@@ -241,7 +249,7 @@ export default {
           { label: 'Traditional Synthetic Data', value: 'Basic Functions' },
           { label: 'DataArc SoG', value: 'Intelligent Graph' }
         ],
-        improvement: 'Deep synthesis powered by knowledge graphs'
+        improvement: 'Deep synthesis powered by context graphs'
       }
     ]
   },
