@@ -32,7 +32,6 @@
           <div class="intro-text">
             <div class="title-bilingual">
               <h2 class="title-main">{{ t('company.about.title') }}</h2>
-              <span class="title-divider">|</span>
               <span class="title-en">{{ t('company.about.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
@@ -74,7 +73,6 @@
         <div class="section-header">
           <div class="title-bilingual">
             <h2 class="title-main">{{ t('company.team.title') }}</h2>
-            <span class="title-divider">|</span>
             <span class="title-en">{{ t('company.team.titleEn') }}</span>
           </div>
           <div class="content-bilingual">
@@ -156,7 +154,7 @@
         <div class="team-features glass-card">
           <div class="title-bilingual">
             <h3 class="title-main">{{ t('company.team.advantages.title') }}</h3>
-            <span class="title-divider">|</span>
+            
             <span class="title-en">{{ t('company.team.advantages.titleEn') }}</span>
           </div>
           <div class="content-bilingual">
@@ -173,7 +171,7 @@
               <div class="feature-content">
                 <div class="title-bilingual">
                   <h4 class="title-main">{{ t('company.team.advantages.sampling.title') }}</h4>
-                  <span class="title-divider">|</span>
+                  
                   <span class="title-en">{{ t('company.team.advantages.sampling.titleEn') }}</span>
                 </div>
                 <div class="content-bilingual">
@@ -191,7 +189,7 @@
               <div class="feature-content">
                 <div class="title-bilingual">
                   <h4 class="title-main">{{ t('company.team.advantages.synthesis.title') }}</h4>
-                  <span class="title-divider">|</span>
+                  
                   <span class="title-en">{{ t('company.team.advantages.synthesis.titleEn') }}</span>
                 </div>
                 <div class="content-bilingual">
@@ -209,7 +207,7 @@
               <div class="feature-content">
                 <div class="title-bilingual">
                   <h4 class="title-main">{{ t('company.team.advantages.training.title') }}</h4>
-                  <span class="title-divider">|</span>
+                  
                   <span class="title-en">{{ t('company.team.advantages.training.titleEn') }}</span>
                 </div>
                 <div class="content-bilingual">
@@ -274,7 +272,7 @@
               </div>
             <div class="title-bilingual">
               <h3 class="title-main">{{ t('company.companyDetails.companyName.title') }}</h3>
-              <span class="title-divider">|</span>
+              
               <span class="title-en">{{ t('company.companyDetails.companyName.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
@@ -290,7 +288,7 @@
               </div>
             <div class="title-bilingual">
               <h3 class="title-main">{{ t('company.companyDetails.founded.title') }}</h3>
-              <span class="title-divider">|</span>
+              
               <span class="title-en">{{ t('company.companyDetails.founded.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
@@ -310,7 +308,7 @@
               </div>
             <div class="title-bilingual">
               <h3 class="title-main">{{ t('company.companyDetails.address.title') }}</h3>
-              <span class="title-divider">|</span>
+              
               <span class="title-en">{{ t('company.companyDetails.address.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
@@ -330,7 +328,7 @@
               </div>
             <div class="title-bilingual">
               <h3 class="title-main">{{ t('company.companyDetails.vision.title') }}</h3>
-              <span class="title-divider">|</span>
+              
               <span class="title-en">{{ t('company.companyDetails.vision.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
@@ -358,7 +356,7 @@
           <div class="team-info">
             <div class="title-bilingual">
               <h3 class="title-main">{{ t('company.teamDetails.teamScale.title') }}</h3>
-              <span class="title-divider">|</span>
+              
               <span class="title-en">{{ t('company.teamDetails.teamScale.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
@@ -375,7 +373,7 @@
                 <div class="advantage-content">
                   <div class="title-bilingual">
                     <h4 class="title-main">{{ t('company.teamDetails.advantages.research.title') }}</h4>
-                    <span class="title-divider">|</span>
+                    
                     <span class="title-en">{{ t('company.teamDetails.advantages.research.titleEn') }}</span>
                   </div>
                   <div class="content-bilingual">
@@ -393,7 +391,7 @@
                 <div class="advantage-content">
                   <div class="title-bilingual">
                     <h4 class="title-main">{{ t('company.teamDetails.advantages.reputation.title') }}</h4>
-                    <span class="title-divider">|</span>
+                    
                     <span class="title-en">{{ t('company.teamDetails.advantages.reputation.titleEn') }}</span>
                   </div>
                   <div class="content-bilingual">
@@ -411,7 +409,7 @@
                 <div class="advantage-content">
                   <div class="title-bilingual">
                     <h4 class="title-main">{{ t('company.teamDetails.advantages.advisory.title') }}</h4>
-                    <span class="title-divider">|</span>
+                    
                     <span class="title-en">{{ t('company.teamDetails.advantages.advisory.titleEn') }}</span>
                   </div>
                   <div class="content-bilingual">
@@ -429,7 +427,7 @@
                 <div class="advantage-content">
                   <div class="title-bilingual">
                     <h4 class="title-main">{{ t('company.teamDetails.advantages.resources.title') }}</h4>
-                    <span class="title-divider">|</span>
+                    
                     <span class="title-en">{{ t('company.teamDetails.advantages.resources.titleEn') }}</span>
                   </div>
                   <div class="content-bilingual">
@@ -473,7 +471,7 @@
         <div class="section-header">
           <div class="title-bilingual">
             <h2 class="title-main">{{ t('company.funding.title') }}</h2>
-            <span class="title-divider">|</span>
+            
             <span class="title-en">{{ t('company.funding.titleEn') }}</span>
           </div>
           <div class="content-bilingual">
@@ -490,7 +488,7 @@
             <div class="timeline-content">
               <div class="title-bilingual">
                 <h3 class="title-main">{{ t('company.funding.rounds.seed.title') }}</h3>
-                <span class="title-divider">|</span>
+                
                 <span class="title-en">{{ t('company.funding.rounds.seed.titleEn') }}</span>
               </div>
               <div class="funding-stats">
@@ -511,7 +509,7 @@
             <div class="timeline-content">
               <div class="title-bilingual">
                 <h3 class="title-main">{{ t('company.funding.rounds.seedPlus.title') }}</h3>
-                <span class="title-divider">|</span>
+                
                 <span class="title-en">{{ t('company.funding.rounds.seedPlus.titleEn') }}</span>
               </div>
               <div class="funding-stats">
@@ -532,7 +530,7 @@
             <div class="timeline-content">
               <div class="title-bilingual">
                 <h3 class="title-main">{{ t('company.funding.rounds.seriesA.title') }}</h3>
-                <span class="title-divider">|</span>
+                
                 <span class="title-en">{{ t('company.funding.rounds.seriesA.titleEn') }}</span>
               </div>
               <div class="funding-stats">
@@ -553,7 +551,7 @@
             <div class="timeline-content">
               <div class="title-bilingual">
                 <h3 class="title-main">{{ t('company.funding.rounds.preAngel.title') }}</h3>
-                <span class="title-divider">|</span>
+                
                 <span class="title-en">{{ t('company.funding.rounds.preAngel.titleEn') }}</span>
               </div>
               <div class="funding-stats">
@@ -571,14 +569,14 @@
         <div class="investors-section">
           <div class="title-bilingual">
             <h3 class="title-main">{{ t('company.funding.investors.title') }}</h3>
-            <span class="title-divider">|</span>
+            
             <span class="title-en">{{ t('company.funding.investors.titleEn') }}</span>
           </div>
           <div class="investors-grid">
             <div class="investor-category">
               <div class="title-bilingual">
                 <h4 class="title-main">{{ t('company.funding.investors.leading.title') }}</h4>
-                <span class="title-divider">|</span>
+                
                 <span class="title-en">{{ t('company.funding.investors.leading.titleEn') }}</span>
               </div>
               <div class="investor-placeholder">{{ t('company.funding.investors.leading.placeholder') }}</div>
@@ -587,7 +585,7 @@
             <div class="investor-category">
               <div class="title-bilingual">
                 <h4 class="title-main">{{ t('company.funding.investors.industrial.title') }}</h4>
-                <span class="title-divider">|</span>
+                
                 <span class="title-en">{{ t('company.funding.investors.industrial.titleEn') }}</span>
               </div>
               <div class="investor-placeholder">{{ t('company.funding.investors.industrial.placeholder') }}</div>
@@ -603,7 +601,7 @@
         <div class="section-header">
           <div class="title-bilingual">
             <h2 class="title-main">{{ t('company.milestones.title') }}</h2>
-            <span class="title-divider">|</span>
+            
             <span class="title-en">{{ t('company.milestones.titleEn') }}</span>
           </div>
           <div class="content-bilingual">
@@ -617,7 +615,7 @@
             <div class="milestone-date">{{ t('company.milestones.items.founded.date') }}</div>
             <div class="title-bilingual">
               <h3 class="title-main">{{ t('company.milestones.items.founded.title') }}</h3>
-              <span class="title-divider">|</span>
+              
               <span class="title-en">{{ t('company.milestones.items.founded.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
@@ -630,7 +628,7 @@
             <div class="milestone-date">{{ t('company.milestones.items.launch.date') }}</div>
             <div class="title-bilingual">
               <h3 class="title-main">{{ t('company.milestones.items.launch.title') }}</h3>
-              <span class="title-divider">|</span>
+              
               <span class="title-en">{{ t('company.milestones.items.launch.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
@@ -643,7 +641,7 @@
             <div class="milestone-date">{{ t('company.milestones.items.breakthrough.date') }}</div>
             <div class="title-bilingual">
               <h3 class="title-main">{{ t('company.milestones.items.breakthrough.title') }}</h3>
-              <span class="title-divider">|</span>
+              
               <span class="title-en">{{ t('company.milestones.items.breakthrough.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
@@ -656,7 +654,7 @@
             <div class="milestone-date">{{ t('company.milestones.items.validation.date') }}</div>
             <div class="title-bilingual">
               <h3 class="title-main">{{ t('company.milestones.items.validation.title') }}</h3>
-              <span class="title-divider">|</span>
+              
               <span class="title-en">{{ t('company.milestones.items.validation.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
@@ -669,7 +667,7 @@
             <div class="milestone-date">{{ t('company.milestones.items.expansion.date') }}</div>
             <div class="title-bilingual">
               <h3 class="title-main">{{ t('company.milestones.items.expansion.title') }}</h3>
-              <span class="title-divider">|</span>
+              
               <span class="title-en">{{ t('company.milestones.items.expansion.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
@@ -682,7 +680,7 @@
             <div class="milestone-date">{{ t('company.milestones.items.future.date') }}</div>
             <div class="title-bilingual">
               <h3 class="title-main">{{ t('company.milestones.items.future.title') }}</h3>
-              <span class="title-divider">|</span>
+              
               <span class="title-en">{{ t('company.milestones.items.future.titleEn') }}</span>
             </div>
             <div class="content-bilingual">

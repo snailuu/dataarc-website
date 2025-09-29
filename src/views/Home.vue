@@ -244,6 +244,7 @@
             <a v-for="item in duplicatedNews" :key="`${item.title}-${item.index}`" :href="item.link" target="_blank" class="news-card">
               <div class="news-image">
                 <div class="news-placeholder">{{ item.placeholder }}</div>
+                <div class="news-tag" v-if="item.tag" :class="getTagClass(item.tag)">{{ item.tag }}</div>
               </div>
               <div class="news-content">
                 <h4 class="title-level-4">{{ item.title }}</h4>
@@ -509,6 +510,7 @@ const pauseScroll = () => {
 // 恢复滚动
 const resumeScroll = () => {
   isScrollPaused = false
+  autoScroll() // 重新启动滚动动画
 }
 
 // 处理鼠标滚轮事件
@@ -517,13 +519,18 @@ const handleWheel = (event) => {
   if (!newsTrack.value) return
   
   currentScroll += event.deltaY * 0.5
-  const cardWidth = 304
+  const cardWidth = 344
   const maxScroll = (newsContent.value.items?.length || 0) * cardWidth
   
   if (currentScroll < 0) currentScroll = maxScroll - cardWidth
   if (currentScroll >= maxScroll) currentScroll = 0
   
   newsTrack.value.style.transform = `translateX(-${currentScroll}px)`
+}
+
+// 获取标签样式类
+const getTagClass = (tag) => {
+  return tag === 'DataArc观点' ? 'tag-dataarc' : 'tag-authority'
 }
 
 
@@ -1382,6 +1389,28 @@ const submitBookingForm = async () => {
   justify-content: center;
   color: var(--text-tertiary);
   font-size: var(--font-sm);
+  position: relative;
+}
+
+.news-tag {
+  position: absolute;
+  top: var(--space-3);
+  left: var(--space-3);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  font-size: var(--font-xs);
+  font-weight: var(--font-weight-medium);
+  z-index: 10;
+}
+
+.tag-dataarc {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+.tag-authority {
+  background: linear-gradient(135deg, #f093fb, #f5576c);
+  color: white;
 }
 
 .news-content {
@@ -1576,8 +1605,17 @@ const submitBookingForm = async () => {
   }
   
   .news-card {
-    width: 250px;
-    height: 180px;
+    width: 280px;
+    height: 240px;
+  }
+  
+  .news-image {
+    height: 140px;
+  }
+  
+  .news-content {
+    height: 100px;
+    padding: var(--space-4);
   }
 }
 
