@@ -838,6 +838,13 @@
               </div>
             </div>
           </div>
+          
+          <div class="view-more-section">
+            <router-link to="/cases" class="view-more-btn">
+              查看更多案例
+              <span class="btn-arrow">→</span>
+            </router-link>
+          </div>
       </div>
     </section>
   </div>
@@ -1529,8 +1536,41 @@ const productCases = computed(() => [
 
 .cases-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--space-6);
+}
+
+.view-more-section {
+  text-align: center;
+  margin-top: var(--space-8);
+}
+
+.view-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  color: white;
+  text-decoration: none;
+  border-radius: var(--radius-lg);
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(68, 155, 255, 0.2);
+}
+
+.view-more-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(68, 155, 255, 0.3);
+}
+
+.btn-arrow {
+  transition: transform 0.3s ease;
+}
+
+.view-more-btn:hover .btn-arrow {
+  transform: translateX(4px);
 }
 
 .case-card {
@@ -1646,6 +1686,10 @@ const productCases = computed(() => [
     grid-template-columns: 1fr;
   }
   
+  .cases-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
   .module-title {
     font-size: 1.5rem;
   }
@@ -1742,6 +1786,10 @@ const productCases = computed(() => [
   }
 
   .synergy-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cases-grid {
     grid-template-columns: 1fr;
   }
 }
