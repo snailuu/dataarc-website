@@ -11,9 +11,12 @@ Port 8890 is in use, trying another one...
 
   ➜  Local:   http://localhost:8891/
   ➜  Network: http://192.168.168.47:8891/
-11:13:16 PM [vite] hmr update /src/views/Company.vue?vue&type=style&index=0&scoped=10794d97&lang.css
+11:52:19 PM [vite] page reload dist/index.html
+y.vue?vue&type=style&index=0&scoped=10794d97&lang.css
 11:16:41 PM [vite] hmr update /src/views/Company.vue?vue&type=style&index=0&scoped=10794d97&lang.css
 11:19:52 PM [vite] hmr update /src/views/Company.vue?vue&type=style&index=0&scoped=10794d97&lang.css
 11:20:09 PM [vite] hmr update /src/views/Company.vue?vue&type=style&index=0&scoped=10794d97&lang.css
 11:20:17 PM [vite] hmr update /src/views/Company.vue?vue&type=style&index=0&scoped=10794d97&lang.css
 11:20:29 PM [vite] hmr update /src/views/Company.vue?vue&type=style&index=0&scoped=10794d97&lang.css
+11:52:19 PM [vite] page reload dist/index.html
+11:52:19 PM [vite] page reload dist/index.html

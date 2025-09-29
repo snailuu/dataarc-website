@@ -8,3 +8,13 @@ nohup: ignoring input
 
   ➜  Local:   http://localhost:8888/
   ➜  Network: http://192.168.168.47:8888/
+11:39:17 PM [vite] hmr update /src/views/Company.vue
+11:39:46 PM [vite] hmr update /src/views/Company.vue
+11:41:38 PM [vite] hmr update /src/views/Company.vue
+11:42:40 PM [vite] hmr update /src/views/Company.vue
+11:48:33 PM [vite] hmr update /src/views/Company.vue
+11:49:04 PM [vite] hmr update /src/views/Company.vue
+11:49:21 PM [vite] hmr update /src/views/Company.vue
+11:49:45 PM [vite] hmr update /src/views/Company.vue
+11:52:02 PM [vite] hmr update /src/views/Company.vue
+11:52:19 PM [vite] page reload dist/index.html

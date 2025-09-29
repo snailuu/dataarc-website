@@ -366,10 +366,6 @@
             
             <div class="team-advantages">
               <div class="advantage-item">
-                <div class="icon-wrapper">
-                <img src="/images/icons/研究积累图标.png" alt="研究积累" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
                 <div class="advantage-content">
                   <div class="title-bilingual">
                     <h4 class="title-main">{{ t('company.teamDetails.advantages.research.title') }}</h4>
@@ -383,7 +379,7 @@
                 </div>
               </div>
               
-              <div class="advantage-item">
+                            <div class="advantage-item">
                 <div class="icon-wrapper">
                 <img src="/images/icons/业界知名图标.png" alt="业界知名" class="icon-img">
                 <div class="icon-glow"></div>
@@ -439,9 +435,7 @@
             </div>
           </div>
           
-          <div class="team-visual">
-            <div class="team-placeholder">{{ t('company.teamDetails.teamVisual.placeholder') }}</div>
-          </div>
+
         </div>
         
         <div class="advisors-section">
