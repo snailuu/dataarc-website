@@ -521,24 +521,6 @@
                   <h5 class="title-main">{{ t('products.syndata.modules.generation.features.tabular.title') }}</h5>
                   <p class="content-main">{{ t('products.syndata.modules.generation.features.tabular.description') }}</p>
                 </div>
-                
-                <div class="feature-item">
-                  <div class="icon-wrapper">
-                <img src="/images/icons/质量评估图标.png" alt="自动评估" class="icon-img" />
-                <div class="icon-glow"></div>
-              </div>
-                  <h5 class="title-main">{{ t('products.syndata.modules.generation.features.judge.title') }}</h5>
-                  <p class="content-main">{{ t('products.syndata.modules.generation.features.judge.description') }}</p>
-                </div>
-                
-                <div class="feature-item">
-                  <div class="icon-wrapper">
-                <img src="/images/icons/具身数据图标.png" alt="具身数据" class="icon-img" />
-                <div class="icon-glow"></div>
-              </div>
-                  <h5 class="title-main">{{ t('products.syndata.modules.generation.features.embodied.title') }}</h5>
-                  <p class="content-main">{{ t('products.syndata.modules.generation.features.embodied.description') }}</p>
-                </div>
               </div>
             </div>
           </div>
@@ -571,6 +553,15 @@
               </div>
                   <h5 class="title-main">{{ t('products.syndata.modules.training.features.quality.title') }}</h5>
                   <p class="content-main">{{ t('products.syndata.modules.training.features.quality.description') }}</p>
+                </div>
+                
+                <div class="feature-item">
+                  <div class="icon-wrapper">
+                <img src="/images/icons/质量评估图标.png" alt="自动评估" class="icon-img" />
+                <div class="icon-glow"></div>
+              </div>
+                  <h5 class="title-main">{{ t('products.syndata.modules.training.features.judge.title') }}</h5>
+                  <p class="content-main">{{ t('products.syndata.modules.training.features.judge.description') }}</p>
                 </div>
               </div>
             </div>

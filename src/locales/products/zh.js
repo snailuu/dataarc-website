@@ -192,15 +192,6 @@ export default {
           tabular: {
             title: '表格合成数据',
             description: '拟合真实数据库的列分布与关联关系，支持数据库压缩和隐私保护'
-          },
-
-          judge: {
-            title: 'Judge 自动评估',
-            description: '智能评估合成数据质量，自动识别和优化数据生成效果'
-          },
-          embodied: {
-            title: '具身合成数据',
-            description: '针对机器人和仿真场景提供虚拟环境和行为数据'
           }
         }
       },
@@ -215,6 +206,10 @@ export default {
           quality: {
             title: '质量评估与反馈',
             description: '衡量合成数据统计相似度与隐私风险，优化生成策略'
+          },
+          judge: {
+            title: 'Judge 自动评估',
+            description: '智能评估合成数据质量，自动识别和优化数据生成效果'
           }
         }
       },

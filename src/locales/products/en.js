@@ -192,15 +192,6 @@ export default {
           tabular: {
             title: 'Tabular Synthetic Data',
             description: 'Fit column distribution and correlation relationships of real databases, supporting database compression and privacy protection'
-          },
-
-          judge: {
-            title: 'Judge Auto-Evaluation',
-            description: 'Intelligently evaluate synthetic data quality, automatically identify and optimize data generation effectiveness'
-          },
-          embodied: {
-            title: 'Embodied Synthetic Data',
-            description: 'Provide virtual environment and behavioral data for robotics and simulation scenarios'
           }
         }
       },
@@ -215,6 +206,10 @@ export default {
           quality: {
             title: 'Quality Assessment and Feedback',
             description: 'Measure statistical similarity and privacy risk of synthetic data, optimize generation strategies'
+          },
+          judge: {
+            title: 'Judge Auto-Evaluation',
+            description: 'Intelligently evaluate synthetic data quality, automatically identify and optimize data generation effectiveness'
           }
         }
       },
