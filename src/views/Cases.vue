@@ -872,7 +872,7 @@ const labelsContent = computed(() => {
 .additional-cases .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-6);
+  gap: var(--space-3);
 }
 
 .detailed-case {
@@ -1259,7 +1259,7 @@ const labelsContent = computed(() => {
 @media (max-width: 1024px) {
   .additional-cases .container {
     grid-template-columns: 1fr;
-    gap: var(--space-4);
+    gap: var(--space-3);
   }
 
   .solution-details {
