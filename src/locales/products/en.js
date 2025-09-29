@@ -105,10 +105,7 @@ export default {
             title: 'ToG Graph Reasoning Technology',
             description: 'Reasoning accuracy increased to 90.2%, multi-step thinking and causal chain analysis based on graphs'
           },
-          judge: {
-            title: 'Judge Risk Control',
-            description: 'Reduce data risk by 90%, automatically identify and filter potential risky content'
-          },
+
           agent: {
             title: 'Enterprise Decision Analysis Agent',
             description: 'Integrated intelligent assistant for complex task decomposition, result interpretation, and enterprise decision interpretation'
@@ -196,9 +193,10 @@ export default {
             title: 'Tabular Synthetic Data',
             description: 'Fit column distribution and correlation relationships of real databases, supporting database compression and privacy protection'
           },
-          multimodal: {
-            title: 'Multimodal Synthetic Data',
-            description: 'Combine text, image, audio, video to generate multimodal samples for cross-media model training'
+
+          judge: {
+            title: 'Judge Auto-Evaluation',
+            description: 'Intelligently evaluate synthetic data quality, automatically identify and optimize data generation effectiveness'
           },
           embodied: {
             title: 'Embodied Synthetic Data',

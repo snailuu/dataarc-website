@@ -116,10 +116,7 @@
                   <span class="list-main">{{ t('products.livingkb.modules.analysis.features.sql.title') }}</span>
                   <span class="list-en">SQL-R1 Smart Query</span>
                 </li>
-                <li class="list-item-bilingual">
-                  <span class="list-main">{{ t('products.livingkb.modules.analysis.features.judge.title') }}</span>
-                  <span class="list-en">Judge Risk Control</span>
-                </li>
+
               </ul>
             </div>
             <div class="comparison-cell">
@@ -133,8 +130,8 @@
                   <span class="list-en">SoE Encryption Training</span>
                 </li>
                 <li class="list-item-bilingual">
-                  <span class="list-main">{{ t('products.syndata.modules.generation.features.multimodal.title') }}</span>
-                  <span class="list-en">Multi-modal Data Generation</span>
+                  <span class="list-main">{{ t('products.syndata.modules.generation.features.judge.title') }}</span>
+                  <span class="list-en">Judge Auto-Evaluation</span>
                 </li>
                 <li class="list-item-bilingual">
                   <span class="list-main">{{ t('products.syndata.modules.customization.title') }}</span>

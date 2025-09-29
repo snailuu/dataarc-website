@@ -105,10 +105,7 @@ export default {
             title: 'ToG 图推理技术',
             description: '推理准确率升至90.2%，基于图的多步思考和因果链分析'
           },
-          judge: {
-            title: 'Judge 风险控制',
-            description: '降低90%数据风险，自动识别和过滤潜在风险内容'
-          },
+
           agent: {
             title: '企业决策分析 Agent',
             description: '复杂任务分解、结果解释、企业决策解读的一体化智能助手'
@@ -196,9 +193,10 @@ export default {
             title: '表格合成数据',
             description: '拟合真实数据库的列分布与关联关系，支持数据库压缩和隐私保护'
           },
-          multimodal: {
-            title: '多模态合成数据',
-            description: '结合文本、图像、语音、视频生成多模态样本，用于跨媒体模型训练'
+
+          judge: {
+            title: 'Judge 自动评估',
+            description: '智能评估合成数据质量，自动识别和优化数据生成效果'
           },
           embodied: {
             title: '具身合成数据',
