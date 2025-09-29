@@ -90,7 +90,7 @@ export default {
     ]
   },
   advantages: {
-    title: '技术优势',
+    title: '核心技术 vs SOTA',
     description: 'DataArc 自主研发多项合成数据核心技术，覆盖从数据合成到模型训练的全周期，助力模型更准确、更高效、更安全。依托知识驱动的大模型推理框架，有效解决企业业务场景中推理深度不足、数据调用不准及多模态处理受限等难题。',
     items: {
       industry: {

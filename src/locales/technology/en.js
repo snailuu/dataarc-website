@@ -90,7 +90,7 @@ export default {
     ]
   },
   advantages: {
-    title: 'Technical Advantages',
+    title: 'Core Technologies vs SOTA',
     description: 'DataArc independently develops core synthetic data technologies covering the full cycle from data synthesis to model training, making models more accurate, efficient, and secure. The knowledge-driven large model reasoning framework addresses insufficient reasoning depth, inaccurate data retrieval, and multimodal limitations in enterprise scenarios.',
     items: {
       industry: {
