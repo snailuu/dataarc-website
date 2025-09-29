@@ -150,74 +150,6 @@
           </div>
         </div>
 
-        <!-- Team Features -->
-        <div class="team-features glass-card">
-          <div class="title-bilingual">
-            <h3 class="title-main">{{ t('company.team.advantages.title') }}</h3>
-            
-            <span class="title-en">{{ t('company.team.advantages.titleEn') }}</span>
-          </div>
-          <div class="content-bilingual">
-            <p class="content-main">{{ t('company.team.advantages.description') }}</p>
-            <p class="content-en">{{ t('company.team.advantages.descriptionEn') }}</p>
-          </div>
-          
-          <div class="features-grid">
-            <div class="feature-item">
-              <div class="icon-wrapper">
-                <img src="/images/icons/采样技术图标.png" alt="采样技术" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
-              <div class="feature-content">
-                <div class="title-bilingual">
-                  <h4 class="title-main">{{ t('company.team.advantages.sampling.title') }}</h4>
-                  
-                  <span class="title-en">{{ t('company.team.advantages.sampling.titleEn') }}</span>
-                </div>
-                <div class="content-bilingual">
-                  <p class="content-main">{{ t('company.team.advantages.sampling.description') }}</p>
-                  <p class="content-en">{{ t('company.team.advantages.sampling.descriptionEn') }}</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="feature-item">
-              <div class="icon-wrapper">
-                <img src="/images/icons/合成技术图标.png" alt="合成技术" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
-              <div class="feature-content">
-                <div class="title-bilingual">
-                  <h4 class="title-main">{{ t('company.team.advantages.synthesis.title') }}</h4>
-                  
-                  <span class="title-en">{{ t('company.team.advantages.synthesis.titleEn') }}</span>
-                </div>
-                <div class="content-bilingual">
-                  <p class="content-main">{{ t('company.team.advantages.synthesis.description') }}</p>
-                  <p class="content-en">{{ t('company.team.advantages.synthesis.descriptionEn') }}</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="feature-item">
-              <div class="icon-wrapper">
-                <img src="/images/icons/训练技术图标.png" alt="训练技术" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
-              <div class="feature-content">
-                <div class="title-bilingual">
-                  <h4 class="title-main">{{ t('company.team.advantages.training.title') }}</h4>
-                  
-                  <span class="title-en">{{ t('company.team.advantages.training.titleEn') }}</span>
-                </div>
-                <div class="content-bilingual">
-                  <p class="content-main">{{ t('company.team.advantages.training.description') }}</p>
-                  <p class="content-en">{{ t('company.team.advantages.training.descriptionEn') }}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <!-- Other Team Members -->
         <div class="other-members">
@@ -260,8 +192,10 @@
     <section id="about-dataarc" class="company-details">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">{{ t('company.companyDetails.title') }}</h2>
-          <p class="section-subtitle">{{ t('company.companyDetails.subtitle') }}</p>
+          <div class="title-bilingual">
+            <h2 class="title-main">{{ t('company.companyDetails.title') }}</h2>
+            <span class="title-en">{{ t('company.companyDetails.titleEn') }}</span>
+          </div>
         </div>
         
         <div class="details-grid">
@@ -346,12 +280,7 @@
 
     <!-- Team Details Section -->
     <section id="core-team" class="team-details">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">{{ t('company.teamDetails.title') }}</h2>
-          <p class="section-subtitle">{{ t('company.teamDetails.subtitle') }}</p>
-        </div>
-        
+      <div class="container">        
         <div class="team-overview">
           <div class="team-info">
             <div class="title-bilingual">
