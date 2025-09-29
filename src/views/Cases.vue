@@ -999,6 +999,7 @@ const labelsContent = computed(() => {
   flex-wrap: wrap;
   gap: var(--space-2);
   margin-bottom: var(--space-4);
+  justify-content: center;
 }
 
 .tag {
@@ -1021,6 +1022,7 @@ const labelsContent = computed(() => {
   display: flex;
   flex-direction: column;
   gap: var(--space-4);
+  text-align: center;
 }
 
 
