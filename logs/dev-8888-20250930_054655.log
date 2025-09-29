@@ -1,0 +1,10 @@
+nohup: ignoring input
+
+> dataarctech-website@1.0.0 dev
+> vite --host 0.0.0.0 --port 8000 --port 8888 --host 0.0.0.0
+
+
+  VITE v4.5.14  ready in 499 ms
+
+  ➜  Local:   http://localhost:8888/
+  ➜  Network: http://192.168.168.47:8888/

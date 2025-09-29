@@ -1,0 +1,21 @@
+nohup: ignoring input
+
+> dataarctech-website@1.0.0 dev
+> vite --host 0.0.0.0 --port 8000
+
+Port 8000 is in use, trying another one...
+Port 8001 is in use, trying another one...
+Port 8002 is in use, trying another one...
+Port 8003 is in use, trying another one...
+
+  VITE v4.5.14  ready in 458 ms
+
+  ➜  Local:   http://localhost:8004/
+  ➜  Network: http://192.168.168.47:8004/
+npm ERR! path /root/dataarc_new
+npm ERR! command failed
+npm ERR! signal SIGHUP
+npm ERR! command sh -c -- vite --host 0.0.0.0 --port 8000
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2025-09-29T21_46_09_894Z-debug-0.log
