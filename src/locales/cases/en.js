@@ -228,28 +228,28 @@ export default {
     description: "DataArc's competitive advantages versus global leaders",
     cards: [
       {
-        title: 'Writer Model Comparison',
+        title: 'vs GraphRAG',
         stats: [
-          { label: 'Traditional Training Cost', value: 'US$700K' },
-          { label: 'DataArc Solution', value: 'Significantly Reduced' }
+          { label: 'GraphRAG Construction Efficiency', value: 'Baseline' },
+          { label: 'DataArc Context Graph', value: '218x Faster' }
         ],
-        improvement: 'Tool-call accuracy improved by 19.3%'
+        improvement: 'Context graph construction 218x faster than GraphRAG'
       },
       {
-        title: 'Data Compliance Risk',
+        title: 'vs Stanford EntiGraph',
         stats: [
-          { label: 'Data Breach Cost', value: 'US$14.8M' },
-          { label: 'DataArc Protection', value: 'Zero Risk' }
+          { label: 'EntiGraph Baseline Performance', value: 'Standard' },
+          { label: 'DataArc SoG Technology', value: '25.4% Better' }
         ],
-        improvement: 'SoE technology eliminates data leakage risk'
+        improvement: 'SoG synthetic data technology outperforms Stanford EntiGraph by 25.4%'
       },
       {
-        title: 'Gretel Comparison Advantage',
+        title: 'Data Augmentation Capability',
         stats: [
-          { label: 'Traditional Synthetic Data', value: 'Basic Functions' },
-          { label: 'DataArc SoG', value: 'Intelligent Graph' }
+          { label: 'Traditional Data Augmentation', value: 'Quality Degrades' },
+          { label: 'DataArc SoG', value: '30x + Diversity' }
         ],
-        improvement: 'Deep synthesis powered by context graphs'
+        improvement: 'SoG synthetic data technology scales 30x while maintaining diversity'
       }
     ]
   },

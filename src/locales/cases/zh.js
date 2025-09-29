@@ -228,28 +228,28 @@ export default {
     description: 'DataArc 与国际领先方案的对比优势',
     cards: [
       {
-        title: 'Writer 模型对比',
+        title: 'vs GraphRAG',
         stats: [
-          { label: '传统训练成本', value: '70 万美元' },
-          { label: 'DataArc 方案', value: '显著降低' }
+          { label: 'GraphRAG 建图效率', value: '基准水平' },
+          { label: 'DataArc 语境图谱', value: '218 倍提升' }
         ],
-        improvement: '工具调用准确率提升 19.3%'
+        improvement: '语境图谱建图效率比 GraphRAG 提升 218 倍'
       },
       {
-        title: '数据合规风险',
+        title: 'vs Stanford EntiGraph',
         stats: [
-          { label: '数据违规成本', value: '1480 万美元' },
-          { label: 'DataArc 保障', value: '零风险' }
+          { label: 'EntiGraph 基础效果', value: '基准表现' },
+          { label: 'DataArc SoG 技术', value: '25.4% 提升' }
         ],
-        improvement: '通过 SoE 技术完全规避数据泄露风险'
+        improvement: 'SoG 合成数据技术比斯坦福 EntiGraph 效果提升 25.4%'
       },
       {
-        title: 'Gretel 对比优势',
+        title: '数据扩增能力',
         stats: [
-          { label: '传统合成数据', value: '基础功能' },
-          { label: 'DataArc SoG', value: '智能图谱' }
+          { label: '传统数据扩增', value: '质量下降' },
+          { label: 'DataArc SoG', value: '30 倍 + 多样化' }
         ],
-        improvement: '基于语境图谱的深度合成技术'
+        improvement: 'SoG 合成数据技术扩增 30 倍数据量还能保持多样化'
       }
     ]
   },

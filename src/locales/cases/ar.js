@@ -228,28 +228,28 @@ export default {
     description: 'مزايا DataArc أمام الحلول العالمية الرائدة',
     cards: [
       {
-        title: 'مقارنة نموذج Writer',
+        title: 'مقابل GraphRAG',
         stats: [
-          { label: 'تكلفة التدريب التقليدية', value: '700 ألف دولار أمريكي' },
-          { label: 'حل DataArc', value: 'انخفاض ملحوظ' }
+          { label: 'كفاءة بناء GraphRAG', value: 'المستوى الأساسي' },
+          { label: 'رسم سياق DataArc', value: 'تحسن بـ218 مرة' }
         ],
-        improvement: 'تحسن دقة استدعاء الأدوات بنسبة 19.3%'
+        improvement: 'كفاءة بناء رسوم السياق تتفوق على GraphRAG بـ218 مرة'
       },
       {
-        title: 'مخاطر الامتثال للبيانات',
+        title: 'مقابل Stanford EntiGraph',
         stats: [
-          { label: 'تكلفة خرق البيانات', value: '14.8 مليون دولار أمريكي' },
-          { label: 'حماية DataArc', value: 'مخاطر معدومة' }
+          { label: 'أداء EntiGraph الأساسي', value: 'الأداء المرجعي' },
+          { label: 'تقنية DataArc SoG', value: 'تحسن 25.4%' }
         ],
-        improvement: 'تُزيل تقنية SoE مخاطر تسرب البيانات بالكامل'
+        improvement: 'تقنية SoG للبيانات الاصطناعية تتفوق على Stanford EntiGraph بـ25.4%'
       },
       {
-        title: 'تفوق مقارنة بـ Gretel',
+        title: 'قدرة توسيع البيانات',
         stats: [
-          { label: 'البيانات الاصطناعية التقليدية', value: 'وظائف أساسية' },
-          { label: 'DataArc SoG', value: 'رسم معرفي ذكي' }
+          { label: 'توسيع البيانات التقليدي', value: 'تراجع الجودة' },
+          { label: 'DataArc SoG', value: '30 مرة + تنوع' }
         ],
-        improvement: 'تقنية توليد عميق مبنية على رسوم السياق'
+        improvement: 'تقنية SoG للبيانات الاصطناعية توسع البيانات 30 مرة مع الحفاظ على التنوع'
       }
     ]
   },

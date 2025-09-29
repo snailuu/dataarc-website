@@ -880,7 +880,6 @@ const labelsContent = computed(() => {
   padding: var(--space-8);
   background: transparent;
   border-radius: var(--radius-2xl);
-  border: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
   flex-direction: column;
   gap: var(--space-4);
