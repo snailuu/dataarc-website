@@ -246,43 +246,10 @@
             </div>
           </div>
 
-          <!-- Module 2: Knowledge Management -->
+          <!-- Module 2: Analysis Tools -->
           <div class="module-card">
             <div class="module-header">
               <div class="module-number">02</div>
-              <div class="module-content-wrapper">
-                <h4 class="title-main">{{ t('products.livingkb.modules.management.title') }}</h4>
-                <p class="content-main">{{ t('products.livingkb.modules.management.description') }}</p>
-              </div>
-            </div>
-            
-            <div class="module-content">
-              <div class="feature-grid">
-                <div class="feature-item">
-                  <div class="icon-wrapper">
-                <img src="/images/icons/知识管理图标.png" alt="知识管理" class="icon-img" />
-                <div class="icon-glow"></div>
-              </div>
-                  <h5 class="title-main">{{ t('products.livingkb.modules.management.features.crud.title') }}</h5>
-                  <p class="content-main">{{ t('products.livingkb.modules.management.features.crud.description') }}</p>
-                </div>
-            
-                <div class="feature-item">
-                  <div class="icon-wrapper">
-                <img src="/images/icons/权限管理图标.png" alt="权限管理" class="icon-img" />
-                <div class="icon-glow"></div>
-              </div>
-                  <h5 class="title-main">{{ t('products.livingkb.modules.management.features.permission.title') }}</h5>
-                  <p class="content-main">{{ t('products.livingkb.modules.management.features.permission.description') }}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Module 3: Analysis Tools -->
-          <div class="module-card">
-            <div class="module-header">
-              <div class="module-number">03</div>
               <div class="module-content-wrapper">
                 <h4 class="title-main">{{ t('products.livingkb.modules.analysis.title') }}</h4>
                 <p class="content-main">{{ t('products.livingkb.modules.analysis.description') }}</p>
@@ -332,37 +299,73 @@
             </div>
           </div>
 
-        <!-- Module 4: Agent Hub -->
-        <div class="module-card">
-            <div class="module-header">
-              <div class="module-number">04</div>
-              <div class="module-content-wrapper">
-                <h4 class="title-main">{{ t('products.livingkb.modules.ecosystem.title') }}</h4>
-                <p class="content-main">{{ t('products.livingkb.modules.ecosystem.description') }}</p>
+          <!-- Module 3 & 4: Knowledge Management and Agent Hub -->
+          <div class="modules-row">
+            <!-- Module 3: Knowledge Management -->
+            <div class="module-card">
+              <div class="module-header">
+                <div class="module-number">03</div>
+                <div class="module-content-wrapper">
+                  <h4 class="title-main">{{ t('products.livingkb.modules.management.title') }}</h4>
+                  <p class="content-main">{{ t('products.livingkb.modules.management.description') }}</p>
+                </div>
+              </div>
+              
+              <div class="module-content">
+                <div class="feature-grid">
+                  <div class="feature-item">
+                    <div class="icon-wrapper">
+                  <img src="/images/icons/知识管理图标.png" alt="知识管理" class="icon-img" />
+                  <div class="icon-glow"></div>
+                </div>
+                    <h5 class="title-main">{{ t('products.livingkb.modules.management.features.crud.title') }}</h5>
+                    <p class="content-main">{{ t('products.livingkb.modules.management.features.crud.description') }}</p>
+                  </div>
+              
+                  <div class="feature-item">
+                    <div class="icon-wrapper">
+                  <img src="/images/icons/权限管理图标.png" alt="权限管理" class="icon-img" />
+                  <div class="icon-glow"></div>
+                </div>
+                    <h5 class="title-main">{{ t('products.livingkb.modules.management.features.permission.title') }}</h5>
+                    <p class="content-main">{{ t('products.livingkb.modules.management.features.permission.description') }}</p>
+                  </div>
+                </div>
               </div>
             </div>
-            
-            <div class="module-content">
-              <div class="feature-grid">
-                <div class="feature-item">
-                  <div class="icon-wrapper">
-                <img src="/images/icons/Agent Hub图标.png" alt="Agent Hub" class="icon-img" />
-                <div class="icon-glow"></div>
-              </div>
-                  <h5 class="title-main">{{ t('products.livingkb.modules.ecosystem.features.multiAgent.title') }}</h5>
-                  <p class="content-main">{{ t('products.livingkb.modules.ecosystem.features.multiAgent.description') }}</p>
+
+            <!-- Module 4: Agent Hub -->
+            <div class="module-card">
+                <div class="module-header">
+                  <div class="module-number">04</div>
+                  <div class="module-content-wrapper">
+                    <h4 class="title-main">{{ t('products.livingkb.modules.ecosystem.title') }}</h4>
+                    <p class="content-main">{{ t('products.livingkb.modules.ecosystem.description') }}</p>
+                  </div>
                 </div>
                 
-                <div class="feature-item">
-                  <div class="icon-wrapper">
-                <img src="/images/icons/开发工具图标.png" alt="开发工具" class="icon-img" />
-                <div class="icon-glow"></div>
-              </div>
-                  <h5 class="title-main">{{ t('products.livingkb.modules.ecosystem.features.devTools.title') }}</h5>
-                  <p class="content-main">{{ t('products.livingkb.modules.ecosystem.features.devTools.description') }}</p>
+                <div class="module-content">
+                  <div class="feature-grid">
+                    <div class="feature-item">
+                      <div class="icon-wrapper">
+                    <img src="/images/icons/Agent Hub图标.png" alt="Agent Hub" class="icon-img" />
+                    <div class="icon-glow"></div>
+                  </div>
+                      <h5 class="title-main">{{ t('products.livingkb.modules.ecosystem.features.multiAgent.title') }}</h5>
+                      <p class="content-main">{{ t('products.livingkb.modules.ecosystem.features.multiAgent.description') }}</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                      <div class="icon-wrapper">
+                    <img src="/images/icons/开发工具图标.png" alt="开发工具" class="icon-img" />
+                    <div class="icon-glow"></div>
+                  </div>
+                      <h5 class="title-main">{{ t('products.livingkb.modules.ecosystem.features.devTools.title') }}</h5>
+                      <p class="content-main">{{ t('products.livingkb.modules.ecosystem.features.devTools.description') }}</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
           </div>
         </div>
 
@@ -377,7 +380,7 @@
         <!-- LivingKB Use Cases -->
         <div class="use-cases-section">
           <h3 class="title-level-3">{{ t('products.livingkb.scenarios.title') }}</h3>
-          <div class="cases-grid">
+          <div class="cases-grid scenarios-grid">
             <div class="case-item">
               <div class="icon-wrapper">
                 <img src="/images/icons/企业知识管理图标.png" alt="企业知识管理" class="icon-img" />
@@ -525,67 +528,70 @@
             </div>
           </div>
 
-          <!-- Module 3: Encryption Training -->
-          <div class="module-card">
-            <div class="module-header">
-              <div class="module-number">03</div>
-              <div class="module-content-wrapper">
-                <h4 class="title-main">{{ t('products.syndata.modules.training.title') }}</h4>
-                <p class="content-main">{{ t('products.syndata.modules.training.description') }}</p>
-              </div>
-            </div>
-            
-            <div class="module-content">
-              <div class="feature-grid">
-                <div class="feature-item">
-                  <div class="icon-wrapper">
-                <img src="/images/icons/SoE加密图标.png" alt="SoE加密" class="icon-img" />
-                <div class="icon-glow"></div>
-              </div>
-                  <h5 class="title-main">{{ t('products.syndata.modules.training.features.soe.title') }}</h5>
-                  <p class="content-main">{{ t('products.syndata.modules.training.features.soe.description') }}</p>
-                </div>
-                
-                <div class="feature-item">
-                  <div class="icon-wrapper">
-                <img src="/images/icons/质量评估图标.png" alt="自动评估" class="icon-img" />
-                <div class="icon-glow"></div>
-              </div>
-                  <h5 class="title-main">{{ t('products.syndata.modules.training.features.judge.title') }}</h5>
-                  <p class="content-main">{{ t('products.syndata.modules.training.features.judge.description') }}</p>
+          <!-- Module 3 & 4: Encryption Training and Agent Customization -->
+          <div class="modules-row">
+            <!-- Module 3: Encryption Training -->
+            <div class="module-card">
+              <div class="module-header">
+                <div class="module-number">03</div>
+                <div class="module-content-wrapper">
+                  <h4 class="title-main">{{ t('products.syndata.modules.training.title') }}</h4>
+                  <p class="content-main">{{ t('products.syndata.modules.training.description') }}</p>
                 </div>
               </div>
+              
+              <div class="module-content">
+                <div class="feature-grid">
+                  <div class="feature-item">
+                    <div class="icon-wrapper">
+                  <img src="/images/icons/SoE加密图标.png" alt="SoE加密" class="icon-img" />
+                  <div class="icon-glow"></div>
+                </div>
+                    <h5 class="title-main">{{ t('products.syndata.modules.training.features.soe.title') }}</h5>
+                    <p class="content-main">{{ t('products.syndata.modules.training.features.soe.description') }}</p>
+                  </div>
+                  
+                  <div class="feature-item">
+                    <div class="icon-wrapper">
+                  <img src="/images/icons/质量评估图标.png" alt="自动评估" class="icon-img" />
+                  <div class="icon-glow"></div>
+                </div>
+                    <h5 class="title-main">{{ t('products.syndata.modules.training.features.judge.title') }}</h5>
+                    <p class="content-main">{{ t('products.syndata.modules.training.features.judge.description') }}</p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
 
-          <!-- Module 4: Agent Customization -->
-          <div class="module-card">
-            <div class="module-header">
-              <div class="module-number">04</div>
-              <div class="module-content-wrapper">
-                <h4 class="title-main">{{ t('products.syndata.modules.customization.title') }}</h4>
-                <p class="content-main">{{ t('products.syndata.modules.customization.description') }}</p>
-              </div>
-            </div>
-            
-            <div class="module-content">
-              <div class="feature-grid">
-                <div class="feature-item">
-                  <div class="icon-wrapper">
-                <img src="/images/icons/预设Agent图标.png" alt="预设Agent" class="icon-img" />
-                <div class="icon-glow"></div>
-              </div>
-                  <h5 class="title-main">{{ t('products.syndata.modules.customization.features.prebuilt.title') }}</h5>
-                  <p class="content-main">{{ t('products.syndata.modules.customization.features.prebuilt.description') }}</p>
+            <!-- Module 4: Agent Customization -->
+            <div class="module-card">
+              <div class="module-header">
+                <div class="module-number">04</div>
+                <div class="module-content-wrapper">
+                  <h4 class="title-main">{{ t('products.syndata.modules.customization.title') }}</h4>
+                  <p class="content-main">{{ t('products.syndata.modules.customization.description') }}</p>
                 </div>
-                
-                <div class="feature-item">
-                  <div class="icon-wrapper">
-                <img src="/images/icons/企业定制图标.png" alt="企业定制" class="icon-img" />
-                <div class="icon-glow"></div>
               </div>
-                  <h5 class="title-main">{{ t('products.syndata.modules.customization.features.enterprise.title') }}</h5>
-                  <p class="content-main">{{ t('products.syndata.modules.customization.features.enterprise.description') }}</p>
+              
+              <div class="module-content">
+                <div class="feature-grid">
+                  <div class="feature-item">
+                    <div class="icon-wrapper">
+                  <img src="/images/icons/预设Agent图标.png" alt="预设Agent" class="icon-img" />
+                  <div class="icon-glow"></div>
+                </div>
+                    <h5 class="title-main">{{ t('products.syndata.modules.customization.features.prebuilt.title') }}</h5>
+                    <p class="content-main">{{ t('products.syndata.modules.customization.features.prebuilt.description') }}</p>
+                  </div>
+                  
+                  <div class="feature-item">
+                    <div class="icon-wrapper">
+                  <img src="/images/icons/企业定制图标.png" alt="企业定制" class="icon-img" />
+                  <div class="icon-glow"></div>
+                </div>
+                    <h5 class="title-main">{{ t('products.syndata.modules.customization.features.enterprise.title') }}</h5>
+                    <p class="content-main">{{ t('products.syndata.modules.customization.features.enterprise.description') }}</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1991,6 +1997,76 @@ h3{
   .navigation-actions .btn {
     padding: var(--space-3) var(--space-5);
     font-size: var(--font-sm);
+  }
+}
+
+/* Module Row Layout */
+.modules-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+/* Scenarios Grid Layout */
+.scenarios-grid {
+  grid-template-columns: repeat(3, 1fr) !important;
+}
+
+/* Compact Layout - Reduced Margins and Padding */
+.product-detail {
+  padding: var(--space-12) 0;
+}
+
+.module-card {
+  margin-bottom: var(--space-6);
+}
+
+.module-header {
+  padding: var(--space-4) var(--space-6);
+  padding-left: calc(var(--space-6) + 70px);
+}
+
+.module-content {
+  padding: var(--space-4);
+}
+
+.feature-item {
+  padding: var(--space-4);
+}
+
+.section-header {
+  margin-bottom: var(--space-8);
+}
+
+.use-cases-section {
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+.architecture-section {
+  margin: var(--space-6) 0;
+}
+
+.case-item {
+  padding: var(--space-4);
+}
+
+@media (max-width: 1024px) {
+  .modules-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+}
+
+@media (max-width: 768px) {
+  .scenarios-grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .modules-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
   }
 }
 </style> 
