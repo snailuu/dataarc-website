@@ -548,32 +548,6 @@
           </div>
         </div>
         
-        <div class="investors-section">
-          <div class="title-bilingual">
-            <h3 class="title-main">{{ t('company.funding.investors.title') }}</h3>
-            
-            <span class="title-en">{{ t('company.funding.investors.titleEn') }}</span>
-          </div>
-          <div class="investors-grid">
-            <div class="investor-category">
-              <div class="title-bilingual">
-                <h4 class="title-main">{{ t('company.funding.investors.leading.title') }}</h4>
-                
-                <span class="title-en">{{ t('company.funding.investors.leading.titleEn') }}</span>
-              </div>
-              <div class="investor-placeholder">{{ t('company.funding.investors.leading.placeholder') }}</div>
-            </div>
-            
-            <div class="investor-category">
-              <div class="title-bilingual">
-                <h4 class="title-main">{{ t('company.funding.investors.industrial.title') }}</h4>
-                
-                <span class="title-en">{{ t('company.funding.investors.industrial.titleEn') }}</span>
-              </div>
-              <div class="investor-placeholder">{{ t('company.funding.investors.industrial.placeholder') }}</div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -1997,41 +1971,6 @@ const submitForm = async () => {
   font-size: var(--font-sm);
 }
 
-.investors-section h3 {
-  font-size: var(--font-2xl);
-  font-weight: var(--font-weight-semibold);
-  color: var(--text-primary);
-  margin-bottom: var(--space-8);
-  text-align: center;
-}
-
-.investors-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--space-8);
-}
-
-.investor-category h4 {
-  font-size: var(--font-lg);
-  font-weight: var(--font-weight-semibold);
-  color: var(--text-primary);
-  margin-bottom: var(--space-4);
-  text-align: center;
-}
-
-.investor-placeholder {
-  background: var(--neutral-100);
-  border: 2px dashed var(--neutral-300);
-  border-radius: var(--radius-lg);
-  padding: var(--space-8);
-  color: var(--neutral-500);
-  text-align: center;
-  min-height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 /* ===== Milestones Section ===== */
 .milestones {
   padding: var(--space-32) 0;
@@ -2136,9 +2075,6 @@ const submitForm = async () => {
     margin-bottom: 0;
   }
   
-  .investors-grid {
-    grid-template-columns: 1fr;
-  }
   
   .milestones-grid {
     grid-template-columns: 1fr;
