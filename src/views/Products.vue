@@ -373,7 +373,10 @@
         <div class="architecture-section">
           <h3 class="title-level-3">{{ t('products.livingkb.architecture.title') }}</h3>
           <div class="arch-visual">
-            <div class="arch-placeholder">{{ t('products.livingkb.architecture.placeholder') }}</div>
+                          <video class="demo-video" autoplay muted loop controls>
+                <source src="/videos/livingkb-demo-fixed.mp4" type="video/mp4">
+                您的浏览器不支持视频播放。
+              </video>
           </div>
         </div>
             
@@ -602,7 +605,10 @@
         <div class="architecture-section">
           <h3 class="title-level-3">{{ t('products.syndata.architecture.title') }}</h3>
           <div class="arch-visual">
-            <div class="arch-placeholder">【需要图片：SynData Platform完整技术架构图】</div>
+                          <video class="demo-video" autoplay muted loop controls>
+                <source src="/videos/syndata-demo-fixed.mp4" type="video/mp4">
+                您的浏览器不支持视频播放。
+              </video>
           </div>
         </div>
 
@@ -1322,6 +1328,19 @@ const productCases = computed(() => [
   font-size: 1rem;
   margin: 0 auto;
   max-width: 800px;
+}
+
+.demo-video {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  display: block;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: var(--glass-backdrop);
 }
 
 /* Use Cases Section */
@@ -2057,6 +2076,10 @@ h3{
     grid-template-columns: 1fr;
     gap: var(--space-4);
   }
+  
+  .demo-video {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2067,6 +2090,15 @@ h3{
   .modules-row {
     grid-template-columns: 1fr;
     gap: var(--space-3);
+  }
+  
+  .demo-video {
+    border-radius: var(--radius-md);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .architecture-section {
+    margin-bottom: var(--space-8);
   }
 }
 </style> 

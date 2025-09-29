@@ -128,7 +128,7 @@ export default {
       }
     },
     architecture: {
-      title: 'LivingKB Technical Architecture',
+      title: 'LivingKB Product Demo',
       placeholder: '[Placeholder: Full LivingKB architecture diagram needed]'
     },
     scenarios: {
@@ -225,7 +225,7 @@ export default {
       }
     },
     architecture: {
-      title: 'SynData Platform Technical Architecture'
+      title: 'SynData Platform Product Demo'
     },
     scenarios: {
       title: 'Typical Application Scenarios',

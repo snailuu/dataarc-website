@@ -128,7 +128,7 @@ export default {
       }
     },
     architecture: {
-      title: 'LivingKB 技术架构',
+      title: 'LivingKB 产品演示',
       placeholder: '【需要图片：LivingKB完整技术架构图】'
     },
     scenarios: {
@@ -225,7 +225,7 @@ export default {
       }
     },
     architecture: {
-      title: 'SynData Platform 技术架构',
+      title: 'SynData Platform 产品演示',
       placeholder: '【需要图片：SynData Platform完整技术架构图】'
     },
     scenarios: {

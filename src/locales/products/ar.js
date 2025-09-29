@@ -121,7 +121,7 @@ export default {
       }
     },
     architecture: {
-      title: 'البنية التقنية لـ LivingKB'
+              title: 'عرض منتج LivingKB'
     },
     scenarios: {
       title: 'سيناريوهات التطبيق النموذجية',
@@ -216,7 +216,7 @@ export default {
       }
     },
     architecture: {
-      title: 'البنية التقنية لمنصة SynData'
+              title: 'عرض منصة SynData'
     },
     scenarios: {
       items: {
