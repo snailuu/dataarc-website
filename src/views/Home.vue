@@ -242,14 +242,14 @@
         <div class="news-scroll-container" @mouseenter="pauseScroll" @mouseleave="resumeScroll" @wheel="handleWheel">
           <div class="news-track" ref="newsTrack">
             <a v-for="item in duplicatedNews" :key="`${item.title}-${item.index}`" :href="item.link" target="_blank" class="news-card">
-              <div class="news-image">
-                <div class="news-placeholder">{{ item.placeholder }}</div>
+            <div class="news-image">
+              <div class="news-placeholder">{{ item.placeholder }}</div>
                 <div class="news-tag" v-if="item.tag" :class="getTagClass(item.tag)">{{ item.tag }}</div>
-              </div>
-              <div class="news-content">
-                <h4 class="title-level-4">{{ item.title }}</h4>
-                <p class="news-date text-sm font-normal text-quaternary">{{ item.date }}</p>
-              </div>
+            </div>
+            <div class="news-content">
+              <h4 class="title-level-4">{{ item.title }}</h4>
+              <p class="news-date text-sm font-normal text-quaternary">{{ item.date }}</p>
+            </div>
             </a>
           </div>
         </div>

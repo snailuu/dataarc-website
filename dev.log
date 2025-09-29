@@ -3,34 +3,17 @@ nohup: ignoring input
 > dataarctech-website@1.0.0 dev
 > vite --host 0.0.0.0 --port 8000 --host 0.0.0.0 --port 8888
 
-
-  VITE v4.5.14  ready in 520 ms
-
-  ➜  Local:   http://localhost:8888/
-  ➜  Network: http://192.168.168.47:8888/
-nohup: ignoring input
-
-> dataarctech-website@1.0.0 dev
-> vite --host 0.0.0.0 --port 8000 --host 0.0.0.0 --port 8888
-
-Port 8888 is in use, trying another one...
-
-  VITE v4.5.14  ready in 459 ms
-
-  ➜  Local:   http://localhost:8889/
-  ➜  Network: http://192.168.168.47:8889/
-10:24:04 PM [vite] hmr update /src/views/Company.vue
-10:24:27 PM [vite] hmr update /src/views/Company.vue
-10:24:42 PM [vite] hmr update /src/views/Company.vue
-nohup: ignoring input
-
-> dataarctech-website@1.0.0 dev
-> vite --host 0.0.0.0 --port 8000 --host 0.0.0.0 --port 8888
-
 Port 8888 is in use, trying another one...
 Port 8889 is in use, trying another one...
+Port 8890 is in use, trying another one...
 
-  VITE v4.5.14  ready in 480 ms
+  VITE v4.5.14  ready in 465 ms
 
-  ➜  Local:   http://localhost:8890/
-  ➜  Network: http://192.168.168.47:8890/
+  ➜  Local:   http://localhost:8891/
+  ➜  Network: http://192.168.168.47:8891/
+11:13:16 PM [vite] hmr update /src/views/Company.vue?vue&type=style&index=0&scoped=10794d97&lang.css
+11:16:41 PM [vite] hmr update /src/views/Company.vue?vue&type=style&index=0&scoped=10794d97&lang.css
+11:19:52 PM [vite] hmr update /src/views/Company.vue?vue&type=style&index=0&scoped=10794d97&lang.css
+11:20:09 PM [vite] hmr update /src/views/Company.vue?vue&type=style&index=0&scoped=10794d97&lang.css
+11:20:17 PM [vite] hmr update /src/views/Company.vue?vue&type=style&index=0&scoped=10794d97&lang.css
+11:20:29 PM [vite] hmr update /src/views/Company.vue?vue&type=style&index=0&scoped=10794d97&lang.css

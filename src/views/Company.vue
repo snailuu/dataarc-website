@@ -480,15 +480,12 @@
           </div>
         </div>
         
-        <div class="funding-timeline">
+        <div class="funding-timeline horizontal-timeline">
+          
           <div class="timeline-item">
-            <div class="timeline-marker">
-              <div class="timeline-number">1</div>
-            </div>
             <div class="timeline-content">
               <div class="title-bilingual">
                 <h3 class="title-main">{{ t('company.funding.rounds.seed.title') }}</h3>
-                
                 <span class="title-en">{{ t('company.funding.rounds.seed.titleEn') }}</span>
               </div>
               <div class="funding-stats">
@@ -497,19 +494,14 @@
               </div>
               <div class="content-bilingual">
                 <p class="content-main">{{ t('company.funding.rounds.seed.description') }}</p>
-                <p class="content-en">{{ t('company.funding.rounds.seed.descriptionEn') }}</p>
               </div>
             </div>
           </div>
           
           <div class="timeline-item">
-            <div class="timeline-marker">
-              <div class="timeline-number">2</div>
-            </div>
             <div class="timeline-content">
               <div class="title-bilingual">
                 <h3 class="title-main">{{ t('company.funding.rounds.seedPlus.title') }}</h3>
-                
                 <span class="title-en">{{ t('company.funding.rounds.seedPlus.titleEn') }}</span>
               </div>
               <div class="funding-stats">
@@ -518,19 +510,15 @@
               </div>
               <div class="content-bilingual">
                 <p class="content-main">{{ t('company.funding.rounds.seedPlus.description') }}</p>
-                <p class="content-en">{{ t('company.funding.rounds.seedPlus.descriptionEn') }}</p>
+
               </div>
             </div>
           </div>
           
           <div class="timeline-item">
-            <div class="timeline-marker">
-              <div class="timeline-number">3</div>
-            </div>
             <div class="timeline-content">
               <div class="title-bilingual">
                 <h3 class="title-main">{{ t('company.funding.rounds.seriesA.title') }}</h3>
-                
                 <span class="title-en">{{ t('company.funding.rounds.seriesA.titleEn') }}</span>
               </div>
               <div class="funding-stats">
@@ -539,19 +527,14 @@
               </div>
               <div class="content-bilingual">
                 <p class="content-main">{{ t('company.funding.rounds.seriesA.description') }}</p>
-                <p class="content-en">{{ t('company.funding.rounds.seriesA.descriptionEn') }}</p>
               </div>
             </div>
           </div>
           
           <div class="timeline-item active">
-            <div class="timeline-marker">
-              <div class="timeline-number">4</div>
-            </div>
             <div class="timeline-content">
               <div class="title-bilingual">
                 <h3 class="title-main">{{ t('company.funding.rounds.preAngel.title') }}</h3>
-                
                 <span class="title-en">{{ t('company.funding.rounds.preAngel.titleEn') }}</span>
               </div>
               <div class="funding-stats">
@@ -560,7 +543,6 @@
               </div>
               <div class="content-bilingual">
                 <p class="content-main">{{ t('company.funding.rounds.preAngel.description') }}</p>
-                <p class="content-en">{{ t('company.funding.rounds.preAngel.descriptionEn') }}</p>
               </div>
             </div>
           </div>
@@ -1845,6 +1827,89 @@ const submitForm = async () => {
   margin-bottom: var(--space-16);
 }
 
+/* ===== 横向时间轴样式 ===== */
+.horizontal-timeline {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+  margin: var(--space-16) 0;
+  min-height: 400px;
+  overflow-x: auto;
+  padding: var(--space-12) var(--space-4);
+}
+
+.horizontal-timeline .timeline-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  max-width: 250px;
+  margin-bottom: 0;
+  gap: var(--space-4);
+  position: relative;
+  z-index: 2;
+}
+
+.horizontal-timeline .timeline-marker {
+  flex-shrink: 0;
+  order: 2;
+}
+
+.horizontal-timeline .timeline-content {
+  order: 1;
+  width: 100%;
+  margin-bottom: var(--space-4);
+  text-align: center;
+  padding: var(--space-4);
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.horizontal-timeline .timeline-content h3 {
+  font-size: var(--font-lg);
+  margin-bottom: var(--space-2);
+}
+
+.horizontal-timeline .funding-stats {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.horizontal-timeline .funding-amount,
+.horizontal-timeline .funding-date {
+  font-size: var(--font-xs);
+  padding: var(--space-1) var(--space-2);
+}
+
+.horizontal-timeline .content-bilingual p {
+  font-size: var(--font-sm);
+  line-height: var(--leading-normal);
+}
+
+.horizontal-timeline .title-bilingual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px !important;
+}
+
+.horizontal-timeline .title-main {
+  margin-bottom: 0;
+  line-height: 1.1 !important;
+}
+
+.horizontal-timeline .title-en {
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+
 .timeline-item {
   display: flex;
   gap: var(--space-6);
@@ -1866,6 +1931,25 @@ const submitForm = async () => {
   align-items: center;
   justify-content: center;
   font-weight: var(--font-weight-bold);
+  position: relative;
+  z-index: 3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all var(--duration-normal) var(--ease-out);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.horizontal-timeline .timeline-number:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .timeline-item.active .timeline-number {
@@ -2021,12 +2105,74 @@ const submitForm = async () => {
     text-align: center;
   }
   
+  /* 移动端横向时间轴适应 */
+  .horizontal-timeline {
+    flex-direction: column;
+    align-items: stretch;
+    min-height: auto;
+    padding: var(--space-4);
+  }
+  
+  .timeline-track {
+    display: none;
+  }
+  
+  .horizontal-timeline .timeline-item {
+    flex-direction: row;
+    max-width: none;
+    margin-bottom: var(--space-6);
+    gap: var(--space-4);
+  }
+  
+  .horizontal-timeline .timeline-marker {
+    order: 1;
+    flex-shrink: 0;
+  }
+  
+  .horizontal-timeline .timeline-content {
+    order: 2;
+    text-align: left;
+    min-height: auto;
+    margin-bottom: 0;
+  }
+  
   .investors-grid {
     grid-template-columns: 1fr;
   }
   
   .milestones-grid {
     grid-template-columns: 1fr;
+  }
+  
+  /* 移动端横向时间轴适应 */
+  .horizontal-timeline {
+    flex-direction: column;
+    align-items: stretch;
+    min-height: auto;
+    padding: var(--space-4);
+  }
+  
+  .timeline-track {
+    display: none;
+  }
+  
+  .horizontal-timeline .timeline-item {
+    flex-direction: row;
+    max-width: none;
+    margin-bottom: var(--space-6);
+    gap: var(--space-4);
+  }
+  
+  .horizontal-timeline .timeline-marker {
+    order: 1;
+    flex-shrink: 0;
+  }
+  
+  .horizontal-timeline .timeline-content {
+    order: 2;
+    text-align: left;
+    min-height: auto;
+    margin-bottom: 0;
   }
 }
 </style> 
