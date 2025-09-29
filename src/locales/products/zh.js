@@ -321,21 +321,6 @@ export default {
             '实现知识和数据的良性循环'
           ]
         }
-      },
-      complete: {
-        title: '为企业AI各个场景提供完整解决方案',
-        mechanism: {
-          title: '核心机制',
-          description: '双产品覆盖从数据生成、知识管理到AI应用的全链路需求'
-        },
-        value: {
-          title: '应用价值',
-          items: [
-            '降低企业AI应用的技术门槛',
-            '提供标准化的AI基础设施',
-            '支持企业AI的快速部署和迭代'
-          ]
-        }
       }
     }
   },

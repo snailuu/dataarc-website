@@ -306,21 +306,6 @@ export default {
             'Achieve virtuous cycle of knowledge and data'
           ]
         }
-      },
-      complete: {
-        title: 'Provide Complete Solutions for Enterprise AI Scenarios',
-        mechanism: {
-          title: 'Core Mechanism',
-          description: 'Dual products cover full-chain needs from data generation, knowledge management to AI applications'
-        },
-        value: {
-          title: 'Application Value',
-          items: [
-            'Lower technical barriers for enterprise AI applications',
-            'Provide standardized AI infrastructure',
-            'Support rapid deployment and iteration of enterprise AI'
-          ]
-        }
       }
     }
   },

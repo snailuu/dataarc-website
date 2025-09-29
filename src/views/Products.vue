@@ -318,14 +318,7 @@
                   <p class="content-main">{{ t('products.livingkb.modules.analysis.features.tog.description') }}</p>
                 </div>
                 
-                <div class="feature-item">
-                  <div class="icon-wrapper">
-                <img src="/images/icons/风险控制图标.png" alt="风险控制" class="icon-img" />
-                <div class="icon-glow"></div>
-              </div>
-                  <h5 class="title-main">{{ t('products.livingkb.modules.analysis.features.judge.title') }}</h5>
-                  <p class="content-main">{{ t('products.livingkb.modules.analysis.features.judge.description') }}</p>
-                </div>
+
 
                 <div class="feature-item">
                   <div class="icon-wrapper">
@@ -531,11 +524,11 @@
                 
                 <div class="feature-item">
                   <div class="icon-wrapper">
-                <img src="/images/icons/多模态数据图标.png" alt="多模态数据" class="icon-img" />
+                <img src="/images/icons/质量评估图标.png" alt="自动评估" class="icon-img" />
                 <div class="icon-glow"></div>
               </div>
-                  <h5 class="title-main">{{ t('products.syndata.modules.generation.features.multimodal.title') }}</h5>
-                  <p class="content-main">{{ t('products.syndata.modules.generation.features.multimodal.description') }}</p>
+                  <h5 class="title-main">{{ t('products.syndata.modules.generation.features.judge.title') }}</h5>
+                  <p class="content-main">{{ t('products.syndata.modules.generation.features.judge.description') }}</p>
                 </div>
                 
                 <div class="feature-item">
@@ -735,22 +728,6 @@
               </ul>
             </div>
           </div>
-          
-          <div class="synergy-item">
-            <div class="icon-wrapper">
-                <img src="/images/icons/完整解决方案图标.png" alt="完整解决方案" class="icon-img" />
-                <div class="icon-glow"></div>
-              </div>
-            <h3 class="synergy-title">{{ t('products.synergy.values.complete.title') }}</h3>
-            <div class="synergy-content">
-              <h4 class="content-subtitle">{{ t('products.synergy.values.complete.mechanism.title') }}</h4>
-              <p class="content-main">{{ t('products.synergy.values.complete.mechanism.description') }}</p>
-              <h4 class="content-subtitle">{{ t('products.synergy.values.complete.value.title') }}</h4>
-              <ul class="list-standard">
-                <li v-for="(item, index) in synergyValueItems.complete" :key="index">{{ item }}</li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -912,11 +889,6 @@ const synergyValueItems = computed(() => {
         '构建自我增强的产品体系',
         '持续优化企业AI能力',
         '实现知识和数据的良性循环'
-      ],
-      complete: synergyData.complete?.value?.items || [
-        '降低企业AI应用的技术门槛',
-        '提供标准化的AI基础设施',
-        '支持企业AI的快速部署和迭代'
       ]
     }
   }
