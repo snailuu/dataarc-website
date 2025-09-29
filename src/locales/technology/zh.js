@@ -7,6 +7,8 @@ export default {
     descriptionEn: 'Living KB dynamic knowledge base synthetic data platform, with seven core technologies driving AI intelligent upgrades.'
   },
   process: {
+    title: '如何让你的企业 AI 更智能',
+    titleEn: 'How to Make Your Enterprise AI Smarter',
     steps: {
       userData: {
         title: '用户数据',

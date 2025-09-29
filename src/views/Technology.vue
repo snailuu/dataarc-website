@@ -37,6 +37,14 @@
 
     <section class="page-content">
       <div class="container">
+        <!-- 如何让企业AI更智能 -->
+        <div class="process-header">
+          <div class="title-bilingual">
+            <h2 class="title-main">{{ t('technology.process.title') }}</h2>
+            <span class="title-en">{{ t('technology.process.titleEn') }}</span>
+          </div>
+        </div>
+
         <!-- 产品流程步骤 -->
         <div id="product-process" class="process-steps">
           <div class="step-item">
@@ -473,6 +481,33 @@ const toggleFaq = (type, index) => {
   padding: 60px 0;
 }
 
+/* 流程标题 */
+.process-header {
+  text-align: center;
+  margin-bottom: var(--space-12);
+}
+
+.process-header .title-bilingual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.process-header .title-main {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.process-header .title-en {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 /* 流程步骤 */
 .process-steps {
   max-width: 800px;
@@ -796,6 +831,14 @@ const toggleFaq = (type, index) => {
 }
 
 @media (max-width: 768px) {
+  .process-header .title-main {
+    font-size: 2rem;
+  }
+  
+  .process-header .title-en {
+    font-size: 0.9rem;
+  }
+
   .feature-cards {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -823,6 +866,10 @@ const toggleFaq = (type, index) => {
 }
 
 @media (max-width: 480px) {
+  .process-header .title-main {
+    font-size: 1.8rem;
+  }
+
   .tech-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
