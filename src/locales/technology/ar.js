@@ -144,7 +144,7 @@ export default {
         }
       },
       reasoning: {
-        title: 'مقابل Stanford EntiGraph',
+        title: 'مقابل EntiGraph',
         stats: {
           dataArc: {
             label: 'تقنية DataArc SoG',

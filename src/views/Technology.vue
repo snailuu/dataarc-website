@@ -947,6 +947,18 @@ const toggleFaq = (type, index) => {
     gap: 15px;
   }
 
+  .performance-comparison {
+    padding: var(--space-8) var(--space-6);
+  }
+
+  .performance-comparison .title-main {
+    font-size: 1.6rem;
+  }
+
+  .performance-comparison .content-main {
+    font-size: 0.85rem;
+  }
+
   .comparison-grid {
     grid-template-columns: 1fr;
     gap: var(--space-4);
@@ -983,6 +995,18 @@ const toggleFaq = (type, index) => {
     gap: 10px;
   }
 
+  .performance-comparison {
+    padding: var(--space-6) var(--space-4);
+  }
+
+  .performance-comparison .title-main {
+    font-size: 1.4rem;
+  }
+
+  .performance-comparison .content-main {
+    font-size: 0.8rem;
+  }
+
   .process-steps {
     gap: var(--space-8);
   }
@@ -991,6 +1015,10 @@ const toggleFaq = (type, index) => {
 /* ===== Performance Comparison Section ===== */
 .performance-comparison {
   margin-top: var(--space-16);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-12) var(--space-8);
 }
 
 .performance-comparison .section-header {
@@ -999,12 +1027,13 @@ const toggleFaq = (type, index) => {
 
 .performance-comparison .title-main {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 300;
   color: var(--text-primary);
 }
 
 .performance-comparison .content-main {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: 300;
   color: var(--text-secondary);
   max-width: 600px;
   margin: var(--space-4) auto 0;
@@ -1043,9 +1072,9 @@ const toggleFaq = (type, index) => {
   justify-content: space-between;
 }
 
-.comparison-header h3 {
-  font-size: var(--font-lg);
-  font-weight: var(--font-weight-semibold);
+.comparison-card .comparison-header .title-main {
+  font-size: 1.7rem !important;
+  font-weight: 300 !important;
   color: var(--text-primary);
   margin-bottom: var(--space-2);
 }

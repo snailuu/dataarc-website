@@ -144,7 +144,7 @@ export default {
         }
       },
       reasoning: {
-        title: 'vs Stanford EntiGraph',
+        title: 'vs EntiGraph',
         stats: {
           dataArc: {
             label: 'DataArc SoG Technology',
