@@ -612,9 +612,9 @@ const toggleFaq = (type, index) => {
 
 .tech-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  max-width: 800px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -787,6 +787,14 @@ const toggleFaq = (type, index) => {
   font-size: 0.9rem;
 }
 
+@media (max-width: 1024px) {
+  .tech-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 900px;
+  }
+}
+
 @media (max-width: 768px) {
   .feature-cards {
     grid-template-columns: 1fr;
@@ -794,7 +802,8 @@ const toggleFaq = (type, index) => {
   }
 
   .tech-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
   }
 
   .title-bilingual{
@@ -815,7 +824,8 @@ const toggleFaq = (type, index) => {
 
 @media (max-width: 480px) {
   .tech-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 }
 
