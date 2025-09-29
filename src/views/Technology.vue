@@ -138,7 +138,7 @@
                           <div class="title-bilingual" style="display: flex !important; align-items: center !important; text-align: left !important; flex-direction: row !important; margin: 0 0 12px 0 !important;">
                 <img src="/images/icons/核心技术页面-核心功能-icon.png" alt="核心功能" class="feature-icon" style="width: 48px !important; height: 48px !important; object-fit: contain !important; object-position: center !important; margin: 0 !important;">
                 <h3 class="title-main" style="margin: 0 !important; flex: 1 !important;">{{ t('technology.features.core.title') }}</h3>
-              </div>
+            </div>
             <ul class="list-bilingual">
               <li
                 v-for="(item, index) in coreFeatureItems"
@@ -154,7 +154,7 @@
                           <div class="title-bilingual" style="display: flex !important; align-items: center !important; text-align: left !important; flex-direction: row !important; margin: 0 0 12px 0 !important;">
                 <img src="/images/icons/核心技术页面-产品特点-icon.png" alt="产品特点" class="feature-icon" style="width: 48px !important; height: 48px !important; object-fit: contain !important; object-position: center !important; margin: 0 !important;">
                 <h3 class="title-main" style="margin: 0 !important; flex: 1 !important;">{{ t('technology.features.product.title') }}</h3>
-              </div>
+            </div>
             <ul class="list-bilingual">
               <li
                 v-for="(item, index) in productFeatureItems"
@@ -180,85 +180,85 @@
           <div class="content-bilingual">
             <p class="content-main">{{ t('technology.advantages.description') }}</p>
           </div>
-        </div>
+          </div>
 
         <!-- 核心技术六个卡片 -->
-        <div class="tech-grid">
-          <div class="tech-item">
-            <div class="icon-wrapper">
-              <img src="/images/icons/更懂行图标.png" alt="更懂行" class="icon-img">
-              <div class="icon-glow"></div>
+          <div class="tech-grid">
+            <div class="tech-item">
+              <div class="icon-wrapper">
+                <img src="/images/icons/更懂行图标.png" alt="更懂行" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
+              <div class="title-bilingual">
+                <h4 class="title-main">{{ t('technology.advantages.items.industry.title') }}</h4>
+              </div>
+              <div class="content-bilingual">
+                <p class="content-main">{{ t('technology.advantages.items.industry.description') }}</p>
+              </div>
             </div>
-            <div class="title-bilingual">
-              <h4 class="title-main">{{ t('technology.advantages.items.industry.title') }}</h4>
-            </div>
-            <div class="content-bilingual">
-              <p class="content-main">{{ t('technology.advantages.items.industry.description') }}</p>
-            </div>
-          </div>
 
-          <div class="tech-item">
-            <div class="icon-wrapper">
-              <img src="/images/icons/更聪明图标.png" alt="更聪明" class="icon-img">
-              <div class="icon-glow"></div>
+            <div class="tech-item">
+              <div class="icon-wrapper">
+                <img src="/images/icons/更聪明图标.png" alt="更聪明" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
+              <div class="title-bilingual">
+                <h4 class="title-main">{{ t('technology.advantages.items.smart.title') }}</h4>
+              </div>
+              <div class="content-bilingual">
+                <p class="content-main">{{ t('technology.advantages.items.smart.description') }}</p>
+              </div>
             </div>
-            <div class="title-bilingual">
-              <h4 class="title-main">{{ t('technology.advantages.items.smart.title') }}</h4>
-            </div>
-            <div class="content-bilingual">
-              <p class="content-main">{{ t('technology.advantages.items.smart.description') }}</p>
-            </div>
-          </div>
 
-          <div class="tech-item">
-            <div class="icon-wrapper">
-              <img src="/images/icons/更靠谱图标.png" alt="更靠谱" class="icon-img">
-              <div class="icon-glow"></div>
+            <div class="tech-item">
+              <div class="icon-wrapper">
+                <img src="/images/icons/更靠谱图标.png" alt="更靠谱" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
+              <div class="title-bilingual">
+                <h4 class="title-main">{{ t('technology.advantages.items.reliable.title') }}</h4>
+              </div>
+              <div class="content-bilingual">
+                <p class="content-main">{{ t('technology.advantages.items.reliable.description') }}</p>
+              </div>
             </div>
-            <div class="title-bilingual">
-              <h4 class="title-main">{{ t('technology.advantages.items.reliable.title') }}</h4>
-            </div>
-            <div class="content-bilingual">
-              <p class="content-main">{{ t('technology.advantages.items.reliable.description') }}</p>
-            </div>
-          </div>
 
-          <div class="tech-item">
-            <div class="icon-wrapper">
-              <img src="/images/icons/更专业图标.png" alt="更专业" class="icon-img">
-              <div class="icon-glow"></div>
+            <div class="tech-item">
+              <div class="icon-wrapper">
+                <img src="/images/icons/更专业图标.png" alt="更专业" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
+              <div class="title-bilingual">
+                <h4 class="title-main">{{ t('technology.advantages.items.professional.title') }}</h4>
+              </div>
+              <div class="content-bilingual">
+                <p class="content-main">{{ t('technology.advantages.items.professional.description') }}</p>
+              </div>
             </div>
-            <div class="title-bilingual">
-              <h4 class="title-main">{{ t('technology.advantages.items.professional.title') }}</h4>
-            </div>
-            <div class="content-bilingual">
-              <p class="content-main">{{ t('technology.advantages.items.professional.description') }}</p>
-            </div>
-          </div>
 
-          <div class="tech-item">
-            <div class="icon-wrapper">
-              <img src="/images/icons/更安全图标.png" alt="更安全" class="icon-img">
-              <div class="icon-glow"></div>
+            <div class="tech-item">
+              <div class="icon-wrapper">
+                <img src="/images/icons/更安全图标.png" alt="更安全" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
+              <div class="title-bilingual">
+                <h4 class="title-main">{{ t('technology.advantages.items.secure.title') }}</h4>
+              </div>
+              <div class="content-bilingual">
+                <p class="content-main">{{ t('technology.advantages.items.secure.description') }}</p>
+              </div>
             </div>
-            <div class="title-bilingual">
-              <h4 class="title-main">{{ t('technology.advantages.items.secure.title') }}</h4>
-            </div>
-            <div class="content-bilingual">
-              <p class="content-main">{{ t('technology.advantages.items.secure.description') }}</p>
-            </div>
-          </div>
 
-          <div class="tech-item">
-            <div class="icon-wrapper">
-              <img src="/images/icons/更准确图标.png" alt="更准确" class="icon-img">
-              <div class="icon-glow"></div>
-            </div>
-            <div class="title-bilingual">
-              <h4 class="title-main">{{ t('technology.advantages.items.accurate.title') }}</h4>
-            </div>
-            <div class="content-bilingual">
-              <p class="content-main">{{ t('technology.advantages.items.accurate.description') }}</p>
+            <div class="tech-item">
+              <div class="icon-wrapper">
+                <img src="/images/icons/更准确图标.png" alt="更准确" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
+              <div class="title-bilingual">
+                <h4 class="title-main">{{ t('technology.advantages.items.accurate.title') }}</h4>
+              </div>
+              <div class="content-bilingual">
+                <p class="content-main">{{ t('technology.advantages.items.accurate.description') }}</p>
             </div>
           </div>
         </div>
@@ -364,7 +364,7 @@
           <div class="title-bilingual">
             <h2 class="title-main">{{ t('technology.faq.title') }}</h2>
           </div>
-        </div>
+          </div>
 
         <!-- FAQ内容 -->
         <div class="faq-content">

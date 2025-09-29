@@ -373,10 +373,13 @@
         <div class="architecture-section">
           <h3 class="title-level-3">{{ t('products.livingkb.architecture.title') }}</h3>
           <div class="arch-visual">
-                          <video class="demo-video" autoplay muted loop controls>
+            <div class="video-container">
+              <video class="demo-video" autoplay muted loop controls>
                 <source src="/videos/livingkb-demo-fixed.mp4" type="video/mp4">
                 您的浏览器不支持视频播放。
               </video>
+              <div class="video-overlay"></div>
+            </div>
           </div>
         </div>
             
@@ -605,10 +608,13 @@
         <div class="architecture-section">
           <h3 class="title-level-3">{{ t('products.syndata.architecture.title') }}</h3>
           <div class="arch-visual">
-                          <video class="demo-video" autoplay muted loop controls>
+            <div class="video-container">
+              <video class="demo-video" autoplay muted loop controls>
                 <source src="/videos/syndata-demo-fixed.mp4" type="video/mp4">
                 您的浏览器不支持视频播放。
               </video>
+              <div class="video-overlay"></div>
+            </div>
           </div>
         </div>
 
@@ -1330,17 +1336,42 @@ const productCases = computed(() => [
   max-width: 800px;
 }
 
-.demo-video {
+/* Video Container */
+.video-container {
+  position: relative;
   width: 100%;
   max-width: 900px;
+  margin: 60px auto;
+  cursor: pointer;
+}
+
+.demo-video {
+  width: 100%;
   height: auto;
   border-radius: var(--radius-lg);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-  margin: 0 auto;
   display: block;
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
   backdrop-filter: var(--glass-backdrop);
+}
+
+/* Video Overlay */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: var(--radius-lg);
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.video-container:hover .video-overlay {
+  opacity: 0;
 }
 
 /* Use Cases Section */
@@ -2077,6 +2108,10 @@ h3{
     gap: var(--space-4);
   }
   
+  .video-container {
+    margin: 40px auto;
+  }
+  
   .demo-video {
     max-width: 100%;
   }
@@ -2090,6 +2125,10 @@ h3{
   .modules-row {
     grid-template-columns: 1fr;
     gap: var(--space-3);
+  }
+  
+  .video-container {
+    margin: 30px auto;
   }
   
   .demo-video {
