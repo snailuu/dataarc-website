@@ -183,7 +183,7 @@ export default {
         id: 'insurance',
         title: 'Insurance — AI Smart Customer Service',
         tags: ['Insurance', 'Smart Service', 'Synthetic Data'],
-        description: 'Delivered AI-powered customer service for a major insurance group, dramatically improving dialog quality and handling efficiency with synthetic data.',
+        description: 'Delivered technology optimization solutions for a major insurance group, dramatically improving dialog quality and handling efficiency with synthetic data.',
         placeholder: '[Image: Insurance Smart Customer Service Overview]',
         challenge: 'Increase AI customer service quality, resolve long-tail and corner cases, and lower human transfer rates.',
         solution: 'Provide high-quality synthetic training data to strengthen rare and long-tail intent handling for the AI customer service model.',
@@ -195,7 +195,7 @@ export default {
       },
       {
         id: 'finance',
-        title: 'Finance — IDEA FinAI Economic Super Brain',
+        title: 'Finance — Economic Super Brain',
         tags: ['FinTech', 'Economic Analysis', 'Smart Research'],
         description: 'Partnered with IDEA Research Institute to build the FinAI Economic Super Brain, enhancing financial analysis and research with context graph technology.',
         placeholder: '[Image: IDEA FinAI Economic Super Brain]',
@@ -209,7 +209,7 @@ export default {
       },
       {
         id: 'education',
-        title: 'Education — SAIF Financial Knowledge Large Model',
+        title: 'Education — Financial Knowledge Large Model',
         tags: ['Education & Training', 'Financial Knowledge', 'Exam System'],
         description: 'Supported SAIF with a financial knowledge large model, generating 500K Q&A pairs via synthetic data to outperform GPT-4 on domain tasks.',
         placeholder: '[Image: SAIF Financial Knowledge Large Model]',

@@ -183,7 +183,7 @@ export default {
         id: 'insurance',
         title: '保险行业 - AI 智能客服',
         tags: ['保险行业', '智能客服', '合成数据'],
-        description: '为大型保险公司提供 AI 智能客服解决方案，通过合成数据技术显著提升客服系统的对话质量和处理效率。',
+        description: '为大型保险公司提供技术优化方案，通过合成数据技术显著提升客服系统的对话质量和处理效率。',
         placeholder: '【需要图片：保险行业智能客服案例总览】',
         challenge: '提升 AI 保险客服的对话质量，解决长尾问题和反例问题，降低人工转接率。',
         solution: '通过合成数据技术，为 AI 客服模型提供高质量训练数据，优化罕见问题和长尾知识的处理能力。',
@@ -195,7 +195,7 @@ export default {
       },
       {
         id: 'finance',
-        title: '金融领域 - IDEA FinAI 经济超脑',
+        title: '金融领域 - 经济超脑',
         tags: ['金融科技', '经济分析', '智能投研'],
         description: '与 IDEA 研究院合作开发 FinAI 经济超脑，通过语境图谱技术提升金融数据分析和投研能力。',
         placeholder: '【需要图片：金融 IDEA FinAI 经济超脑】',
@@ -209,7 +209,7 @@ export default {
       },
       {
         id: 'education',
-        title: '教培领域 - 上海高金金融知识大模型',
+        title: '教培领域 - 金融知识大模型',
         tags: ['教育培训', '金融知识', '考试系统'],
         description: '为上海高金提供金融知识大模型，通过合成数据技术生成 50 万金融问答对，打造超越 GPT-4 的专业模型。',
         placeholder: '【需要图片：上海高金金融知识大模型】',

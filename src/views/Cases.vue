@@ -865,7 +865,7 @@ const labelsContent = computed(() => {
 /* ===== Detailed Cases Section ===== */
 .detailed-cases,
 .additional-cases {
-  padding: var(--space-32) 0;
+  padding: var(--space-32) var(--space-24);
   background: var(--bg-primary);
 }
 
@@ -873,6 +873,7 @@ const labelsContent = computed(() => {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-3);
+  max-width: none;
 }
 
 .detailed-case {
