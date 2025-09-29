@@ -840,9 +840,8 @@
           </div>
           
           <div class="view-more-section">
-            <router-link to="/cases" class="view-more-btn">
-              查看更多案例
-              <span class="btn-arrow">→</span>
+            <router-link to="/cases" class="btn btn-primary btn-lg">
+              <span class="btn-text-main">查看更多案例</span>
             </router-link>
           </div>
       </div>
@@ -1545,32 +1544,26 @@ const productCases = computed(() => [
   margin-top: var(--space-8);
 }
 
-.view-more-btn {
+.view-more-section .btn {
   display: inline-flex;
   align-items: center;
-  gap: var(--space-2);
-  padding: var(--space-3) var(--space-6);
-  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-  color: white;
+  justify-content: center;
+  font-weight: var(--font-weight-medium);
+  transition: all var(--duration-normal) var(--ease-out);
+  border-radius: var(--radius-full);
+  padding: var(--space-2) var(--space-6);
+  min-width: 120px;
   text-decoration: none;
-  border-radius: var(--radius-lg);
-  font-weight: 500;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(68, 155, 255, 0.2);
 }
 
-.view-more-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(68, 155, 255, 0.3);
+.view-more-section .btn-primary {
+  background: rgba(0, 212, 255, 0.6);
+  color: var(--text-white);
 }
 
-.btn-arrow {
-  transition: transform 0.3s ease;
-}
-
-.view-more-btn:hover .btn-arrow {
-  transform: translateX(4px);
+.view-more-section .btn-primary:hover {
+  background: rgba(0, 212, 255, 0.8);
+  transform: translateY(-1px);
 }
 
 .case-card {
@@ -1586,13 +1579,7 @@ const productCases = computed(() => [
   transform: translateY(-4px);
 }
 
-.livingkb-case {
-  border-left: 4px solid var(--primary-color);
-}
 
-.syndata-case {
-  border-left: 4px solid var(--accent-color);
-}
 
 .case-header {
   background: var(--bg-secondary);
@@ -1625,6 +1612,7 @@ const productCases = computed(() => [
 
 .case-content {
   padding: var(--space-6);
+  text-align: center;
 }
 
 .case-challenge,
