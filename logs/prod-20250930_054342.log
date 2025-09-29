@@ -1,0 +1,6 @@
+
+> dataarctech-website@1.0.0 preview
+> vite preview --port 8000 --port 8888 --host 0.0.0.0
+
+  ➜  Local:   http://localhost:8888/
+  ➜  Network: http://192.168.168.47:8888/

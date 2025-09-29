@@ -155,14 +155,14 @@ const common = {
       container_orchestration: 'Container Orchestration',
     },
     sampleConversations: [
-      {q: "Analyze customer credit risk level", a: "Based on historical transaction data, customer risk level is B+, recommended credit limit 500K"},
-      {q: "Predict next quarter investment trends", a: "Comprehensive macroeconomic indicators show 72% probability of tech sector rise, suggest 15% allocation"},
-      {q: "Identify abnormal trading behavior", a: "Detected abnormal account trading frequency in past 7 days, suspected money laundering risk, recommend manual review"},
-      {q: "Optimize asset allocation strategy", a: "Current portfolio volatility is high, recommend reducing equity position to 60%, increase bond allocation"},
-      {q: "Recommend personalized learning path", a: "Based on learning behavior analysis, suggest prioritizing math foundation module, estimated 15 days needed"},
-      {q: "Optimize production line scheduling", a: "Suggest adjusting production line A to 85% capacity, expect 12% efficiency improvement, save 80K cost"},
-      {q: "Patient diagnosis assistance analysis", a: "Based on symptoms and test results, suspected cardiovascular disease, recommend further ECG examination"},
-      {q: "AI model performance optimization", a: "Through hyperparameter tuning, model accuracy improved to 94.5%, inference speed increased by 30%"}
+      ["Analyze customer credit risk level", "Based on historical transaction data, customer risk level is B+, recommended credit limit 500K"],
+      ["Predict next quarter investment trends", "Comprehensive macroeconomic indicators show 72% probability of tech sector rise, suggest 15% allocation"],
+      ["Identify abnormal trading behavior", "Detected abnormal account trading frequency in past 7 days, suspected money laundering risk, recommend manual review"],
+      ["Optimize asset allocation strategy", "Current portfolio volatility is high, recommend reducing equity position to 60%, increase bond allocation"],
+      ["Recommend personalized learning path", "Based on learning behavior analysis, suggest prioritizing math foundation module, estimated 15 days needed"],
+      ["Optimize production line scheduling", "Suggest adjusting production line A to 85% capacity, expect 12% efficiency improvement, save 80K cost"],
+      ["Patient diagnosis assistance analysis", "Based on symptoms and test results, suspected cardiovascular disease, recommend further ECG examination"],
+      ["AI model performance optimization", "Through hyperparameter tuning, model accuracy improved to 94.5%, inference speed increased by 30%"]
     ]
   },
 }

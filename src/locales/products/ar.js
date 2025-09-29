@@ -239,6 +239,9 @@ export default {
       }
     }
   },
+  actions: {
+    viewMoreCases: 'عرض المزيد من الحالات'
+  },
   synergy: {
     title: 'قيمة التعاون بين المنتجين',
     subtitle: 'مزايا التكامل العميق لـ LivingKB + منصة SynData',

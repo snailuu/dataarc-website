@@ -264,6 +264,9 @@ export default {
       integration: '【需要图片：双产品协同架构图-展示数据流和知识流】'
     }
   },
+  actions: {
+    viewMoreCases: '查看更多案例'
+  },
   synergy: {
     title: '双产品协同价值',
     subtitle: 'LivingKB + SynData Platform 的深度融合优势',

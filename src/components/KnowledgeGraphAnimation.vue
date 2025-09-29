@@ -502,14 +502,14 @@ const startMessageStream = () => {
       // 添加问题
       visibleMessages.value.push({
         type: 'question',
-        content: conversation.q
+        content: conversation[0]
       })
       
       // 0.5秒后添加答案
       setTimeout(() => {
         visibleMessages.value.push({
           type: 'answer',
-          content: conversation.a
+          content: conversation[1]
         })
         
         // 限制显示的消息数量，保持滚动效果

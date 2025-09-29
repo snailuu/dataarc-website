@@ -841,7 +841,7 @@
           
           <div class="view-more-section">
             <router-link to="/cases" class="btn btn-primary btn-lg">
-              <span class="btn-text-main">查看更多案例</span>
+              <span class="btn-text-main">{{ t('products.actions.viewMoreCases') }}</span>
             </router-link>
           </div>
       </div>

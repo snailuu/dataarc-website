@@ -249,6 +249,9 @@ export default {
       }
     }
   },
+  actions: {
+    viewMoreCases: 'View More Cases'
+  },
   synergy: {
     title: 'Dual Product Synergy Value',
     subtitle: 'Deep integration advantages of LivingKB + SynData Platform',
