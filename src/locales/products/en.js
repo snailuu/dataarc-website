@@ -203,10 +203,6 @@ export default {
             title: 'SoE Encryption Training Technology',
             description: 'Zero sensitive data leakage, providing differential privacy training tools'
           },
-          quality: {
-            title: 'Quality Assessment and Feedback',
-            description: 'Measure statistical similarity and privacy risk of synthetic data, optimize generation strategies'
-          },
           judge: {
             title: 'Judge Auto-Evaluation',
             description: 'Intelligently evaluate synthetic data quality, automatically identify and optimize data generation effectiveness'

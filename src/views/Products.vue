@@ -548,15 +548,6 @@
                 
                 <div class="feature-item">
                   <div class="icon-wrapper">
-                <img src="/images/icons/质量评估图标.png" alt="质量评估" class="icon-img" />
-                <div class="icon-glow"></div>
-              </div>
-                  <h5 class="title-main">{{ t('products.syndata.modules.training.features.quality.title') }}</h5>
-                  <p class="content-main">{{ t('products.syndata.modules.training.features.quality.description') }}</p>
-                </div>
-                
-                <div class="feature-item">
-                  <div class="icon-wrapper">
                 <img src="/images/icons/质量评估图标.png" alt="自动评估" class="icon-img" />
                 <div class="icon-glow"></div>
               </div>

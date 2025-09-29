@@ -203,10 +203,6 @@ export default {
             title: 'SoE 加密训练技术',
             description: '敏感数据0泄露，提供差分隐私化训练工具'
           },
-          quality: {
-            title: '质量评估与反馈',
-            description: '衡量合成数据统计相似度与隐私风险，优化生成策略'
-          },
           judge: {
             title: 'Judge 自动评估',
             description: '智能评估合成数据质量，自动识别和优化数据生成效果'
