@@ -882,7 +882,7 @@ const labelsContent = computed(() => {
   padding: var(--space-12);
   background: transparent;
   border-radius: var(--radius-2xl);
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -890,7 +890,7 @@ const labelsContent = computed(() => {
 
 .premium-case {
   background: transparent;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .case-header {
@@ -951,14 +951,13 @@ const labelsContent = computed(() => {
   background: var(--bg-primary);
   padding: var(--space-6);
   border-radius: var(--radius-lg);
-  border-left: 3px solid var(--primary-color);
 }
 
 .solution-overview {
-  background: var(--glass-bg);
+  background: transparent;
   padding: var(--space-6);
   border-radius: var(--radius-lg);
-  backdrop-filter: var(--glass-backdrop);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .solution-title {
@@ -976,10 +975,11 @@ const labelsContent = computed(() => {
 }
 
 .solution-module {
-  background: var(--bg-primary);
+  background: var(--glass-bg);
   padding: var(--space-4);
   border-radius: var(--radius-md);
-  border: 1px solid var(--neutral-200);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: var(--glass-backdrop);
 }
 
 .challenge-list {
@@ -1051,11 +1051,10 @@ const labelsContent = computed(() => {
 .case-challenge,
 .case-solution,
 .case-results {
-  background: var(--glass-bg);
+  background: transparent;
   padding: var(--space-6);
   border-radius: var(--radius-lg);
-  backdrop-filter: var(--glass-backdrop);
-  border: 1px solid var(--glass-border);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .results-grid {
@@ -1063,15 +1062,16 @@ const labelsContent = computed(() => {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: var(--space-8);
+  gap: var(--space-6);
   margin-top: var(--space-6);
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 @media (max-width: 768px) {
   .results-grid {
-    flex-direction: column;
+    flex-direction: row;
     gap: var(--space-4);
+    flex-wrap: nowrap;
   }
 }
 
@@ -1146,7 +1146,7 @@ const labelsContent = computed(() => {
 
 .results-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-4);
   margin-top: var(--space-4);
 }
@@ -1154,8 +1154,9 @@ const labelsContent = computed(() => {
 .result-item {
   text-align: center;
   padding: var(--space-4);
-  background: var(--glass-bg);
+  background: transparent;
   border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .result-number {
@@ -1288,7 +1289,7 @@ const labelsContent = computed(() => {
   }
 
   .results-grid {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--space-4);
   }
 }
