@@ -135,10 +135,10 @@
         <!-- 核心功能和产品特点 -->
         <div class="feature-cards">
           <div class="feature-card">
-            <img src="/images/icons/核心技术页面-核心功能-icon.png" alt="核心功能" class="feature-icon">
-            <div class="title-bilingual">
-              <h3 class="title-main">{{ t('technology.features.core.title') }}</h3>
-            </div>
+                          <div class="title-bilingual" style="display: flex !important; align-items: center !important; text-align: left !important; flex-direction: row !important; margin: 0 0 12px 0 !important;">
+                <img src="/images/icons/核心技术页面-核心功能-icon.png" alt="核心功能" class="feature-icon" style="width: 48px !important; height: 48px !important; object-fit: contain !important; object-position: center !important; margin: 0 !important;">
+                <h3 class="title-main" style="margin: 0 !important; flex: 1 !important;">{{ t('technology.features.core.title') }}</h3>
+              </div>
             <ul class="list-bilingual">
               <li
                 v-for="(item, index) in coreFeatureItems"
@@ -151,10 +151,10 @@
           </div>
 
           <div class="feature-card">
-            <img src="/images/icons/核心技术页面-产品特点-icon.png" alt="产品特点" class="feature-icon">
-            <div class="title-bilingual">
-              <h3 class="title-main">{{ t('technology.features.product.title') }}</h3>
-            </div>
+                          <div class="title-bilingual" style="display: flex !important; align-items: center !important; text-align: left !important; flex-direction: row !important; margin: 0 0 12px 0 !important;">
+                <img src="/images/icons/核心技术页面-产品特点-icon.png" alt="产品特点" class="feature-icon" style="width: 48px !important; height: 48px !important; object-fit: contain !important; object-position: center !important; margin: 0 !important;">
+                <h3 class="title-main" style="margin: 0 !important; flex: 1 !important;">{{ t('technology.features.product.title') }}</h3>
+              </div>
             <ul class="list-bilingual">
               <li
                 v-for="(item, index) in productFeatureItems"
@@ -571,30 +571,44 @@ const toggleFaq = (type, index) => {
   margin-right: auto;
 }
 
+/* 确保图标和标题并排显示 */
+.fullscreen-section .feature-card .title-bilingual {
+  display: flex !important;
+  align-items: center !important;
+  text-align: left !important;
+  justify-content: flex-start !important;
+}
+
 .feature-card {
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
   backdrop-filter: var(--glass-backdrop);
   border-radius: var(--radius-xl);
   padding: var(--space-8);
-  text-align: center;
 }
 
 .feature-icon {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto var(--space-6) auto;
-  display: block;
+  width: 48px;
+  height: 48px;
+  margin-right: var(--space-3);
+  flex-shrink: 0;
+  object-fit: contain;
+  object-position: center;
 }
 
 .feature-card .title-bilingual {
-  margin-bottom: var(--space-6);
+  display: flex !important;
+  align-items: center !important;
+  margin-bottom: var(--space-3);
+  text-align: left !important;
 }
 
 .feature-card .title-main {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--text-primary);
+  margin: 0 !important;
+  display: inline-block !important;
 }
 
 .list-bilingual {
@@ -967,6 +981,11 @@ const toggleFaq = (type, index) => {
   .feature-cards {
     grid-template-columns: 1fr;
     gap: var(--space-6);
+  }
+
+  .feature-icon {
+    width: 40px;
+    height: 40px;
   }
 
   .title-bilingual{
