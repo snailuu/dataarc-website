@@ -50,7 +50,7 @@ export default {
         icon: '/images/icons/教育培训图标.png',
         iconAlt: '教育培训',
         glow: true,
-        highlights: ['智能分类', '知识图谱', '考试系统']
+        highlights: ['智能分类', '语境图谱', '考试系统']
       },
       {
         key: 'aiServices',
@@ -83,8 +83,8 @@ export default {
           title: 'LivingKB + 投资分析 Agent',
           modules: [
             {
-              title: '知识图谱构建',
-              text: '整合企业尽调报告、财务数据、市场分析等多源信息，构建动态投资知识图谱。'
+              title: '语境图谱构建',
+              text: '整合企业尽调报告、财务数据、市场分析等多源信息，构建动态投资语境图谱。'
             },
             {
               title: '智能分析工具',
@@ -93,6 +93,10 @@ export default {
             {
               title: '决策支持系统',
               text: '利用 RAG 技术实现精准检索，为投资决策提供全面的知识支撑。'
+            },
+            {
+              title: '语境推理引擎',
+              text: '在语境图谱上进行深度思考推理，考虑知识关联性，提供比传统方法更智能的分析洞察。'
             }
           ]
         },
@@ -143,6 +147,10 @@ export default {
             {
               title: '模型持续迭代',
               text: '建立合成数据驱动的模型迭代流程，快速响应业务变化。'
+            },
+            {
+              title: '专业领域小模型优化',
+              text: '通过合成数据进行定向优化小模型，让其在专业领域搜索更加精准，在搜索场景下表现卓越。'
             }
           ]
         },
@@ -191,7 +199,7 @@ export default {
         tags: ['金融科技', '经济分析', '智能投研'],
         description: '与 IDEA 研究院合作开发 FinAI 经济超脑，通过语境图谱技术提升金融数据分析和投研能力。',
         placeholder: '【需要图片：金融 IDEA FinAI 经济超脑】',
-        challenge: '构建企业知识图谱，提升竞对分析与行业监控的效率，实现跨文档复杂推理。',
+        challenge: '构建企业语境图谱，提升竞对分析与行业监控的效率，实现跨文档复杂推理。',
         solution: '通过语境图谱技术，实现金融行业企业知识的结构化管理，自动化采集海量数据并识别行业属性。',
         results: [
           { value: '20.3 倍', label: '研报数据增量', icon: '/images/icons/数据增量图标.png', iconAlt: '研报数据增量' },
@@ -241,7 +249,7 @@ export default {
           { label: '传统合成数据', value: '基础功能' },
           { label: 'DataArc SoG', value: '智能图谱' }
         ],
-        improvement: '基于知识图谱的深度合成技术'
+        improvement: '基于语境图谱的深度合成技术'
       }
     ]
   },
