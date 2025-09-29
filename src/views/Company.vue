@@ -1694,29 +1694,48 @@ const submitForm = async () => {
 }
 
 .team-overview {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: var(--space-12);
   margin-bottom: var(--space-16);
+}
+
+.team-info {
+  max-width: 1000px;
+  width: 100%;
 }
 
 .team-advantages {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--space-6);
-  margin-top: var(--space-8);
+  margin: var(--space-8) auto 0 auto;
+  max-width: 800px;
+  width: 100%;
+  justify-items: center;
 }
 
 .advantage-item {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: var(--space-4);
-  align-items: flex-start;
+  width: 100%;
+  max-width: 300px;
 }
 
 .advantage-icon {
   color: var(--primary-color);
   font-size: var(--font-sm);
   flex-shrink: 0;
+}
+
+.advantage-content {
+  text-align: center;
+  width: 100%;
 }
 
 .advantage-content h4 {
@@ -2025,11 +2044,14 @@ const submitForm = async () => {
   }
   
   .team-overview {
-    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
   }
   
   .team-advantages {
     grid-template-columns: 1fr;
+    margin: var(--space-6) auto 0 auto;
+    max-width: 350px;
   }
   
   .advisors-grid {

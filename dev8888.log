@@ -19,3 +19,11 @@ nohup: ignoring input
 11:52:02 PM [vite] hmr update /src/views/Company.vue
 11:52:19 PM [vite] page reload dist/index.html
 11:56:15 PM [vite] hmr update /src/views/Company.vue
+12:02:10 AM [vite] hmr update /src/views/Company.vue?vue&type=style&index=0&scoped=10794d97&lang.css
+npm ERR! path /root/dataarc_new
+npm ERR! command failed
+npm ERR! signal SIGHUP
+npm ERR! command sh -c -- vite --host 0.0.0.0 --port 8000 --host 0.0.0.0 --port 8888
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2025-09-29T15_36_35_163Z-debug-0.log
