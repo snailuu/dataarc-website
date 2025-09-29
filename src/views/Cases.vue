@@ -88,6 +88,9 @@
                 <div class="content-bilingual">
                   <span class="content-main">{{ caseItem.subtitle }}</span>
                 </div>
+                <div class="content-bilingual">
+                  <p class="content-main">{{ caseItem.background }}</p>
+                </div>
               </div>
               <div class="industry-bilingual">
                 <span class="content-main">{{ caseItem.industry }}</span>
@@ -95,14 +98,6 @@
             </div>
 
             <div class="case-body">
-              <div class="case-section">
-                <div class="title-bilingual">
-                  <h4 class="title-main">{{ labelsContent.clientBackground }}</h4>
-                </div>
-                <div class="content-bilingual">
-                  <p class="content-main">{{ caseItem.background }}</p>
-                </div>
-              </div>
 
               <div class="case-section">
                 <div class="title-bilingual">
