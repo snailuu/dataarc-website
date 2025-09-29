@@ -554,10 +554,10 @@ const toggleFaq = (type, index) => {
 /* 流程步骤 */
 .process-steps {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 2px auto;
   display: flex;
   flex-direction: column;
-  gap: var(--space-12);
+  gap: 2px;
 }
 
 /* 核心功能和产品特点卡片 */
@@ -635,7 +635,7 @@ const toggleFaq = (type, index) => {
 
 .step-item {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 2px;
   position: relative;
   align-items: stretch;
 }
@@ -656,6 +656,8 @@ const toggleFaq = (type, index) => {
   height: auto;
   align-self: stretch;
 }
+
+
 
 .step-content {
   display: flex;
@@ -1027,7 +1029,7 @@ const toggleFaq = (type, index) => {
   }
 
   .process-steps {
-    gap: var(--space-8);
+    gap: 2px;
   }
 }
 
