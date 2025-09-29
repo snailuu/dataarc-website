@@ -9,6 +9,7 @@ export default {
   process: {
     title: 'How to Make Your Enterprise AI Smarter',
     titleEn: 'How to Make Your Enterprise AI Smarter',
+    description: 'Through five core steps, DataArc helps enterprises build intelligent knowledge management and decision support systems, enabling AI to truly understand enterprise data and improve business execution efficiency.',
     steps: {
       userData: {
         title: 'User Data',
@@ -159,14 +160,14 @@ export default {
           value: '25.4%'
         }
       },
-      encryption: {
+      data: {
         title: 'Data Augmentation Capability',
         stats: {
-          privacy: {
+          dataArc: {
             label: 'DataArc SoG',
             value: '30x + Diversity'
           },
-          performance: {
+          benchmark: {
             label: 'Traditional Methods',
             value: 'Quality Degrades'
           }

@@ -9,6 +9,7 @@ export default {
   process: {
     title: '如何让你的企业 AI 更智能',
     titleEn: 'How to Make Your Enterprise AI Smarter',
+    description: '通过五大核心步骤，DataArc 帮助企业构建智能化的知识管理和决策支持系统，让 AI 真正理解企业数据，提升业务执行效率。',
     steps: {
       userData: {
         title: '用户数据',
@@ -159,14 +160,14 @@ export default {
           value: '25.4%'
         }
       },
-      encryption: {
+      data: {
         title: '数据扩增能力',
         stats: {
-          privacy: {
+          dataArc: {
             label: 'DataArc SoG',
             value: '30 倍 + 多样化'
           },
-          performance: {
+          benchmark: {
             label: '传统数据扩增',
             value: '质量下降'
           }

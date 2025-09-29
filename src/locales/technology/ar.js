@@ -9,6 +9,7 @@ export default {
   process: {
     title: 'كيف تجعل الذكاء الاصطناعي لمؤسستك أكثر ذكاءً',
     titleEn: 'How to Make Your Enterprise AI Smarter',
+    description: 'من خلال خمس خطوات أساسية، تساعد DataArc المؤسسات في بناء أنظمة ذكية لإدارة المعرفة ودعم القرارات، مما يمكن الذكاء الاصطناعي من فهم بيانات المؤسسة حقاً وتحسين كفاءة تنفيذ الأعمال.',
     steps: {
       userData: {
         title: 'بيانات المستخدم',
@@ -159,14 +160,14 @@ export default {
           value: '25.4%'
         }
       },
-      encryption: {
+      data: {
         title: 'قدرة توسيع البيانات',
         stats: {
-          privacy: {
+          dataArc: {
             label: 'DataArc SoG',
             value: '30 مرة + تنوع'
           },
-          performance: {
+          benchmark: {
             label: 'توسيع البيانات التقليدي',
             value: 'تراجع الجودة'
           }

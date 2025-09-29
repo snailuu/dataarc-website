@@ -44,6 +44,9 @@
             <h2 class="title-main">{{ t('technology.process.title') }}</h2>
             <span class="title-en">{{ t('technology.process.titleEn') }}</span>
           </div>
+          <div class="content-bilingual">
+            <p class="content-main">{{ t('technology.process.description') }}</p>
+          </div>
         </div>
 
         <!-- 产品流程步骤 -->
@@ -126,6 +129,41 @@
                 <p class="content-main">{{ t('technology.process.steps.graphAdaptation.description') }}</p>
               </div>
             </div>
+          </div>
+        </div>
+
+        <!-- 核心功能和产品特点 -->
+        <div class="feature-cards">
+          <div class="feature-card">
+            <img src="/images/icons/核心技术页面-核心功能-icon.png" alt="核心功能" class="feature-icon">
+            <div class="title-bilingual">
+              <h3 class="title-main">{{ t('technology.features.core.title') }}</h3>
+            </div>
+            <ul class="list-bilingual">
+              <li
+                v-for="(item, index) in coreFeatureItems"
+                :key="index"
+                class="list-item-bilingual"
+              >
+                <span class="list-main">{{ item }}</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <img src="/images/icons/核心技术页面-产品特点-icon.png" alt="产品特点" class="feature-icon">
+            <div class="title-bilingual">
+              <h3 class="title-main">{{ t('technology.features.product.title') }}</h3>
+            </div>
+            <ul class="list-bilingual">
+              <li
+                v-for="(item, index) in productFeatureItems"
+                :key="index"
+                class="list-item-bilingual"
+              >
+                <span class="list-main">{{ item }}</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -227,6 +265,14 @@
 
         <!-- 性能对比（原行业标杆对比）-->
         <div class="performance-comparison">
+          <div class="section-header">
+            <div class="title-bilingual">
+              <h3 class="title-main">{{ t('technology.performance.title') }}</h3>
+            </div>
+            <div class="content-bilingual">
+              <p class="content-main">{{ t('technology.performance.description') }}</p>
+            </div>
+          </div>
           <div class="comparison-grid">
             <div class="comparison-card glass-border">
               <div class="comparison-header">
@@ -405,7 +451,7 @@ const dataFaqOpen = ref([])
 watchEffect(() => {
   const length = kbFaqItems.value.length
   if (kbFaqOpen.value.length !== length) {
-    kbFaqOpen.value = Array.from({ length }, (_, index) => index === 0)
+    kbFaqOpen.value = Array.from({ length }, () => false)
   }
 })
 
@@ -500,8 +546,9 @@ const toggleFaq = (type, index) => {
 .section-header .content-main {
   font-size: 1.1rem;
   color: var(--text-secondary);
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
+  line-height: 1.8;
 }
 
 /* 流程步骤 */
@@ -511,6 +558,65 @@ const toggleFaq = (type, index) => {
   display: flex;
   flex-direction: column;
   gap: var(--space-12);
+}
+
+/* 核心功能和产品特点卡片 */
+.feature-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-8);
+  margin-top: var(--space-16);
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: var(--glass-backdrop);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  text-align: center;
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto var(--space-6) auto;
+  display: block;
+}
+
+.feature-card .title-bilingual {
+  margin-bottom: var(--space-6);
+}
+
+.feature-card .title-main {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.list-bilingual {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-item-bilingual {
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: left;
+}
+
+.list-item-bilingual:last-child {
+  border-bottom: none;
+}
+
+.list-main {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 .step-item {
@@ -846,6 +952,11 @@ const toggleFaq = (type, index) => {
     gap: var(--space-4);
   }
 
+  .feature-cards {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
   .title-bilingual{
     display: flex;
     align-items: center;
@@ -880,6 +991,23 @@ const toggleFaq = (type, index) => {
 /* ===== Performance Comparison Section ===== */
 .performance-comparison {
   margin-top: var(--space-16);
+}
+
+.performance-comparison .section-header {
+  margin-bottom: var(--space-12);
+}
+
+.performance-comparison .title-main {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.performance-comparison .content-main {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: var(--space-4) auto 0;
 }
 
 .comparison-grid {
