@@ -366,6 +366,10 @@
             
             <div class="team-advantages">
               <div class="advantage-item">
+                <div class="icon-wrapper">
+                <img src="/images/icons/研究积累图标.png" alt="研究积累" class="icon-img">
+                <div class="icon-glow"></div>
+              </div>
                 <div class="advantage-content">
                   <div class="title-bilingual">
                     <h4 class="title-main">{{ t('company.teamDetails.advantages.research.title') }}</h4>
