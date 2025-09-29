@@ -820,8 +820,8 @@ const labelsContent = computed(() => {
 
 .industry-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: var(--space-6);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-4);
   margin-top: var(--space-12);
 }
 
@@ -1296,8 +1296,8 @@ const labelsContent = computed(() => {
 
 @media (max-width: 768px) {
   .industry-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--space-4);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-3);
   }
 
   .case-header {
