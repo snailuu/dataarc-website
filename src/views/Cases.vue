@@ -880,18 +880,17 @@ const labelsContent = computed(() => {
 .detailed-case {
   margin-bottom: var(--space-20);
   padding: var(--space-12);
-  background: var(--glass-bg);
+  background: transparent;
   border-radius: var(--radius-2xl);
-  backdrop-filter: var(--glass-backdrop);
-  border: 1px solid var(--glass-border);
+  border: none;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
 .premium-case {
-  background: linear-gradient(135deg, var(--glass-bg) 0%, rgba(99, 102, 241, 0.05) 100%);
-  border: 1px solid rgba(99, 102, 241, 0.2);
+  background: transparent;
+  border: none;
 }
 
 .case-header {
