@@ -178,9 +178,6 @@
                 <p class="content-main">{{ item.description }}</p>
               </div>
             </div>
-            <div class="case-visual">
-              <div class="case-placeholder">{{ item.placeholder }}</div>
-            </div>
           </div>
 
           <div class="case-challenge">
@@ -872,6 +869,12 @@ const labelsContent = computed(() => {
   background: var(--bg-primary);
 }
 
+.additional-cases .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
 .detailed-case {
   margin-bottom: var(--space-12);
   padding: var(--space-8);
@@ -1009,9 +1012,6 @@ const labelsContent = computed(() => {
 }
 
 .case-overview {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: var(--space-8);
   margin-bottom: var(--space-8);
   background: var(--bg-primary);
   padding: var(--space-6);
@@ -1024,24 +1024,6 @@ const labelsContent = computed(() => {
   gap: var(--space-4);
 }
 
-.case-visual {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--neutral-50);
-  border-radius: var(--radius-md);
-  border: 1px solid var(--neutral-200);
-}
-
-.case-placeholder {
-  padding: var(--space-8);
-  text-align: center;
-  color: var(--text-tertiary);
-  font-size: var(--font-sm);
-  background: var(--neutral-100);
-  border-radius: var(--radius-md);
-  width: 100%;
-}
 
 .case-challenge,
 .case-solution,
@@ -1274,7 +1256,7 @@ const labelsContent = computed(() => {
 
 /* Responsive improvements */
 @media (max-width: 1024px) {
-  .case-overview {
+  .additional-cases .container {
     grid-template-columns: 1fr;
     gap: var(--space-4);
   }
