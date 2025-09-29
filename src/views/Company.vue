@@ -280,7 +280,7 @@
 
     <!-- Team Details Section -->
     <section id="core-team" class="team-details">
-      <div class="container">        
+      <div class="container">
         <div class="team-overview">
           <div class="team-info">
             <div class="title-bilingual">

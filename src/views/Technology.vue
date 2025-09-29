@@ -35,10 +35,11 @@
       </div>
     </section>
 
-    <section class="page-content">
+    <!-- 第一屏：如何让你的企业 AI 更智能 -->
+    <section class="fullscreen-section dark-bg">
       <div class="container">
-        <!-- 如何让企业AI更智能 -->
-        <div class="process-header">
+        <!-- 标题 -->
+        <div class="section-header">
           <div class="title-bilingual">
             <h2 class="title-main">{{ t('technology.process.title') }}</h2>
             <span class="title-en">{{ t('technology.process.titleEn') }}</span>
@@ -46,7 +47,7 @@
         </div>
 
         <!-- 产品流程步骤 -->
-        <div id="product-process" class="process-steps">
+        <div class="process-steps">
           <div class="step-item">
             <div class="icon-wrapper">
               <img src="/images/icons/数据采集图标.png" alt="数据采集" class="icon-img">
@@ -127,145 +128,107 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- 核心功能和产品特点 -->
-        <div id="core-features" class="feature-cards">
-          <div class="feature-card">
-            <img src="/images/icons/核心技术页面-核心功能-icon.png" alt="核心功能" class="feature-icon">
-            <div class="title-bilingual">
-              <h3 class="title-main">{{ t('technology.features.core.title') }}</h3>
-            </div>
-            <ul class="list-bilingual">
-              <li
-                v-for="(item, index) in coreFeatureItems"
-                :key="index"
-                class="list-item-bilingual"
-              >
-                <span class="list-main">{{ item }}</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="feature-card">
-            <img src="/images/icons/核心技术页面-产品特点-icon.png" alt="产品特点" class="feature-icon">
-            <div class="title-bilingual">
-              <h3 class="title-main">{{ t('technology.features.product.title') }}</h3>
-            </div>
-            <ul class="list-bilingual">
-              <li
-                v-for="(item, index) in productFeatureItems"
-                :key="index"
-                class="list-item-bilingual"
-              >
-                <span class="list-main">{{ item }}</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- 技术优势 -->
-        <div id="tech-advantages" class="tech-section">
+    <!-- 第二屏：核心技术 vs SOTA -->
+    <section class="fullscreen-section pure-black-bg">
+      <div class="container">
+        <!-- 标题 -->
+        <div class="section-header">
           <div class="title-bilingual">
             <h2 class="title-main">{{ t('technology.advantages.title') }}</h2>
           </div>
           <div class="content-bilingual">
             <p class="content-main">{{ t('technology.advantages.description') }}</p>
           </div>
+        </div>
 
-          <div class="tech-grid">
-            <div class="tech-item">
-              <div class="icon-wrapper">
-                <img src="/images/icons/更懂行图标.png" alt="更懂行" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
-              <div class="title-bilingual">
-                <h4 class="title-main">{{ t('technology.advantages.items.industry.title') }}</h4>
-              </div>
-              <div class="content-bilingual">
-                <p class="content-main">{{ t('technology.advantages.items.industry.description') }}</p>
-              </div>
+        <!-- 核心技术六个卡片 -->
+        <div class="tech-grid">
+          <div class="tech-item">
+            <div class="icon-wrapper">
+              <img src="/images/icons/更懂行图标.png" alt="更懂行" class="icon-img">
+              <div class="icon-glow"></div>
             </div>
-
-            <div class="tech-item">
-              <div class="icon-wrapper">
-                <img src="/images/icons/更聪明图标.png" alt="更聪明" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
-              <div class="title-bilingual">
-                <h4 class="title-main">{{ t('technology.advantages.items.smart.title') }}</h4>
-              </div>
-              <div class="content-bilingual">
-                <p class="content-main">{{ t('technology.advantages.items.smart.description') }}</p>
-              </div>
+            <div class="title-bilingual">
+              <h4 class="title-main">{{ t('technology.advantages.items.industry.title') }}</h4>
             </div>
-
-            <div class="tech-item">
-              <div class="icon-wrapper">
-                <img src="/images/icons/更靠谱图标.png" alt="更靠谱" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
-              <div class="title-bilingual">
-                <h4 class="title-main">{{ t('technology.advantages.items.reliable.title') }}</h4>
-              </div>
-              <div class="content-bilingual">
-                <p class="content-main">{{ t('technology.advantages.items.reliable.description') }}</p>
-              </div>
+            <div class="content-bilingual">
+              <p class="content-main">{{ t('technology.advantages.items.industry.description') }}</p>
             </div>
+          </div>
 
-            <div class="tech-item">
-              <div class="icon-wrapper">
-                <img src="/images/icons/更专业图标.png" alt="更专业" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
-              <div class="title-bilingual">
-                <h4 class="title-main">{{ t('technology.advantages.items.professional.title') }}</h4>
-              </div>
-              <div class="content-bilingual">
-                <p class="content-main">{{ t('technology.advantages.items.professional.description') }}</p>
-              </div>
+          <div class="tech-item">
+            <div class="icon-wrapper">
+              <img src="/images/icons/更聪明图标.png" alt="更聪明" class="icon-img">
+              <div class="icon-glow"></div>
             </div>
-
-            <div class="tech-item">
-              <div class="icon-wrapper">
-                <img src="/images/icons/更安全图标.png" alt="更安全" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
-              <div class="title-bilingual">
-                <h4 class="title-main">{{ t('technology.advantages.items.secure.title') }}</h4>
-              </div>
-              <div class="content-bilingual">
-                <p class="content-main">{{ t('technology.advantages.items.secure.description') }}</p>
-              </div>
+            <div class="title-bilingual">
+              <h4 class="title-main">{{ t('technology.advantages.items.smart.title') }}</h4>
             </div>
+            <div class="content-bilingual">
+              <p class="content-main">{{ t('technology.advantages.items.smart.description') }}</p>
+            </div>
+          </div>
 
-            <div class="tech-item">
-              <div class="icon-wrapper">
-                <img src="/images/icons/更准确图标.png" alt="更准确" class="icon-img">
-                <div class="icon-glow"></div>
-              </div>
-              <div class="title-bilingual">
-                <h4 class="title-main">{{ t('technology.advantages.items.accurate.title') }}</h4>
-              </div>
-              <div class="content-bilingual">
-                <p class="content-main">{{ t('technology.advantages.items.accurate.description') }}</p>
-              </div>
+          <div class="tech-item">
+            <div class="icon-wrapper">
+              <img src="/images/icons/更靠谱图标.png" alt="更靠谱" class="icon-img">
+              <div class="icon-glow"></div>
+            </div>
+            <div class="title-bilingual">
+              <h4 class="title-main">{{ t('technology.advantages.items.reliable.title') }}</h4>
+            </div>
+            <div class="content-bilingual">
+              <p class="content-main">{{ t('technology.advantages.items.reliable.description') }}</p>
+            </div>
+          </div>
+
+          <div class="tech-item">
+            <div class="icon-wrapper">
+              <img src="/images/icons/更专业图标.png" alt="更专业" class="icon-img">
+              <div class="icon-glow"></div>
+            </div>
+            <div class="title-bilingual">
+              <h4 class="title-main">{{ t('technology.advantages.items.professional.title') }}</h4>
+            </div>
+            <div class="content-bilingual">
+              <p class="content-main">{{ t('technology.advantages.items.professional.description') }}</p>
+            </div>
+          </div>
+
+          <div class="tech-item">
+            <div class="icon-wrapper">
+              <img src="/images/icons/更安全图标.png" alt="更安全" class="icon-img">
+              <div class="icon-glow"></div>
+            </div>
+            <div class="title-bilingual">
+              <h4 class="title-main">{{ t('technology.advantages.items.secure.title') }}</h4>
+            </div>
+            <div class="content-bilingual">
+              <p class="content-main">{{ t('technology.advantages.items.secure.description') }}</p>
+            </div>
+          </div>
+
+          <div class="tech-item">
+            <div class="icon-wrapper">
+              <img src="/images/icons/更准确图标.png" alt="更准确" class="icon-img">
+              <div class="icon-glow"></div>
+            </div>
+            <div class="title-bilingual">
+              <h4 class="title-main">{{ t('technology.advantages.items.accurate.title') }}</h4>
+            </div>
+            <div class="content-bilingual">
+              <p class="content-main">{{ t('technology.advantages.items.accurate.description') }}</p>
             </div>
           </div>
         </div>
 
-        <!-- Performance Comparison Section -->
-        <div id="performance-comparison" class="performance-comparison">
-          <div class="section-header">
-            <div class="title-bilingual">
-              <h2 class="title-main">{{ t('technology.performance.title') }}</h2>
-            </div>
-            <div class="content-bilingual">
-              <p class="content-main">{{ t('technology.performance.description') }}</p>
-            </div>
-          </div>
-
+        <!-- 性能对比（原行业标杆对比）-->
+        <div class="performance-comparison">
           <div class="comparison-grid">
-            <div class="comparison-card">
+            <div class="comparison-card glass-border">
               <div class="comparison-header">
                 <div class="title-bilingual">
                   <h3 class="title-main">{{ t('technology.performance.cards.graph.title') }}</h3>
@@ -291,7 +254,7 @@
               </div>
             </div>
 
-            <div class="comparison-card">
+            <div class="comparison-card glass-border">
               <div class="comparison-header">
                 <div class="title-bilingual">
                   <h3 class="title-main">{{ t('technology.performance.cards.reasoning.title') }}</h3>
@@ -317,40 +280,48 @@
               </div>
             </div>
 
-            <div class="comparison-card">
+            <div class="comparison-card glass-border">
               <div class="comparison-header">
                 <div class="title-bilingual">
-                  <h3 class="title-main">{{ t('technology.performance.cards.encryption.title') }}</h3>
+                  <h3 class="title-main">{{ t('technology.performance.cards.data.title') }}</h3>
                 </div>
                 <div class="icon-wrapper">
-                  <img src="/images/icons/SoE加密图标.png" alt="SoE加密" class="icon-img">
+                  <img src="/images/icons/合成数据扩充图标.png" alt="数据扩增对比" class="icon-img">
                   <div class="icon-glow"></div>
                 </div>
               </div>
               <div class="comparison-stats">
                 <div class="stat-item">
-                  <span class="stat-label">{{ t('technology.performance.cards.encryption.stats.privacy.label') }}</span>
-                  <span class="stat-value highlight">{{ t('technology.performance.cards.encryption.stats.privacy.value') }}</span>
+                  <span class="stat-label">{{ t('technology.performance.cards.data.stats.dataArc.label') }}</span>
+                  <span class="stat-value highlight">{{ t('technology.performance.cards.data.stats.dataArc.value') }}</span>
                 </div>
                 <div class="stat-item">
-                  <span class="stat-label">{{ t('technology.performance.cards.encryption.stats.performance.label') }}</span>
-                  <span class="stat-value highlight">{{ t('technology.performance.cards.encryption.stats.performance.value') }}</span>
+                  <span class="stat-label">{{ t('technology.performance.cards.data.stats.benchmark.label') }}</span>
+                  <span class="stat-value">{{ t('technology.performance.cards.data.stats.benchmark.value') }}</span>
                 </div>
               </div>
               <div class="improvement">
-                <span class="improvement-text">{{ t('technology.performance.cards.encryption.improvement.label') }}</span>
-                <span class="improvement-value">{{ t('technology.performance.cards.encryption.improvement.value') }}</span>
+                <span class="improvement-text">{{ t('technology.performance.cards.data.improvement.label') }}</span>
+                <span class="improvement-value">{{ t('technology.performance.cards.data.improvement.value') }}</span>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- FAQ部分 -->
-        <div id="faq" class="faq-section">
+    <!-- 第三屏：常见问题 -->
+    <section class="fullscreen-section dark-bg">
+      <div class="container">
+        <!-- 标题 -->
+        <div class="section-header">
           <div class="title-bilingual">
             <h2 class="title-main">{{ t('technology.faq.title') }}</h2>
           </div>
+        </div>
 
+        <!-- FAQ内容 -->
+        <div class="faq-content">
           <div class="faq-tabs">
             <button class="faq-tab" :class="{ active: activeTab === 'kb' }" @click="activeTab = 'kb'">
               {{ t('technology.faq.tabs.kb') }}
@@ -477,41 +448,69 @@ const toggleFaq = (type, index) => {
   opacity: 0.9;
 }
 
-.page-content {
-  padding: 60px 0;
+/* 全屏section布局 */
+.fullscreen-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
 }
 
-/* 流程标题 */
-.process-header {
+/* 交替背景色 */
+.dark-bg {
+  background: #0a0a0a;
+}
+
+.pure-black-bg {
+  background: #000000;
+}
+
+/* 统一的section标题样式 */
+.section-header {
   text-align: center;
-  margin-bottom: var(--space-12);
+  margin-bottom: var(--space-16);
 }
 
-.process-header .title-bilingual {
+.section-header .title-bilingual {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: var(--space-2);
 }
 
-.process-header .title-main {
-  font-size: 2.5rem;
-  font-weight: 700;
+.section-header .title-main {
+  font-size: 3rem;
+  font-weight: 300;
   color: var(--text-primary);
+  letter-spacing: -0.02em;
 }
 
-.process-header .title-en {
+.section-header .title-en {
   font-size: 1rem;
   font-weight: 400;
   color: var(--text-secondary);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
+}
+
+.section-header .content-bilingual {
+  margin-top: var(--space-6);
+}
+
+.section-header .content-main {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 /* 流程步骤 */
 .process-steps {
-  max-width: 800px;
-  margin: 0 auto 80px;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
 }
 
 .step-item {
@@ -684,23 +683,16 @@ const toggleFaq = (type, index) => {
 }
 
 /* FAQ部分 */
-.faq-section {
+.faq-content {
   max-width: 800px;
   margin: 0 auto;
-}
-
-.faq-section h2 {
-  text-align: center;
-  font-size: 2rem;
-  color: var(--text-primary);
-  font-weight: 600;
 }
 
 .faq-tabs {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .faq-tab {
@@ -831,22 +823,27 @@ const toggleFaq = (type, index) => {
 }
 
 @media (max-width: 768px) {
-  .process-header .title-main {
-    font-size: 2rem;
+  .fullscreen-section {
+    min-height: auto;
+    padding: 60px 0;
   }
   
-  .process-header .title-en {
-    font-size: 0.9rem;
+  .section-header .title-main {
+    font-size: 2.2rem;
   }
-
-  .feature-cards {
-    grid-template-columns: 1fr;
-    gap: 30px;
+  
+  .section-header .title-en {
+    font-size: 0.9rem;
   }
 
   .tech-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+  }
+
+  .comparison-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
   }
 
   .title-bilingual{
@@ -866,7 +863,7 @@ const toggleFaq = (type, index) => {
 }
 
 @media (max-width: 480px) {
-  .process-header .title-main {
+  .section-header .title-main {
     font-size: 1.8rem;
   }
 
@@ -874,29 +871,37 @@ const toggleFaq = (type, index) => {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
+
+  .process-steps {
+    gap: var(--space-8);
+  }
 }
 
 /* ===== Performance Comparison Section ===== */
 .performance-comparison {
   margin-top: var(--space-16);
-  padding: var(--space-12);
-  background: var(--bg-secondary);
-  border-radius: var(--radius-2xl);
 }
 
 .comparison-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-6);
-  margin-top: var(--space-8);
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .comparison-card {
-  background: var(--bg-primary);
+  background: transparent;
   border-radius: var(--radius-xl);
   padding: var(--space-6);
-  border: 1px solid var(--neutral-200);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   transition: all var(--duration-normal) var(--ease-out);
+}
+
+/* 透明白边框样式 */
+.glass-border {
+  background: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
 
 .comparison-card:hover {
