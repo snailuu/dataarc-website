@@ -1,73 +1,59 @@
 <template>
-  <footer class="footer">
+  <div class="footer">
     <div class="footer-background">
       <div class="footer-gradient"></div>
       <div class="footer-pattern"></div>
     </div>
 
     <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <div class="brand-logo">
-            <img src="/images/icons/企业logo.png" :alt="`${t('common.brand')} Logo`" class="logo-image">
-            <span class="brand-text">{{ t('common.brand') }}</span>
-          </div>
-          <p class="brand-description">{{ t('footer.tagline') }}</p>
-          <div class="social-links">
-            <a href="#" class="social-link" :aria-label="t('footer.socials.wechat')">
-              <svg viewBox="0 0 24 24" class="social-icon">
-                <path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 4.882-1.657 7.36-.5.468-3.644-2.857-6.876-7.231-6.876z" />
-              </svg>
-            </a>
-            <a href="#" class="social-link" :aria-label="t('footer.socials.weibo')">
-              <svg viewBox="0 0 24 24" class="social-icon">
-                <path d="M20.194 14.197c0 3.362-3.53 6.085-7.885 6.085-4.354 0-7.885-2.723-7.885-6.085 0-3.361 3.531-6.084 7.885-6.084 4.355 0 7.885 2.723 7.885 6.084z" />
-              </svg>
-            </a>
-            <a :href="`mailto:${contactSection.email}`" class="social-link" :aria-label="t('footer.socials.email')">
-              <svg viewBox="0 0 24 24" class="social-icon">
-                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <div class="footer-nav">
-          <div v-for="section in navSections" :key="section.key" class="nav-section">
-            <h3 class="nav-title">{{ section.title }}</h3>
-            <ul class="nav-links">
-              <li v-for="link in section.links" :key="link.key">
-                <RouterLink v-if="link.to" :to="link.to" class="nav-link">{{ link.label }}</RouterLink>
-                <a v-else :href="link.href" class="nav-link">{{ link.label }}</a>
-              </li>
-            </ul>
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="brand-logo">
+              <img src="/images/icons/企业logo.png" :alt="`${t('common.brand')} Logo`" class="logo-image">
+              <span class="brand-text">{{ t('common.brand') }}</span>
+            </div>
+            <p class="brand-description">{{ t('footer.tagline') }}</p>
+            <div class="social-links">
+              <a :href="`mailto:${contactSection.email}`" class="social-link" :aria-label="t('footer.socials.email')">
+                <img class="social-icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjRTRFNEU3IiBkPSJNMjAgNEg0Yy0xLjEgMC0xLjk5LjktMS45OSAyTDIgMThjMCAxLjEuOSAyIDIgMmgxNmMxLjEgMCAyLS45IDItMlY2YzAtMS4xLS45LTItMi0ybS0uNCA0LjI1bC03LjA3IDQuNDJjLS4zMi4yLS43NC4yLTEuMDYgMEw0LjQgOC4yNWEuODUuODUgMCAxIDEgLjktMS40NEwxMiAxMWw2LjctNC4xOWEuODUuODUgMCAxIDEgLjkgMS40NCIvPjwvc3ZnPg=="/>
+              </a> 
+            </div>
           </div>
 
-          <div class="nav-section">
-            <h3 class="nav-title">{{ contactSection.title }}</h3>
-            <div class="contact-info">
-              <div class="contact-item">
-                <svg viewBox="0 0 24 24" class="contact-icon">
-                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-                </svg>
-                <span>{{ contactSection.address }}</span>
-              </div>
-              <div class="contact-item">
-                <svg viewBox="0 0 24 24" class="contact-icon">
-                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-                </svg>
-                <a :href="`mailto:${contactSection.email}`" class="nav-link">{{ contactSection.email }}</a>
-              </div>
-              <div class="contact-item">
-                <svg viewBox="0 0 24 24" class="contact-icon">
-                  <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
-                </svg>
-                <a :href="`tel:${normalizedPhone}`" class="nav-link">{{ contactSection.phone }}</a>
+          <div class="footer-nav">
+            <div v-for="section in navSections" :key="section.key" class="nav-section">
+              <h3 class="nav-title">{{ section.title }}</h3>
+              <ul class="nav-links">
+                <li v-for="link in section.links" :key="link.key">
+                  <RouterLink v-if="link.to" :to="link.to" class="nav-link">{{ link.label }}</RouterLink>
+                  <a v-else :href="link.href" class="nav-link">{{ link.label }}</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="nav-section">
+              <h3 class="nav-title">{{ t('footer.nav.contact.title') }}</h3>
+              <div class="contact-info">
+                <div class="contact-item">
+                  <img class="contact-icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHBhdGggZmlsbD0iIzAwRDRGRiIgZD0iTTI1NiAxNy4xMDhjLTc1LjczIDAtMTM3LjEyMiA2MS4zOTItMTM3LjEyMiAxMzcuMTIyYy4wNTUgMjMuMjUgNi4wMjIgNDYuMTA3IDExLjU4IDU2LjI2MkwyNTYgNDk0Ljg5MmwxMTkuOTgyLTI3NC4yNDRoLS4wNjNhMTM3LjEgMTM3LjEgMCAwIDAgMTcuMjAyLTY2LjQxOEMzOTMuMTIyIDc4LjUgMzMxLjczIDE3LjEwOCAyNTYgMTcuMTA4bTAgNjguNTZhNjguNTYgNjguNTYgMCAwIDEgNjguNTYgNjguNTYyQTY4LjU2IDY4LjU2IDAgMCAxIDI1NiAyMjIuNzlhNjguNTYgNjguNTYgMCAwIDEtNjguNTYtNjguNTZBNjguNTYgNjguNTYgMCAwIDEgMjU2IDg1LjY3eiIvPjwvc3ZnPg==" />
+                  <span>{{ t('footer.nav.contact.address') }}</span>
+                </div>
+                <div class="contact-item">
+                  
+                  <img class="contact-icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjMDBENEZGIiBkPSJNMjAgNEg0Yy0xLjEgMC0xLjk5LjktMS45OSAyTDIgMThjMCAxLjEuOSAyIDIgMmgxNmMxLjEgMCAyLS45IDItMlY2YzAtMS4xLS45LTItMi0ybS0uNCA0LjI1bC03LjA3IDQuNDJjLS4zMi4yLS43NC4yLTEuMDYgMEw0LjQgOC4yNWEuODUuODUgMCAxIDEgLjktMS40NEwxMiAxMWw2LjctNC4xOWEuODUuODUgMCAxIDEgLjkgMS40NCIvPjwvc3ZnPg=="/>
+                  <!-- <a :href="`mailto:${contactSection.email}`" class="nav-link">{{ t('footer.nav.contact.email') }}</a> -->
+                  <span>contact@dataarc.tech</span>
+                </div>
+                <div class="contact-item">
+                  <img class="contact-icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjMDBENEZGIiBkPSJNMTIuNTkzIDIzLjI1OGwtLjAxMS4wMDJsLS4wNzEuMDM1bC0uMDIuMDA0bC0uMDE0LS4wMDRsLS4wNzEtLjAzNXEtLjAxNi0uMDA1LS4wMjQuMDA1bC0uMDA0LjAxMWwtLjAxNy40MjhsLjAwNS4wMmwuMDEuMDEzbC4xMDQuMDc0bC4wMTUuMDA0bC4wMTItLjAwNGwuMTA0LS4wNzRsLjAxMi0uMDE2bC4wMDQtLjAxN2wtLjAxNy0uNDI3cS0uMDA0LS4wMTYtLjAxNy0uMDE4bS4yNjUtLjExM2wtLjAxMy4wMDJsLS4xODUuMDkzbC0uMDEuMDFsLjAwMy4wMTFsLjE4LjQzbC4wMDUuMDEybC4wMDguMDA3bC4yMDEuMDkzcS4wMTkuMDA1LjAyOS0uMDA4bC4wMDQtLjAxNGwtLjAzNC0uNjE0cS0uMDA1LS4wMTgtLjAyLS4wMjJtLS43MTUuMDAyYS4wMi4wMiAwIDAgMC0uMDI3LjAwNmwtLjAwNi4wMTRsLS4wMzQuNjE0cS4wMDEuMDE4LjAxNy4wMjRsLjAxNS0uMDAybC4yMDEtLjA5M2wuMDEtLjAwOGwuMDA0LS4wMTFsLjAxNy0uNDNsLS4wMDMtLjAxMmwtLjAxLS4wMXoiLz48cGF0aCBmaWxsPSIjMDBENEZGIiBkPSJNMTYuNTUyIDIyLjEzM2MtMS40NC0uMDUzLTUuNTIxLS42MTctOS43OTUtNC44OWMtNC4yNzMtNC4yNzQtNC44MzYtOC4zNTQtNC44OS05Ljc5NWMtLjA4LTIuMTk2IDEuNjAyLTQuMzI5IDMuNTQ1LTUuMTYyYTEuNDcgMS40NyAwIDAgMSAxLjQ0NS4xNTljMS42IDEuMTY2IDIuNzA0IDIuOTMgMy42NTIgNC4zMTdhMS41MDQgMS41MDQgMCAwIDEtLjI1NiAxLjk4NmwtMS45NTEgMS40NDlhLjQ4LjQ4IDAgMCAwLS4xNDIuNjE2Yy40NDIuODAzIDEuMjI4IDEuOTk5IDIuMTI4IDIuODk5czIuMTUzIDEuNzM4IDMuMDEyIDIuMjNhLjQ4My40ODMgMCAwIDAgLjY0NC0uMTYybDEuMjctMS45MzNhMS41MDMgMS41MDMgMCAwIDEgMi4wNTYtLjMzMmMxLjQwNy45NzQgMy4wNDkgMi4wNTkgNC4yNTEgMy41OThhMS40NyAxLjQ3IDAgMCAxIC4xODkgMS40ODVjLS44MzcgMS45NTMtMi45NTUgMy42MTYtNS4xNTggMy41MzUiLz48L3N2Zz4="/>
+                  <!-- <a href="#" class="nav-link">{{ t('footer.nav.contact.phone') }}</a> -->
+                  <span>{{ t('footer.nav.contact.phone') }}</span>
+                </div>
               </div>
             </div>
           </div>
+        
         </div>
-      </div>
 
       <div class="footer-bottom">
         <div class="footer-divider"></div>
@@ -85,7 +71,7 @@
         </div>
       </div>
     </div>
-  </footer>
+  </div>
 </template>
 
 <script setup>
@@ -136,13 +122,19 @@ const navSections = computed(() =>
 )
 
 const contactSection = computed(() => ({
-  title: t('footer.nav.contact.title'),
-  address: t('footer.nav.contact.address'),
-  email: t('footer.nav.contact.email'),
-  phone: t('footer.nav.contact.phone'),
+  title: ('footer.nav.contact.title'),
+  address: ('footer.nav.contact.address'),
+  email: ('footer.nav.contact.email'),
+  phone: ('footer.nav.contact.phone'),
 }))
 
-const normalizedPhone = computed(() => contactSection.value.phone.replace(/\s+/g, ''))
+const normalizedPhone = computed(() => {
+  const phone = contactSection.value.phone
+  if (typeof phone === 'string') {
+    return phone.replace(/\s+/g, '')
+  }
+  return ''
+})
 </script>
 
 <style scoped>

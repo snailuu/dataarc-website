@@ -830,6 +830,8 @@
           </div>
       </div>
     </section>
+
+    <AppFooter />
   </div>
 </template>
 
@@ -838,6 +840,7 @@ import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
 import AppHeader from '@/components/AppHeader.vue'
+import AppFooter from '@/components/AppFooter.vue'
 
 const { t, locale, messages } = useI18n()
 const router = useRouter()
