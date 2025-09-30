@@ -146,30 +146,35 @@ export default {
         title: 'DataArc Viewpoint | How to Keep AI Getting Stronger in the Second Half of LLM Era?',
         date: 'January 15, 2025',
         placeholder: '【Image needed: homepage-news-ai-development.png】',
+        img: '/images/news/首页-新闻-AI发展.png',
         link: 'https://mp.weixin.qq.com/s/Eg7Ji_Ihq1I5mzXqCdToHw'
       },
       {
         title: 'DataArc News | DataArc Becomes Member of Shenzhen AI Industry Association',
         date: 'January 12, 2025',
         placeholder: '【Image needed: homepage-news-association-member.png】',
+        img: '/images/news/首页-新闻-协会会员.png',
         link: 'https://mp.weixin.qq.com/s/KpVsB02xfOxdB4T6hMJgwA'
       },
       {
         title: 'Synthetic Data Special: Synthetic Data is All You Need (Part 1)',
         date: 'January 10, 2025',
         placeholder: '【Image needed: homepage-news-synthetic-data-1.png】',
+        img: '/images/news/首页-新闻-合成数据上.png',
         link: 'https://mp.weixin.qq.com/s/jy9aZDGbtpwkA17yW8QeOg'
       },
       {
         title: 'Synthetic Data Special: Synthetic Data is All You Need (Part 2)',
         date: 'January 8, 2025',
         placeholder: '【Image needed: homepage-news-synthetic-data-2.png】',
+        img: '/images/news/首页-新闻-合成数据下.png',
         link: 'https://mp.weixin.qq.com/s/LR3N0oxnwoJNAUBXxk15Kw'
       },
       {
         title: 'Knowledge Management | Why Does Your Company AI Not Work Well?',
         date: 'January 5, 2025',
         placeholder: '【Image needed: homepage-news-knowledge-management.png】',
+        img: '/images/news/首页-新闻-知识管理.png',
         link: 'https://mp.weixin.qq.com/s/oOdiTftrHhnPhXpjgppYXg'
       }
     ],

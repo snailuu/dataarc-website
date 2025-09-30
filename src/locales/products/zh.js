@@ -192,6 +192,10 @@ export default {
           tabular: {
             title: '表格合成数据',
             description: '拟合真实数据库的列分布与关联关系，支持数据库压缩和隐私保护'
+          },
+          judge: {
+            title: '多模态数据生成',
+            description: '覆盖文本、图像、音频等多模态数据生成能力，满足多场景训练需求'
           }
         }
       },

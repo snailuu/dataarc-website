@@ -326,7 +326,7 @@ const footer = {
     privacy: 'Privacy Policy',
     terms: 'Terms of Service',
     cookies: 'Cookie Policy',
-    icp: '粤ICP备2024000000号',
+    icp: '粤ICP备2025461589号-1',
     copyright: '© 2024 DataArc Technology Co., Ltd. All rights reserved.',
   },
 }

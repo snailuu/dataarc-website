@@ -15,11 +15,9 @@
             <span class="title-highlight title-multilevel">
               <span class="title-main company-future-title">{{ t('company.hero.subtitle') }}</span>
             </span>
-            <span class="subtitle-en company-english-line">{{ t('company.hero.englishLine') }}</span>
           </h1>
           <div class="hero-description content-bilingual">
             <p class="content-main">{{ t('company.hero.description') }}</p>
-            <p class="content-en">{{ t('company.hero.descriptionEn') }}</p>
           </div>
         </div>
       </div>
@@ -32,11 +30,9 @@
           <div class="intro-text">
             <div class="title-bilingual">
               <h2 class="title-main">{{ t('company.about.title') }}</h2>
-              <span class="title-en">{{ t('company.about.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
               <p class="content-main">{{ t('company.about.description') }}</p>
-              <p class="content-en">{{ t('company.about.descriptionEn') }}</p>
             </div>
             
             <div class="company-stats">
@@ -44,21 +40,18 @@
                 <div class="stat-number">{{ t('company.about.stats.founded.number') }}</div>
                 <div class="stat-label-bilingual">
                   <span class="stat-main">{{ t('company.about.stats.founded.label') }}</span>
-                  <span class="stat-en">{{ t('company.about.stats.founded.labelEn') }}</span>
                 </div>
               </div>
               <div class="stat-item">
                 <div class="stat-number">{{ t('company.about.stats.patents.number') }}</div>
                 <div class="stat-label-bilingual">
                   <span class="stat-main">{{ t('company.about.stats.patents.label') }}</span>
-                  <span class="stat-en">{{ t('company.about.stats.patents.labelEn') }}</span>
                 </div>
               </div>
               <div class="stat-item">
                 <div class="stat-number">{{ t('company.about.stats.partners.number') }}</div>
                 <div class="stat-label-bilingual">
                   <span class="stat-main">{{ t('company.about.stats.partners.label') }}</span>
-                  <span class="stat-en">{{ t('company.about.stats.partners.labelEn') }}</span>
                 </div>
               </div>
             </div>
@@ -73,11 +66,9 @@
         <div class="section-header">
           <div class="title-bilingual">
             <h2 class="title-main">{{ t('company.team.title') }}</h2>
-            <span class="title-en">{{ t('company.team.titleEn') }}</span>
           </div>
           <div class="content-bilingual">
             <p class="content-main">{{ t('company.team.description') }}</p>
-            <p class="content-en">{{ t('company.team.descriptionEn') }}</p>
           </div>
         </div>
 
@@ -194,7 +185,6 @@
         <div class="section-header">
           <div class="title-bilingual">
             <h2 class="title-main">{{ t('company.companyDetails.title') }}</h2>
-            <span class="title-en">{{ t('company.companyDetails.titleEn') }}</span>
           </div>
         </div>
         
@@ -207,11 +197,9 @@
             <div class="title-bilingual">
               <h3 class="title-main">{{ t('company.companyDetails.companyName.title') }}</h3>
               
-              <span class="title-en">{{ t('company.companyDetails.companyName.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
               <p class="content-main">{{ t('company.companyDetails.companyName.value') }}</p>
-              <p class="content-en">{{ t('company.companyDetails.companyName.valueEn') }}</p>
             </div>
           </div>
           
@@ -223,15 +211,12 @@
             <div class="title-bilingual">
               <h3 class="title-main">{{ t('company.companyDetails.founded.title') }}</h3>
               
-              <span class="title-en">{{ t('company.companyDetails.founded.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
               <p class="content-main">{{ t('company.companyDetails.founded.value') }}</p>
-              <p class="content-en">{{ t('company.companyDetails.founded.valueEn') }}</p>
             </div>
             <div class="content-bilingual">
               <p class="content-main">{{ t('company.companyDetails.founded.description') }}</p>
-              <p class="content-en">{{ t('company.companyDetails.founded.descriptionEn') }}</p>
             </div>
           </div>
           
@@ -243,15 +228,12 @@
             <div class="title-bilingual">
               <h3 class="title-main">{{ t('company.companyDetails.address.title') }}</h3>
               
-              <span class="title-en">{{ t('company.companyDetails.address.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
               <p class="content-main">{{ t('company.companyDetails.address.value') }}</p>
-              <p class="content-en">{{ t('company.companyDetails.address.valueEn') }}</p>
             </div>
             <div class="content-bilingual">
               <p class="content-main">{{ t('company.companyDetails.address.detail') }}</p>
-              <p class="content-en">{{ t('company.companyDetails.address.detailEn') }}</p>
             </div>
           </div>
           
@@ -263,15 +245,12 @@
             <div class="title-bilingual">
               <h3 class="title-main">{{ t('company.companyDetails.vision.title') }}</h3>
               
-              <span class="title-en">{{ t('company.companyDetails.vision.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
               <p class="content-main">{{ t('company.companyDetails.vision.value') }}</p>
-              <p class="content-en">{{ t('company.companyDetails.vision.valueEn') }}</p>
             </div>
             <div class="content-bilingual">
               <p class="content-main">{{ t('company.companyDetails.vision.description') }}</p>
-              <p class="content-en">{{ t('company.companyDetails.vision.descriptionEn') }}</p>
             </div>
           </div>
         </div>
@@ -286,11 +265,9 @@
             <div class="title-bilingual">
               <h3 class="title-main">{{ t('company.teamDetails.teamScale.title') }}</h3>
               
-              <span class="title-en">{{ t('company.teamDetails.teamScale.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
               <p class="content-main">{{ t('company.teamDetails.teamScale.description') }}</p>
-              <p class="content-en">{{ t('company.teamDetails.teamScale.descriptionEn') }}</p>
             </div>
             
             <div class="team-advantages">
@@ -302,12 +279,10 @@
                   </div>
                   <div class="title-bilingual">
                     <h4 class="title-main">{{ t('company.teamDetails.advantages.research.title') }}</h4>
-                    <span class="title-en">{{ t('company.teamDetails.advantages.research.titleEn') }}</span>
                   </div>
                 </div>
                 <div class="content-bilingual">
                   <p class="content-main">{{ t('company.teamDetails.advantages.research.description') }}</p>
-                  <p class="content-en">{{ t('company.teamDetails.advantages.research.descriptionEn') }}</p>
                 </div>
               </div>
               
@@ -319,12 +294,10 @@
                   </div>
                   <div class="title-bilingual">
                     <h4 class="title-main">{{ t('company.teamDetails.advantages.reputation.title') }}</h4>
-                    <span class="title-en">{{ t('company.teamDetails.advantages.reputation.titleEn') }}</span>
                   </div>
                 </div>
                 <div class="content-bilingual">
                   <p class="content-main">{{ t('company.teamDetails.advantages.reputation.description') }}</p>
-                  <p class="content-en">{{ t('company.teamDetails.advantages.reputation.descriptionEn') }}</p>
                 </div>
               </div>
               
@@ -336,12 +309,10 @@
                   </div>
                   <div class="title-bilingual">
                     <h4 class="title-main">{{ t('company.teamDetails.advantages.advisory.title') }}</h4>
-                    <span class="title-en">{{ t('company.teamDetails.advantages.advisory.titleEn') }}</span>
                   </div>
                 </div>
                 <div class="content-bilingual">
                   <p class="content-main">{{ t('company.teamDetails.advantages.advisory.description') }}</p>
-                  <p class="content-en">{{ t('company.teamDetails.advantages.advisory.descriptionEn') }}</p>
                 </div>
               </div>
               
@@ -353,12 +324,10 @@
                   </div>
                   <div class="title-bilingual">
                     <h4 class="title-main">{{ t('company.teamDetails.advantages.resources.title') }}</h4>
-                    <span class="title-en">{{ t('company.teamDetails.advantages.resources.titleEn') }}</span>
                   </div>
                 </div>
                 <div class="content-bilingual">
                   <p class="content-main">{{ t('company.teamDetails.advantages.resources.description') }}</p>
-                  <p class="content-en">{{ t('company.teamDetails.advantages.resources.descriptionEn') }}</p>
                 </div>
               </div>
             </div>
@@ -377,11 +346,9 @@
           <div class="title-bilingual">
             <h2 class="title-main">{{ t('company.funding.title') }}</h2>
             
-            <span class="title-en">{{ t('company.funding.titleEn') }}</span>
           </div>
           <div class="content-bilingual">
             <p class="content-main">{{ t('company.funding.description') }}</p>
-            <p class="content-en">{{ t('company.funding.descriptionEn') }}</p>
           </div>
         </div>
         
@@ -391,7 +358,6 @@
             <div class="timeline-content">
               <div class="title-bilingual">
                 <h3 class="title-main">{{ t('company.funding.rounds.seed.title') }}</h3>
-                <span class="title-en">{{ t('company.funding.rounds.seed.titleEn') }}</span>
               </div>
               <div class="funding-stats">
                 <span class="funding-amount">{{ t('company.funding.rounds.seed.amount') }}</span>
@@ -407,7 +373,6 @@
             <div class="timeline-content">
               <div class="title-bilingual">
                 <h3 class="title-main">{{ t('company.funding.rounds.seedPlus.title') }}</h3>
-                <span class="title-en">{{ t('company.funding.rounds.seedPlus.titleEn') }}</span>
               </div>
               <div class="funding-stats">
                 <span class="funding-amount">{{ t('company.funding.rounds.seedPlus.amount') }}</span>
@@ -424,7 +389,6 @@
             <div class="timeline-content">
               <div class="title-bilingual">
                 <h3 class="title-main">{{ t('company.funding.rounds.seriesA.title') }}</h3>
-                <span class="title-en">{{ t('company.funding.rounds.seriesA.titleEn') }}</span>
               </div>
               <div class="funding-stats">
                 <span class="funding-amount">{{ t('company.funding.rounds.seriesA.amount') }}</span>
@@ -440,7 +404,6 @@
             <div class="timeline-content">
               <div class="title-bilingual">
                 <h3 class="title-main">{{ t('company.funding.rounds.preAngel.title') }}</h3>
-                <span class="title-en">{{ t('company.funding.rounds.preAngel.titleEn') }}</span>
               </div>
               <div class="funding-stats">
                 <span class="funding-amount">{{ t('company.funding.rounds.preAngel.amount') }}</span>
@@ -463,11 +426,9 @@
           <div class="title-bilingual">
             <h2 class="title-main">{{ t('company.milestones.title') }}</h2>
             
-            <span class="title-en">{{ t('company.milestones.titleEn') }}</span>
           </div>
           <div class="content-bilingual">
             <p class="content-main">{{ t('company.milestones.description') }}</p>
-            <p class="content-en">{{ t('company.milestones.descriptionEn') }}</p>
           </div>
         </div>
         
@@ -477,11 +438,9 @@
             <div class="title-bilingual">
               <h3 class="title-main">{{ t('company.milestones.items.founded.title') }}</h3>
               
-              <span class="title-en">{{ t('company.milestones.items.founded.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
               <p class="content-main">{{ t('company.milestones.items.founded.description') }}</p>
-              <p class="content-en">{{ t('company.milestones.items.founded.descriptionEn') }}</p>
             </div>
           </div>
           
@@ -490,11 +449,9 @@
             <div class="title-bilingual">
               <h3 class="title-main">{{ t('company.milestones.items.launch.title') }}</h3>
               
-              <span class="title-en">{{ t('company.milestones.items.launch.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
               <p class="content-main">{{ t('company.milestones.items.launch.description') }}</p>
-              <p class="content-en">{{ t('company.milestones.items.launch.descriptionEn') }}</p>
             </div>
           </div>
           
@@ -503,11 +460,9 @@
             <div class="title-bilingual">
               <h3 class="title-main">{{ t('company.milestones.items.breakthrough.title') }}</h3>
               
-              <span class="title-en">{{ t('company.milestones.items.breakthrough.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
               <p class="content-main">{{ t('company.milestones.items.breakthrough.description') }}</p>
-              <p class="content-en">{{ t('company.milestones.items.breakthrough.descriptionEn') }}</p>
             </div>
           </div>
           
@@ -516,11 +471,9 @@
             <div class="title-bilingual">
               <h3 class="title-main">{{ t('company.milestones.items.validation.title') }}</h3>
               
-              <span class="title-en">{{ t('company.milestones.items.validation.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
               <p class="content-main">{{ t('company.milestones.items.validation.description') }}</p>
-              <p class="content-en">{{ t('company.milestones.items.validation.descriptionEn') }}</p>
             </div>
           </div>
           
@@ -529,11 +482,9 @@
             <div class="title-bilingual">
               <h3 class="title-main">{{ t('company.milestones.items.expansion.title') }}</h3>
               
-              <span class="title-en">{{ t('company.milestones.items.expansion.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
               <p class="content-main">{{ t('company.milestones.items.expansion.description') }}</p>
-              <p class="content-en">{{ t('company.milestones.items.expansion.descriptionEn') }}</p>
             </div>
           </div>
           
@@ -542,11 +493,9 @@
             <div class="title-bilingual">
               <h3 class="title-main">{{ t('company.milestones.items.future.title') }}</h3>
               
-              <span class="title-en">{{ t('company.milestones.items.future.titleEn') }}</span>
             </div>
             <div class="content-bilingual">
               <p class="content-main">{{ t('company.milestones.items.future.description') }}</p>
-              <p class="content-en">{{ t('company.milestones.items.future.descriptionEn') }}</p>
             </div>
           </div>
         </div>
@@ -563,7 +512,7 @@
               {{ t('company.contact.description') }}
             </p>
             
-            <div class="contact-details">
+            <!-- <div class="contact-details">
               <div class="contact-item">
                 <div class="contact-icon">
                   <svg viewBox="0 0 24 24" class="icon">
@@ -599,10 +548,10 @@
                   <div class="contact-value">{{ t('company.contact.phone.value') }}</div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
 
-          <div class="contact-form-wrapper">
+          <!-- <div class="contact-form-wrapper">
             <form class="contact-form glass-card" @submit.prevent="submitForm">
               <h3 class="title-level-3">{{ t('company.contact.form.title') }}</h3>
               
@@ -700,7 +649,7 @@
                 <span v-else>{{ t('company.contact.form.submit') }}</span>
               </button>
             </form>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -918,12 +867,7 @@ const submitForm = async () => {
   color: var(--text-white) !important;
 }
 
-.hero .company-super-title .company-english-line {
-  color: var(--text-white-secondary) !important;
-}
-
-.hero .hero-description .content-main,
-.hero .hero-description .content-en {
+.hero .hero-description .content-main {
   color: var(--text-white-secondary) !important;
 }
 
@@ -1217,10 +1161,9 @@ const submitForm = async () => {
 }
 
 .contact-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-16);
-  align-items: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-info {
@@ -1647,13 +1590,6 @@ const submitForm = async () => {
   min-width: 0;
 }
 
-.advantage-item .title-bilingual .title-en {
-  font-size: var(--font-base);
-  line-height: 1.4;
-  word-break: break-word;
-  hyphens: auto;
-}
-
 .advantage-icon {
   color: var(--primary-color);
   font-size: var(--font-sm);
@@ -1806,12 +1742,6 @@ const submitForm = async () => {
   margin-bottom: 0;
   line-height: 1.1 !important;
 }
-
-.horizontal-timeline .title-en {
-  line-height: 1.1;
-  margin-top: 0;
-}
-
 
 .timeline-item {
   display: flex;

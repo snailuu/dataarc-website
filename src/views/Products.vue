@@ -15,11 +15,9 @@
             <span class="title-highlight title-multilevel">
               <span class="title-main company-future-title">{{ t('products.hero.subtitle') }}</span>
             </span>
-            <span class="subtitle-en company-english-line">{{ t('products.hero.englishLine') }}</span>
           </h1>
           <div class="hero-description content-bilingual">
             <p class="content-main">{{ t('products.hero.description') }}</p>
-            <p class="content-en">{{ t('products.hero.descriptionEn') }}</p>
           </div>
         </div>
       </div>
@@ -102,19 +100,15 @@
               <ul class="list-bilingual">
                 <li class="list-item-bilingual">
                   <span class="list-main">{{ t('products.livingkb.modules.access.features.contextGraph.title') }}</span>
-                  <span class="list-en">Context Graph</span>
                 </li>
                 <li class="list-item-bilingual">
                   <span class="list-main">{{ t('products.livingkb.modules.analysis.features.tog.title') }}</span>
-                  <span class="list-en">Think-on-Graph</span>
                 </li>
                 <li class="list-item-bilingual">
                   <span class="list-main">{{ t('products.livingkb.modules.analysis.features.rag.title') }}</span>
-                  <span class="list-en">Retrieval Augmented Generation</span>
                 </li>
                 <li class="list-item-bilingual">
                   <span class="list-main">{{ t('products.livingkb.modules.analysis.features.sql.title') }}</span>
-                  <span class="list-en">SQL-R1 Smart Query</span>
                 </li>
 
               </ul>
@@ -123,19 +117,15 @@
               <ul class="list-bilingual">
                 <li class="list-item-bilingual">
                   <span class="list-main">{{ t('products.syndata.modules.generation.features.sog.title') }}</span>
-                  <span class="list-en">SoG Graph Synthesis</span>
                 </li>
                 <li class="list-item-bilingual">
                   <span class="list-main">{{ t('products.syndata.modules.training.features.soe.title') }}</span>
-                  <span class="list-en">SoE Encryption Training</span>
                 </li>
                 <li class="list-item-bilingual">
                   <span class="list-main">{{ t('products.syndata.modules.generation.features.judge.title') }}</span>
-                  <span class="list-en">Judge Auto-Evaluation</span>
                 </li>
                 <li class="list-item-bilingual">
                   <span class="list-main">{{ t('products.syndata.modules.customization.title') }}</span>
-                  <span class="list-en">Agent Customization Platform</span>
                 </li>
               </ul>
             </div>
@@ -149,31 +139,25 @@
               <ul class="list-bilingual">
                 <li class="list-item-bilingual">
                   <span class="list-main">{{ t('products.livingkb.scenarios.items.knowledge.title') }}</span>
-                  <span class="list-en">Enterprise Knowledge Intelligence</span>
                 </li>
                 <li class="list-item-bilingual">
                   <span class="list-main">{{ t('products.livingkb.scenarios.items.collaboration.title') }}</span>
-                  <span class="list-en">Cross-department Knowledge Collaboration</span>
                 </li>
                 <li class="list-item-bilingual">
                   <span class="list-main">{{ t('products.livingkb.scenarios.items.decision.title') }}</span>
-                  <span class="list-en">GenAI-driven Decision Support</span>
                 </li>
               </ul>
             </div>
             <div class="comparison-cell">
               <ul class="list-bilingual">
                 <li class="list-item-bilingual">
-                  <span class="list-main">大模型训练数据扩充</span>
-                  <span class="list-en">LLM Training Data Augmentation</span>
+                  <span class="list-main">{{ t('products.syndata.scenarios.items.training.title') }}</span>
                 </li>
                 <li class="list-item-bilingual">
-                  <span class="list-main">隐私保护数据共享</span>
-                  <span class="list-en">Privacy-preserving Data Sharing</span>
+                  <span class="list-main">{{ t('products.syndata.scenarios.items.privacy.title') }}</span>
                 </li>
                 <li class="list-item-bilingual">
-                  <span class="list-main">冷启动数据问题解决</span>
-                  <span class="list-en">Cold Start Data Problem Solution</span>
+                  <span class="list-main">{{ t('products.syndata.scenarios.items.coldStart.title') }}</span>
                 </li>
               </ul>
             </div>
@@ -733,7 +717,7 @@
     </section>
 
     <!-- Technical Architecture Overview -->
-    <section class="tech-overview">
+    <!-- <section class="tech-overview">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">{{ t('products.techOverview.title') }}</h2>
@@ -804,7 +788,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Customer Success Cases -->
     <section id="success-cases" class="customer-cases">
@@ -1777,6 +1761,7 @@ const productCases = computed(() => [
     align-items: center;
     gap: var(--space-4);
     padding: var(--space-6);
+    padding-left: 10px !important;  
   }
   
   .module-number {
@@ -1922,12 +1907,7 @@ const productCases = computed(() => [
   color: var(--text-white) !important;
 }
 
-.hero .company-super-title .company-english-line {
-  color: var(--text-white-secondary) !important;
-}
-
-.hero .hero-description .content-main,
-.hero .hero-description .content-en {
+.hero .hero-description .content-main {
   color: var(--text-white-secondary) !important;
 }
 

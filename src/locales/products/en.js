@@ -192,6 +192,10 @@ export default {
           tabular: {
             title: 'Tabular Synthetic Data',
             description: 'Fit column distribution and correlation relationships of real databases, supporting database compression and privacy protection'
+          },
+          judge: {
+            title: 'Multimodal Data Generation',
+            description: 'End-to-end generation across text, image, and audio modalities to support diverse training scenarios'
           }
         }
       },

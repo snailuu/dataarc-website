@@ -10,7 +10,7 @@ export const SUPPORTED_LOCALES = [
   { code: 'ar', label: ar.common.language.ar, dir: 'rtl', iso: 'ar' },
 ]
 
-const DEFAULT_LOCALE = 'zh'
+const DEFAULT_LOCALE = 'en'
 
 const messages = {
   zh,

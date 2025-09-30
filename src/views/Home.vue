@@ -34,14 +34,14 @@
             <p class="content-main">{{ heroContent.descriptions?.[0] }}</p>
             <p class="content-en">{{ heroContent.descriptions?.[1] }}</p>
           </div>
-          <div class="hero-actions" v-if="heroContent">
+          <!-- <div class="hero-actions" v-if="heroContent">
             <a href="#" class="btn btn-primary btn-lg btn-capsule">
               <span class="btn-text-main">{{ t('common.buttons.login') }}</span>
             </a>
             <a href="#contact" class="btn btn-secondary btn-lg btn-capsule btn-white">
               <span class="btn-text-main">{{ t('common.buttons.contact') }}</span>
             </a>
-          </div>
+          </div> -->
         </div>
         <div class="hero-visual">
           <div class="visual-container">
@@ -75,7 +75,7 @@
             <div class="opportunity-icon">
               <div class="icon-wrapper market-icon-wrapper">
                 <img :src="card.icon" :alt="card.title" class="icon-img market-icon">
-                <div class="icon-glow market-glow"></div>
+                <!-- <div class="icon-glow market-glow"></div> -->
               </div>
             </div>
             <div class="title-stacked">
@@ -185,35 +185,65 @@
             </div>
           </div>
 
-          <div class="connection-indicators" v-if="technologyContent.connectors">
-            <div class="connection-indicator left">
-              <div class="connection-arrow">↓</div>
-              <div class="connection-label">
-                <div class="connection-main">{{ technologyContent.connectors.left }}</div>
+          <div v-if="technologyContent.connectors" class="tech-connector-columns">
+            <div class="connector-column">
+              <div class="connection-indicator left">
+                <div class="connection-arrow">↓</div>
+                <div class="connection-label">
+                  <div class="connection-main">{{ technologyContent.connectors.left }}</div>
+                </div>
               </div>
-            </div>
-            <div class="connection-indicator right">
-              <div class="connection-arrow">↓</div>
-              <div class="connection-label">
-                <div class="connection-main">{{ technologyContent.connectors.right }}</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="tech-branches">
-            <div class="branch-section" v-for="branch in ['left', 'right']" :key="branch">
-              <div v-for="item in technologyContent.branches?.[branch] || []" :key="item.title" class="tech-item">
-                <div class="tech-title">
-                  <div class="icon-wrapper">
-                    <img :src="item.icon" :alt="item.iconAlt" class="tech-icon-img">
-                    <div class="icon-glow"></div>
-                  </div>
-                  <div class="title-stacked-new">
-                    <span class="title-main">{{ item.title }}</span>
+              <div class="tech-branches">
+                <div class="branch-section">
+                  <div
+                    v-for="item in technologyContent.branches?.left || []"
+                    :key="item.title"
+                    class="tech-item"
+                  >
+                    <div class="tech-title">
+                      <div class="icon-wrapper">
+                        <img :src="item.icon" :alt="item.iconAlt" class="tech-icon-img">
+                        <div class="icon-glow"></div>
+                      </div>
+                      <div class="title-stacked-new">
+                        <span class="title-main">{{ item.title }}</span>
+                      </div>
+                    </div>
+                    <div class="tech-content">
+                      <div class="tech-desc-main">{{ item.description }}</div>
+                    </div>
                   </div>
                 </div>
-                <div class="tech-content">
-                  <div class="tech-desc-main">{{ item.description }}</div>
+              </div>
+            </div>
+
+            <div class="connector-column">
+              <div class="connection-indicator right">
+                <div class="connection-arrow">↓</div>
+                <div class="connection-label">
+                  <div class="connection-main">{{ technologyContent.connectors.right }}</div>
+                </div>
+              </div>
+              <div class="tech-branches">
+                <div class="branch-section">
+                  <div
+                    v-for="item in technologyContent.branches?.right || []"
+                    :key="item.title"
+                    class="tech-item"
+                  >
+                    <div class="tech-title">
+                      <div class="icon-wrapper">
+                        <img :src="item.icon" :alt="item.iconAlt" class="tech-icon-img">
+                        <div class="icon-glow"></div>
+                      </div>
+                      <div class="title-stacked-new">
+                        <span class="title-main">{{ item.title }}</span>
+                      </div>
+                    </div>
+                    <div class="tech-content">
+                      <div class="tech-desc-main">{{ item.description }}</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -239,17 +269,40 @@
           <p class="content-main">{{ newsContent.subtitle }}</p>
         </div>
 
-        <div class="news-scroll-container" @mouseenter="pauseScroll" @mouseleave="resumeScroll" @wheel="handleWheel">
-          <div class="news-track" ref="newsTrack">
-            <a v-for="item in duplicatedNews" :key="`${item.title}-${item.index}`" :href="item.link" target="_blank" class="news-card">
-            <div class="news-image">
-              <div class="news-placeholder">{{ item.placeholder }}</div>
+        <div
+          class="news-scroll-container"
+          ref="newsContainer"
+          @mouseenter="handleNewsMouseEnter"
+          @mouseleave="handleNewsMouseLeave"
+          @wheel.prevent="handleWheel"
+          @scroll="handleNewsScroll"
+          @touchstart="handleNewsTouchStart"
+          @touchend="handleNewsTouchEnd"
+          @touchcancel="handleNewsTouchEnd"
+        >
+          <div class="news-track">
+            <a
+              v-for="item in duplicatedNews"
+              :key="`${item.title}-${item.index}`"
+              :href="item.link"
+              target="_blank"
+              class="news-card"
+            >
+              <div class="news-image">
+                <img
+                  v-if="item.img"
+                  :src="item.img"
+                  :alt="item.title"
+                  class="news-img"
+                  loading="lazy"
+                />
+                <div v-else class="news-placeholder">{{ item.placeholder }}</div>
                 <div class="news-tag" v-if="item.tag" :class="getTagClass(item.tag)">{{ item.tag }}</div>
-            </div>
-            <div class="news-content">
-              <h4 class="title-level-4">{{ item.title }}</h4>
-              <p class="news-date text-sm font-normal text-quaternary">{{ item.date }}</p>
-            </div>
+              </div>
+              <div class="news-content">
+                <h4 class="title-level-4 news-title">{{ item.title }}</h4>
+                <p class="news-date text-sm font-normal text-quaternary">{{ item.date }}</p>
+              </div>
             </a>
           </div>
         </div>
@@ -374,7 +427,7 @@
 </template>
 
 <script setup>
-import { onMounted, onBeforeUnmount, computed, ref, nextTick } from 'vue'
+import { onMounted, onBeforeUnmount, computed, ref, nextTick, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
 import AppHeader from '@/components/AppHeader.vue'
@@ -480,55 +533,103 @@ const duplicatedNews = computed(() => {
 })
 
 // 新闻滚动相关
-const newsTrack = ref(null)
-let scrollTimer = null
-const scrollSpeed = 0.5 // 滚动速度
+const newsContainer = ref(null)
+const scrollSpeed = 0.5 // 滚动速度（px/frame）
+const CARD_WIDTH = 344 // 卡片宽度320 + 间距24
 let currentScroll = 0
 let isScrollPaused = false
+let isHovered = false
 
-// 自动滚动函数
+const getTotalNewsItems = () => newsContent.value.items?.length || 0
+
+const normalizeScroll = (value) => {
+  const totalItems = getTotalNewsItems()
+  if (totalItems === 0) return 0
+  const maxScroll = totalItems * CARD_WIDTH
+  return ((value % maxScroll) + maxScroll) % maxScroll
+}
+
+const setScrollPosition = (value) => {
+  const container = newsContainer.value
+  if (!container) return
+
+  currentScroll = normalizeScroll(value)
+  container.scrollLeft = currentScroll
+}
+
+const scrollBy = (delta) => {
+  const container = newsContainer.value
+  if (!container) return
+  setScrollPosition(container.scrollLeft + delta)
+}
+
 const autoScroll = () => {
-  if (!newsTrack.value || isScrollPaused) return
-  
-  currentScroll += scrollSpeed
-  const cardWidth = 344 // 卡片宽度320 + 间距24
-  const maxScroll = (newsContent.value.items?.length || 0) * cardWidth
-  
-  if (currentScroll >= maxScroll) {
-    currentScroll = 0
-  }
-  
-  newsTrack.value.style.transform = `translateX(-${currentScroll}px)`
+  if (!newsContainer.value || isScrollPaused || isHovered) return
+  scrollBy(scrollSpeed)
   requestAnimationFrame(autoScroll)
 }
 
-// 暂停滚动
 const pauseScroll = () => {
   isScrollPaused = true
 }
 
-// 恢复滚动
 const resumeScroll = () => {
+  if (isHovered) return
+  if (!isScrollPaused) return
   isScrollPaused = false
-  autoScroll() // 重新启动滚动动画
+  autoScroll()
 }
 
-// 处理鼠标滚轮事件
+const handleNewsMouseEnter = () => {
+  isHovered = true
+  pauseScroll()
+}
+
+const handleNewsMouseLeave = () => {
+  isHovered = false
+  resumeScroll()
+}
+
 const handleWheel = (event) => {
   event.preventDefault()
-  if (!newsTrack.value) return
-  
-  currentScroll += event.deltaY * 0.5
-  const cardWidth = 344
-  const maxScroll = (newsContent.value.items?.length || 0) * cardWidth
-  
-  if (currentScroll < 0) currentScroll = maxScroll - cardWidth
-  if (currentScroll >= maxScroll) currentScroll = 0
-  
-  newsTrack.value.style.transform = `translateX(-${currentScroll}px)`
+  scrollBy(event.deltaY * 0.5)
 }
 
-// 获取标签样式类
+const handleNewsScroll = () => {
+  const container = newsContainer.value
+  const totalItems = getTotalNewsItems()
+  if (!container || totalItems === 0) return
+
+  const maxScroll = totalItems * CARD_WIDTH
+  if (container.scrollLeft >= maxScroll) {
+    container.scrollLeft -= maxScroll
+  } else if (container.scrollLeft < 0) {
+    container.scrollLeft += maxScroll
+  }
+  currentScroll = container.scrollLeft
+}
+
+const handleNewsTouchStart = () => {
+  pauseScroll()
+}
+
+const handleNewsTouchEnd = () => {
+  resumeScroll()
+}
+
+watch(
+  () => newsContent.value.items,
+  () => {
+    nextTick(() => {
+      setScrollPosition(0)
+      if (!isHovered) {
+        isScrollPaused = false
+        autoScroll()
+      }
+    })
+  }
+)
+
 const getTagClass = (tag) => {
   return tag === 'DataArc观点' ? 'tag-dataarc' : 'tag-authority'
 }
@@ -544,12 +645,14 @@ onMounted(() => {
   
   // 启动自动滚动
   nextTick(() => {
+    setScrollPosition(0)
     autoScroll()
   })
 })
 
 onBeforeUnmount(() => {
   isScrollPaused = true
+  isHovered = false
 })
 
 // 鼠标互动效果
@@ -1183,6 +1286,12 @@ const submitBookingForm = async () => {
   animation: glow 2s ease-in-out infinite alternate;
 }
 
+.icon-glow.market-glow{
+  height: 100px;
+  width: 100px;
+  top: 10px;
+}
+
 @keyframes glow {
   from {
     opacity: 0.5;
@@ -1350,16 +1459,23 @@ const submitBookingForm = async () => {
 /* 新闻滚动容器 */
 .news-scroll-container {
   width: 100%;
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
   position: relative;
   margin-top: var(--space-8);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  touch-action: pan-x;
+}
+
+.news-scroll-container::-webkit-scrollbar {
+  display: none;
 }
 
 .news-track {
   display: flex;
   gap: var(--space-6);
-  transition: transform 0.3s ease;
-  will-change: transform;
+  width: max-content;
 }
 
 .news-card {
@@ -1390,6 +1506,20 @@ const submitBookingForm = async () => {
   color: var(--text-tertiary);
   font-size: var(--font-sm);
   position: relative;
+  overflow: hidden;
+}
+
+.news-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-placeholder {
+  color: var(--text-tertiary);
+  font-size: var(--font-sm);
+  text-align: center;
+  padding: 0 var(--space-4);
 }
 
 .news-tag {
@@ -1427,9 +1557,10 @@ const submitBookingForm = async () => {
   color: var(--text-primary);
   line-height: 1.4;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  text-overflow: ellipsis;
   margin-bottom: var(--space-2);
 }
 
@@ -1760,9 +1891,9 @@ const submitBookingForm = async () => {
 
 /* 技术分支容器 */
 .tech-branches {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-12);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
   position: relative;
 }
 
@@ -1771,6 +1902,7 @@ const submitBookingForm = async () => {
   display: flex;
   flex-direction: column;
   gap: var(--space-6);
+  flex: 1;
 }
 
 .branch-header {
@@ -1860,6 +1992,7 @@ const submitBookingForm = async () => {
   margin-bottom: var(--space-3);
   padding-bottom: var(--space-3);
   border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  min-width: 0;
 }
 
 .icon-wrapper {
@@ -1882,6 +2015,9 @@ const submitBookingForm = async () => {
 .title-stacked-new {
   margin: 0;
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .title-stacked-new .title-main {
@@ -1906,7 +2042,9 @@ const submitBookingForm = async () => {
 
 
 .tech-content {
-  text-align: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tech-desc-main {
@@ -2001,11 +2139,36 @@ const submitBookingForm = async () => {
 
 /* 连接指示器 */
 .connection-indicators {
+  display: contents;
+}
+
+.tech-connector-columns {
   display: flex;
-  justify-content: center;
+  gap: var(--space-12);
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.connector-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  width: 100%;
+}
+
+.connector-column:first-child .connection-indicator,
+.connector-column:first-child .connection-label {
   align-items: center;
-  margin: var(--space-0) 0;
-  gap: var(--space-32);
+  text-align: left;
+}
+
+.connector-column:last-child .connection-indicator,
+.connector-column:last-child .connection-label {
+  align-items: center;
+  text-align: right;
 }
 
 .connection-indicator {
@@ -2013,14 +2176,6 @@ const submitBookingForm = async () => {
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-.connection-indicator.left {
-  transform: translateX(var(--space-8));
-}
-
-.connection-indicator.right {
-  transform: translateX(calc(-1 * var(--space-8)));
 }
 
 .connection-arrow {
@@ -2047,8 +2202,12 @@ const submitBookingForm = async () => {
 
 /* 响应式设计 */
 @media (max-width: 1200px) {
+  .tech-connector-columns {
+    gap: var(--space-8);
+  }
+
   .tech-branches {
-    gap: var(--space-12);
+    gap: var(--space-8);
   }
 
   .parallel-flow {
@@ -2066,9 +2225,13 @@ const submitBookingForm = async () => {
     gap: var(--space-12);
   }
 
+  .tech-connector-columns {
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+
   .tech-branches {
-    grid-template-columns: 1fr;
-    gap: var(--space-16);
+    gap: var(--space-8);
   }
 
   .foundation-card {

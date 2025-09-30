@@ -15,11 +15,9 @@
             <span class="title-highlight title-multilevel">
               <span class="title-main company-future-title">{{ t('technology.hero.subtitle') }}</span>
             </span>
-            <span class="subtitle-en company-english-line">{{ t('technology.hero.englishLine') }}</span>
           </h1>
           <div class="hero-description content-bilingual">
             <p class="content-main">{{ t('technology.hero.description') }}</p>
-            <p class="content-en">{{ t('technology.hero.descriptionEn') }}</p>
           </div>
           
           <!-- Tech Stats in Hero -->
@@ -42,7 +40,6 @@
         <div class="section-header">
           <div class="title-bilingual">
             <h2 class="title-main">{{ t('technology.process.title') }}</h2>
-            <span class="title-en">{{ t('technology.process.titleEn') }}</span>
           </div>
           <div class="content-bilingual">
             <p class="content-main">{{ t('technology.process.description') }}</p>
@@ -531,14 +528,6 @@ const toggleFaq = (type, index) => {
   letter-spacing: -0.02em;
 }
 
-.section-header .title-en {
-  font-size: 1rem;
-  font-weight: 400;
-  color: var(--text-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
 .section-header .content-bilingual {
   margin-top: var(--space-6);
 }
@@ -767,8 +756,9 @@ const toggleFaq = (type, index) => {
 }
 
 .tech-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
@@ -954,10 +944,6 @@ const toggleFaq = (type, index) => {
     font-size: 2.2rem;
   }
   
-  .section-header .title-en {
-    font-size: 0.9rem;
-  }
-
   .tech-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
@@ -1061,8 +1047,9 @@ const toggleFaq = (type, index) => {
 }
 
 .comparison-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: var(--space-6);
   max-width: 1200px;
   margin: 0 auto;
@@ -1137,6 +1124,7 @@ const toggleFaq = (type, index) => {
 
 /* ===== Hero Section ===== */
 .hero {
+  margin-top: 60px;
   position: relative;
   min-height: 80vh;
   display: flex;
@@ -1214,12 +1202,7 @@ const toggleFaq = (type, index) => {
   color: var(--text-white) !important;
 }
 
-.hero .company-super-title .company-english-line {
-  color: var(--text-white-secondary) !important;
-}
-
-.hero .hero-description .content-main,
-.hero .hero-description .content-en {
+.hero .hero-description .content-main {
   color: var(--text-white-secondary) !important;
 }
 

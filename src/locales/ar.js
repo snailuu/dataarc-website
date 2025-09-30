@@ -326,7 +326,7 @@ const footer = {
     privacy: 'سياسة الخصوصية',
     terms: 'شروط الخدمة',
     cookies: 'سياسة ملفات تعريف الارتباط',
-    icp: '粤ICP备2024000000号',
+    icp: '粤ICP备2025461589号-1',
     copyright: '© 2024 شركة DataArc Technology. جميع الحقوق محفوظة.',
   },
 }

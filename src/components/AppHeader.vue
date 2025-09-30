@@ -404,11 +404,11 @@ onUnmounted(() => {
   height: var(--logo-size) !important;
 }
 
-.brand-link:hover .logo-image {
+/* .brand-link:hover .logo-image {
   filter: brightness(0.8);
   width: var(--logo-size) !important;
   height: var(--logo-size) !important;
-}
+} */
 
 .brand-text {
   font-size: var(--font-xl);

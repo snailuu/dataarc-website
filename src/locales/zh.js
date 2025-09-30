@@ -326,7 +326,7 @@ const footer = {
     privacy: '隐私政策',
     terms: '服务条款',
     cookies: 'Cookie 政策',
-    icp: '粤ICP备2024000000号',
+    icp: '粤ICP备2025461589号-1',
     copyright: '© 2024 数创弧光科技有限公司. 保留所有权利.',
   },
 }

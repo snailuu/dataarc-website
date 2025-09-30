@@ -776,6 +776,14 @@ const labelsContent = computed(() => {
     flex-direction: column;
     gap: var(--space-2);
   }
+
+  .detailed-cases,.additional-cases{  
+    padding: var(--space-4) !important;
+  }
+
+  .detailed-cases .content-bilingual {
+    padding: 0 10px !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -867,6 +875,7 @@ const labelsContent = computed(() => {
 .additional-cases {
   padding: var(--space-32) var(--space-24);
   background: var(--bg-primary);
+  overflow-x: scroll;
 }
 
 .additional-cases .container {
@@ -1037,20 +1046,19 @@ const labelsContent = computed(() => {
 }
 
 .results-grid {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-auto-rows: 1fr;
   gap: var(--space-3);
   margin-top: var(--space-2);
-  flex-wrap: nowrap;
+  align-items: stretch;
 }
+
 
 @media (max-width: 768px) {
   .results-grid {
-    flex-direction: row;
+    grid-template-columns: 1fr;
     gap: var(--space-4);
-    flex-wrap: nowrap;
   }
 }
 
@@ -1062,6 +1070,10 @@ const labelsContent = computed(() => {
   transition: all var(--duration-normal) var(--ease-out);
   border: 1px solid var(--neutral-200);
   box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .result-item:hover {
@@ -1123,11 +1135,14 @@ const labelsContent = computed(() => {
   font-weight: var(--font-weight-medium);
 }
 
+
 .results-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-auto-rows: 1fr;
   gap: var(--space-4);
   margin-top: var(--space-4);
+  align-items: stretch;
 }
 
 .result-item {
@@ -1136,6 +1151,10 @@ const labelsContent = computed(() => {
   background: transparent;
   border-radius: var(--radius-lg);
   border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .result-number {
@@ -1268,7 +1287,7 @@ const labelsContent = computed(() => {
   }
 
   .results-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: var(--space-4);
   }
 }

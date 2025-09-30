@@ -134,6 +134,7 @@ export default {
         title: 'DataArc观点 | 大模型下半场，怎样能让AI继续变强？',
         date: '2025 年 1 月 15 日',
         placeholder: '【需要图片：首页-新闻-AI发展.png】',
+        img: '/images/news/首页-新闻-AI发展.png',
         link: 'https://mp.weixin.qq.com/s/Eg7Ji_Ihq1I5mzXqCdToHw',
         tag: 'DataArc观点',
         tag: 'DataArc观点'
@@ -142,6 +143,7 @@ export default {
         title: 'DataArc章讯 | 数创弧光成为深圳市人工智能产业协会会员单位',
         date: '2025 年 1 月 12 日',
         placeholder: '【需要图片：首页-新闻-协会会员.png】',
+        img: '/images/news/首页-新闻-协会会员.png',
         link: 'https://mp.weixin.qq.com/s/KpVsB02xfOxdB4T6hMJgwA',
         tag: 'DataArc观点'
       },
@@ -149,6 +151,7 @@ export default {
         title: '合成数据专题：Synthetic Data is All You Need（上）',
         date: '2025 年 1 月 10 日',
         placeholder: '【需要图片：首页-新闻-合成数据上.png】',
+        img: '/images/news/首页-新闻-合成数据上.png',
         link: 'https://mp.weixin.qq.com/s/jy9aZDGbtpwkA17yW8QeOg',
         tag: 'DataArc观点'
       },
@@ -156,6 +159,7 @@ export default {
         title: '合成数据专题：Synthetic Data is All You Need（下）',
         date: '2025 年 1 月 8 日',
         placeholder: '【需要图片：首页-新闻-合成数据下.png】',
+        img: '/images/news/首页-新闻-合成数据下.png',
         link: 'https://mp.weixin.qq.com/s/LR3N0oxnwoJNAUBXxk15Kw',
         tag: 'DataArc观点'
       },
@@ -163,6 +167,7 @@ export default {
         title: '知识管理 | 为什么你公司的AI用不好？',
         date: '2025 年 1 月 5 日',
         placeholder: '【需要图片：首页-新闻-知识管理.png】',
+        img: '/images/news/首页-新闻-知识管理.png',
         link: 'https://mp.weixin.qq.com/s/oOdiTftrHhnPhXpjgppYXg',
         tag: 'DataArc观点'
       },
@@ -170,6 +175,7 @@ export default {
         title: '500亿元投资缘何流向深圳宝安',
         date: '2025 年 9 月 11 日',
         placeholder: '【需要图片：首页-新闻-宝安投资.png】',
+        img: '/images/news/首页-新闻-宝安投资.png',
         link: 'http://sz.people.com.cn/n2/2025/0911/c202846-41348055.html',
         tag: '权威报道'
       },
@@ -177,6 +183,7 @@ export default {
         title: '深圳科技工业园举办AI 3.0时代主题高端沙龙',
         date: '2025 年 9 月 1 日',
         placeholder: '【需要图片：首页-新闻-AI沙龙.png】',
+        img: '/images/news/首页-新闻-AI沙龙.png',
         link: 'https://www.sznews.com/news/content/2025-09/01/content_31679960.htm',
         tag: '权威报道'
       },
@@ -184,6 +191,7 @@ export default {
         title: '"金种子"孵出超千万融资！给创业导航，二期全球招募启动',
         date: '2025 年 7 月 25 日',
         placeholder: '【需要图片：首页-新闻-金种子融资.png】',
+        img: '/images/news/首页-新闻-金种子融资.png',
         link: 'https://www.thepaper.cn/newsDetail_forward_31248162',
         tag: '权威报道'
       },
@@ -191,6 +199,7 @@ export default {
         title: '投资界沙龙「AI狂飙 智汇未来」成功举办，共话AI产业新机遇',
         date: '2025 年 7 月 23 日',
         placeholder: '【需要图片：首页-新闻-投资沙龙.png】',
+        img: '/images/news/首页-新闻-投资沙龙.png',
         link: 'http://www.ofcapital.com/ofcweb/jx/comNews/20250725/2259.html',
         tag: '权威报道'
       },
@@ -198,30 +207,35 @@ export default {
         title: '深圳市人工智能产业协会新闻报道',
         date: '2025 年 7 月 12 日',
         placeholder: '【需要图片：首页-新闻-AI协会.png】',
+        img: '/images/news/首页-新闻-AI协会.png',
         link: 'https://caip.org.cn/news/detail?id=34048'
       },
       {
         title: '数创弧光获得天使轮融资',
         date: '2025 年 6 月 9 日',
         placeholder: '【需要图片：首页-新闻-天使轮融资.png】',
+        img: '/images/news/首页-新闻-天使轮融资.png',
         link: 'https://news.qq.com/rain/a/20250609A07KKN00?suid=&media_id='
       },
       {
         title: '携手共建前海创新科技生态圈——"数智创科汇"首期活动在华海金融创新中心成功举办',
         date: '2025 年 5 月 26 日',
         placeholder: '【需要图片：首页-新闻-数智创科汇.png】',
+        img: '/images/news/首页-新闻-数智创科汇.png',
         link: 'https://cnews.chinadaily.com.cn/a/202505/26/WS68341325a310205377034f71.html'
       },
       {
         title: '深港携手共建前海创新科技生态圈',
         date: '2025 年 4 月 3 日',
         placeholder: '【需要图片：首页-新闻-深港合作.png】',
+        img: '/images/news/首页-新闻-深港合作.png',
         link: 'https://www.sz.gov.cn/cn/xxgk/zfxxgj/bmdt/content/post_12104803.html'
       },
       {
         title: '500亿元投资缘何流向深圳宝安',
         date: '2025 年 9 月 11 日',
         placeholder: '【需要图片：首页-新闻-宝安投资.png】',
+        img: '/images/news/首页-新闻-宝安投资.png',
         link: 'http://sz.people.com.cn/n2/2025/0911/c202846-41348055.html',
         tag: '权威报道'
       },
@@ -229,6 +243,7 @@ export default {
         title: '深圳科技工业园举办AI 3.0时代主题高端沙龙',
         date: '2025 年 9 月 1 日',
         placeholder: '【需要图片：首页-新闻-AI沙龙.png】',
+        img: '/images/news/首页-新闻-AI沙龙.png',
         link: 'https://www.sznews.com/news/content/2025-09/01/content_31679960.htm',
         tag: '权威报道'
       },
@@ -236,36 +251,42 @@ export default {
         title: '"金种子"孵出超千万融资！给创业导航，二期全球招募启动',
         date: '2025 年 7 月 25 日',
         placeholder: '【需要图片：首页-新闻-金种子融资.png】',
+        img: '/images/news/首页-新闻-金种子融资.png',
         link: 'https://www.thepaper.cn/newsDetail_forward_31248162'
       },
       {
         title: '投资界沙龙「AI狂飙 智汇未来」成功举办，共话AI产业新机遇',
         date: '2025 年 7 月 23 日',
         placeholder: '【需要图片：首页-新闻-投资沙龙.png】',
+        img: '/images/news/首页-新闻-投资沙龙.png',
         link: 'http://www.ofcapital.com/ofcweb/jx/comNews/20250725/2259.html'
       },
       {
         title: '深圳市人工智能产业协会新闻报道',
         date: '2025 年 7 月 12 日',
         placeholder: '【需要图片：首页-新闻-AI协会.png】',
+        img: '/images/news/首页-新闻-AI协会.png',
         link: 'https://caip.org.cn/news/detail?id=34048'
       },
       {
         title: '数创弧光获得天使轮融资',
         date: '2025 年 6 月 9 日',
         placeholder: '【需要图片：首页-新闻-天使轮融资.png】',
+        img: '/images/news/首页-新闻-天使轮融资.png',
         link: 'https://news.qq.com/rain/a/20250609A07KKN00?suid=&media_id='
       },
       {
         title: '携手共建前海创新科技生态圈——"数智创科汇"首期活动在华海金融创新中心成功举办',
         date: '2025 年 5 月 26 日',
         placeholder: '【需要图片：首页-新闻-数智创科汇.png】',
+        img: '/images/news/首页-新闻-数智创科汇.png',
         link: 'https://cnews.chinadaily.com.cn/a/202505/26/WS68341325a310205377034f71.html'
       },
       {
         title: '深港携手共建前海创新科技生态圈',
         date: '2025 年 4 月 3 日',
         placeholder: '【需要图片：首页-新闻-深港合作.png】',
+        img: '/images/news/首页-新闻-深港合作.png',
         link: 'https://www.sz.gov.cn/cn/xxgk/zfxxgj/bmdt/content/post_12104803.html'
       }
     ],
